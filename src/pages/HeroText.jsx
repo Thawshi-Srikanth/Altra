@@ -7,7 +7,7 @@ function HeroText() {
         <p>Decades of Excellence:</p>
         <div className="lg:mt-[-20px]">Pioneering Laboratory Solutions</div>
       </div>
-      <div className="font-rosario lg:text-[39px] text-center lg:px-[60px]">
+      <div className="font-rosario lg:text-[30px] xl:text-[35px] 2xl:text-[37px] text-center lg:px-[60px]">
         <p>
           Our laboratory equipment business has stood at the forefront of
           innovation,<br></br> providing cutting-edge solutions for scientific

@@ -30,7 +30,7 @@ function Header() {
                       {" "}
                       <p
                         className={`${
-                          title.color ? `${title.color}` : ""
+                          title.color ? `${title.color}` : "xl:text-[17px] 2xl:text-[22px]"
                         }`}
                       >
                         {title.name}
