@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className="lg:flex lg:flex-row lg:h-100 lg:shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)]">
+    <div className="lg:flex lg:flex-row lg:h-100 lg:shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)] ">
       <div className="lg:flex lg:flex-row lg:pl-[86px] lg:pr-[86px] lg:pt-[10px] lg:pb-[10px]">
         {" "}
         <div className="lg:flex lg:flex-row  ">

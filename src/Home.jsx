@@ -6,7 +6,7 @@ import Commitment from "./pages/Commitment";
 import bgVideo from "./assets/video/bgVideo.mp4";
 export default function Home() {
   return (
-    <div>
+    <div className="lg:mt-[20px]">
      
    
         <video
@@ -15,7 +15,7 @@ export default function Home() {
           loop
           muted
           className=" absolute z-0 w-auto  
-            min-w-full  max-w-none"
+            min-w-full  max-w-none "
         />
         <div className="relative">
         <HeroSection />
