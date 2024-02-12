@@ -24,8 +24,8 @@ export default function Home() {
         <Brands />
 
         <Commitment />
-        <Magnetic/>
-        <Clientele/>
+        <Magnetic />
+        <Clientele />
       </div>
     </div>
   );
