@@ -3,11 +3,11 @@ import React from "react";
 function HeroText() {
   return (
     <div className="">
-      <div className=" text-center font-rosario lg:text-[69px] font-bold text-white lg:pt-[110px]">
+      <div className=" text-center font-rosario lg:text-[40px] xl:text-[69px] font-bold text-white lg:pt-[110px]">
         <p>Decades of Excellence:</p>
         <div className="lg:mt-[-20px]">Pioneering Laboratory Solutions</div>
       </div>
-      <div className="font-rosario lg:text-[30px] xl:text-[35px] 2xl:text-[37px] text-center lg:px-[60px]">
+      <div className="font-rosario lg:text-[25px] xl:text-[35px] 2xl:text-[37px] text-center lg:px-[60px] lg:pt-[20px] ">
         <p>
           Our laboratory equipment business has stood at the forefront of
           innovation,<br></br> providing cutting-edge solutions for scientific

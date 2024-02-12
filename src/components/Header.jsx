@@ -7,13 +7,13 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="lg:flex lg:flex-row lg:h-100 lg:shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)] ">
-      <div className="lg:flex lg:flex-row lg:pl-[86px] lg:pr-[86px] lg:pt-[10px] lg:pb-[10px]">
+      <div className="lg:flex lg:flex-row xl:pl-[86px] xl:pr-[86px] lg:pt-[10px] lg:pb-[10px]">
         {" "}
-        <div className="lg:flex lg:flex-row  ">
+        <div className="lg:flex lg:flex-row lg:scale-75 xl:scale-100 ">
           <img src={headerLogo} alt="headerLogo" />
           <img src={headerLogoText} alt="headerLogoText" />
         </div>
-        <div className="lg:ml-[100px] lg:flex lg:gap-x-[70px] lg:text-[24px] font-rosario justify-center items-center">
+        <div className="xl:ml-[100px] lg:flex  lg:gap-x-[40px] xl:gap-x-[70px] xl:text-[24px] font-rosario justify-center items-center">
           {" "}
           {headerTitles.map((title) => (
             <div key={title.id}>
