@@ -26,7 +26,7 @@ function Header() {
     setCurrentTab(item);
   };
 
-  console.log(currentTab);
+
   return (
     <div className="lg:flex lg:flex-row lg:h-[100px] lg:shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)] ">
       <div className="lg:flex lg:flex-row xl:pl-[86px] xl:pr-[86px] lg:pt-[10px] lg:pb-[10px]">

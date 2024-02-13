@@ -1,6 +1,5 @@
 import React from "react";
 import flask from "../assets/images/HeroImages/flask.png";
-import bgVideo from "../assets/video/bgVideo.mp4";
 function HeroSection() {
   return (
     <div className="relative   [background:linear-gradient(180deg,_#fff_70.9%,_rgba(2,_2,_1,_0))]  lg:h-[500px] lg:grid lg:grid-cols-3 lg:px-[90px]  bg-white ">
@@ -21,7 +20,7 @@ function HeroSection() {
         </div>
         <div className="lg:mt-[px] lg:ml-[-35px] xl:ml-0 ">
           {" "}
-          <button className="lg:bg-[#ff8a3a] lg:h-[80px] lg:w-[280px]  lg:rounded-[20px] xl:mt-[30px] lg:mt-[10px] lg:text-[30px] text-white font-rosario shadow-[15px_15px_30px_rgba(0,_0,_0,_0.25)] lg:scale-75 xl:scale-100">
+          <button className="lg:bg-[#ff8a3a] lg:h-[80px] lg:w-[280px]  lg:rounded-[20px] xl:mt-[30px] lg:mt-[10px] lg:text-[30px] text-white font-rosario shadow-[15px_15px_30px_rgba(0,_0,_0,_0.25)] lg:scale-75 xl:scale-100 hover:text-black font-bold transition duration-300  ">
             Inquire Now
           </button>
           <p className="lg:ml-[86px] font-rosario text-[20px]  text-[#e18655] lg:mt-[20px] ">

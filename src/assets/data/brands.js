@@ -12,6 +12,9 @@ export const brands = [
   { id: 4, img: brand4, alt: "brand04" },
   { id: 5, img: brand5, alt: "brand05" },
   { id: 6, img: brand6, alt: "brand06" },
+  { id: 7, img: brand1, alt: "brand01" },
+  { id: 8, img: brand2, alt: "brand02" },
+  { id: 9, img: brand3, alt: "brand03" },
 ];
 
 export default brands;
