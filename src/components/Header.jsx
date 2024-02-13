@@ -29,7 +29,7 @@ function Header() {
 
   return (
     <div className="lg:flex lg:flex-row lg:h-[100px] lg:shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)] ">
-      <div className="lg:flex lg:flex-row xl:pl-[86px] xl:pr-[86px] lg:pt-[10px] lg:pb-[10px]">
+      <div className="lg:flex lg:flex-row xl:pl-[86px] xl:pr-[86px] lg:pt-[10px] lg:pb-[10px] relative xl:left-[30px] 2xl:left-[40px]">
         <Link to="/">
           <div className="lg:flex lg:flex-row lg:scale-75 xl:scale-100 ">
             <img src={headerLogo} alt="headerLogo" className="lg:h-[80px]" />

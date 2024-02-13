@@ -3,7 +3,7 @@ import flask from "../assets/images/HeroImages/flask.png";
 function HeroSection() {
   return (
     <div className="relative   [background:linear-gradient(180deg,_#fff_70.9%,_rgba(2,_2,_1,_0))]  lg:h-[500px] lg:grid lg:grid-cols-3 lg:px-[90px]  bg-white ">
-      <div className="lg:col-span-2 lg:mt-[60px] ">
+      <div className="lg:col-span-2 lg:mt-[60px] relative xl:left-[35px]">
         <div className="lg:flex lg:flex-row 2xl:text-[69px] xl:text-[60px] lg:text-[40px] font-rosario  lg:gap-[20px]">
           <span className="text-[#e18655] font-bold">Elevate Your</span>
           <span className="font-bold text-transparent [-webkit-text-stroke:2px_#000] ">
@@ -28,7 +28,7 @@ function HeroSection() {
           </p>
         </div>
       </div>
-      <div className="">
+      <div className="relative xl:left-[35px] 2xl:left-0">
         <img src={flask} alt="flask" className="lg:ml-[12px] xl:mt-[-40px] " />
       </div>
     </div>
