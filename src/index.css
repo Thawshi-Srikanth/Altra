@@ -8,7 +8,7 @@ carusel */
 .item {
   min-height: 30rem;
  min-width: 30rem;
-  padding: 40px;
+  padding: 20px;
   pointer-events: none;
 }
 

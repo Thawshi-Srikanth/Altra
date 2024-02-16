@@ -12,7 +12,7 @@ function ShowProduct() {
 
   return (
     <div className=" ">
-      <p className="lg:pt-[60px] text-center font-rosario xl:text-[69px] lg:text-[40px] font-bold text-white ">
+      <p className="lg:pt-[60px] text-center font-rosario xl:text-[69px] lg:text-[50px]  font-bold text-white ">
         Products
       </p>
       <motion.div
@@ -33,7 +33,7 @@ function ShowProduct() {
                   alt={product.title}
                   className="relative   "
                 />
-                <p className={`text-nowrap font-bold font-rosario absolute lg:mt-[-120px] lg:ml-[120px]  text-[30px] ${product.title==="Equipment"?"xl:ml-[130px]":""}`}>
+                <p className={` text-nowrap font-bold font-rosario absolute lg:mt-[-120px]  lg:ml-[70px]  xl:text-[55px] lg:text-[45px] text-center ${product.title==="Equipment"?"lg:ml-[100px]":""} ${product.title==="Lab Furniture"?"xl:ml-[60px] lg:ml-[90px]":""} ${product.title==="Chemicals"?"lg:ml-[130px] xl:ml-[100px]":""}`}>
                   {product.title}
                 </p>
               </motion.div>

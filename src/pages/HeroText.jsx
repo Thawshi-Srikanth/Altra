@@ -3,7 +3,7 @@ import React from "react";
 function HeroText() {
   return (
     <div className="">
-      <div className=" text-center font-rosario text-[25px] md:text-[35px] lg:text-[40px] xl:text-[69px] font-bold text-white lg:pt-[110px]">
+      <div className=" text-center font-rosario text-[25px] md:text-[35px] lg:text-[50px] xl:text-[69px] font-bold text-white lg:pt-[110px]">
         <p className="">Decades of Excellence:</p>
         <div className="lg:mt-[-20px] mt-[-10px]">Pioneering Laboratory Solutions</div>
       </div>

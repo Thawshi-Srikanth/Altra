@@ -17,7 +17,7 @@ export default {
         rosario: ["Rosario", " sans-serif"],
       },
       animation: {
-        "infinite-scroll": "infinite-scroll 11s linear infinite",
+        "infinite-scroll": "infinite-scroll 14s linear infinite",
         "infinite-scroll-reverse":
           "infinite-scroll 14s linear infinite reverse",
       },

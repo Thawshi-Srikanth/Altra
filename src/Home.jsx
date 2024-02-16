@@ -12,25 +12,26 @@ import bgVideo from "./assets/video/bgVideo.mp4"
 export default function Home() {
   return (
     <div className="lg:mt-[20px]  ">
-      <video
-        src={bgVideo}
-        autoPlay="{true}"
-        loop
-        muted
-        className=" absolute z-0 w-auto  
-            min-w-full  h-[4317px] max-w-none  "
-      />
+    <video
+      src={bgVideo}
+      autoPlay="{true}"
+      loop
+      muted
+      className=" absolute z-0 w-auto  
+          md:min-w-[768px]  lg:h-[4010px] max-w-none xl:h-[4600px]  2xl:h-[4610px] "
+    />
 
-      <div className="relative bg-[#FFBC8E] bg-opacity-70">
-        <HeroSection />
-        <HeroText />
-        <Brands />
-        <Commitment />
-        <Magnetic />
-        <ShowProduct />
-        <PhScale />
-        <Clientele />
-      </div>
+    <div className="relative bg-[#FF8A3A] bg-opacity-80">
+      <HeroSection />
+      <HeroText />
+      <Brands />
+      <Commitment />
+      <Magnetic />
+      <ShowProduct />
+      <PhScale />
+      <Clientele />
     </div>
+  </div>
+   
   );
 }
