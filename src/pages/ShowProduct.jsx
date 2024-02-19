@@ -41,7 +41,7 @@ function ShowProduct() {
                   className="relative xl:w-[400px] xl:h-[600px]    xl:scale-110"
                 />
                 <p
-                  className={` font-medium text-nowrap xl:bottom-[40px] font-rosario absolute lg:mt-[-120px] xl:ml-[60px]  lg:ml-[90px] xl:text-[55px] lg:text-[45px] text-center ${
+                  className={` font-medium text-nowrap xl:bottom-[40px] font-rosario absolute lg:mt-[-120px] xl:ml-0  lg:ml-[90px] xl:text-[55px] lg:text-[45px] text-center ${
                     product.title === "Equipment"
                       ? "lg:ml-[120px] xl:ml-[80px]"
                       : ""
@@ -55,9 +55,13 @@ function ShowProduct() {
                       : ""
                   } ${
                     product.title === "Thermometer"
-                      ? "lg:ml-[103px] xl:ml-[30px]"
+                      ? "lg:ml-[103px] xl:ml-[40px]"
                       : ""
-                  } `}
+                  }  ${
+                    product.title === "Filter Papers"
+                      ? "lg:ml-[103px] xl:ml-[56px]"
+                      : ""
+                  }`}
                 >
                   {product.title}
                 </p>
