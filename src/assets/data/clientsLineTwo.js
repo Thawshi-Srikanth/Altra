@@ -20,8 +20,8 @@ export const clientsclientsLineTwo = [
   { id: 15, img: O, alt: "brand03" },
   { id: 16, img: P, alt: "brand03" },
   { id: 17, img: Q, alt: "brand03" },
-  { id: 9, img: I, alt: "brand03" },
-  { id: 10, img: J, alt: "brand03" },
+  // { id: 9, img: I, alt: "brand03" },
+  // { id: 10, img: J, alt: "brand03" },
   
 
 ];

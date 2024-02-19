@@ -24,17 +24,7 @@ export const clients = [
   { id: 6, img: F, alt: "brand06" },
   { id: 7, img: G, alt: "brand01" },
   { id: 8, img: H, alt: "brand02" },
-  { id: 1, img: A, alt: "brand03" },
 
-  { id: 2, img: B, alt: "brand02" },
-  { id: 3, img: C, alt: "brand03" },
-  { id: 4, img: D, alt: "brand04" },
-
-  // { id: 8, img: H, alt: "brand02" },
-  // { id: 10, img: I, alt: "brand03" },
-  // { id: 11,img: J, alt: "brand03" },
-  // { id: 12, img: K, alt: "brand03" },
-  // { id: 13, img: L, alt: "brand03" },
 ];
 
 export default clients;
