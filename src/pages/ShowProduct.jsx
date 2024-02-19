@@ -51,7 +51,7 @@ function ShowProduct() {
                       : ""
                   } ${
                     product.title === "Chemicals"
-                      ? "lg:ml-[113px] xl:ml-[80px]"
+                      ? "lg:ml-[113px] xl:ml-[75px]"
                       : ""
                   } ${
                     product.title === "Thermometer"
