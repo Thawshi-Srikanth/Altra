@@ -21,12 +21,12 @@ function Clientele() {
           ))}
         </div>
       </div>
-      <div className="bg-white opacity-80  xl:h-[200px]">
-        <div className="xl:gap-[120px] lg:gap-[100px] items-center lg:mt-[30px] flex  md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-reverse ">
+      <div className="bg-white opacity-80 lg:h-[152px] xl:h-[200px]">
+      <div className="xl:gap-[120px] lg:gap-[100px] lg:mt-[30px] flex  md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-reverse ">
           {clientsclientsLineTwo.map((brand) => (
             <div
               key={brand.id}
-              className="flex lg:h-[120px] xl:h-[140px]   xl:top-[24px] relative "
+              className="flex lg:h-[120px] xl:h-[140px] lg:top-[17px] xl:top-[24px] relative "
             >
               <img src={brand.img} alt={brand.alt} className=" " />
             </div>
