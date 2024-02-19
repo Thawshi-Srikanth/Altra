@@ -39,7 +39,7 @@ function Header() {
               <img src={headerLogo} alt="headerLogo" className="lg:h-[80px]" />
             </div>
           </Link>
-          <div className="relative xl:left-[0px] lg:flex  lg:gap-x-[40px] xl:gap-x-[75px] xl:text-[24px] font-rosario justify-center items-center">
+          <div className="relative xl:left-[40px] lg:flex  lg:gap-x-[40px] xl:gap-x-[90px] xl:text-[24px] font-rosario justify-center items-center">
             {headerTitles.map((title) => (
               <div key={title.id} className="">
                 <ul className="flex ">
@@ -73,7 +73,7 @@ function Header() {
             ))}
            
           </div>
-          <div className="relative xl:left-[60px] lg:left-[33px] flex  items-center ">
+          <div className="relative xl:left-[140px] lg:left-[33px] flex  items-center ">
               {" "}
               <img
                 src={search}

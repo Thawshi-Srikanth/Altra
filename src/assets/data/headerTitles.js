@@ -9,7 +9,7 @@ export const headerTitles = [
   { id: 4, name: "Research", path: "/research", image: Line },
   { id: 5, name: "About Us", path: "/aboutUs", image: Line },
   { id: 6, name: "Contact", path: "/contact", image: Line },
-  { id: 7, name: "Search", path: "", lense: search },
+  // { id: 7, name: "", path: "", lense: search },
 ];
 
 export default headerTitles;
