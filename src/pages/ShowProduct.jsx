@@ -55,7 +55,7 @@ function ShowProduct() {
                       : ""
                   } ${
                     product.title === "Thermometer"
-                      ? "lg:ml-[103px] xl:ml-[40px]"
+                      ? "lg:ml-[103px] xl:ml-[35px]"
                       : ""
                   } `}
                 >
