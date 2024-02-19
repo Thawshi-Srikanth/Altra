@@ -51,11 +51,11 @@ function ShowProduct() {
                       : ""
                   } ${
                     product.title === "Chemicals"
-                      ? "lg:ml-[113px] xl:ml-[75px]"
+                      ? "lg:ml-[113px] xl:ml-[80px]"
                       : ""
                   } ${
                     product.title === "Thermometer"
-                      ? "lg:ml-[103px] xl:ml-[35px]"
+                      ? "lg:ml-[103px] xl:ml-[30px]"
                       : ""
                   } `}
                 >
