@@ -10,7 +10,7 @@ function Clientele() {
       </p>
       <div className="bg-white opacity-80 lg:h-[152px] xl:h-[200px]">
         {" "}
-        <div className="xl:gap-[150px] lg:gap-[100px] lg:mt-[30px] flex  md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll ">
+        <div className="xl:gap-[120px] lg:gap-[100px] lg:mt-[30px] flex  md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll ">
           {clients.map((brand) => (
             <div
               key={brand.id}
@@ -22,7 +22,7 @@ function Clientele() {
         </div>
       </div>
       <div className="bg-white opacity-80  xl:h-[200px]">
-        <div className="xl:gap-[150px] lg:gap-[100px] items-center lg:mt-[30px] flex  md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-reverse ">
+        <div className="xl:gap-[120px] lg:gap-[100px] items-center lg:mt-[30px] flex  md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-reverse ">
           {clientsclientsLineTwo.map((brand) => (
             <div
               key={brand.id}
