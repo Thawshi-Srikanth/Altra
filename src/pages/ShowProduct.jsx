@@ -47,7 +47,7 @@ function ShowProduct() {
                       : ""
                   } ${
                     product.title === "Lab Furniture"
-                      ? "xl:ml-[50px] lg:ml-[100px]"
+                      ? "xl:ml-[45px] lg:ml-[100px]"
                       : ""
                   } ${
                     product.title === "Chemicals"
