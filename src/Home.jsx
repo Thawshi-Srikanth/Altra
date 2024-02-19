@@ -18,7 +18,7 @@ export default function Home() {
       loop
       muted
       className=" absolute z-0 w-auto  
-          md:min-w-[768px]  lg:h-[4010px] max-w-none xl:h-[4600px]  2xl:h-[4610px] "
+          md:min-w-[768px]  lg:h-[3970px] max-w-none xl:h-[4573px]  2xl:h-[4582px] "
     />
 
     <div className="relative bg-[#FF8A3A] bg-opacity-80">

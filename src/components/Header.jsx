@@ -32,46 +32,55 @@ function Header() {
   return (
     <div>
       {/* dekstop */}
-      <div className=" lg:block hidden lg:flex lg:flex-row lg:h-[100px] lg:shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)] ">
-        <div className="lg:flex lg:flex-row xl:pl-[86px] xl:pr-[86px] lg:pt-[10px] lg:pb-[10px] relative xl:left-[30px] 2xl:left-[40px]">
+      <div className=" relative lg:block hidden lg:flex lg:flex-row lg:h-[100px] lg:shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)] ">
+        <div className="lg:right-[10px] xl:right-0 lg:flex lg:flex-row xl:pl-[86px] xl:pr-[86px] lg:pt-[10px] lg:pb-[10px] relative xl:left-[30px] 2xl:left-[40px]">
           <Link to="/">
-            <div className="lg:flex lg:flex-row lg:scale-75 xl:scale-100 ">
+            <div className="lg:flex lg:flex-row lg:scale-75 xl:scale-100 relative xl:right-[70px]  ">
               <img src={headerLogo} alt="headerLogo" className="lg:h-[80px]" />
             </div>
           </Link>
-          <div className="xl:ml-[100px] lg:flex  lg:gap-x-[40px] xl:gap-x-[70px] xl:text-[24px] font-rosario justify-center items-center">
+          <div className="relative xl:left-[0px] lg:flex  lg:gap-x-[40px] xl:gap-x-[75px] xl:text-[24px] font-rosario justify-center items-center">
             {headerTitles.map((title) => (
-              <div key={title.id}>
-                <ul>
-                  {title.lense ? (
-                    <img
-                      src={title.lense}
-                      alt="searchIcon"
-                      className="lg:h-[30px]"
-                    />
-                  ) : (
-                    <li className="lg:flex lg:flex-row">
-                      <Link to={title.path}>
-                        <p
-                          className={`${
-                            currentTab == title.name
-                              ? "text-[#FF8A3A]"
-                              : "text-black"
-                          } xl:text-[17px] 2xl:text-[22px] font-bold
+              <div key={title.id} className="">
+                <ul className="flex ">
+                  <li className="lg:flex lg:flex-row">
+                    <Link to={title.path}>
+                      <p
+                        className={`${
+                          currentTab == title.name
+                            ? "text-[#FF8A3A]"
+                            : "text-black"
+                        } xl:text-[17px] 2xl:text-[22px] font-bold
                       `}
-                          onClick={() => handleItemClick(title.name)}
-                        >
-                          {title.name}
-                        </p>
-                      </Link>
+                        onClick={() => handleItemClick(title.name)}
+                      >
+                        {title.name}
+                      </p>
+                    </Link>
 
-                      {title.img ? <img src={title.img} alt="toggle" /> : ""}
-                    </li>
-                  )}
+                    {title.img ? (
+                      <img
+                        src={title.img}
+                        alt="toggle"
+                        className="relative xl:left-[20px]"
+                      />
+                    ) : (
+                      ""
+                    )}
+                  </li>
                 </ul>
               </div>
             ))}
+           
           </div>
+          <div className="relative xl:left-[60px] lg:left-[33px] flex  items-center ">
+              {" "}
+              <img
+                src={search}
+                alt="headerLogo"
+                className="xl:w-[42px] xl:h-[42px] lg:w-[35px] lg:h-[35px]"
+              />
+            </div>
         </div>
       </div>
 
@@ -86,7 +95,7 @@ function Header() {
           <img
             src={toggle}
             alt="toggle"
-            className="w-[19px] h-[17px] relative left-[160px] md:left-[350px]"
+            className="w-[19px] h-[17px] relative left-[160px] md:left-[350px] "
           />
           <img
             src={search}

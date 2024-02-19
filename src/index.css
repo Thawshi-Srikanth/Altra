@@ -8,18 +8,15 @@ carusel */
 .item {
   min-height: 30rem;
  min-width: 30rem;
-  padding: 20px;
+
   pointer-events: none;
 }
 
-.item img {
-  width: 100%;
-  height: 100%;
-  border-radius: 2rem;
-}
+
 
 .inner-carousel {
   display: flex;
+
 
 }
 
@@ -27,5 +24,4 @@ carusel */
   cursor: grab;
   overflow: hidden;
 }
-
 

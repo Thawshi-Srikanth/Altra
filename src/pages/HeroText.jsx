@@ -8,7 +8,7 @@ function HeroText() {
         <div className="lg:mt-[-20px] mt-[-10px]">Pioneering Laboratory Solutions</div>
       </div>
       <div className="md:text-[30px] font-rosario lg:text-[25px] xl:text-[35px] 2xl:text-[37px] text-center lg:px-[60px] lg:pt-[20px] pt-[10px]">
-        <p className="lg:block hidden">
+        <p className="lg:block hidden  leading-[130%]">
           Our laboratory equipment business has stood at the forefront of
           innovation,<br></br> providing cutting-edge solutions for scientific
           exploration. With a legacy of <br></br>reliability, precision, and customer

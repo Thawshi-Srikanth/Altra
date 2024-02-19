@@ -2,7 +2,7 @@ import React from "react";
 
 function SingleCommitment({ img, topic, commit }) {
   return (
-    <div className="md:rounded-[20px] rounded-[6.99px] flex flex-row lg:w-[400px] lg:h-[200px] md:h-[150px] md:w-[260px] h-[87px] w-[170px] bg-white bg-opacity-80 mx-auto justify-center">
+    <div className="md:rounded-[20px] rounded-[6.99px] flex flex-row lg:w-[400px] lg:h-[200px] md:h-[150px] md:w-[260px] h-[87px] w-[170px] bg-white bg-opacity-90 mx-auto justify-center">
       <div className="flex mx-auto justify-center items-center">
         <img
           src={img}
