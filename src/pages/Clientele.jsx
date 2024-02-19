@@ -26,9 +26,9 @@ function Clientele() {
           {clientsclientsLineTwo.map((brand) => (
             <div
               key={brand.id}
-              className="flex lg:h-[120px] xl:h-[140px]  xl:top-[24px] relative "
+              className="flex lg:h-[120px] xl:h-[140px]   xl:top-[24px] relative "
             >
-              <img src={brand.img} alt={brand.alt} className=" relative " />
+              <img src={brand.img} alt={brand.alt} className=" " />
             </div>
           ))}
         </div>
