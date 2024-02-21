@@ -4,17 +4,17 @@ import brands from "../assets/data/brands";
 function Brands() {
   return (
     <div className="overflow-x-hidden overflow-y-hidden">
-      <p className="md:text-[35px] text-[25px] xl:text-[69px] lg:text-[50px] font-rosario text-white  text-center lg:mt-[60px] md:mt-[30px] mt-[20px] font-bold">
+      <p className="md:text-[35px] text-[25px] xl:text-[69px] lg:text-[50px] sm:text-[30px] font-rosario text-white  text-center lg:mt-[60px] md:mt-[30px] mt-[20px]  font-bold">
         Our trusted brands
       </p>
-      <div className="bg-white  opacity-90 lg:h-[150px] ">
+      <div className="bg-white  opacity-90 lg:h-[150px] md:h-[90px]  sm:h-[80px] sm:mt-[30px] md:mt-[30px] mt-[20px]">
         {" "}
-        <div className="absolute lg:h-[150px]"></div>
-        <div className=" relative lg:mt-[30px] flex lg:gap-[40px] gap-[10px] md:gap-[90px] md:top-[1px] top-[10px] md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll ">
+        
+        <div className=" relative lg:mt-[30px]  flex lg:gap-[40px] gap-[10px] md:gap-[90px]  sm:gap-[80px] md:top-[10px] top-[10px] md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll ">
           {brands.map((brand) => (
             <div
               key={brand.id}
-              className="object-cover flex lg:h-[120px]  md:h-[50px] h-[50px] mb-[20px] md:mb-0 relative lg:top-[13px]  xl:full xl:"
+              className="object-cover flex lg:h-[120px]  md:h-[70px] h-[50px] mb-[20px] md:mb-0 relative lg:top-[13px]  md:top-[6px]  xl:full xl:"
             >
               <img src={brand.img} alt={brand.alt} className=" " />
             </div>

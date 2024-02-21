@@ -7,21 +7,171 @@ carusel */
 
 .item {
   min-height: 30rem;
- min-width: 30rem;
+  min-width: 30rem;
 
   pointer-events: none;
 }
 
-
-
 .inner-carousel {
   display: flex;
-
-
 }
 
 .carousel {
   cursor: grab;
   overflow: hidden;
+}
+
+.itemMob {
+  min-height: 18rem;
+  min-width: 18rem;
+  padding: 34px;
+
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 932px) {
+  .magP {
+    font-size: 22.3px;
+    left: 0.4px;
+  }
+}
+@media only screen and (max-width: 915px) {
+  .magP {
+    font-size: 22px;
+    left: 0.4px;
+  }
+}
+@media only screen and (max-width: 844px) {
+  .magP {
+    font-size: 19.8px;
+    left: 0.4px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .magP {
+    font-size: 18.2px;
+    position: relative;
+    left: 0.4px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .magP {
+    font-size: 17px;
+    position: relative;
+    left: 0.4px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .magText {
+    font-size: 10px;
+    left: 0.4px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .magWidth {
+    width: 375px;
+    position: relative;
+    left: 30px;
+    font-size: 11.2px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .magWidth {
+    width: 335px;
+    position: relative;
+    left: 20px;
+    font-size: 9.6px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .magWidth {
+    width: 335px;
+    position: relative;
+    left: 20px;
+    font-size: 9.6px;
+  }
+}
+
+@media only screen and (min-width: 430px) {
+  .magP {
+    position: relative;
+    right: 13px;
+    bottom: 3px;
+  }
+}
+@media only screen and (min-width: 412px) {
+  .magP {
+    position: relative;
+    right: 13px;
+    bottom: 3px;
+  }
+}
+
+@media only screen and (min-width: 430px) {
+  .magnet {
+    right: -19px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .magnet {
+    right: -19px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .magnet {
+    right: -33px;
+  }
+}
+
+@media only screen and (min-width: 932px) {
+  .phwidth {
+    width: 840px;
+    font-size: 23px;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 915px) {
+  .phwidth {
+    width: 829px;
+    font-size: 23px;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 844px) {
+  .phwidth {
+    width: 770px;
+    font-size: 21.2px;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .phwidth {
+    width: 700px;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .phwidth {
+    width: 700px;
+    font-size: 19px;
+  }
+}
+
+
+
+@media only screen and (min-width: 932px) {
+  .searchwidth {
+    position: relative;
+    left:45px
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .searchwidth{
+    position: relative;
+    left:0px;
+    
+  }
 }
 

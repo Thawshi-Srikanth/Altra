@@ -11,17 +11,26 @@ import bgVideo from "./assets/video/bgVideo.mp4"
 
 export default function Home() {
   return (
-    <div className="lg:mt-[20px]  ">
+    
+  //   <div className="lg:mt-[20px]  ">
+  //   <video
+  //     src={bgVideo}
+  //     autoPlay="{true}"
+  //     loop
+  //     muted
+  //     className=" absolute z-0 w-auto  
+  //         md:min-w-[768px]  lg:h-[3970px] max-w-none xl:h-[4670px]  2xl:h-[4679px] "
+  //   />
+<div className="lg:mt-[20px] relative  ">
+  <div className=" h-full">
     <video
       src={bgVideo}
-      autoPlay="{true}"
+      autoPlay={true}
       loop
       muted
-      className=" absolute z-0 w-auto  
-          md:min-w-[768px]  lg:h-[3970px] max-w-none xl:h-[4670px]  2xl:h-[4679px] "
+      className="absolute z-0 w-full h-full object-cover lg:h-[4020px]  xl:max-w-none xl:h-[4670px]  2xl:h-[4679px] md:w-full"
     />
-
-    <div className="relative bg-[#FF8A3A] bg-opacity-80">
+    <div className="relative bg-[#FF8A3A] bg-opacity-80 ">
       <HeroSection />
       <HeroText />
       <Brands />
@@ -32,6 +41,6 @@ export default function Home() {
       <Clientele />
     </div>
   </div>
-   
+  </div>
   );
 }

@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import headerTitles from "../assets/data/headerTitles";
 import headerLogo from "../assets/images/headerLogo.png";
-import logoMobile from "../assets/images/logoMobile.png";
-import toggle from "../assets/images/toggle.png";
 import search from "../assets/images/search.svg";
+import toggle from "../assets/images/toggle.png";
 
 import { Link, useLocation } from "react-router-dom";
 
@@ -36,7 +35,7 @@ function Header() {
         <div className="lg:right-[10px] xl:right-0 lg:flex lg:flex-row xl:pl-[86px] xl:pr-[86px] lg:pt-[10px] lg:pb-[10px] relative xl:left-[30px] 2xl:left-[40px]">
           <Link to="/">
             <div className="lg:flex lg:flex-row lg:scale-75 xl:scale-100 relative xl:right-[70px]  ">
-              <img src={headerLogo} alt="headerLogo" className="lg:h-[80px]" />
+              <img src={headerLogo} alt="headerLogo" className="lg:h-[80px] " />
             </div>
           </Link>
           <div className="relative xl:left-[40px] lg:flex  lg:gap-x-[55px] xl:gap-x-[90px] xl:text-[24px] font-rosario justify-center items-center">
@@ -87,20 +86,20 @@ function Header() {
       {/* mobile */}
 
       <div className="lg:hidden relative shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)] h-16 mb-[20px]">
-        <div className="grid grid-cols-3 pt-[13px] pb-[13px] pl-[25px] pr-[20px] items-center relative  ">
+        <div className="grid grid-cols-3 pt-[13px] pb-[13px] pl-[25px] pr-[20px] items-center relative searchwidth ">
           <Link to="/">
             {" "}
-            <img src={logoMobile} alt="logo" className="" />
+            <img src={headerLogo} alt="logo" className="md:scale-50 relative md:bottom-[15px] md:right-[20px]" />
           </Link>
           <img
             src={toggle}
             alt="toggle"
-            className="w-[19px] h-[17px] relative left-[160px] md:left-[350px] "
+            className="w-[19px] h-[17px] relative left-[160px] md:left-[390px] sm:left-[330px]  md:bottom-[15px]  "
           />
           <img
             src={search}
             alt="search"
-            className="w-[24px] h-[24px] relative left-[90px]  md:left-[180px]"
+            className="w-[24px] h-[24px]  left-[90px]  md:left-[180px] sm:left-[162px] relative md:bottom-[15px]"
           />
         </div>
       </div>
