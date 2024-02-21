@@ -16,7 +16,7 @@ function MobileViewProducts() {
   return (
     <motion.div
       ref={carousel}
-      className="carousel   lg:hidden relative bottom-[80px] md:bottom-0 sm:scale-125 md:scale-100"
+      className="carousel   lg:hidden relative bottom-[90px] md:bottom-0 sm:scale-125 md:scale-100"
       whileTap={{ cursor: "grabbling" }}
     >
       <motion.div

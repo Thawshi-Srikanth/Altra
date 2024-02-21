@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import { ProductsImages } from "../assets/data/ProductsImages";
 import MobileViewProducts from "./MobileViewProducts";
+import { brands } from './../assets/data/brands';
 
 function ShowProduct() {
   const [width, setWidth] = useState(0);
@@ -15,7 +16,7 @@ function ShowProduct() {
   };
 
   return (
-    <div className="relative">
+    <div className="relative bottom-[25px] sm:bottom-0">
       <p className="sm:text-[30px] text-[25px] pt-[40px] lg:pt-[60px] md:pt-[60px] sm:pt-[110px] md:text-[35px] text-center font-rosario xl:text-[69px] lg:text-[50px]  font-bold text-white ">
         Products
       </p>

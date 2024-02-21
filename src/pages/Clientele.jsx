@@ -4,7 +4,7 @@ import clientsclientsLineTwo from "../assets/data/clientsLineTwo";
 
 function Clientele() {
   return (
-    <div className="overflow-x-hidden lg:pb-[80px] md:pb-[60px]  relative bottom-[60px] md:bottom-0 ">
+    <div className="overflow-x-hidden lg:pb-[80px] md:pb-[60px]  relative bottom-[130px] md:bottom-0 ">
       <p className="md:mt-[50px] sm:text-[30px]  md:text-[35px] text-[25px]  lg:pt-[40px] lg:text-[40px] 2xl:text-[69px] xl:text-[60px] font-rosario text-white  text-center xl:mt-[60px] font-bold">
         Clientele
       </p>
