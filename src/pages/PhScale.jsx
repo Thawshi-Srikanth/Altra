@@ -9,7 +9,7 @@ function PhScale() {
         <div className="md:top-[-5px] relative lg:top-[10px] top-[10px]  left-[-8px] md:left-0">
           {" "}
 
-          <img src={phDetail} alt="" className="md:hidden scale-110  p-6  sm:px-3  sm:scale-125  sm:left-[140px] relative sm:top-[70px] bottom-[20px] sm:bottom-0"/>
+          <img src={phDetail} alt="" className="md:hidden scale-y-110 sm:scale-y-0  p-6  sm:px-3  sm:scale-125  sm:left-[140px] relative sm:top-[70px] bottom-[20px] sm:bottom-0"/>
           <p className="sm:text-[30px] md:block hidden text-[12px] md:text-[25px]  lg:text-[30px] xl:text-[40px]  font-rosario text-[#fd5901] font-bold lg:px-[10px] lg:ml-[20px] lg:pt-[20px] md:ml-[20px] md:pt-[20px] ">
             PH Scale
           </p>
