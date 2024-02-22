@@ -89,17 +89,17 @@ function Header() {
         <div className="grid grid-cols-3 pt-[13px] pb-[13px] pl-[25px] pr-[20px] items-center relative searchwidth ">
           <Link to="/">
             {" "}
-            <img src={headerLogo} alt="logo" className="md:scale-50 relative md:bottom-[19px] logo sm:scale-75 sm:bottom-[11px]" />
+            <img src={headerLogo} alt="logo" className="md:scale-50 relative md:bottom-[19px] logo sm:scale-75 sm:bottom-[11px] md:mt-[-8px]" />
           </Link>
           <img
             src={toggle}
             alt="toggle"
-            className="w-[19px] h-[17px] relative left-[160px] toggle sm:left-[330px]  md:bottom-[15px] sm:bottom-[11px] "
+            className="w-[19px] h-[17px] relative left-[160px] toggle sm:left-[330px]  md:bottom-[15px] sm:bottom-[11px] md:mt-[-8px]"
           />
           <img
             src={search}
             alt="search"
-            className="w-[24px] h-[24px]  left-[90px]  md:left-[180px] sm:left-[162px] relative md:bottom-[15px] sm:bottom-[11px]"
+            className="w-[24px] h-[24px]  left-[90px]  md:left-[180px] sm:left-[162px] relative md:bottom-[15px] sm:bottom-[11px] md:mt-[-8px]"
           />
         </div>
       </div>

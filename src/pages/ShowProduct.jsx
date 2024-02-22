@@ -21,17 +21,17 @@ function ShowProduct() {
         Products
       </p>
       {/* dekstop */}
-      <div className="relative">
+      <div className="">
         {" "}
         <motion.div
           ref={carousel}
-          className="carousel  xl:pl-[80px]  lg:block hidden"
+          className="carousel  xl:pl-[80px]  lg:block hidden "
           whileTap={{ cursor: "grabbling" }}
         >
           <motion.div
             drag="x"
-            dragConstraints={{ right: 10, left: -width }}
-            className="inner-carousel  relative xl:mt-[50px] "
+            dragConstraints={{ right:10, left: -width }}
+            className="inner-carousel  relative xl:mt-[50px] xl:min-w-[2100px] lg:min-w-[2100px]"
           >
             {ProductsImages.map((product) => {
               return (

@@ -22,7 +22,7 @@ function MobileViewProducts() {
       <motion.div
         drag="x"
         dragConstraints={{ right: 6, left: -width }}
-        className="inner-carousel  relative  "
+        className="inner-carousel  relative  md:min-w-[1400px] sm:min-w-[1760px] min-w-[580px]"
       >
         {ProductsImages.map((product) => {
           return (

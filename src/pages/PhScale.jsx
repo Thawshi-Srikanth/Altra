@@ -5,11 +5,11 @@ import phDetail from "../assets/images/Phmeter/Fact.png";
 function PhScale() {
   return (
     <div className="bottom-[194px] md:bottom-0 flex xl:mt-[210px] lg:mt-[120px] md:mt-[50px] lg:pb-6  relative left-[17px] md:left-0 lg:left-[-30px] xl:left-0">
-      <div className=" phwidth rounded-[12px]  lg:mt-[18px] lg:px-[20px] xl:ml-[90px] 2xl:ml-[180px]  lg:ml-[60px] relative lg:rounded-[45px] md:rounded-[11.6px] md:bg-white md:bg-opacity-90 lg:h-[200px] xl:h-[250px] xl:w-[1255px] 2xl:w-[1250px]  lg:w-[1050px]  md:ml-[50px]  sm:w-[500px] sm:h-[120px]   md:h-[140px] h-[80px] w-[335px] flex-col">
+      <div className=" phwidth rounded-[12px]  lg:mt-[18px] lg:px-[20px] xl:ml-[90px] 2xl:ml-[180px]  lg:ml-[60px] relative lg:rounded-[45px] md:rounded-[11.6px] md:bg-white md:bg-opacity-90 lg:h-[200px] xl:h-[250px] xl:w-[1255px] 2xl:w-[1250px]  lg:w-[1050px]  md:ml-[50px]  md:w-[850px] sm:w-[500px] sm:h-[120px]   md:h-[140px] h-[80px] w-[335px] flex-col">
         <div className="md:top-[-5px] relative lg:top-[10px] top-[10px]  left-[-8px] md:left-0">
           {" "}
 
-          <img src={phDetail} alt="" className="md:hidden scale-105  px-5  sm:px-3  sm:scale-125  sm:left-[140px] relative sm:top-[70px]"/>
+          <img src={phDetail} alt="" className="md:hidden scale-105  p-6  sm:px-3  sm:scale-125  sm:left-[140px] relative sm:top-[70px] bottom-[20px] sm:bottom-0"/>
           <p className="sm:text-[30px] md:block hidden text-[12px] md:text-[25px]  lg:text-[30px] xl:text-[40px]  font-rosario text-[#fd5901] font-bold lg:px-[10px] lg:ml-[20px] lg:pt-[20px] md:ml-[20px] md:pt-[20px] ">
             PH Scale
           </p>
