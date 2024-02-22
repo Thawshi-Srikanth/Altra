@@ -15,7 +15,7 @@ function HeroSection() {
           <span className="font-bold   text-transparent  [-webkit-text-stroke:0.5px_#000]  lg:[-webkit-text-stroke:2px_#000]">
             Unleash
           </span>
-          <span className="text-[#e18655] font-bold lg:ml-[10px] relative left-[8px] lg:left-0">
+          <span className="text-[#e18655] font-bold lg:ml-[10px] relative left-[8px] lg:left-0 text-nowrap">
             Laboratory Excellence!
           </span>
         </div>
