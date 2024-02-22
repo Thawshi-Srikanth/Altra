@@ -5,9 +5,9 @@ import magnetFact from "../assets/images/Magnet/FactSm.png";
 function Magnetic() {
   return (
     <div className="pr-[10px] md:pr-6 flex xl:mt-[160px] lg:mt-[100px] md:mt-[90px] lg:pb-6 mt-[50px] relative md:right-[10px] lg:right-0  md:scale-100 right-[4px]">
-      <div className="md:pt-[10px] rounded-[12px] lg:pt-0 md:left-[60px] md:w-11/12  md:h-[140px] md:rounded-[15px] lg:left-0 lg:mt-[18px] lg:px-[20px] xl:ml-[90px] 2xl:ml-[180px]  lg:ml-[60px] relative lg:rounded-[45px] md:bg-white md:bg-opacity-90 lg:h-[200px] xl:h-[250px] xl:w-[1255px] 2xl:w-[1250px]  lg:w-[900px] magWidth w-[335px]  h-[80px] left-[18px] ">
+      <div className="md:pt-[10px] rounded-[12px] lg:pt-0 md:left-[60px] md:w-11/12  md:h-[140px] md:rounded-[15px] lg:left-0 lg:mt-[18px] lg:px-[20px] xl:ml-[90px] 2xl:ml-[180px]  lg:ml-[60px] relative lg:rounded-[45px] md:bg-white md:bg-opacity-90 lg:h-[200px] xl:h-[250px] xl:w-[1255px] 2xl:w-[1250px]  lg:w-[900px] magWidth w-[335px] sm:w-[500px] sm:h-[120px] h-[80px] left-[18px] ">
         
-        <img src={magnetFact} alt="" className="md:hidden relative bottom-[40px]  sm:bottom-[-16px] left-[7px] sm:left-[160px] scale-100 sm:scale-150 sm:w-[600px] sm:h-[110px]" />
+        <img src={magnetFact} alt="" className="md:hidden relative bottom-[40px]  sm:bottom-[-16px] left-[7px] sm:left-[160px] scale-100   sm:scale-125" />
 
         <div>
           {" "}
@@ -18,7 +18,7 @@ function Magnetic() {
 
         <div className="md:block hidden ">
           {" "}
-          <p className=" xl:leading-[40px] font-rosario magP text-[10px]   md:leading-[30px] md:mt-[-10px] md:pt-[10px] lg:pt-0 lg:text-[22px] xl:text-[33px] lg:mt-[10px] lg:px-[10px]  lg:ml-[20px] md:ml-[20px] ml-[-15px] xl:mt-[0px] scale-95 md:scale-100">
+          <p className=" xl:leading-[40px] font-rosario magP text-[10px]   md:leading-[30px] md:mt-[-10px] md:pt-[10px] lg:pt-0 lg:text-[22px] xl:text-[33px] lg:mt-[10px] lg:px-[10px]  lg:ml-[20px] md:ml-[20px] ml-[-15px] xl:mt-[0px] scale-95 md:scale-100 relative xl:left-[1px]">
             Stirrers with magnetic bars can stir liquids without a physical
             <br />
             connection. The magnetic bar is placed in the liquid, and a magnetic

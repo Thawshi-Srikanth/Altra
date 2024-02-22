@@ -46,9 +46,9 @@ function ShowProduct() {
                     className="relative xl:w-[400px] xl:h-[600px]    xl:scale-110"
                   />
                   <p
-                    className={` ] font-medium text-nowrap xl:bottom-[40px] font-rosario absolute lg:mt-[-120px] xl:ml-0  lg:ml-[90px] xl:text-[55px] lg:text-[45px] text-center ${
+                    className={` font-medium text-nowrap xl:bottom-[40px] font-rosario absolute lg:mt-[-120px] xl:ml-0  lg:ml-[90px] xl:text-[55px] lg:text-[45px] text-center ${
                       product.title === "Equipment"
-                        ? "lg:ml-[120px] xl:ml-[80px]"
+                        ? "lg:ml-[120px] xl:ml-[80px] "
                         : ""
                     } ${
                       product.title === "Lab Furniture"
