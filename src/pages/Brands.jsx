@@ -26,7 +26,7 @@ function Brands() {
           {brands.map((brand) => (
             <div
               key={brand.id}
-              className="object-cover flex lg:h-[120px]  md:h-[70px] h-[50px] mb-[20px] md:mb-0 relative lg:top-[13px]  md:top-[6px]  xl:full  xl:mt-[2px] "
+              className=" flex lg:h-[120px]  md:h-[70px] h-[50px] mb-[20px] md:mb-0 relative lg:top-[13px]  md:top-[6px]  xl:full  xl:mt-[2px] "
             >
               <img src={brand.img} alt={brand.alt} className=" " />
             </div>
