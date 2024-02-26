@@ -20,7 +20,7 @@ function Brands() {
             </div>
           ))}
         </div> */}
-        <div className="  flex  top-[5px]   [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll ">
+        <div className="  flex  top-[5px]   justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll ">
           {brands.map((brand) => (
             <div
               key={brand.id}
