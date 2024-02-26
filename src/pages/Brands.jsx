@@ -22,7 +22,7 @@ function Brands() {
         </div>
      
       </div>
-      <div className="bg-white"> <div className="  sm:hidden   flex  gap-[24px]   top-[5px]  justify-start [&_li]:mx-8 [&_img]:max-w-lg  animate-infinite-scroll ">
+      <div className="bg-white"> <div className="  sm:hidden   flex  gap-[24px]   top-[5px]  justify-start  [&_img]:max-w-lg  animate-infinite-scroll ">
           {brands.map((brand) => (
             <div
               key={brand.id}
