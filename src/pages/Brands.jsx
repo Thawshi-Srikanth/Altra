@@ -22,7 +22,7 @@ function Brands() {
         </div>
      
       </div>
-      <div className=" sm:hidden lg:mt-[30px]  flex lg:gap-[40px] gap-[20px] md:gap-[50px]  sm:gap-[80px] md:top-[10px] top-[5px]  justify-start [&_li]:mx-8 [&_img]:max-w-96  animate-infinite-scroll ">
+      <div className="bg-white"> <div className="  sm:hidden   flex  gap-[24px]   top-[5px]  justify-start [&_li]:mx-8 [&_img]:max-w-lg  animate-infinite-scroll ">
           {brands.map((brand) => (
             <div
               key={brand.id}
@@ -31,7 +31,8 @@ function Brands() {
               <img src={brand.img} alt={brand.alt} className=" " />
             </div>
           ))}
-        </div>
+        </div></div>
+     
     </div>
   );
 }
