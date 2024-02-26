@@ -10,7 +10,7 @@ function Brands() {
       <div className="bg-white  opacity-90 lg:h-[150px] md:h-[90px]  sm:h-[80px] sm:mt-[30px] md:mt-[30px] mt-[20px] h-[60px] ">
         {" "}
         
-        <div className="  lg:mt-[30px]  flex lg:gap-[40px] gap-[20px] md:gap-[50px]  sm:gap-[80px] md:top-[10px] top-[5px]  justify-start [&_li]:mx-8 [&_img]:max-w-96  animate-infinite-scroll ">
+        <div className="sm:block hidden  lg:mt-[30px]  flex lg:gap-[40px] gap-[20px] md:gap-[50px]  sm:gap-[80px] md:top-[10px] top-[5px]  justify-start [&_li]:mx-8 [&_img]:max-w-96  animate-infinite-scroll ">
           {brands.map((brand) => (
             <div
               key={brand.id}
@@ -22,6 +22,16 @@ function Brands() {
         </div>
      
       </div>
+      <div className="sm:hidden  lg:mt-[30px]  flex lg:gap-[40px] gap-[20px] md:gap-[50px]  sm:gap-[80px] md:top-[10px] top-[5px]  justify-start [&_li]:mx-8 [&_img]:max-w-96  animate-infinite-scroll ">
+          {brands.map((brand) => (
+            <div
+              key={brand.id}
+              className="object-cover flex lg:h-[120px]  md:h-[70px] h-[50px] mb-[20px] md:mb-0 relative lg:top-[13px]  md:top-[6px]  xl:full  xl:mt-[2px] "
+            >
+              <img src={brand.img} alt={brand.alt} className=" " />
+            </div>
+          ))}
+        </div>
     </div>
   );
 }
