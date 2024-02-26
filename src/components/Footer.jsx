@@ -81,7 +81,7 @@ function Footer() {
         </div>
         <div className="left-[40px]  mx-auto  sm:mx-0 sm:scale-75 md:scale-100 lg:top-[50px]  relative lg:right-[30px] md:left-[90px]  sm:left-[20px] lg:left-0  xl:right-0 xl:scale-90 md:mt-[45px] lg:mt-0 sm:mt-[27px] mt-[75px] px-2 sm:px-0">
           <div className="lg:left-[130px] xl:left-[190px] relative grid grid-cols-2 sm:grid-cols-1 gap-[90px] sm:gap-0 text-nowrap">
-            <p className="text-white font-rosario xl:text-[23px] sm:text-[15px] text-[12px] lg:text-[20px] md:text-[15px] lg:my-[17px] relative right-[15px] sm:right-0">
+            <p className="text-white font-rosario xl:text-[23px] sm:text-[15px] text-[13px] lg:text-[20px] md:text-[15px] lg:my-[17px] relative right-[15px] sm:right-0">
               <span className="text-nowrap text-center xl:pl-[80px] lg:left-[70px] relative xl:left-0 left-[50px] sm:left-0">
                 Address:
               </span>
@@ -95,7 +95,7 @@ function Footer() {
               alt="line"
               className="lg:w-[250px] relative lg:bottom-[5px] md:bottom-[-2px] sm:bottom-[-3px] sm:block hidden"
             />
-            <p className="text-white font-rosario xl:text-[23px] lg:text-[20px] md:text-[15px] text-[12px] lg:my-[17px] lg:pl-[60px] relative bottom-[10px] sm:pt-[18px] md:pt-[10px] lg:pt-0">
+            <p className="text-white font-rosario xl:text-[23px] lg:text-[20px] md:text-[15px] text-[13px] lg:my-[17px] lg:pl-[60px] relative bottom-[10px] sm:pt-[18px] md:pt-[10px] lg:pt-0">
               <span className="lg:pl-[30px] left-[16px] sm:left-0 relative">
                 Phone: <br />
               </span>
