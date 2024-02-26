@@ -2,9 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+video::-webkit-media-controls {
+  display: none;
+  z-index: 1000;
+}
+html {
+  height: -webkit-fill-available;
+
+}
 /* 
 carusel */
+body {
+  height: -webkit-fill-available;
 
+}
 .item {
   min-height: 30rem;
   min-width: 30rem;
