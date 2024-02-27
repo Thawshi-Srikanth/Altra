@@ -4,7 +4,7 @@ import commit from "../assets/data/commit";
 
 function Commitment() {
   return (
-    <div className="px-1 md:px-0 ">
+    <div className=" w-full px-1 md:px-0 ">
       <p className="lg:pt-[60px] sm:text-[30px] text-[25px] md:mt-[30px] sm:mt-[50px] mt-[20px] md:text-[35px] text-center font-rosario xl:text-[69px] lg:text-[50px] font-bold text-white ">
         Our commitments to you
       </p>

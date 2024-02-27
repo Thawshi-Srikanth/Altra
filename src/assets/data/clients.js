@@ -15,7 +15,7 @@ import H from "../images/Clientele/H.png";
 // import O from "../images/Clientele/O.png";
 
 export const clients = [
-  { id: 1, img: A, alt: "brand03" },
+  { id: 1, img: A, alt: "brand03", },
 
   { id: 2, img: B, alt: "brand02" },
   { id: 3, img: C, alt: "brand03" },

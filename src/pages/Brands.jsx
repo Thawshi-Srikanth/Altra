@@ -4,7 +4,7 @@ import CaroMob from "./CaroMob";
 
 function Brands() {
   return (
-    <div className="overscroll-x-auto ">
+    <div className=" w-full overscroll-x-auto ">
       <p className="md:text-[35px] text-[25px] xl:text-[69px] lg:text-[50px] sm:text-[30px] font-rosario text-white  text-center lg:mt-[60px] md:mt-[30px] mt-[20px]  font-bold">
         Our trusted brands
       </p>
@@ -24,7 +24,7 @@ function Brands() {
 
       <div className="bg-white">
         {" "}
-        <div className="mx-auto flex  items-center gap-[24px]  sm:hidden      top-[5px]    [&_img]:max-w-sm  animate-infinite-scroll ">
+        <div className="mx-auto flex  items-center gap-[24px]  sm:hidden   relative   top-[8px]    [&_img]:max-w-sm  animate-infinite-scroll ">
           {brands.map((brand) => (
             <div key={brand.id} className=" flex  relative    ">
               <CaroMob src={brand.img} alt={brand.alt} />

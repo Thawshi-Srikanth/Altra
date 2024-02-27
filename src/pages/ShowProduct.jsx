@@ -16,7 +16,7 @@ function ShowProduct() {
   };
 
   return (
-    <div className="relative bottom-[25px] sm:bottom-0">
+    <div className=" w-full relative bottom-[25px] sm:bottom-0">
       <p className="sm:text-[30px] text-[25px] pt-[40px] lg:pt-[60px] md:pt-[60px] sm:pt-[110px] md:text-[35px] text-center font-rosario xl:text-[69px] lg:text-[50px]  font-bold text-white ">
         Products
       </p>

@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
 
-function CaroMob({src,alt}) {
+function CaroMob({ src, alt, height }) {
   return (
-    <div className=' h-[70px] '>
-        <img src={src} alt= {alt} className='h-[60px]'/>
+    <div className=" h-[60px] sm:hidden ">
+      <img
+        src={src}
+        alt={alt}
+        className={`${height!== null ? `h-[40px]` : ""} `}
+      />
     </div>
-  )
+  );
 }
 
-export default CaroMob
+export default CaroMob;
