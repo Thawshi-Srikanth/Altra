@@ -14,7 +14,7 @@ function Footer() {
   console.log(titles);
   return (
     <div className="relative mt-[-65px] sm:mt-0 ">
-      <div className="bg-[#2D2D2D] lg:grid lg:grid-cols-3 grid sm:grid-cols-3 lg:h-[400px] md:h-[250px] sm:h-[210px] h-[700px] relative">
+      <div className="bg-[#2D2D2D] lg:grid lg:grid-cols-3 grid sm:grid-cols-3 lg:h-[470px] md:h-[250px] sm:h-[210px] h-[700px] relative">
         <div className="order-last scale-50 sm:scale-100 sm:order-none flex flex-col justify-center xl:ml-[80px] lg:ml-[30px] relative xl:scale-90 md:scale-90 bottom-[20px] sm:bottom-0">
           <div className="">
             <img
