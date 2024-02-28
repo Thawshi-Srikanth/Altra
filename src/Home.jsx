@@ -36,7 +36,7 @@ export default function Home() {
             autoPlay={true}
             loop
             muted
-            className="justify-end flex items-center absolute   xl:h-[4680px] lg:h-[4020px] md:h-[2918px] sm:h-[2670px] h-[1810px] object-cover min-w-full "
+            className="justify-end flex items-center absolute   xl:h-[4680px] lg:h-[4020px] md:h-[2918px] sm:h-[2670px] h-[1820px] object-cover min-w-full "
           />
           <div className="relative bg-[#FF8A3A] bg-opacity-80 min-w-full ">
             <HeroSection />
