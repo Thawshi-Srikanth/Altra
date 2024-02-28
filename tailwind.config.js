@@ -18,14 +18,13 @@ export default {
         rosario: ["Rosario", " sans-serif"],
       },
       animation: {
-        "infinite-scroll": "infinite-scroll 20s linear infinite",
-        "infinite-scroll-reverse":
-          "infinite-scroll 20s linear infinite reverse",
+        "infinite-scroll": "infinite-scroll 14s linear infinite",
+        "infinite-scroll-reverse": "infinite-scroll 14s linear infinite reverse",
       },
       keyframes: {
         "infinite-scroll": {
-          from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-200%)" },
+          from: { transform: "translateX(120)" },
+          to: { transform: "translateX(-100%)" },
         },
       },
     },

@@ -29,9 +29,9 @@ function Header() {
   };
 
   return (
-    <div>
+    <div className=" fixed top-0 z-[50] bottom-0 w-screen ">
       {/* dekstop */}
-      <div className="relative lg:block hidden lg:flex lg:flex-row lg:h-[100px] lg:shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)] ">
+      <div className="bg-white  top-0 z-[50] bottom-0 w-screen  relative  lg:block hidden  lg:flex-row lg:h-[100px] lg:shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)] ">
         <div className="lg:right-[10px] xl:right-0 lg:flex lg:flex-row xl:pl-[86px] xl:pr-[86px] lg:pt-[10px] lg:pb-[10px] relative xl:left-[30px] 2xl:left-[40px]">
           <Link to="/">
             <div className="lg:flex lg:flex-row lg:scale-75 xl:scale-100 relative xl:right-[70px]  ">
@@ -85,7 +85,7 @@ function Header() {
 
       {/* mobile */}
 
-      <div className="lg:hidden relative shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)] h-16 mb-[20px]">
+      <div className="bg-white top-0 z-[50] lg:hidden relative shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)] h-16 mb-[20px]">
         <div className="grid grid-cols-3 pt-[13px] pb-[13px] pl-[25px] pr-[20px] items-center relative searchwidth ">
           <Link to="/">
             {" "}

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+
 video::-webkit-media-controls {
   display: none;
   z-index: 1000;

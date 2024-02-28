@@ -23,6 +23,35 @@ export default function Home() {
     }
   }, []);
   return (
+
+    
+      <div className="lg:mt-[0px]   overflow-x-hidden w-screen relative top-36 ">
+        <div className="h-full w-full overflow-x-hidden ">
+          <video
+            playsInline
+            disablePictureInPicture="true"
+            controlsList="nodownload"
+            controls={false}
+            src={renderProfileImg(0)}
+            autoPlay={true}
+            loop
+            muted
+            className="justify-end flex items-center absolute   xl:h-[4680px] lg:h-[4020px] md:h-[2918px] sm:h-[2670px] h-[1770px] object-cover min-w-full "
+          />
+          <div className="relative bg-[#FF8A3A] bg-opacity-80 min-w-full">
+            <HeroSection />
+            <HeroText />
+            <Brands />
+            <Commitment />
+            <Magnetic />
+            <ShowProduct />
+            <PhScale />
+            <Clientele />
+        
+          </div>
+        </div>{" "}
+      </div>
+
     //   <div className="lg:mt-[20px]  ">
     //   <video
     //     src={bgVideo}
@@ -32,31 +61,5 @@ export default function Home() {
     //     className=" absolute z-0 w-auto
     //         md:min-w-[768px]  lg:h-[3970px] max-w-none xl:h-[4670px]  2xl:h-[4679px] "
     //   />
-    <div className="lg:mt-[0px]  h-screen overflow-x-hidden w-screen ">
-      <div className="h-full w-full overflow-x-hidden ">
-        <video
-          playsInline
-          disablePictureInPicture="true"
-          controlsList="nodownload"
-          controls={false}
-          src={renderProfileImg(0)}
-          autoPlay={true}
-          loop
-          muted
-          className=" absolute  h-screen object-cover min-w-full "
-        />
-        <div className="relative  bg-[#FF8A3A] bg-opacity-80 min-w-full">
-       <HeroSection />
-          <HeroText />
-          <Brands />
-          <Commitment />
-          <Magnetic />
-          <ShowProduct />
-          <PhScale />
-          <Clientele />
-          <Footer />
-        </div>
-      </div>{" "}
-    </div>
   );
 }
