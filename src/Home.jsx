@@ -25,7 +25,7 @@ export default function Home() {
   return (
 
     
-      <div className="lg:mt-[0px]   overflow-x-hidden w-screen relative top-36 ">
+      <div className="lg:mt-[0px]    w-screen relative lg:top-36 top-[90px]  ">
         <div className="h-full w-full overflow-x-hidden ">
           <video
             playsInline
@@ -36,9 +36,9 @@ export default function Home() {
             autoPlay={true}
             loop
             muted
-            className="justify-end flex items-center absolute   xl:h-[4680px] lg:h-[4020px] md:h-[2918px] sm:h-[2670px] h-[1770px] object-cover min-w-full "
+            className="justify-end flex items-center absolute   xl:h-[4680px] lg:h-[4020px] md:h-[2918px] sm:h-[2670px] h-[1810px] object-cover min-w-full "
           />
-          <div className="relative bg-[#FF8A3A] bg-opacity-80 min-w-full">
+          <div className="relative bg-[#FF8A3A] bg-opacity-80 min-w-full ">
             <HeroSection />
             <HeroText />
             <Brands />

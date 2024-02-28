@@ -16,13 +16,13 @@ function MobileViewProducts() {
   return (
     <motion.div
       ref={carousel}
-      className="carousel   lg:hidden relative bottom-[90px] md:bottom-0 sm:scale-125 md:scale-100"
+      className="carousel z-[1]  lg:hidden relative bottom-[90px] md:bottom-0 sm:scale-125 md:scale-100"
       whileTap={{ cursor: "grabbling" }}
     >
       <motion.div
         drag="x"
         dragConstraints={{ right: 6, left: -width }}
-        className="inner-carousel  relative  md:min-w-[1400px] sm:min-w-[1760px] min-w-[580px]"
+        className="inner-carousel  relative  md:min-w-[1400px] sm:min-w-[1760px] min-w-[580px] "
       >
         {ProductsImages.map((product) => {
           return (

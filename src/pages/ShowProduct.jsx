@@ -16,7 +16,7 @@ function ShowProduct() {
   };
 
   return (
-    <div className=" w-full relative bottom-[25px] sm:bottom-0">
+    <div className="overflow-x-auto w-full relative bottom-[25px] sm:bottom-0 ">
       <p className="sm:text-[30px] text-[25px] pt-[40px] lg:pt-[60px] md:pt-[60px] sm:pt-[110px] md:text-[35px] text-center font-rosario xl:text-[69px] lg:text-[50px]  font-bold text-white ">
         Products
       </p>
@@ -27,11 +27,12 @@ function ShowProduct() {
           ref={carousel}
           className="carousel  xl:pl-[80px]  lg:block hidden "
           whileTap={{ cursor: "grabbling" }}
+          style={{ top: "100px" }}
         >
           <motion.div
             drag="x"
             dragConstraints={{ right:10, left: -width }}
-            className="inner-carousel  relative xl:mt-[50px] xl:min-w-[2100px] lg:min-w-[2100px]"
+            className="inner-carousel  relative xl:mt-[50px] xl:min-w-[2100px] lg:min-w-[2100px] z-[1]"
           >
             {ProductsImages.map((product) => {
               return (
