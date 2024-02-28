@@ -25,7 +25,7 @@ export default function Home() {
   return (
 
     
-      <div className="lg:mt-[0px]    w-screen relative lg:top-36 top-[90px]  ">
+      <div className="lg:mt-[0px]    w-screen relative lg:top-36 top-[80px]  ">
         <div className="h-full w-full overflow-x-hidden ">
           <video
             playsInline
