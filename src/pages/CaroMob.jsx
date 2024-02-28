@@ -6,7 +6,7 @@ function CaroMob({ src, alt, height }) {
       <img
         src={src}
         alt={alt}
-        className={`${height!== null ? `h-[40px]` : ""} `}
+        className={`${height!== null ? `h-[50px]` : ""} `}
       />
     </div>
   );
