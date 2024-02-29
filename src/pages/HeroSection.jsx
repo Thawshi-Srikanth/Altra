@@ -3,7 +3,7 @@ import flask from "../assets/images/HeroImages/flask.png";
 import { Link } from "react-router-dom";
 function HeroSection() {
   return (
-    <div className=" relative pb-[15px]  lg:pb-0  [background:linear-gradient(180deg,_#fff_70.9%,_rgba(2,_2,_1,_0))]  lg:h-[500px] grid grid-cols-3 lg:px-[90px]  bg-white w-full xl:mt-[-40px] top-[-1px]">
+    <div className=" relative pb-[15px]  lg:pb-0  [background:linear-gradient(180deg,_#fff_70.9%,_rgba(2,_2,_1,_0))]  lg:h-[500px] grid grid-cols-3 lg:px-[90px]  bg-white w-full xl:mt-[-40px] top-[-10px] ">
       <div className="col-span-2 lg:mt-[60px] mt-[20px] md:mt-[60px] relative xl:left-[35px] left-[30px] ">
         <div className="lg:flex lg:flex-row 2xl:text-[69px] xl:text-[60px] lg:text-[40px] text-[20px] md:text-[40px] sm:text-[38px] font-rosario  lg:gap-[20px]">
           <span className="text-[#e18655] font-bold">Elevate Your</span>
