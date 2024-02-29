@@ -1,16 +1,15 @@
 import React, { useCallback } from "react";
-import Brands from "./pages/Brands";
+import "react-html5video/dist/styles.css";
+import bgVideo from "./assets/video/bgVideo.mp4";
+import MemoRizedBrands from "./pages/Brands";
 import Clientele from "./pages/Clientele";
 import Commitment from "./pages/Commitment";
 import HeroSection from "./pages/HeroSection";
 import HeroText from "./pages/HeroText";
 import Magnetic from "./pages/Magnetic";
 import PhScale from "./pages/PhScale";
-import ShowProduct from "./pages/ShowProduct";
-import bgVideo from "./assets/video/bgVideo.mp4";
-import "react-html5video/dist/styles.css";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import MemoRizedProducts from "./pages/ShowProduct";
+import MemoRizedClientele from "./pages/Clientele";
 
 export default function Home() {
   const renderProfileImg = useCallback((element) => {
@@ -36,17 +35,17 @@ export default function Home() {
             autoPlay={true}
             loop
             muted
-            className="justify-end flex items-center absolute   xl:h-[4680px] lg:h-[4020px] md:h-[2918px] sm:h-[2670px] h-[1820px] object-cover min-w-full "
+            className="justify-end flex items-center absolute xl:h-[5700px]  2xl:h-[5600px] lg:h-[4100px] md:h-[2998px] sm:h-[2426px] h-[1820px] object-cover min-w-full "
           />
           <div className="relative bg-[#FF8A3A] bg-opacity-80 min-w-full ">
             <HeroSection />
             <HeroText />
-            <Brands />
             <Commitment />
+            <MemoRizedBrands />
             <Magnetic />
-            <ShowProduct />
+            <MemoRizedProducts />
             <PhScale />
-            <Clientele />
+            <MemoRizedClientele />
         
           </div>
         </div>{" "}

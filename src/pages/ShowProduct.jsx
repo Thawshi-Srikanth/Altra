@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
-import React, { useEffect, useRef, useState } from "react";
+import React, { memo, useEffect, useRef, useState } from "react";
 import { ProductsImages } from "../assets/data/ProductsImages";
 import MobileViewProducts from "./MobileViewProducts";
-import { brands } from './../assets/data/brands';
+import { brands } from "./../assets/data/brands";
+import { userStateContext } from "../contexts/ContextProvider";
 
-function ShowProduct() {
+const MemoRizedProducts=memo(function ShowProduct() {
   const [width, setWidth] = useState(0);
   const carousel = useRef();
 
@@ -16,7 +17,7 @@ function ShowProduct() {
   };
 
   return (
-    <div className="overflow-x-auto w-full relative bottom-[25px] sm:bottom-0 ">
+    <div className="overflow-x-auto w-full relative bottom-[25px] sm:bottom-0 xl:bottom-0 xl:mt-[394px]">
       <p className="sm:text-[30px] text-[25px] pt-[40px] lg:pt-[60px] md:pt-[60px] sm:pt-[110px] md:text-[35px] text-center font-rosario xl:text-[69px] lg:text-[50px]  font-bold text-white ">
         Products
       </p>
@@ -31,7 +32,7 @@ function ShowProduct() {
         >
           <motion.div
             drag="x"
-            dragConstraints={{ right:10, left: -width }}
+            dragConstraints={{ right: 10, left: -width }}
             className="inner-carousel  relative xl:mt-[50px] xl:min-w-[2100px] lg:min-w-[2100px] z-[1]"
           >
             {ProductsImages.map((product) => {
@@ -123,6 +124,6 @@ md screens */}
       <MobileViewProducts />
     </div>
   );
-}
+})
 
-export default ShowProduct;
+export default MemoRizedProducts;

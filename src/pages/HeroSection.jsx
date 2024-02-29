@@ -3,7 +3,7 @@ import flask from "../assets/images/HeroImages/flask.png";
 import { Link } from "react-router-dom";
 function HeroSection() {
   return (
-    <div className=" relative pb-[15px]  lg:pb-0  [background:linear-gradient(180deg,_#fff_70.9%,_rgba(2,_2,_1,_0))]  lg:h-[500px] grid grid-cols-3 lg:px-[90px]  bg-white w-full">
+    <div className=" relative pb-[15px]  lg:pb-0  [background:linear-gradient(180deg,_#fff_70.9%,_rgba(2,_2,_1,_0))]  lg:h-[500px] grid grid-cols-3 lg:px-[90px]  bg-white w-full xl:mt-[-40px] top-[-1px]">
       <div className="col-span-2 lg:mt-[60px] mt-[20px] md:mt-[60px] relative xl:left-[35px] left-[30px] ">
         <div className="lg:flex lg:flex-row 2xl:text-[69px] xl:text-[60px] lg:text-[40px] text-[20px] md:text-[40px] sm:text-[38px] font-rosario  lg:gap-[20px]">
           <span className="text-[#e18655] font-bold">Elevate Your</span>
@@ -26,7 +26,7 @@ function HeroSection() {
               Inquire Now
             </button>
           </Link>
-          <p className="pb-[20px]  sm:pb-0 lg:ml-[86px] text-[9px] md:text-[12px] sm:text-[9px] font-rosario lg:text-[20px]  text-[#e18655] lg:mt-[20px] md:mt-[10px] mt-[5px] relative left-[14px] sm:ml-[-5px] md:left-0 lg:left-0">
+          <p className="pb-[20px]  sm:pb-0 lg:ml-[86px] text-[9px] md:text-[12px] sm:text-[9px] font-rosario lg:text-[20px]  text-[#e18655] lg:mt-[20px] md:mt-[10px] mt-[5px] relative left-[14px] sm:ml-[-5px] md:left-5 lg:left-0">
             <Link to="/products " className="">See Products</Link>
           </p>
         </div>
