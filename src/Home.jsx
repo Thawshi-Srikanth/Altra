@@ -1,17 +1,51 @@
-import React, { useCallback } from "react";
+import React, { Suspense, lazy, useCallback, useState } from "react";
 import "react-html5video/dist/styles.css";
 import bgVideo from "./assets/video/bgVideo.mp4";
-import MemoRizedBrands from "./pages/Brands";
-import Clientele from "./pages/Clientele";
+import delayForDemo from "./components/Delay";
+import Loader from "./components/Loader";
 import Commitment from "./pages/Commitment";
 import HeroSection from "./pages/HeroSection";
 import HeroText from "./pages/HeroText";
 import Magnetic from "./pages/Magnetic";
 import PhScale from "./pages/PhScale";
-import MemoRizedProducts from "./pages/ShowProduct";
-import MemoRizedClientele from "./pages/Clientele";
 
 export default function Home() {
+  const [pageLoaded, setPageLoaded] = useState(false);
+
+  const Lazy = (path) =>
+    lazy(() => {
+      if (pageLoaded == true) {
+        return import(`${path}`);
+      } else {
+        setPageLoaded(true);
+        return delayForDemo(import(`${path}`), 2000);
+      }
+    });
+  const pathOne = "./pages/Brands";
+  const pathTwo = "./pages/Clientele";
+  const pathThree = "./pages/ShowProduct";
+
+  const LazyBrands = Lazy(pathOne);
+  const LazyClientle = Lazy(pathTwo);
+  const LazyProducts = Lazy(pathThree);
+  // const LazyBrands = lazy(() => {
+  //   if (pageLoaded == true) {
+  //     return import("./pages/Brands");
+  //   } else {
+  //     setPageLoaded(true);
+  //     return delayForDemo(import("./pages/Brands"), 2000);
+  //   }
+  // });
+
+  // const LazyClientle = lazy(() => {
+  //   if (pageLoaded == true) {
+  //     return import("./pages/Clientele");
+  //   } else {
+  //     setPageLoaded(true);
+  //     return delayForDemo(import("./pages/Clientele"), 2000);
+  //   }
+  // });
+
   const renderProfileImg = useCallback((element) => {
     switch (element) {
       case 0:
@@ -22,35 +56,41 @@ export default function Home() {
     }
   }, []);
   return (
+    <div className="lg:mt-[0px]    w-screen relative lg:top-30 sm:top-[80px] top-[60px] ">
+      <div className="h-full w-full overflow-x-hidden ">
+        <video
+          playsInline
+          disablePictureInPicture="true"
+          controlsList="nodownload"
+          controls={false}
+          src={renderProfileImg(0)}
+          autoPlay={true}
+          loop
+          muted
+          className="justify-end flex items-center absolute xl:h-[4900px]   lg:h-[4100px] md:h-[2998px] sm:h-[2426px] h-[1755px] object-cover min-w-full "
+        />
+        <div className="relative bg-[#FF8A3A] bg-opacity-80 min-w-full ">
+          <HeroSection />
+          <HeroText />
+          <Suspense fallback={<Loader />}>
+            <LazyBrands />
+          </Suspense>
 
-    
-      <div className="lg:mt-[0px]    w-screen relative lg:top-30 sm:top-[80px] top-[60px] ">
-        <div className="h-full w-full overflow-x-hidden ">
-          <video
-            playsInline
-            disablePictureInPicture="true"
-            controlsList="nodownload"
-            controls={false}
-            src={renderProfileImg(0)}
-            autoPlay={true}
-            loop
-            muted
-            className="justify-end flex items-center absolute xl:h-[5050px]   lg:h-[4100px] md:h-[2998px] sm:h-[2426px] h-[1755px] object-cover min-w-full "
-          />
-          <div className="relative bg-[#FF8A3A] bg-opacity-80 min-w-full ">
-         <HeroSection />
-            <HeroText />
-            <MemoRizedBrands />
-            <Commitment />
-          
-            <Magnetic />
-            <MemoRizedProducts />
-            <PhScale />
-            <MemoRizedClientele />
-        
-          </div>
-        </div>{" "}
-      </div>
+          <Commitment />
+
+          <Magnetic />
+          <Suspense fallback={<Loader />}>
+            <LazyProducts />
+          </Suspense>
+
+          <PhScale />
+          <Suspense fallback={<Loader />}>
+            {" "}
+            <LazyClientle />
+          </Suspense>
+        </div>
+      </div>{" "}
+    </div>
 
     //   <div className="lg:mt-[20px]  ">
     //   <video

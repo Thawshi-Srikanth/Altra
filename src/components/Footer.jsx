@@ -15,7 +15,7 @@ function Footer() {
   const mobTitile = titles(itemsToExcludeMobile);
 
   return (
-    <div className="relative mt-[0px] sm:mt-[-140px] xl:mt-[140px]  md:mt-[70px] ">
+    <div className="relative mt-[0px] sm:mt-[-140px] xl:mt-[80px]  md:mt-[70px] ">
       <div className="bg-[#2D2D2D] lg:grid lg:grid-cols-3 grid sm:grid-cols-3 lg:h-[350px] md:h-[250px] sm:h-[210px] h-[700px] relative">
         <div className="order-last scale-50 sm:scale-100 sm:order-none flex flex-col justify-center xl:ml-[80px] lg:ml-[30px] relative xl:scale-90 md:scale-90 bottom-[20px] sm:bottom-0 xl:top-[30px]">
           <div className="">
