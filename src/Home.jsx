@@ -21,30 +21,38 @@ export default function Home() {
         return delayForDemo(import(`${path}`), 2000);
       }
     });
-  const pathOne = "./pages/Brands";
-  const pathTwo = "./pages/Clientele";
-  const pathThree = "./pages/ShowProduct";
+  // const pathOne = "./pages/Brands";
+  // const pathTwo = "./pages/Clientele";
+  // const pathThree = "./pages/ShowProduct";
 
-  const LazyBrands = Lazy(pathOne);
-  const LazyClientle = Lazy(pathTwo);
-  const LazyProducts = Lazy(pathThree);
-  // const LazyBrands = lazy(() => {
-  //   if (pageLoaded == true) {
-  //     return import("./pages/Brands");
-  //   } else {
-  //     setPageLoaded(true);
-  //     return delayForDemo(import("./pages/Brands"), 2000);
-  //   }
-  // });
+  // const LazyBrands = Lazy(pathOne);
+  // const LazyClientle = Lazy(pathTwo);
+  // const LazyProducts = Lazy(pathThree);
+  const LazyBrands = lazy(() => {
+    if (pageLoaded == true) {
+      return import("./pages/Brands");
+    } else {
+      setPageLoaded(true);
+      return delayForDemo(import("./pages/Brands"), 2000);
+    }
+  });
 
-  // const LazyClientle = lazy(() => {
-  //   if (pageLoaded == true) {
-  //     return import("./pages/Clientele");
-  //   } else {
-  //     setPageLoaded(true);
-  //     return delayForDemo(import("./pages/Clientele"), 2000);
-  //   }
-  // });
+  const LazyClientle = lazy(() => {
+    if (pageLoaded == true) {
+      return import("./pages/Clientele");
+    } else {
+      setPageLoaded(true);
+      return delayForDemo(import("./pages/Clientele"), 2000);
+    }
+  });
+  const LazyProducts= lazy(() => {
+    if (pageLoaded == true) {
+      return import("./pages/Clientele");
+    } else {
+      setPageLoaded(true);
+      return delayForDemo(import("./pages/ShowProduct"), 2000);
+    }
+  });
 
   const renderProfileImg = useCallback((element) => {
     switch (element) {
