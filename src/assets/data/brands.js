@@ -19,6 +19,7 @@ import brand18 from "../images/Brands/brand18.png";
 
 export const brands = [
   { id: 1, img: brand1, alt: "brand01" },
+  { id: 19, img: brand1, alt: "brand01" },
   { id: 2, img: brand2, alt: "brand02" },
   { id: 3, img: brand3, alt: "brand03" },
   { id: 4, img: brand4, alt: "brand04" },
@@ -36,6 +37,7 @@ export const brands = [
   { id: 16, img: brand16, alt: "brand03" },
   { id: 17, img: brand17, alt: "brand03" },
   { id: 18, img: brand18, alt: "brand03" },
+
 ];
 
 export default brands;

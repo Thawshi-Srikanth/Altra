@@ -11,7 +11,7 @@ const MemoRizedClientele=memo(function Clientele() {
       </p>
       <div className="  bg-[#FFFFFF] opacity-80 lg:h-[190px] xl:h-[170px] md:h-[100px] sm:h-[80px] h-[50px] relative mt-[30px] md:mt-0">
         {" "}
-        <div className=" flex-row flex-nowrap xl:gap-[60px] lg:gap-[100px]  gap-[10px] md:gap-[60px]  sm:gap-[50px] lg:mt-[30px] md:mt-[20px] sm:mt-[20px] flex md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll scroll-smooth">
+        <div className=" flex-row flex-nowrap xl:gap-[60px] lg:gap-[100px]  gap-[10px] md:gap-[60px]  sm:gap-[50px] lg:mt-[30px] md:mt-[20px] sm:mt-[20px] flex md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scrollClientle scroll-smooth">
           {clients.map((brand) => (
             <div
               key={brand.id}
@@ -25,7 +25,7 @@ const MemoRizedClientele=memo(function Clientele() {
         </div>
       </div>
       <div className="bg-[#FFFFFF] opacity-80 flex-nowrap   lg:h-[190px] xl:h-[170px] sm:h-[80px] md:h-[100px] h-[50px] relative mt-[21px] md:mt-0 ">
-      <div className=" flex-row flex-nowrap  xl:gap-[60px] lg:gap-[100px]  gap-[10px] md:gap-[60px]  sm:gap-[50px] lg:mt-[30px] md:mt-[20px] sm:mt-[20px] flex md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-reverse ">
+      <div className=" flex-row flex-nowrap  xl:gap-[60px] lg:gap-[100px]  gap-[10px] md:gap-[60px]  sm:gap-[50px] lg:mt-[30px] md:mt-[20px] sm:mt-[20px] flex md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scrollClientle-reverse scroll-smooth">
           {clientsclientsLineTwo.map((brand) => (
             <div
               key={brand.id}

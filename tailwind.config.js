@@ -18,13 +18,25 @@ export default {
         rosario: ["Rosario", " sans-serif"],
       },
       animation: {
-        "infinite-scroll": "infinite-scroll 14s linear infinite",
-        "infinite-scroll-reverse": "infinite-scroll 14s linear infinite reverse",
+        "infinite-scroll": "infinite-scroll 20s linear infinite",
+        "infinite-scrollMob": "infinite-scrollMob 20s linear infinite",
+        "infinite-scroll-reverse": "infinite-scroll 20s linear infinite reverse",
+
+        "infinite-scrollClientle": "infinite-scrollClientle 14s linear infinite",
+        "infinite-scrollClientle-reverse": "infinite-scrollClientle 14s linear infinite reverse",
       },
       keyframes: {
         "infinite-scroll": {
           from: { transform: "translateX(120)" },
+          to: { transform: "translateX(-270%)" },
+        },
+        "infinite-scrollClientle": {
+          from: { transform: "translateX(120)" },
           to: { transform: "translateX(-100%)" },
+        },
+        "infinite-scrollMob": {
+          from: { transform: "translateX(120)" },
+          to: { transform: "translateX(-390%)" },
         },
       },
     },
