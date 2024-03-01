@@ -36,7 +36,7 @@ export default {
         },
         "infinite-scrollMob": {
           from: { transform: "translateX(120)" },
-          to: { transform: "translateX(-400%)" },
+          to: { transform: "translateX(-430%)" },
         },
       },
     },
