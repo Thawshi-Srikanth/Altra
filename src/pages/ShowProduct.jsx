@@ -58,7 +58,7 @@ const MemoRizedProducts=memo(function ShowProduct() {
                         : ""
                     } ${
                       product.title === "Chemicals"
-                        ? "xl:ml-[85px] sm:ml-[120px]"
+                        ? "xl:ml-[85px] sm:ml-[130px]"
                         : ""
                     } ${
                       product.title === "Thermometer"
