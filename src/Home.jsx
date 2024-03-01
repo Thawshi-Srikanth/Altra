@@ -24,7 +24,7 @@ export default function Home() {
   return (
 
     
-      <div className="lg:mt-[0px]    w-screen relative lg:top-36 top-[80px]  ">
+      <div className="lg:mt-[0px]    w-screen relative lg:top-36 sm:top-[80px] top-[60px] ">
         <div className="h-full w-full overflow-x-hidden ">
           <video
             playsInline
@@ -35,10 +35,10 @@ export default function Home() {
             autoPlay={true}
             loop
             muted
-            className="justify-end flex items-center absolute xl:h-[5700px]  2xl:h-[5600px] lg:h-[4100px] md:h-[2998px] sm:h-[2426px] h-[1750px] object-cover min-w-full "
+            className="justify-end flex items-center absolute xl:h-[5050px]   lg:h-[4100px] md:h-[2998px] sm:h-[2426px] h-[1755px] object-cover min-w-full "
           />
           <div className="relative bg-[#FF8A3A] bg-opacity-80 min-w-full ">
-            <HeroSection />
+         <HeroSection />
             <HeroText />
             <MemoRizedBrands />
             <Commitment />

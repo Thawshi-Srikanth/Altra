@@ -17,7 +17,7 @@ const MemoRizedProducts=memo(function ShowProduct() {
   };
 
   return (
-    <div className="overflow-x-auto w-full relative bottom-[25px] sm:bottom-0 xl:bottom-0 xl:mt-[394px]">
+    <div className="overflow-x-auto w-full relative bottom-[25px] sm:bottom-0 xl:bottom-0 xl:mt-[130px]">
       <p className="sm:text-[30px] text-[25px] pt-[40px] lg:pt-[60px] md:pt-[60px] sm:pt-[110px] md:text-[35px] text-center font-rosario xl:text-[69px] lg:text-[50px]  font-bold text-white ">
         Products
       </p>
