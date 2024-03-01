@@ -49,7 +49,7 @@ export default function Home() {
     }
   }, []);
   return (
-    <div className="lg:mt-[0px]    w-screen relative lg:top-30 sm:top-[80px] top-[60px] ">
+    <div className="lg:mt-[0px]    w-screen relative lg:top-30 sm:top-[80px] top-[50px] ">
       <div className="h-full w-full overflow-x-hidden ">
         <video
           playsInline
