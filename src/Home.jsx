@@ -33,7 +33,7 @@ export default function Home() {
       return import("./pages/Brands");
     } else {
       setPageLoaded(true);
-      return delayForDemo(import("./pages/Brands"), 3500);
+      return (import("./pages/Brands"), 3500);
     }
   });
 
