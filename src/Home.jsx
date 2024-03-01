@@ -12,22 +12,7 @@ import PhScale from "./pages/PhScale";
 export default function Home() {
   const [pageLoaded, setPageLoaded] = useState(false);
 
-  // const Lazy = (path) =>
-  //   lazy(() => {
-  //     if (pageLoaded == true) {
-  //       return import(`${path}`);
-  //     } else {
-  //       setPageLoaded(true);
-  //       return delayForDemo(import(`${path}`), 3500);
-  //     }
-  //   });
-  // const pathOne = "./pages/Brands";
-  // const pathTwo = "./pages/Clientele";
-  // const pathThree = "./pages/ShowProduct";
-
-  // const LazyBrands = Lazy(pathOne);
-  // const LazyClientle = Lazy(pathTwo);
-  // const LazyProducts = Lazy(pathThree);
+ 
   const LazyBrands = lazy(() => {
     if (pageLoaded == true) {
       return import("./pages/Brands");
