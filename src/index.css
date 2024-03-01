@@ -33,13 +33,12 @@ body {
 
 .carousel {
   cursor: grab;
-  overflow: hidden;
+  
 }
 
 .itemMob {
-  min-height: 18rem;
-  min-width: 18rem;
-  padding: 34px;
+
+  padding: 27px;
 
   pointer-events: none;
 }

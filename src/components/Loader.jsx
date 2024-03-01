@@ -2,7 +2,7 @@ import React from "react";
 import { DNA, RotatingTriangles, Triangle } from "react-loader-spinner";
 function Loader() {
   return (
-    <div className="flex justify-center relative  xl:scale-125 top-16">
+    <div className="flex justify-center relative  xl:scale-125 top-7">
       <Triangle
         visible={true}
         height="80"
