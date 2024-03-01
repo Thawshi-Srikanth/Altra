@@ -5,7 +5,7 @@ import CaroMob from "./CaroMob";
 
 const MemoRizedClientele=memo(function Clientele() {
   return (
-    <div className=" w-full overscroll-x-auto xl:pb-[120px] lg:pb-[150px] md:pb-[60px]  relative bottom-[130px] md:bottom-0  sm:bottom-[330px]  xl:mt-[150px]  md:mt-0">
+    <div className=" w-full overscroll-x-auto xl:pb-[120px] lg:pb-[150px] md:pb-[60px]  relative bottom-[130px] md:bottom-0  sm:bottom-[330px]  xl:mt-[10px]  md:mt-0">
       <p className="md:mt-[50px] sm:text-[30px]  md:text-[35px] text-[25px]  lg:pt-[40px] lg:text-[40px] 2xl:text-[69px] xl:text-[60px] font-rosario text-white  text-center xl:mt-[60px] font-bold">
         Clientele
       </p>
