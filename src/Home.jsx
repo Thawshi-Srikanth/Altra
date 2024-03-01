@@ -18,7 +18,7 @@ export default function Home() {
         return import(`${path}`);
       } else {
         setPageLoaded(true);
-        return delayForDemo(import(`${path}`), 2000);
+        return delayForDemo(import(`${path}`), 3500);
       }
     });
   // const pathOne = "./pages/Brands";
@@ -33,7 +33,7 @@ export default function Home() {
       return import("./pages/Brands");
     } else {
       setPageLoaded(true);
-      return delayForDemo(import("./pages/Brands"), 2000);
+      return delayForDemo(import("./pages/Brands"), 3500);
     }
   });
 
@@ -42,15 +42,15 @@ export default function Home() {
       return import("./pages/Clientele");
     } else {
       setPageLoaded(true);
-      return delayForDemo(import("./pages/Clientele"), 2000);
+      return delayForDemo(import("./pages/Clientele"), 3500);
     }
   });
-  const LazyProducts= lazy(() => {
+  const LazyProducts = lazy(() => {
     if (pageLoaded == true) {
-      return import("./pages/Clientele");
+      return import("./pages/ShowProduct");
     } else {
       setPageLoaded(true);
-      return delayForDemo(import("./pages/ShowProduct"), 2000);
+      return delayForDemo(import("./pages/ShowProduct"), 3500);
     }
   });
 
