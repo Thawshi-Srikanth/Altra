@@ -22,7 +22,7 @@ function MobileViewProducts() {
       <motion.div
         drag="x"
         dragConstraints={{ right: 6, left: -width }}
-        className="inner-carousel  relative  md:min-w-[1400px] sm:min-w-max min-w-[580px] md:gap-x-[80px] "
+        className="inner-carousel  relative  md:min-w-[1400px] sm:min-w-max min-w-[780px] md:gap-x-[80px] "
       >
         {ProductsImages.map((product) => {
           return (
@@ -43,11 +43,11 @@ function MobileViewProducts() {
               />
               <p
                 className={`sm:ml-[88px]  md:ml-0 font-medium text-nowrap font-rosario absolute   text-[15px] sm:text-[25px]  md:text-[25px] text-center mt-[-115px]  md:mt-[-60px] sm:mt-[-230px] ${
-                  product.title === "Equipment" ? "md:ml-[87px] ml-[75px] sm:ml-[163px]  " : ""
-                } ${product.title === "Lab Furniture" ? " md:ml-[73px] ml-[67px] sm:ml-[153px]" : ""} ${
-                  product.title === "Chemicals" ? " md:ml-[86px] ml-[77px] sm:ml-[165px]" : ""
-                } ${product.title === "Thermometer" ? " md:ml-[63px]  ml-[65px] sm:ml-[154px]" : ""}  ${
-                  product.title === "Filter Papers" ? "sm:ml-[154px] md:ml-[74px]  ml-[70px]" : ""
+                  product.title === "Equipment" ? "md:ml-[87px] ml-[75px] sm:ml-[173px]  " : ""
+                } ${product.title === "Lab Furniture" ? " md:ml-[73px] ml-[67px] sm:ml-[165.1px]" : ""} ${
+                  product.title === "Chemicals" ? " md:ml-[86px] ml-[77px] sm:ml-[175px]" : ""
+                } ${product.title === "Thermometer" ? " md:ml-[63px]  ml-[65px] sm:ml-[155px]" : ""}  ${
+                  product.title === "Filter Papers" ? "sm:ml-[160px] md:ml-[74px]  ml-[70px]" : ""
                 }`}
               >
                 {product.title}
