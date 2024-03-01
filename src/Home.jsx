@@ -40,8 +40,9 @@ export default function Home() {
           <div className="relative bg-[#FF8A3A] bg-opacity-80 min-w-full ">
             <HeroSection />
             <HeroText />
-            <Commitment />
             <MemoRizedBrands />
+            <Commitment />
+          
             <Magnetic />
             <MemoRizedProducts />
             <PhScale />
