@@ -26,7 +26,7 @@ function HeroSection() {
               Inquire Now
             </button>
           </Link>
-          <p className="pb-[20px]  sm:pb-0 lg:ml-[86px] text-[9px] md:text-[12px] sm:text-[9px] font-rosario lg:text-[20px]  text-[#e18655] lg:mt-[20px] md:mt-[10px] mt-[5px] relative left-[14px] sm:ml-[-5px] md:left-5 lg:left-0">
+          <p className="pb-[20px]  sm:pb-0 lg:ml-[86px] text-[9px] md:text-[12px] sm:text-[9px] font-rosario lg:text-[20px]  text-[#e18655] lg:mt-[20px] md:mt-[10px] mt-[5px] relative left-[12px] sm:ml-[-5px] md:left-5 lg:left-0">
             <Link to="/products " className="">See Products</Link>
           </p>
         </div>
