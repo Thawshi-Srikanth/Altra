@@ -35,7 +35,7 @@ function Header() {
       <div className="bg-white  top-0 z-[50] bottom-0 w-screen  relative  lg:block hidden  lg:flex-row lg:h-[100px] lg:shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)]  ">
         <div className="lg:right-[10px] xl:right-0 lg:flex lg:flex-row xl:pl-[86px] xl:pr-[86px] lg:pt-[10px] lg:pb-[10px] relative xl:left-[30px] 2xl:left-[40px]">
           <Link to="/">
-            <div className="lg:flex lg:flex-row lg:scale-75 xl:scale-100 relative xl:right-[50px] 2xl:right-[70px]  ">
+            <div className="lg:flex lg:flex-row lg:scale-75 xl:scale-100 relative xl:right-[60px] 2xl:right-[70px]  ">
               <img src={headerLogo} alt="headerLogo" className="lg:h-[80px] " />
             </div>
           </Link>
@@ -73,7 +73,7 @@ function Header() {
             ))}
            
           </div>
-          <div className="relative xl:left-[120px] lg:left-[33px] flex  items-center ">
+          <div className="relative  xl:left-[130px] lg:left-[33px] flex  items-center ">
               {" "}
               <img
                 src={search}
