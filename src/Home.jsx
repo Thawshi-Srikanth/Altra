@@ -62,7 +62,7 @@ export default function Home() {
           muted
           className="justify-end flex items-center absolute xl:h-[4964px]   lg:h-[4150px] md:h-[3158px] sm:h-[2456px] h-[1790px] object-cover min-w-full "
         />
-        <div className="relative bg-[#FF8A3A] bg-opacity-80 min-w-full ">
+        <div className="relative bg-[#FF8A3B] bg-opacity-80 min-w-full ">
           <HeroSection />
           <HeroText />
           <Suspense fallback={<Loader />}>

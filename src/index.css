@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
+/* .tabLogo {
+  width: 100px; 
+  height: 100px;
+} */
 
 
 video::-webkit-media-controls {
