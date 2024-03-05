@@ -3,13 +3,13 @@
 export const counterDetails = [
     {
       id: 1,
-      topic: "produts ",
-      end: 100,
+      topic: "Successful Clients ",
+      end: 15,
      
     },    {
         id: 2,
-        topic: "Successfull Clients ",
-        end: 15,
+        topic: "Prodcuts ",
+        end: 100,
        
       },    {
         id: 3,
