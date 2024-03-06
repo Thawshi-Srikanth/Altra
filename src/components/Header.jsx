@@ -109,7 +109,7 @@ function Header() {
           ref={menuRef}
         >
           {headerTitles.map((title) => (
-            <div key={title.id} className=" w-full md:top-[20px] relative">
+            <div key={title.id} className=" w-full md:top-[12px] relative">
               <ul className="  mx-auto flex-col relative  left-[50px] top-[20px] ">
                 <li className="flex space-x-2 ">
                   <Link to={title.path}>
