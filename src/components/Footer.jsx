@@ -2,20 +2,21 @@ import React from "react";
 import footerLogo from "../assets/images/Footer/footerLogo.png";
 import social from "../assets/data/social";
 import headerTitles from "./../assets/data/headerTitles";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Line from "../assets/images/Footer/Line/Line.png";
 
 function Footer() {
   const itemsToExcludeDekstop = ["Search", "Products", "Research"];
   const itemsToExcludeMobile = ["Search"];
 
-  const titles = (arrayType) => headerTitles.filter((title) => !arrayType.includes(title.name));
+  const titles = (arrayType) =>
+    headerTitles.filter((title) => !arrayType.includes(title.name));
 
   const dekTitile = titles(itemsToExcludeDekstop);
   const mobTitile = titles(itemsToExcludeMobile);
 
   return (
-    <div className="relative mt-[0px] sm:mt-[-140px] xl:mt-[80px]  md:mt-[70px] ">
+    <div className="relative mt-[0px] sm:mt-[-140px] xl:mt-[80px]  md:mt-[70px] z-10">
       <div className="bg-[#2D2D2D] lg:grid lg:grid-cols-3 grid sm:grid-cols-3 lg:h-[350px] md:h-[250px] sm:h-[210px] h-[700px] relative">
         <div className="order-last scale-50 sm:scale-100 sm:order-none flex flex-col justify-center xl:ml-[80px] lg:ml-[30px] relative xl:scale-90 md:scale-90 bottom-[20px] sm:bottom-0 xl:top-[30px]">
           <div className="">
@@ -43,15 +44,15 @@ function Footer() {
         <div className=" mx-auto sm:mx-0 grid sm:grid-cols-3  lg:gap-x-[70px] md:gap-x-[30px] sm:gap-x-[30px] relative sm:right-[50px] xl:scale-90 md:mt-[30px] lg:mt-0 sm:mt-[20px] sm:scale-75 md:scale-100">
           <div className="items-center lg:top-[40px] sm:text-[15px] lg:mt-[-17px]  relative xl:right-[30px] top-[60px] sm:top-0 ">
             {dekTitile.map((title) => (
-              <Link to={title.path} key={title.id} className="sm:block hidden">
-                <div className="mb-[30px] sm:mb-0">
+              <div key={title.id} className="sm:block hidden">
+                <Link to={title.path} className="mb-[30px] sm:mb-0">
                   {" "}
                   <p className="text-white font-rosario xl:text-[23px] lg:text-[20px] md:text-[15px] lg:my-[17px] text-nowrap text-center sm:text-left  sm:mb-0 relative bottom-[15px] sm:bottom-0 ">
                     {title.name}
                   </p>
                   <img src={title.image} alt="" />
-                </div>
-              </Link>
+                </Link>
+              </div>
             ))}
             {mobTitile.map((title) => (
               <Link to={title.path} key={title.id} className="sm:hidden">
