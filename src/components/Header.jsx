@@ -112,7 +112,7 @@ function Header() {
                         currentTab == title.name
                           ? "text-[#FF8A3A]"
                           : "text-black"
-                      } md:text-[25px] sm:text-[22px] text-[20px] font-bold hover:text-[#FF8A3A] text-center font-rosario
+                      } md:text-[25px] sm:text-[22px] text-[20px] font-bold text-[#FF8A3A] text-center font-rosario
                   `}
                       onClick={() => handleItemClick(title.name)}
                     >
