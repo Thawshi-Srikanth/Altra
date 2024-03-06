@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useCallback, useState } from "react";
+import React, { Suspense, lazy, useCallback, useEffect, useState } from "react";
 import "react-html5video/dist/styles.css";
 import bgVideo from "./assets/video/bgVideo.mp4";
 import delayForDemo from "./components/Delay";
@@ -10,6 +10,9 @@ import Magnetic from "./pages/Magnetic";
 import PhScale from "./pages/PhScale";
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const [pageLoaded, setPageLoaded] = useState(false);
 
  
