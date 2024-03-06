@@ -110,7 +110,7 @@ function Header() {
         >
           {headerTitles.map((title) => (
             <div key={title.id} className=" w-full md:top-[4px] relative">
-              <ul className="  mx-auto flex-col relative  left-[50px] top-[20px] ">
+              <ul className="  mx-auto flex-col relative  left-[30px] top-[20px] ">
                 <li className="flex space-x-2 ">
                   <Link to={title.path}>
                     <p
