@@ -38,13 +38,19 @@ function Header() {
 
   const handleItemClick = (item) => {
     setCurrentTab(item);
-    setMobDrawer(!mobDrawer)
+    setMobDrawer(!mobDrawer);
   };
 
   return (
-    <div className={`  bottom-0 w-screen  ${currentTab!=="Home"?"fixed top-0 z-10 ":""}`}>
+    <div
+      className={`  bottom-0 w-screen  ${
+        currentTab !== "Home" ? "fixed top-0 z-10 " : ""
+      }`}
+    >
       {/* dekstop */}
-      <div className={`bg-white  top-0 z-[50] bottom-0 w-screen  relative  lg:block hidden  lg:flex-row lg:h-[100px] lg:shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)] `}>
+      <div
+        className={`bg-white  top-0 z-[50] bottom-0 w-screen  relative  lg:block hidden  lg:flex-row lg:h-[100px] lg:shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)] `}
+      >
         <div className="lg:right-[10px] xl:right-0 lg:flex lg:flex-row xl:pl-[86px] xl:pr-[86px] lg:pt-[10px] lg:pb-[10px] relative xl:left-[30px] 2xl:left-[40px]">
           <Link to="/">
             <div className="lg:flex lg:flex-row lg:scale-75 xl:scale-100 relative xl:right-[60px] 2xl:right-[70px]  ">
@@ -98,7 +104,7 @@ function Header() {
       {/* mobile */}
       {mobDrawer ? (
         <div
-          className="lg:hidden w-2/4 sm:w-1/3  mx-auto   fixed top-0 left-0 z-40 md:max-h-[530px] space-y-[20px] h-[320px] sm:h-full bg-white opacity-90  shadow-[0px_4px_4px_#00000040] sm:overflow-y-auto  scroll-smooth focus:scroll-auto  "
+          className="overflow-x-hidden lg:hidden w-2/4 sm:w-1/3  mx-auto   fixed top-0 left-0 z-40 md:max-h-[550px] space-y-[20px] h-[320px] sm:h-full bg-white opacity-90  shadow-[0px_4px_4px_#00000040] sm:overflow-y-auto  scroll-smooth focus:scroll-auto  "
           id="drawer-navigation"
           ref={menuRef}
         >
@@ -118,15 +124,12 @@ function Header() {
                     >
                       {title.name}
                     </p>
-                  </Link>{title.img ? (
-                      <img
-                        src={title.img}
-                        alt="toggle"
-                        className="relative  "
-                      />
-                    ) : (
-                      ""
-                    )}
+                  </Link>
+                  {title.img ? (
+                    <img src={title.img} alt="toggle" className="relative  " />
+                  ) : (
+                    ""
+                  )}
                 </li>
               </ul>
             </div>
