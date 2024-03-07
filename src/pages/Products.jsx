@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import counterDetails from "../assets/data/counterDetails";
 import bg from "../assets/images/products/bg/bg.png";
 import Counter from "./Counter";
@@ -11,9 +11,9 @@ import about from "../assets/images/products/buttons/about.png";
 import contact from "../assets/images/products/buttons/contact.png";
 
 function Products() {
-  /*   useEffect(() => {
+    useEffect(() => {
     window.scrollTo(0, 0);
-  }, []); */
+  }, []);
   return (
     <>
       {" "}
