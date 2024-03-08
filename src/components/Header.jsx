@@ -17,7 +17,7 @@ function Header() {
 
     const tittles = {
       "/": "Home",
-      "/aboutUs": "About Us",
+      "/aboutus": "About Us",
       "/research": "Research",
       "/services": "Services",
       "/contact": "Contact",

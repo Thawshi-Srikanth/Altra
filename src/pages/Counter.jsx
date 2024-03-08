@@ -13,7 +13,7 @@ export default function Counter({ topic, end }) {
     >
       {countOn && (
         <div className="text-[#ff8a3B] z-0 overflow-hidden ">
-          <div className="flex-row items-center justify-center  relative xl:bottom-[13px] bottom-[2px] sm:bottom-[3px] lg:bottom-[12px] md:bottom-[10px]">
+          <div className="flex-row items-center justify-center  relative xl:bottom-[13px] bottom-[2px] sm:bottom-[3px] lg:bottom-[12px] countermd">
             {" "}
             <h1 className=" xl:text-[100px] lg:text-[80px] md:text-[60px] sm:text-[30px] text-[15px] text-center font-bold font-inter whitespace-nowrap">
               <CountUp start={0} end={end} delay={0} duration={2} />+

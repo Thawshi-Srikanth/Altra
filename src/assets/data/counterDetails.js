@@ -8,7 +8,7 @@ export const counterDetails = [
      
     },    {
         id: 2,
-        topic: "Prodcuts ",
+        topic: "Products ",
         end: 100,
        
       },    {
