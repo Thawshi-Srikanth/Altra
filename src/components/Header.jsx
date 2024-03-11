@@ -166,7 +166,7 @@ function Header() {
                   </Link>
                 </li>
                 {title.name == "Products" && (
-                  <div className="top-2 text-nowrap text-[13px]  sm:text-[15px] font-rosario text-[#2a2a2a] cursor-pointer relative left-6 ">
+                  <div className="top-2 text-nowrap text-[11px]  sm:text-[15px] font-rosario text-[#2a2a2a] cursor-pointer relative left-5">
                     {productDropdown.map((title) => (
                       <Link
                         to={title.path}
