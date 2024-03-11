@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
-export default function Counter({ topic, end }) {
+export default function Counter({ topic, end, id ,data}) {
   const [countOn, setCounton] = useState(false);
 
   return (
@@ -13,7 +13,7 @@ export default function Counter({ topic, end }) {
     >
       {countOn && (
         <div className="text-[#ff8a3B] z-0 overflow-hidden ">
-          <div className="flex-row items-center justify-center  relative xl:bottom-[13px] bottom-[2px] sm:bottom-[3px] lg:bottom-[12px] countermd">
+          <div className="sm:block hidden flex-row items-center justify-center  relative xl:bottom-[13px] bottom-[2px] sm:bottom-[3px] lg:bottom-[12px] countermd">
             {" "}
             <h1 className=" xl:text-[100px] lg:text-[80px] md:text-[60px] sm:text-[30px] text-[15px] text-center font-bold font-inter whitespace-nowrap">
               <CountUp start={0} end={end} delay={0} duration={2} />+
@@ -23,8 +23,23 @@ export default function Counter({ topic, end }) {
               {topic}
             </p>
           </div>
+
+          {end!==18 &&<div
+            className={`  text-nowrap sm:hidden  relative flex-col  justify-evenly `}
+          >
+            {" "}
+            <h1 className="text-[45px] text-center font-bold font-inter whitespace-nowrap">
+              <CountUp start={0} end={end} delay={0} duration={2} />+
+            </h1>{" "}
+            <p className="mx-auto flex justify-center  text-[19px] text-center font-rosario ">
+              {" "}
+              {topic}
+            </p>
+          </div>}
         </div>
       )}
     </ScrollTrigger>
   );
 }
+
+

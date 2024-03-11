@@ -8,14 +8,17 @@ import HeroSection from "./pages/HeroSection";
 import HeroText from "./pages/HeroText";
 import Magnetic from "./pages/Magnetic";
 import PhScale from "./pages/PhScale";
+import productDropdown from "./assets/data/productDropdown";
+import ProductDropdownCom from "./components/ProductDropdownCom";
+import { userStateContext } from "./contexts/ContextProvider";
 
 export default function Home() {
+  const{clickToggle,}=userStateContext()
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   const [pageLoaded, setPageLoaded] = useState(false);
 
- 
   const LazyBrands = lazy(() => {
     if (pageLoaded == true) {
       return import("./pages/Brands");
@@ -53,7 +56,7 @@ export default function Home() {
   }, []);
   return (
     <div className="lg:mt-[0px]    w-screen relative lg:top-30 sm:top-[80px] top-[50px] ">
-      <div className="h-full w-full overflow-x-hidden ">
+  <div className="h-full w-full overflow-x-hidden ">
         <video
           playsInline
           disablePictureInPicture="true"
@@ -66,6 +69,7 @@ export default function Home() {
           className="justify-end flex items-center absolute xl:h-[4964px]   lg:h-[4150px] md:h-[3158px] sm:h-[2456px] h-[1790px] object-cover min-w-full "
         />
         <div className="relative bg-[#FF8A3B] bg-opacity-80 min-w-full ">
+     
           <HeroSection />
           <HeroText />
           <Suspense fallback={<Loader />}>

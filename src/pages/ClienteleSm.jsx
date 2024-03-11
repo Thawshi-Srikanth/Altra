@@ -5,11 +5,11 @@ import CaroMob from "./CaroMob";
 
 const MemoRizedClientele2=memo(function Clientele() {
   return (
-    <div className={` bg-[#FF8A3A]   w-full overscroll-x-auto xl:pb-[120px] lg:pb-[150px] md:pb-[60px]  relative  md:bottom-0    xl:mt-[120px]    md:mt-[100px] sm:mt-[50px] sm:h-[450px]`}>
-      <p className="sm:top-[20px] relative md:mt-[50px] sm:text-[30px]  md:text-[35px] text-[25px]  lg:pt-[40px] lg:text-[40px] 2xl:text-[69px] xl:text-[60px] font-rosario text-white  text-center xl:mt-[60px] font-bold">
+    <div className={`overflow-x-hidden bg-[#FF8A3A]   w-full overscroll-x-auto xl:pb-[120px] lg:pb-[150px] md:pb-[60px]  relative  md:bottom-0    xl:mt-[120px]    md:mt-[100px] sm:mt-[50px] sm:h-[450px] h-[280px]`}>
+      <p className=" top-[30px] relative md:mt-[50px] sm:text-[30px]  md:text-[35px] text-[25px]  lg:pt-[40px] lg:text-[40px] 2xl:text-[69px] xl:text-[60px] font-rosario text-white  text-center xl:mt-[60px] font-bold">
         Clientele
       </p>
-      <div className="  bg-[#FFFFFF] opacity-80 lg:h-[190px] xl:h-[170px] md:h-[100px] sm:h-[80px] h-[50px] relative mt-[30px] md:mt-0">
+      <div className="  bg-[#FFFFFF] opacity-80 lg:h-[190px] xl:h-[170px] md:h-[100px] sm:h-[80px] h-[50px] relative mt-[30px]  md:mt-0">
         {" "}
         <div className=" flex-row flex-nowrap xl:gap-[60px] lg:gap-[100px]  gap-[10px] md:gap-[60px]  sm:gap-[50px] lg:mt-[30px] md:mt-[20px] sm:mt-[20px] flex md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scrollClientle scroll-smooth">
           {clients.map((brand) => (
@@ -24,7 +24,7 @@ const MemoRizedClientele2=memo(function Clientele() {
           ))}
         </div>
       </div>
-      <div className="bg-[#FFFFFF] opacity-80 flex-nowrap   lg:h-[190px] xl:h-[170px] sm:h-[80px] md:h-[100px] h-[50px] relative mt-[21px] md:mt-0 ">
+      <div className="bg-[#FFFFFF] opacity-80 flex-nowrap   lg:h-[190px] xl:h-[170px] sm:h-[80px] md:h-[100px] h-[50px] relative mt-[16px] md:mt-0 ">
       <div className=" flex-row flex-nowrap  xl:gap-[60px] lg:gap-[100px]  gap-[10px] md:gap-[60px]  sm:gap-[50px] lg:mt-[30px] md:mt-[20px] sm:mt-[20px] flex md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scrollClientle-reverse scroll-smooth">
           {clientsclientsLineTwo.map((brand) => (
             <div

@@ -3,18 +3,37 @@ import headerTitles from "../assets/data/headerTitles";
 import headerLogo from "../assets/images/headerLogo.png";
 import search from "../assets/images/search.svg";
 import toggle from "../assets/images/toggle.png";
-
+import { FaChevronRight } from "react-icons/fa6";
 import { Link, useLocation } from "react-router-dom";
 import MobileDrawer from "./MobileDrawer";
-
+import { FaAngleDown } from "react-icons/fa6";
+import { productDropdown } from "./../assets/data/productDropdown";
+import ProductDropdown from "./ProductDropdownCom";
+import ProductDropdownCom from "./ProductDropdownCom";
+import { userStateContext } from "../contexts/ContextProvider";
 function Header() {
   const [currentTab, setCurrentTab] = useState(null);
+  const [currentTabDropdown, setCurrentTabDropdown] = useState(null);
   const [mobDrawer, setMobDrawer] = useState(false);
-  const location = useLocation();
-  const menuRef = useRef(null);
-  useEffect(() => {
-    const pathName = location.pathname;
 
+  const location = useLocation();
+  console.log(location);
+  const menuRef = useRef(null);
+
+  const { clickToggle, setClickToggle } = userStateContext();
+  /* 
+  const highlight = (title, path) => {
+    setCurrentTab(title[path] || "");
+    setCurrentTabDropdown(title[path] || "");
+
+  }; */
+  useEffect(() => {
+    const productDropdownTitles = {
+      "/equipment": "Equipment",
+      "/filterpapers": "Filter Papers/Consumables",
+      "/labfurniture": "Lab Furniture",
+      "/chemicals": "Chemical & Regents",
+    };
     const tittles = {
       "/": "Home",
       "/aboutus": "About Us",
@@ -23,31 +42,35 @@ function Header() {
       "/contact": "Contact",
       "/products": "Products",
     };
+    const pathName = location.pathname;
+
     setCurrentTab(tittles[pathName] || "");
+
+    setCurrentTabDropdown(productDropdownTitles[pathName] || "");
 
     let handler = (e) => {
       if (!menuRef.current.contains(e.target)) {
         setMobDrawer(!open);
+        setClickToggle(!open);
       }
     };
     document.addEventListener("mousedown", handler);
     return () => {
       document.removeEventListener("mousedown", handler);
     };
-  }, [location.pathname, mobDrawer]);
+  }, [location.pathname, mobDrawer, clickToggle, setClickToggle]);
 
   const handleItemClick = (item) => {
     setCurrentTab(item);
     setMobDrawer(!mobDrawer);
+  
   };
 
   return (
-/*     currentTab !== "Home" ? "overflow-y-hidden fixed top-0 z-50 " : ""  */
-    <div
-      className={`  bottom-0 w-screen `}
-    >
+    /*     currentTab !== "Home" ? "overflow-y-hidden fixed top-0 z-50 " : ""  */
+    <div className={`  bottom-0 w-screen `}>
       {/* dekstop */}
-    
+
       <div
         className={`bg-white  z-50 top-0 bottom-0 w-screen  relative  lg:block hidden  lg:flex-row lg:h-[100px] lg:shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)] `}
       >
@@ -61,7 +84,7 @@ function Header() {
             {headerTitles.map((title) => (
               <div key={title.id} className="">
                 <ul className="flex ">
-                  <li className="lg:flex lg:flex-row">
+                  <li className="lg:flex lg:flex-row hover:text-[#FF8A3A]">
                     <Link to={title.path}>
                       <p
                         className={`${
@@ -76,14 +99,17 @@ function Header() {
                       </p>
                     </Link>
 
-                    {title.img ? (
-                      <img
-                        src={title.img}
-                        alt="toggle"
-                        className="relative xl:left-[20px] "
-                      />
-                    ) : (
-                      ""
+                    {title.name == "Products" && (
+                      <div
+                        onClick={() => setClickToggle(!clickToggle)}
+                        className={`relative left-1 top-1 z-50   ${
+                          currentTab == title.name && " text-[#FF8A3A]"
+                        }
+                       
+                        `}
+                      >
+                        {clickToggle ? <FaChevronRight /> : <FaAngleDown />}
+                      </div>
                     )}
                   </li>
                 </ul>
@@ -99,12 +125,25 @@ function Header() {
             />
           </div>
         </div>
+        {clickToggle && (
+          <div
+            className="rounded-b-[20px] lg:block hidden bg-white xl:w-[600px] lg:w-[400px] xl:h-[248px] lg:h-[140px] lg:left-[40px] xl:left-[80px] relative mx-auto font-rosario"
+            ref={menuRef}
+          >
+            {productDropdown.map((title) => (
+              <div key={title.id} onClick={()=>setClickToggle(!clickToggle)}>
+                {" "}
+                <ProductDropdownCom title={title} currentTabDropdown={currentTabDropdown}/>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* mobile */}
       {mobDrawer ? (
         <div
-          className="rounded-r-[20px] overflow-x-hidden lg:hidden w-2/4 sm:w-1/3  mx-auto   fixed top-0 left-0 z-40 md:max-h-[700px] space-y-[20px] h-[320px] sm:h-full bg-white  shadow-[0px_4px_4px_#00000040] sm:overflow-y-auto  scroll-smooth focus:scroll-auto  "
+          className="rounded-r-[20px] overflow-x-hidden lg:hidden w-2/4 sm:w-1/3  mx-auto   fixed top-0 left-0 z-40 md:max-h-[700px] space-y-[20px] h-[460px] sm:h-full bg-white  shadow-[0px_4px_4px_#00000040] sm:overflow-y-auto  scroll-smooth focus:scroll-auto  "
           id="drawer-navigation"
           ref={menuRef}
         >
@@ -125,12 +164,30 @@ function Header() {
                       {title.name}
                     </p>
                   </Link>
-                  {/* title.img ? (
-                    <img src={title.img} alt="toggle" className="relative  " />
-                  ) : (
-                    ""
-                  ) */}
                 </li>
+                {title.name == "Products" && (
+                  <div className="top-2 text-nowrap text-[13px]  sm:text-[15px] font-rosario text-[#2a2a2a] cursor-pointer relative left-6 ">
+                    {productDropdown.map((title) => (
+                      <Link
+                        to={title.path}
+                        key={title.id}
+                        onClick={() => handleItemClick(title.name)}
+                      >
+                        {" "}
+                        <ul>
+                          <li
+                            className={`py-2 ${
+                              currentTabDropdown == title.name &&
+                              " text-[#FF8A3A]"
+                            }`}
+                          >
+                            {title.name}
+                          </li>
+                        </ul>
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </ul>
             </div>
           ))}

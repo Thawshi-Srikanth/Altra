@@ -1,10 +1,11 @@
 import toggledown from "../images/toggledown.png";
+import toggledownRight from "../images/toggledownRight.png";
 import search from "../images/search.svg";
 import Line from "../images/Footer/Line/Line.png";
 
 export const headerTitles = [
   { id: 1, name: "Home", path: "/", color: "text-[#FF8A3A]", image: Line },
-  { id: 2, name: "Products", path: "/products", image: Line ,img:toggledown, },
+  { id: 2, name: "Products", path: "/products", image: Line ,img:toggledown,imgTwo:toggledownRight},
   { id: 3, name: "Services", path: "/services", image: Line },
   { id: 4, name: "Research", path: "/research", image: Line },
   { id: 5, name: "About Us", path: "/aboutUs", image: Line },

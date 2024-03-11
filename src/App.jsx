@@ -9,13 +9,15 @@ import Research from "./pages/Research";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import NotFoundPage from "./pages/NotFoundPage";
+import Equipment from "./pages/ProductsSubPages/Equipment";
 
 export default function App() {
   return (
     <Router>
-    <Header />
+      <Header />
+
       <Routes>
-      <Route path="*" element={<NotFoundPage />}></Route>
+        <Route path="*" element={<NotFoundPage />}></Route>
         <Route path="/" element={<Home />}></Route>
         <Route path="/products" element={<Products />}></Route>
 
@@ -23,6 +25,11 @@ export default function App() {
         <Route path="/research" element={<Research />}></Route>
         <Route path="/aboutUs" element={<AboutUs />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
+
+        <Route path="/equipment" element={<NotFoundPage />}></Route>
+        <Route path="/filterpapers" element={<NotFoundPage />}></Route>
+        <Route path="/labfurniture" element={<NotFoundPage />}></Route>
+        <Route path="/chemicals" element={<NotFoundPage />}></Route>
       </Routes>
       <Footer />
     </Router>
