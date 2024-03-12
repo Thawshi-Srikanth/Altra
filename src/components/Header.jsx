@@ -143,7 +143,7 @@ function Header() {
       {/* mobile */}
       {mobDrawer ? (
         <div
-          className="rounded-r-[20px] overflow-x-hidden lg:hidden w-2/4 sm:w-1/3  mx-auto   fixed top-0 left-0 z-40 md:max-h-[700px] space-y-[20px] h-[460px] sm:h-full bg-white  shadow-[0px_4px_4px_#00000040] sm:overflow-y-auto  scroll-smooth focus:scroll-auto  "
+          className="rounded-r-[20px] overflow-x-hidden lg:hidden w-2/4 sm:w-1/3 md:w-[300px] mx-auto   fixed top-0 left-0 z-40 md:max-h-[750px] space-y-[20px] h-[460px] sm:h-full  bg-white  shadow-[0px_4px_4px_#00000040] sm:overflow-y-auto  scroll-smooth focus:scroll-auto  "
           id="drawer-navigation"
           ref={menuRef}
         >
@@ -166,7 +166,7 @@ function Header() {
                   </Link>
                 </li>
                 {title.name == "Products" && (
-                  <div className="top-2 text-nowrap text-[11px]  sm:text-[15px] font-rosario text-[#2a2a2a] cursor-pointer relative left-5">
+                  <div className="top-2 text-nowrap text-[11px]   sm:text-[15px] md:text-[20px] font-rosario text-[#2a2a2a] cursor-pointer relative left-5 sm:ml-[-6px] md:left-5">
                     {productDropdown.map((title) => (
                       <Link
                         to={title.path}
