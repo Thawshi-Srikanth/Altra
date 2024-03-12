@@ -82,6 +82,8 @@ function Products() {
               img2={categiry.img2}
               key={categiry.id}
               title={categiry.title}
+              path={categiry.path}
+              id={categiry.id}
             />
           ))}
         </div>

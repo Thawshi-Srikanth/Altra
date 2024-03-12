@@ -17,7 +17,7 @@ function Header() {
   const [mobDrawer, setMobDrawer] = useState(false);
 
   const location = useLocation();
-  console.log(location);
+
   const menuRef = useRef(null);
 
   const { clickToggle, setClickToggle } = userStateContext();
