@@ -29,10 +29,10 @@ function Header() {
   }; */
   useEffect(() => {
     const productDropdownTitles = {
-      "/equipment": "Equipment",
-      "/filterpapers": "Filter Papers/Consumables",
-      "/labfurniture": "Lab Furniture",
-      "/chemicals": "Chemical & Regents",
+      "/equipment/:1": "Equipment",
+      "/filterpapers/:2": "Filter Papers/Consumables",
+      "/labfurniture/:3": "Lab Furniture",
+      "/chemicals/:4": "Chemical & Regents",
     };
     const tittles = {
       "/": "Home",

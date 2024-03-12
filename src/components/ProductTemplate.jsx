@@ -7,10 +7,9 @@ import MemoRizedClientele2 from "../pages/ClienteleSm";
 function ProductTemplate({ id, imgOne, imgTwo, imgOneMob, imgTwoMob }) {
   return (
     <div>
-      <img src={imgOne} alt="equipment" className="w-full sm:block hidden" />
-      <img src={imgTwo} alt="detail" className="mx-auto sm:block hidden" />
-      <img src={imgOneMob} alt="equipment" className="w-full sm:hidden" />
-      <img src={imgTwoMob} alt="detail" className="mx-auto sm:hidden" />
+      <img src={imgOne} alt="equipment" className="w-full " />
+      <img src={imgTwo} alt="detail" className="mx-auto " />
+    
 
       <div className="bg-[#FF8A3A]  lg:md:mb-[-80px]">
         {id == 1 && <ClientLogos>{<EquipmentClients />}</ClientLogos>}
