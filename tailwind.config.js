@@ -20,6 +20,7 @@ export default {
       },
       animation: {
         "infinite-scroll": "infinite-scroll 20s linear infinite",
+        "infinite-scrollShowProducts": "infinite-scroll 35s linear infinite",
         "infinite-scrollMob": "infinite-scrollMob 20s linear infinite",
         "infinite-scroll-reverse":
           "infinite-scroll 20s linear infinite reverse",
