@@ -42,7 +42,7 @@ function Footer() {
         </div>
 
         <div className=" mx-auto sm:mx-0 grid sm:grid-cols-3  lg:gap-x-[70px] md:gap-x-[30px] sm:gap-x-[30px] relative sm:right-[50px] xl:scale-90 md:mt-[30px] lg:mt-0 sm:mt-[20px] sm:scale-75 md:scale-100">
-          <div className="items-center lg:top-[40px] sm:text-[15px] lg:mt-[-17px]  relative xl:right-[30px] top-[60px] sm:top-0 ">
+          <div className="xl:space-y-11 lg:space-y-9 lg:left-4  sm:space-y-7 sm:left-[26px] md:left-0 xl:left-0 md:space-y-7 items-center lg:top-[40px] sm:text-[15px] lg:mt-[-17px]  relative xl:right-[30px] top-[60px] sm:top-0 ">
             {dekTitile.map((title) => (
               <div key={title.id} className="sm:block hidden">
                 <Link to={title.path} className="mb-[30px] sm:mb-0">
@@ -50,7 +50,7 @@ function Footer() {
                   <p className="text-white font-rosario xl:text-[23px] lg:text-[20px] md:text-[15px] lg:my-[17px] text-nowrap text-center sm:text-left  sm:mb-0 relative bottom-[15px] sm:bottom-0 ">
                     {title.name}
                   </p>
-                  <img src={title.image} alt="" />
+                  {/* <img src={title.image} alt="" className=""/> */}
                 </Link>
               </div>
             ))}
@@ -66,7 +66,7 @@ function Footer() {
               </Link>
             ))}
           </div>
-          <div className="lg:top-[40px] lg:mt-[-17px] relative xl:right-[30px] sm:block hidden">
+          <div className="lg:top-[40px] lg:mt-[-17px] relative xl:right-[30px] sm:block hidden sm:left-[30px] md:left-0">
             <p className="text-white font-rosario xl:text-[23px] sm:text-[15px] md:text-[15px] lg:text-[20px] lg:my-[17px]">
               <Link to="/products"> Products</Link>
             </p>
@@ -77,14 +77,14 @@ function Footer() {
               <br /> Lab Furniture
             </p>
           </div>
-          <div className="sm:block hidden lg:top-[40px] lg:mt-[-17px] relative lg:left-[50px] md:left-[30px] xl:left-[70px] sm:left-[50px]">
+          <div className="sm:block hidden lg:top-[40px] lg:mt-[-17px] relative lg:left-[50px] md:left-[30px] xl:left-[70px] sm:left-[70px]">
             <p className="text-white md:text-[15px] sm:text-[15px] font-rosario xl:text-[23px] lg:text-[20px] lg:my-[17px] md:ml-[30px] sm:ml-[30px] lg:ml-0">
               <Link to="/research"> Research</Link>
             </p>
             <img
               src={Line}
               alt="line"
-              className="sm:left-[30px] md:left-[31px] xl:left-0 lg:ml-0 relative"
+              className="sm:left-[30px] md:left-[31px] lg:left-0 xl:left-0 lg:ml-0 relative"
             />
             <p className="lg:text-[13px] md:text-[12px] sm:text-[12px] xl:text-[13px] text-white wrap xl:scale-150  lg:scale-[125px] relative left-[30px]  xl:top-[23px] lg:top-[15px] lg:ml-[-30px] xl:ml-0 text-nowrap md:ml-[3px] ">
               Research Support <br />
@@ -93,7 +93,7 @@ function Footer() {
             </p>
           </div>
         </div>
-        <div className="left-[40px]  mx-auto  sm:mx-0 sm:scale-75 md:scale-100 lg:top-[50px]  relative lg:right-[30px] md:left-[90px]  sm:left-[20px] lg:left-0  xl:right-0 xl:scale-90 md:mt-[45px] lg:mt-0 sm:mt-[27px] mt-[75px] px-2 sm:px-0">
+        <div className="left-[40px]  mx-auto  sm:mx-0 sm:scale-75 md:scale-100 lg:top-[50px]  relative lg:right-[30px] md:left-[90px]  sm:left-[40px] lg:left-0  xl:right-0 xl:scale-90 md:mt-[45px] lg:mt-0 sm:mt-[27px] mt-[75px] px-2 sm:px-0">
           <div className="lg:left-[130px] xl:left-[190px] relative grid grid-cols-2 sm:grid-cols-1 gap-[90px] sm:gap-0 text-nowrap">
             <p className="text-white font-rosario xl:text-[23px] sm:text-[15px] text-[13px] lg:text-[20px] md:text-[15px] lg:my-[17px] relative right-[15px] sm:right-0">
               <span className="text-nowrap text-center xl:pl-[80px] lg:left-[70px] relative xl:left-0 left-[50px] sm:left-0">
