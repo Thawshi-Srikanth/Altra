@@ -39,36 +39,36 @@ export const productsCaru = [
       img:F,
     },
     {
-        id: 1,
+        id: 7,
        
         img: A,
       },
       {
-        id: 2,
+        id: 8,
        
         img: B,
       },
       {
-        id: 3,
+        id: 9,
         
         img: C,
       },
       {
-        id: 4,
+        id: 10,
         
         img:D,
       },
       {
-        id: 5,
+        id: 11,
         
         img: E,
       },
       {
-        id: 6,
+        id: 12,
         
         img:F,
       }, {
-        id: 1,
+        id: 13,
        
         img: A,
       },
