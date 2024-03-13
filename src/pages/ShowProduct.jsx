@@ -4,25 +4,37 @@ import { ProductsImages } from "../assets/data/ProductsImages";
 import MobileViewProducts from "./MobileViewProducts";
 import { brands } from "./../assets/data/brands";
 import { userStateContext } from "../contexts/ContextProvider";
+import { productsCaru } from "../assets/data/productsCaru";
 
-const MemoRizedProducts=memo(function ShowProduct() {
-  const [width, setWidth] = useState(0);
-  const carousel = useRef();
+const MemoRizedProducts = memo(function ShowProduct() {
+  // const [width, setWidth] = useState(0);
+  // const carousel = useRef();
 
-  useEffect(() => {
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  }, []);
-  const itemStyle = {
-    marginLeft: "-50px",
-  };
+  // useEffect(() => {
+  //   setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  // }, []);
+  // const itemStyle = {
+  //   marginLeft: "-50px",
+  // };
 
   return (
-    <div className="2xl:scale-90 sm:scale-75 lg:scale-100 w-full relative bottom-[25px] sm:bottom-0 xl:bottom-0 xl:mt-[130px]  md:mt-[-50px] lg:mt-0">
+    <div className="overflow-xhidden  2xl:scale-90 sm:scale-75 lg:scale-100 w-full relative bottom-[25px] sm:bottom-0 xl:bottom-0 xl:mt-[130px]  md:mt-[-50px] lg:mt-0">
       <p className="sm:text-[40px] text-[25px] pt-[40px] lg:pt-[60px] md:pt-[60px] sm:pt-[110px]  text-center font-rosario xl:text-[69px] lg:text-[50px] md:text-[45px] font-bold text-white ">
         Products
       </p>
+      <div className="mt-[30px] lg:scale-95 md:scale-90 sm:scale-75 scale-50 overscroll-x-auto z-1">
+        <div className="flex justify-start [&_li]:mx-8 [&_img]:max-w-96 animate-infinite-scroll scroll-smooth lg:gap-x-[80px]">
+          {" "}
+          {productsCaru.map((img) => (
+            <div key={img.id}>
+              <img src={img.img} alt={img.id} />
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* dekstop */}
-      <div className="sm:top-[-67px] lg:mt-[120px]  relative  ">
+      {/*<div className="sm:top-[-67px] lg:mt-[120px]  relative  ">
         {" "}
         <motion.div
           ref={carousel}
@@ -77,7 +89,7 @@ const MemoRizedProducts=memo(function ShowProduct() {
             })}
           </motion.div>
         </motion.div>
-      </div>
+          </div>*/}
 
       {/*
 md screens */}
@@ -121,9 +133,10 @@ md screens */}
           })}
         </motion.div>
       </motion.div> */}
-      <MobileViewProducts />
+
+      {/* <MobileViewProducts />*/}
     </div>
   );
-})
+});
 
 export default MemoRizedProducts;

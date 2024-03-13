@@ -8,12 +8,12 @@ export const counterDetails = [
      
     },    {
         id: 2,
-        topic: "Products ",
+        topic: " ",
         end: 100,
        
       },    {
         id: 3,
-        topic: "Trusted Partners ",
+        topic: "",
         end:18,
        
       }]
