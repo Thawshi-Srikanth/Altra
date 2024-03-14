@@ -18,7 +18,7 @@ function Footer() {
   return (
     <div className="relative mt-[0px] sm:mt-[-140px] xl:mt-[80px]  md:mt-[70px] z-10">
       <div className="bg-[#2D2D2D] lg:grid lg:grid-cols-3 grid sm:grid-cols-3 lg:h-[350px] md:h-[250px] sm:h-[210px] h-[700px] relative">
-        <div className="order-last scale-50 sm:scale-100 sm:order-none flex flex-col justify-center xl:ml-[80px] lg:ml-[30px] relative xl:scale-90 md:scale-90 bottom-[20px] sm:bottom-0 xl:top-[30px]">
+        <div className="order-last scale-50 sm:scale-100 sm:order-none flex flex-col justify-center xl:ml-[80px] lg:ml-[30px] md:ml-[-20px] relative xl:scale-90 md:scale-90 bottom-[20px] sm:bottom-0 xl:top-[30px]">
           <div className="">
             <img
               src={footerLogo}
@@ -42,7 +42,7 @@ function Footer() {
         </div>
 
         <div className=" mx-auto sm:mx-0 grid sm:grid-cols-3  lg:gap-x-[70px] md:gap-x-[30px] sm:gap-x-[30px] relative sm:right-[50px] xl:scale-90 md:mt-[30px] lg:mt-0 sm:mt-[20px] sm:scale-75 md:scale-100">
-          <div className="xl:space-y-11 lg:space-y-9 lg:left-4  sm:space-y-7 sm:left-[26px] md:left-0 xl:left-0 md:space-y-7 items-center lg:top-[40px] sm:text-[15px] lg:mt-[-17px]  relative xl:right-[30px] top-[60px] sm:top-0 ">
+          <div className="xl:space-y-11 lg:space-y-9 lg:left-4  sm:space-y-7 sm:left-[26px] md:left-[26px] xl:left-0 md:space-y-7 items-center lg:top-[40px] sm:text-[15px] lg:mt-[-17px]  relative xl:right-[30px] top-[60px] sm:top-0 ">
             {dekTitile.map((title) => (
               <div key={title.id} className="sm:block hidden">
                 <Link to={title.path} className="mb-[30px] sm:mb-0">
