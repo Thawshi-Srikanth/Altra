@@ -1,6 +1,39 @@
+import { useFormik } from "formik";
 import React from "react";
 import contact from "../assets/data/contact";
+import { basicSchema } from "../schemas/Schema";
+
+const onSubmit = () => {
+  console.log("submitted");
+};
+
 function Contact() {
+  // const nameRef = useRef();
+  // const emailRef = useRef();
+  // const phoneNumberRef = useRef();
+  // const messageRef = useRef();
+  const { values,errors, handleBlur, handleChange, handleSubmit ,touched} = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      phoneNumber: "",
+      message: "",
+    },
+
+    validationSchema: basicSchema,
+    onSubmit,
+  });
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+
+  //   const name = nameRef.current.value;
+  //   const email = emailRef.current.value;
+  //   const phoneNumber = phoneNumberRef.current.value;
+  //   const message = messageRef.current.value;
+
+  // }
+
   return (
     <div className="grid grid-cols-2 bg-[#2D2D2D] xl:h-[850px] lg:h-[870px] md:h-[870px] sm:h-[720px] xl:mb-[-80px] lg:mb-[-73px]  sm:mb-[-72px]   relative lg:pt-[50px] xl:pt-0 xl:px-[150px]  ">
       <div className="relative lg:top-[60px]  md:top-[140px] sm:top-[60px] md:pl-5 lg:pl-0">
@@ -13,18 +46,36 @@ function Contact() {
 
         <div className="  grid mx-auto relative bottom-[0px]">
           {" "}
-          <form className="xl:w-[488px] xl:h-[550px] lg:w-[388px] lg:h-[500px]  max-w-screen-lg mt-8 mb-2 w-80 sm:w-96 grid grid-cols-1 mx-auto justify-center bg-[#3d3b3b] transition-[30] sm:rounded-[26px]">
+          <form
+            className="xl:w-[488px] xl:h-[550px] lg:w-[388px] lg:h-[500px]  max-w-screen-lg mt-8 mb-2 w-80 sm:w-96 grid grid-cols-1 mx-auto justify-center bg-[#3d3b3b] transition-[30] sm:rounded-[26px]"
+            onSubmit={handleSubmit}
+            autoComplete="off"
+          >
             <div className="flex flex-col gap-4 mb-1 xl:p-8 lg:p-4 md:p-5 sm:p-2 ">
               <h6 className="text-white block -mb-3 font-inter lg:text-[14px] antialiased font-semibold leading-relaxed tracking-normal ">
                 Full Name
               </h6>
               <div className="relative h-11 w-full min-w-[200px]">
                 <input
+                  value={values.name}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  id="name"
                   required
                   type="text"
                   placeholder=" "
-                  className="bg-[#ffffff4d] placeholder:text-white  peer h-full w-full rounded-md border border-white border-t-transparent !border-t-blue-gray-200 px-3 py-3 font-inter text-sm font-normal text-white outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-gray-900 focus:border-t-transparent focus:!border-t-gray-900 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+                  className={`placeholder:text-white bg-[#ffffff4d] placeholder:text-right relative peer h-full w-full rounded-md border border-blue-gray-200 border-t-transparent !border-t-blue-gray-200  px-3 py-3 font-inter text-sm font-normal text-white  transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-gray-900 focus:border-t-transparent focus:!border-t-gray-900 ${
+                    errors.name && touched.name
+                      ? "focus:outline-red-400"
+                      : "focus:outline outline-0"
+                  } disabled:border-0 disabled:bg-blue-gray-50`}
                 />
+                {errors.name && touched.name ? (
+                  <p className="text-red-600">{errors.name}</p>
+                ) : (
+                  ""
+                )}
+
                 <label className="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none !overflow-visible truncate text-[11px] font-normal leading-tight text-gray-500 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all before:content-none after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all after:content-none peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.1] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:!border-gray-900 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:!border-gray-900 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500" />
               </div>
               <h6 className="text-white block -mb-3 font-inter lg:text-[14px] antialiased font-semibold leading-relaxed tracking-normal ">
@@ -32,11 +83,24 @@ function Contact() {
               </h6>
               <div className="relative h-11 w-full min-w-[200px] ">
                 <input
+                  value={values.email}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  id="email"
                   required
                   type="email"
                   placeholder="@gmail.com"
-                  className="placeholder:text-white bg-[#ffffff4d] placeholder:text-right relative peer h-full w-full rounded-md border border-blue-gray-200 border-t-transparent !border-t-blue-gray-200  px-3 py-3 font-inter text-sm font-normal text-white outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-gray-900 focus:border-t-transparent focus:!border-t-gray-900 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
-                />
+                  className={`placeholder:text-white bg-[#ffffff4d] placeholder:text-right relative peer h-full w-full rounded-md   px-3 py-3 font-inter text-sm font-normal text-white    ${
+                    errors.email && touched.email
+                      ? "focus:outline-red-900 border border-red-700"
+                      : "focus:outline outline-0 transition-all focus:border-2 placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200  disabled:border-0 disabled:bg-blue-gray-50 border border-blue-gray-200 border-t-transparent !border-t-blue-gray-200 focus:border-gray-900 focus:border-t-transparent focus:!border-t-gray-900"
+                  } `}
+                />{" "}
+                {errors.email && touched.email ? (
+                  <p className="text-red-600">{errors.email}</p>
+                ) : (
+                  ""
+                )}
                 <label className="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none !overflow-visible truncate text-[11px] font-normal leading-tight text-gray-500 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all before:content-none after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all after:content-none peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.1] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:!border-gray-900 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:!border-gray-900 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500" />
               </div>
               <h6 className="text-white block -mb-3 font-inter lg:text-[14px] antialiased font-semibold leading-relaxed tracking-normal ">
@@ -44,11 +108,24 @@ function Contact() {
               </h6>
               <div className="relative h-11 w-full min-w-[200px]">
                 <input
+                  value={values.phoneNumber}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  id="phoneNumber"
                   required
                   type="tel"
                   placeholder=""
-                  className="bg-[#ffffff4d] peer h-full w-full rounded-md border border-blue-gray-200 border-t-transparent !border-t-blue-gray-200  px-3 py-3 font-inter text-sm font-normal text-white outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-gray-900 focus:border-t-transparent focus:!border-t-gray-900 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
-                />
+                  className={`placeholder:text-white bg-[#ffffff4d] placeholder:text-right relative peer h-full w-full rounded-md   px-3 py-3 font-inter text-sm font-normal text-white    ${
+                    errors.phoneNumber && touched.phoneNumber
+                      ? "focus:outline-red-900 border border-red-700"
+                      : "focus:outline outline-0 transition-all focus:border-2 placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200  disabled:border-0 disabled:bg-blue-gray-50 border border-blue-gray-200 border-t-transparent !border-t-blue-gray-200 focus:border-gray-900 focus:border-t-transparent focus:!border-t-gray-900"
+                  } `}
+                />{" "}
+                {errors.phoneNumber && touched.phoneNumber ? (
+                  <p className="text-red-600">{errors.phoneNumber}</p>
+                ) : (
+                  ""
+                )}
                 <label className="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none !overflow-visible truncate text-[11px] font-normal leading-tight text-gray-500 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all before:content-none after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all after:content-none peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.1] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:!border-gray-900 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:!border-gray-900 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500" />
               </div>{" "}
               <h6 className="text-white block -mb-3 font-inter lg:text-[14px] antialiased font-semibold leading-relaxed tracking-normal  ">
@@ -56,6 +133,9 @@ function Contact() {
               </h6>
               <div className="relative w-full min-w-[200px]">
                 <textarea
+                  value={values.message}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
                   required
                   id="message"
                   name="message"
@@ -63,16 +143,25 @@ function Contact() {
                   cols="20"
                   placeholder=""
                   type="text"
-                  className="bg-[#ffffff4d] placeholder:text-white peer h-full w-full rounded-md border border-blue-gray-200 border-t-transparent !border-t-blue-gray-200  px-3 py-3 font-inter text-sm font-normal text-white outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-gray-900 focus:border-t-transparent focus:!border-t-gray-900 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
-                />
+                  className={`placeholder:text-white bg-[#ffffff4d] placeholder:text-right relative peer h-full w-full rounded-md   px-3 py-3 font-inter text-sm font-normal text-white    ${
+                    errors.message && touched.message
+                      ? "focus:outline-red-900 border border-red-400"
+                      : "focus:outline outline-0 transition-all focus:border-2 placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200  disabled:border-0 disabled:bg-blue-gray-50 border border-blue-gray-200 border-t-transparent !border-t-blue-gray-200 focus:border-gray-900 focus:border-t-transparent focus:!border-t-gray-900"
+                  } `}
+                />{" "}
+                {errors.message && touched.message ? (
+                  <p className="text-red-600">{errors.message}</p>
+                ) : (
+                  ""
+                )}
                 <label className="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none !overflow-visible truncate text-[11px] font-normal leading-tight text-gray-500 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all before:content-none after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all after:content-none peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.1] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:!border-gray-900 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:!border-gray-900 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500" />
               </div>
             </div>
 
             <button
               className="relative bottom-6 mx-auto bg-[#FF8A3A] lg:w-[220px] sm:w-[170px] sm:h-[44px] text-white mt-6 block w-full select-none rounded-lg bg-gray-900  px-6 text-center align-middle font-inter text-xs font-bold uppercase shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-              type="button"
-              onClick={() => alert("under development!!!!!")}
+              onClick={handleSubmit}
+              type="submit"
             >
               Send
             </button>
@@ -149,5 +238,4 @@ function Contact() {
     </div>
   );
 }
-
 export default Contact;
