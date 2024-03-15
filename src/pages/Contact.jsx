@@ -197,10 +197,10 @@ function Contact() {
                       <div className="grid gap-y-5">
                         {" "}
                         {d.icon.map((img) => (
-                          <div key={img.id} className="flex gap-x-4 ">
+                          <a href={img.path}  target="blank" key={img.id} className="flex gap-x-4 ">
                             <img src={img.img} className="" />
                             <p>{img.info}</p>
-                          </div>
+                          </a>
                         ))}
                       </div>
                     </div>
@@ -208,19 +208,24 @@ function Contact() {
                 )}
 
                 {d.id === 2 && (
-                  <div className="relative sm:mt-[100px]">
+                  <div className="relative sm:mt-[100px] z-10">
                     {" "}
                     <p className="sm:text-[25px] lg:top-[60px] sm:top-[40px] md:top-[130px] relative text-center xl:right-[35px] lg:right-[94px] sm:right-[90px]  xl:text-[39px]  lg:text-[30px]  font-rosario font-bold text-[transparent]  [-webkit-text-stroke:1.5px_#fff]">
                       {d.topic2}
                     </p>
-                    <div className="font-inter lg:text-[17px] lg:top-[80px] sm:top-[65px] md:top-[150px] relative text-white mx-auto justify-center grid xl:left-[70px] lg:left-[20px] sm:left-[24px]  ">
+                    <div className="font-inter lg:text-[17px] lg:top-[80px] sm:top-[65px] md:top-[150px] relative text-white mx-auto justify-center grid xl:left-[60px] lg:left-[20px] sm:left-[24px]  ">
                       <div className="grid gap-y-5">
                         {" "}
                         {d.iconTwo.map((img) => (
-                          <div key={img.id} className="flex gap-x-4 ">
+                          <a
+                            href={img.path}
+                            target="blank"
+                            key={img.id}
+                            className="flex gap-x-4 z-"
+                          >
                             <img src={img.img} className="" />
                             <p>{img.info}</p>
-                          </div>
+                          </a>
                         ))}
                       </div>
                     </div>
@@ -228,18 +233,23 @@ function Contact() {
                 )}
 
                 {d.id === 3 && (
-                  <div className=" relative sm:top-[70px] lg:top-0 ">
+                  <div className=" relative sm:top-[70px] lg:top-0  z-0">
                     <p className="sm:text-[25px] sm:right-[65px] lg:text-[30px] sm:top-[60px] md:top-[140px]  lg:right-[69px] xl:right-[4px] relative text-center xl:text-[39px] font-rosario font-bold text-[transparent]  [-webkit-text-stroke:1.5px_#fff]">
                       {d.topic3}
                     </p>
-                    <div className="font-inter lg:text-[17px] sm:top-[80px] md:top-[160px] relative text-white mx-auto justify-center grid xl:left-[50px]  ">
+                    <div className="font-inter lg:text-[17px] sm:top-[80px] md:top-[160px] relative text-white mx-auto justify-center grid xl:left-[65px]  ">
                       <div className="grid gap-y-5">
                         {" "}
                         {d.iconThree.map((img) => (
-                          <div key={img.id} className="flex gap-x-4 ">
+                          <a
+                            href={img.path}
+                            target="blank"
+                            key={img.id}
+                            className="flex gap-x-4 "
+                          >
                             <img src={img.img} className="" />
                             <p>{img.info}</p>
-                          </div>
+                          </a>
                         ))}
                       </div>
                     </div>

@@ -74,13 +74,13 @@ function Header() {
       <div
         className={`bg-white  z-50 top-0 bottom-0 w-screen  relative  lg:block hidden  lg:flex-row lg:h-[100px] lg:shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)] `}
       >
-        <div className="lg:right-[10px] xl:right-0 lg:flex lg:flex-row xl:pl-[86px] xl:pr-[86px] lg:pt-[10px] lg:pb-[10px] relative xl:left-[30px] 2xl:left-[40px]">
+        <div className="lg:right-[10px] xl:right-0 lg:flex lg:flex-row xl:pl-[86px] xl:pr-[86px] lg:pt-[10px] lg:pb-[10px] relative xl:left-[10px] 2xl:left-[40px]">
           <Link to="/">
             <div className="lg:flex lg:flex-row lg:scale-75 xl:scale-100 relative xl:right-[60px] 2xl:right-[70px]  ">
               <img src={headerLogo} alt="headerLogo" className="lg:h-[80px] " />
             </div>
           </Link>
-          <div className="text-nowrap relative xl:left-[40px] lg:flex  lg:gap-x-[55px] xl:gap-x-[90px] xl:text-[24px] font-rosario justify-center items-center">
+          <div className="text-nowrap relative 2xl:left-[40px] lg:flex  lg:gap-x-[55px] xl:gap-x-[90px] xl:text-[24px] font-rosario justify-center items-center">
             {headerTitles.map((title) => (
               <div key={title.id} className="">
                 <ul className="flex ">
@@ -116,7 +116,7 @@ function Header() {
               </div>
             ))}
           </div>
-          <div className="relative  xl:left-[130px] lg:left-[33px] flex  items-center ">
+          <div className="relative  2xl:left-[130px] lg:left-[33px] flex  items-center ">
             {" "}
             <img
               src={search}

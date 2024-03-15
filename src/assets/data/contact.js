@@ -11,16 +11,26 @@ export const contact = [
     id: 1,
     topic1: "Contact",
     icon: [
-      { id: 1, img: telephone, info: "0110 000 000" },
-      { id: 2, img: call, info: "0770 000 000" },
-      { id: 3, img: gmail, info: "altrascientific@gmail.com" },
+      { id: 1, img: telephone, info: "011 744 5564", path: "tel:+94117445564" },
+      { id: 2, img: call, info: "077 233 6609 ", path: "tel:+94772336609" },
+      {
+        id: 3,
+        img: gmail,
+        info: "sales@altrascientific.com",
+        path: "mailto:sales@altrascientific.com",
+      },
     ],
   },
   {
     id: 2,
     topic2: "Visit",
     iconTwo: [
-      { id: 1, img: locationIcon, info: "217, Central Road, Colombo 12" },
+      {
+        id: 1,
+        img: locationIcon,
+        info: "452 Negombo Rd, Welisara",
+        path: "https://maps.app.goo.gl/nzmBarY3pzQVTSWZ8",
+      },
     ],
   },
 
@@ -28,9 +38,14 @@ export const contact = [
     id: 3,
     topic3: "Connect",
     iconThree: [
-      { id: 1, img: nullICon, info: "@altrascientific" },
-      { id: 2, img: web, info: "www.altrascientific.com" },
-      { id: 3, img: fbIcon, info: "@altrascientific" },
+      {
+        id: 1,
+        img: nullICon,
+        info: "ALTRA SCIENTIFIC PVT LTD",
+        path: "https://www.linkedin.com/company/altra-scientific-pvt-ltd/",
+      },
+      { id: 2, img: web, info: "www.altrascientific.com", path: "" },
+      { id: 3, img: fbIcon, info: "@altrascientific", path: "" },
     ],
   },
 ];

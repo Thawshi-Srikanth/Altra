@@ -29,14 +29,14 @@ function Footer() {
 
           <div className="mx-auto sm:mx-0 gap-[30px] flex lg:gap-[12px] md:gap-[10px] sm:gap-[0px] xl:gap-[30px] lg:mt-[12px] md:mt-[-23px] sm:mt-[-50px] lg:mb-[20px] relative 2xl:ml-[-40px]  xl:right-[20px] md:left-[20px] lg:right-0 sm:left-[10px]  sm:pb-[30px] mt-[5px] xl:ml-[-45px]">
             {social.map((social) => (
-              <Link key={social.id} to={social.path} target="blank">
+              <a key={social.id} href={social.path} target="blank">
                 {" "}
                 <img
                   src={social.image}
                   alt={social.name}
                   className="md:scale-75 lg:scale-100  sm:scale-50  "
                 />
-              </Link>
+              </a>
             ))}
           </div>
         </div>
@@ -114,8 +114,9 @@ function Footer() {
                 Phone: <br />
               </span>
               <p className="lg:pl-[10px] ">
-                0777777777 <br />
-                0777777777
+                011 744 5564
+                <br />
+                077 233 6609
               </p>
             </p>
           </div>
