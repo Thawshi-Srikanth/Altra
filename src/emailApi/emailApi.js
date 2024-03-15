@@ -9,10 +9,11 @@ export const SendEmail = async ({
   message,
   toast,
   responseCallback,
+  setButtonLoading,
 }) => {
+  setButtonLoading(true);
   try {
     const datas = { name, email, phoneNumber, message };
-  
 
     let response = await axios.post(`${apiUrl}/api`, datas);
 
@@ -48,4 +49,5 @@ export const SendEmail = async ({
       theme: "light",
     });
   }
+  setButtonLoading(false);
 };

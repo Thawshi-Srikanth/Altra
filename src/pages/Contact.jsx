@@ -10,6 +10,7 @@ import { userStateContext } from "../contexts/ContextProvider";
 function Contact() {
   const [buttonLoading, setButtonLoading] = useState(false);
   const { setResponse, response } = userStateContext();
+
   const {
     values,
     errors,
@@ -25,6 +26,7 @@ function Contact() {
       phoneNumber: "",
       message: "",
       toast,
+      setButtonLoading,
       responseCallback: (response) => {
         // Callback function to update response state
         setResponse(response);
@@ -33,8 +35,9 @@ function Contact() {
 
     validationSchema: basicSchema,
     onSubmit: (values) => {
-      setButtonLoading(true);
+  
       SendEmail(values);
+
       console.log(response);
       if (response === true) {
         resetForm(
@@ -43,7 +46,6 @@ function Contact() {
       } else {
         resetForm();
       }
-      setButtonLoading(false);
     },
   });
 
@@ -174,11 +176,11 @@ function Contact() {
 
             <button
               disabled={buttonLoading}
-              className={` relative bottom-6 mx-auto bg-[#FF8A3A] lg:w-[220px] sm:w-[170px] sm:h-[44px] text-white mt-6 block w-full select-none rounded-lg bg-gray-900  px-6 text-center align-middle font-inter text-xs font-bold uppercase shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none`}
-              // onClick={handleSubmit}
+              className={` relative bottom-6 mx-auto  lg:w-[220px] sm:w-[170px] sm:h-[44px] bg-[#FF8A3A] text-white mt-6 block w-full select-none rounded-lg bg-gray-900  px-6 text-center align-middle font-inter text-xs font-bold uppercase shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none`}
+              
               type="submit"
             >
-              {buttonLoading ? "Sending" : "Send"}
+              {buttonLoading ? <p>Sending</p> : <p>Send</p>}
             </button>
           </form>
         </div>
@@ -197,7 +199,12 @@ function Contact() {
                       <div className="grid gap-y-5">
                         {" "}
                         {d.icon.map((img) => (
-                          <a href={img.path}  target="blank" key={img.id} className="flex gap-x-4 ">
+                          <a
+                            href={img.path}
+                            target="blank"
+                            key={img.id}
+                            className="flex gap-x-4 "
+                          >
                             <img src={img.img} className="" />
                             <p>{img.info}</p>
                           </a>
