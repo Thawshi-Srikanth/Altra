@@ -1,42 +1,56 @@
 import { useFormik } from "formik";
-import React from "react";
+import React, { useState } from "react";
 import contact from "../assets/data/contact";
 import { basicSchema } from "../schemas/Schema";
-
-const onSubmit = () => {
-  console.log("submitted");
-};
+import { SendEmail } from "../emailApi/emailApi";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { userStateContext } from "../contexts/ContextProvider";
 
 function Contact() {
-  // const nameRef = useRef();
-  // const emailRef = useRef();
-  // const phoneNumberRef = useRef();
-  // const messageRef = useRef();
-  const { values,errors, handleBlur, handleChange, handleSubmit ,touched} = useFormik({
+  const [buttonLoading, setButtonLoading] = useState(false);
+  const { setResponse, response } = userStateContext();
+  const {
+    values,
+    errors,
+    handleBlur,
+    handleChange,
+    touched,
+    handleSubmit,
+    resetForm,
+  } = useFormik({
     initialValues: {
       name: "",
       email: "",
       phoneNumber: "",
       message: "",
+      toast,
+      responseCallback: (response) => {
+        // Callback function to update response state
+        setResponse(response);
+      },
     },
 
     validationSchema: basicSchema,
-    onSubmit,
+    onSubmit: (values) => {
+      setButtonLoading(true);
+      SendEmail(values);
+      console.log(response);
+      if (response === true) {
+        resetForm(
+          resetForm({ values: { message: "", phoneNumber: "", email: "" } })
+        );
+      } else {
+        resetForm();
+      }
+      setButtonLoading(false);
+    },
   });
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-
-  //   const name = nameRef.current.value;
-  //   const email = emailRef.current.value;
-  //   const phoneNumber = phoneNumberRef.current.value;
-  //   const message = messageRef.current.value;
-
-  // }
 
   return (
     <div className="grid grid-cols-2 bg-[#2D2D2D] xl:h-[850px] lg:h-[870px] md:h-[870px] sm:h-[720px] xl:mb-[-80px] lg:mb-[-73px]  sm:mb-[-72px]   relative lg:pt-[50px] xl:pt-0 xl:px-[150px]  ">
       <div className="relative lg:top-[60px]  md:top-[140px] sm:top-[60px] md:pl-5 lg:pl-0">
+        <ToastContainer />
         <p className="lg:text-[30px] sm:text-[25px] text-center xl:text-[50px] font-rosario text-[#ff8a3a] font-bold">
           Send a{" "}
           <span className="text-[transparent]  [-webkit-text-stroke:1.5px_#fff]">
@@ -159,11 +173,12 @@ function Contact() {
             </div>
 
             <button
-              className="relative bottom-6 mx-auto bg-[#FF8A3A] lg:w-[220px] sm:w-[170px] sm:h-[44px] text-white mt-6 block w-full select-none rounded-lg bg-gray-900  px-6 text-center align-middle font-inter text-xs font-bold uppercase shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-              onClick={handleSubmit}
+              disabled={buttonLoading}
+              className={` relative bottom-6 mx-auto bg-[#FF8A3A] lg:w-[220px] sm:w-[170px] sm:h-[44px] text-white mt-6 block w-full select-none rounded-lg bg-gray-900  px-6 text-center align-middle font-inter text-xs font-bold uppercase shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none`}
+              // onClick={handleSubmit}
               type="submit"
             >
-              Send
+              {buttonLoading ? "Sending" : "Send"}
             </button>
           </form>
         </div>

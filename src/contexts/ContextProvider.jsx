@@ -5,6 +5,8 @@ const StateContext = createContext({
   clickToggle:false,
   setzIndex: () => {},
   setClickToggle: () => {},
+  setResponse:()=>{},
+  response:false
 });
 
 import React from "react";
@@ -12,8 +14,9 @@ import React from "react";
 export const ContextProvider = ({ children }) => {
   const [zindex, setzIndex] = useState(1);
   const [clickToggle, setClickToggle] = useState(false);
+   const [response, setResponse] = useState(null);
   return (
-    <StateContext.Provider value={{ setzIndex, zindex ,clickToggle, setClickToggle}}>
+    <StateContext.Provider value={{ setzIndex, zindex ,clickToggle, setClickToggle,response,setResponse}}>
       {children}
     </StateContext.Provider>
   );
