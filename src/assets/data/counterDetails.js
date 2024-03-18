@@ -4,17 +4,17 @@ export const counterDetails = [
     {
       id: 1,
       topic: "Successful Clients ",
-      end: 15,
+      end: 250,
      
     },    {
         id: 2,
-        topic: "Products ",
-        end: 100,
+        topic: "Laboratory Products ",
+        end: 10000,
        
       },    {
         id: 3,
         topic: "Trusted Partners",
-        end:18,
+        end:30,
        
       }]
 

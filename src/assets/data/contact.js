@@ -4,7 +4,7 @@ import gmail from "../images/contactLogos/gmail.png";
 import locationIcon from "../images/contactLogos/location.png";
 import web from "../images/contactLogos/web.png";
 import fbIcon from "../images/contactLogos/fb.png";
-import nullICon from "../images/contactLogos/null.png";
+import linkedIn from "../images/contactLogos/linkedIn.svg";
 
 export const contact = [
   {
@@ -40,7 +40,7 @@ export const contact = [
     iconThree: [
       {
         id: 1,
-        img: nullICon,
+        img: linkedIn,
         info: "ALTRA SCIENTIFIC PVT LTD",
         path: "https://www.linkedin.com/company/altra-scientific-pvt-ltd/",
       },

@@ -14,10 +14,10 @@ function ProductCategory({ img1, img2, title, path,id }) {
           {title}
         </p>
 
-        <div className="relative lg:scale-90 xl:scale-100 sm:scale-90 rounded-[9.08px] sm:rounded-none scale-90 ">
+        <div className="relative lg:scale-90 xl:scale-100 sm:scale-90 rounded-[9.08px] lg:rounded-[20px] scale-90 xl:h-[300px] xl:w-[600px] lg:h-[300px] lg:W-[550px]  ">
           <img
             src={img1}
-            className="absolute   hover:opacity-0 xl:left-[20px] lg:top-[18px] transition duration-300 z-50"
+            className="absolute   hover:opacity-0  transition duration-300 z-50"
           />
           <img src={img2} className="" />
         </div>

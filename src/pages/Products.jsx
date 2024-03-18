@@ -35,7 +35,7 @@ function Products() {
             alt="bgimage"
             className="w-full h-full object-cover relative sm:hidden  top-[30px] "
           />
-          <div className="flex absolute sm:gap-x-3 gap-x-2 lg:gap-x-10 2xl:bottom-[250px] xl:bottom-[215px] lg:bottom-[145px]  sm:bottom-[112px] bottom-[30px] 2xl:left-[180px] xl:left-[160px] lg:left-[75px] left-[66px] font-rosario lg:text-[25px] md:text-[16px] sm:text-[13px]  text-[9px] text-[#FF8A3B]  lg:scale-90 xl:scale-100 sm:scale-90 sm:left-[69px] mdbutton">
+          <div className="flex absolute sm:gap-x-3 gap-x-2 lg:gap-x-10 2xl:bottom-[233px] xl:bottom-[180px] lg:bottom-[145px]  sm:bottom-[112px] bottom-[30px] 2xl:left-[180px] xl:left-[160px] lg:left-[75px] left-[66px] font-rosario lg:text-[25px] md:text-[16px] sm:text-[13px]  text-[9px] text-[#FF8A3B]  lg:scale-90 xl:scale-100 sm:scale-90 sm:left-[69px] mdbutton">
             <Link to="/aboutus">
               <button className="lg:w-[200px] lg:h-[50px] sm:w-[90px] sm:h-[40px] w-[50px] h-[20px] bg-white sm:rounded-[10px] rounded-[3px]   hover:text-black font-bold transition duration-300 ">
                 About Us
@@ -48,25 +48,28 @@ function Products() {
             </Link>
           </div>
         </div>
-        <div className="bg-[#5B5B5B] xl:h-[300px] lg:h-[180px]    md:h-[150px]  sm:h-[100px]  sm:flex h-[250px]  w-full  justify-evenly mx-auto items-center  relative top-[29px] pb-3 sm:pb-0 sm:top-0  grid grid-cols-2  ">
-          {counterDetails.map((detail) => (
-            <Counter
-              key={detail.id}
-              topic={detail.topic}
-              end={detail.end}
-              data={detail}
-            />
-          ))}
+        <div className="bg-[#5B5B5B]  ">
+          {" "}
+          <div className="  xl:h-[300px] lg:h-[180px]    md:h-[150px]  sm:h-[100px]  flex h-[200px]  w-full  sm:justify-evenly mx-auto items-center  relative top-[0px] pb-3 sm:pb-0 sm:top-0 sm:px-0 px-[50px]  ">
+            {counterDetails.map((detail) => (
+              <Counter
+                key={detail.id}
+                topic={detail.topic}
+                end={detail.end}
+                data={detail}
+              />
+            ))}{" "}
+          </div>{" "}
           <ScrollTrigger
             onEnter={() => setCounton(true)}
             onExit={() => setCounton(false)}
-            className="text-[#ff8a3B] z-0 overflow-hidden flex-col relative mx-auto right-[100px]"
+            className="text-[#ff8a3B] z-0 overflow-hidden grid relative mx-auto justify-center  bottom-9"
           >
             {countOn && (
-              <div className="sm:hidden">
+              <div className="sm:hidden mx-auto    ">
                 {" "}
                 <h1 className="  text-[45px] text-center font-bold font-inter whitespace-nowrap">
-                  <CountUp start={0} end={18} delay={0} duration={2} />+
+                  <CountUp start={0} end={10000} delay={0} duration={2} />+
                 </h1>
                 <p className="mx-auto flex justify-center  text-[19px] text-center font-rosario ">
                   Trusted Partners
@@ -74,7 +77,8 @@ function Products() {
               </div>
             )}
           </ScrollTrigger>
-        </div>{" "}
+        </div>
+
         <div className="grid sm:grid-cols-2  relative lg:gap-y-[50px] sm:gap-y-[30px] xl:top-[50px] lg:top-[50px] sm:top-[40px]  text-nowrap top-[30px] ">
           {productCategoryData.map((categiry) => (
             <ProductCategory

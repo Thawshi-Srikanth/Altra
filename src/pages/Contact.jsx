@@ -50,10 +50,10 @@ function Contact() {
   });
 
   return (
-    <div className="grid grid-cols-2 bg-[#2D2D2D] xl:h-[850px] lg:h-[870px] md:h-[870px] sm:h-[720px] xl:mb-[-80px] lg:mb-[-73px]  sm:mb-[-72px]   relative lg:pt-[50px] xl:pt-0 xl:px-[150px]  ">
-      <div className="relative lg:top-[60px]  md:top-[140px] sm:top-[60px] md:pl-5 lg:pl-0">
+    <div className="grid sm:grid-cols-2 bg-[#2D2D2D] xl:h-[850px] lg:h-[870px] md:h-[870px]  sm:h-[720px] h-[1350px]  w-full xl:mb-[-80px] lg:mb-[-73px]  sm:mb-[-72px]   relative lg:pt-[50px] xl:pt-0 xl:px-[150px]  ">
+      <div className="relative lg:top-[60px]  md:top-[140px] sm:top-[60px] top-[60px]  md:pl-5 lg:pl-0">
         <ToastContainer />
-        <p className="lg:text-[30px] sm:text-[25px] text-center xl:text-[50px] font-rosario text-[#ff8a3a] font-bold">
+        <p className="lg:text-[30px] sm:text-[25px] text-[30px] text-center xl:text-[50px] font-rosario text-[#ff8a3a] font-bold">
           Send a{" "}
           <span className="text-[transparent]  [-webkit-text-stroke:1.5px_#fff]">
             Request
@@ -63,11 +63,11 @@ function Contact() {
         <div className="  grid mx-auto relative bottom-[0px]">
           {" "}
           <form
-            className="xl:w-[488px] xl:h-[550px] lg:w-[388px] lg:h-[500px]  max-w-screen-lg mt-8 mb-2 w-80 sm:w-96 grid grid-cols-1 mx-auto justify-center bg-[#3d3b3b] transition-[30] sm:rounded-[26px]"
+            className="xl:w-[488px] xl:h-[550px] lg:w-[388px] lg:h-[500px] h-[523px]  max-w-screen-lg mt-8 mb-2 w-80 sm:w-96 grid grid-cols-1 mx-auto justify-center bg-[#3d3b3b] transition-[30] sm:rounded-[26px] rounded-[18.8px] sm:left-3 relative lg:left-0"
             onSubmit={handleSubmit}
             autoComplete="off"
           >
-            <div className="flex flex-col gap-4 mb-1 xl:p-8 lg:p-4 md:p-5 sm:p-2 ">
+            <div className="flex flex-col gap-4 mb-1 xl:p-8 lg:p-4 md:p-5 sm:p-2 p-5">
               <h6 className="text-white block -mb-3 font-inter lg:text-[14px] antialiased font-semibold leading-relaxed tracking-normal ">
                 Full Name
               </h6>
@@ -176,8 +176,7 @@ function Contact() {
 
             <button
               disabled={buttonLoading}
-              className={` relative bottom-6 mx-auto  lg:w-[220px] sm:w-[170px] sm:h-[44px] bg-[#FF8A3A] text-white mt-6 block w-full select-none rounded-lg bg-gray-900  px-6 text-center align-middle font-inter text-xs font-bold uppercase shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none`}
-              
+              className={` relative bottom-6 mx-auto  lg:w-[220px] sm:w-[170px] w-[150px] sm:h-[44px] h-[40px] bg-[#FF8A3A] text-white mt-6 block  select-none rounded-lg bg-gray-900  px-6 text-center align-middle font-inter text-xs font-bold uppercase shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none`}
               type="submit"
             >
               {buttonLoading ? <p>Sending</p> : <p>Send</p>}
@@ -185,25 +184,29 @@ function Contact() {
           </form>
         </div>
       </div>
-      <div className="">
-        <div className="grid grid-cols-1 lg:space-y-[-20px] xl:space-y-0">
+      <div className="relative top-[-10px] sm:top-0">
+        <div className="grid grid-cols-1 lg:space-y-[-20px] xl:space-y-0 space-y-[40px] sm:space-y-[-10px]">
           {contact.map((d) => (
             <>
               <div key={d.id}>
                 {d.id === 1 && (
                   <>
-                    <p className="sm:text-[25px] xl:right-[1px] lg:text-[30px] lg:top-[80px] md:top-[140px] sm:top-[60px] lg:right-[74px] sm:right-[74px] relative text-center xl:text-[39px] font-rosario font-bold text-[transparent]  [-webkit-text-stroke:1.5px_#fff]">
+                    <p className="sm:text-[25px] text-[25px] xl:right-[1px] lg:text-[30px] lg:top-[80px] md:top-[140px] sm:top-[60px]  lg:right-[74px] sm:right-[74px]  relative text-center xl:text-[39px] font-rosario font-bold text-[transparent]  [-webkit-text-stroke:1.5px_#fff]">
                       {d.topic1}
                     </p>
-                    <div className="font-inter lg:text-[17px] lg:top-[100px] sm:top-[90px] md:top-[170px] relative text-white mx-auto justify-center grid xl:left-[50px]  ">
-                      <div className="grid gap-y-5">
+                    <div className="font-inter lg:text-[17px] lg:top-[100px] sm:top-[90px] md:top-[170px] top-[20px] relative text-white mx-auto justify-center grid xl:left-[50px]  sm:left-0">
+                      <div className="grid gap-y-5 ">
                         {" "}
                         {d.icon.map((img) => (
                           <a
                             href={img.path}
                             target="blank"
                             key={img.id}
-                            className="flex gap-x-4 "
+                            className={`flex gap-x-4   relative sm:left-0 ${
+                              img.info === "sales@altrascientific.com"
+                                ? "left-[0px]"
+                                : "left-[40px] sm:left-0"
+                            }`}
                           >
                             <img src={img.img} className="" />
                             <p>{img.info}</p>
@@ -215,12 +218,12 @@ function Contact() {
                 )}
 
                 {d.id === 2 && (
-                  <div className="relative sm:mt-[100px] z-10">
+                  <div className="relative sm:mt-[100px] z-10 mt-[30px] ">
                     {" "}
-                    <p className="sm:text-[25px] lg:top-[60px] sm:top-[40px] md:top-[130px] relative text-center xl:right-[35px] lg:right-[94px] sm:right-[90px]  xl:text-[39px]  lg:text-[30px]  font-rosario font-bold text-[transparent]  [-webkit-text-stroke:1.5px_#fff]">
+                    <p className="text-[25px] sm:text-[25px] lg:top-[60px] sm:top-[40px] md:top-[130px] relative text-center xl:right-[35px] lg:right-[94px] sm:right-[90px]  xl:text-[39px]  lg:text-[30px]  font-rosario font-bold text-[transparent]  [-webkit-text-stroke:1.5px_#fff]">
                       {d.topic2}
                     </p>
-                    <div className="font-inter lg:text-[17px] lg:top-[80px] sm:top-[65px] md:top-[150px] relative text-white mx-auto justify-center grid xl:left-[60px] lg:left-[20px] sm:left-[24px]  ">
+                    <div className="font-inter lg:text-[17px] top-[20px] lg:top-[80px] sm:top-[65px] md:top-[150px] relative text-white mx-auto justify-center grid xl:left-[60px] lg:left-[10px] sm:left-[24px]  ">
                       <div className="grid gap-y-5">
                         {" "}
                         {d.iconTwo.map((img) => (
@@ -240,11 +243,11 @@ function Contact() {
                 )}
 
                 {d.id === 3 && (
-                  <div className=" relative sm:top-[70px] lg:top-0  z-0">
-                    <p className="sm:text-[25px] sm:right-[65px] lg:text-[30px] sm:top-[60px] md:top-[140px]  lg:right-[69px] xl:right-[4px] relative text-center xl:text-[39px] font-rosario font-bold text-[transparent]  [-webkit-text-stroke:1.5px_#fff]">
+                  <div className=" relative sm:top-[70px] lg:top-0  z-0 top-[30px] ">
+                    <p className="text-[25px] sm:text-[25px] sm:right-[65px] lg:text-[30px] sm:top-[60px] md:top-[140px]  lg:right-[69px] xl:right-[4px] relative text-center xl:text-[39px] font-rosario font-bold text-[transparent]  [-webkit-text-stroke:1.5px_#fff]">
                       {d.topic3}
                     </p>
-                    <div className="font-inter lg:text-[17px] sm:top-[80px] md:top-[160px] relative text-white mx-auto justify-center grid xl:left-[65px]  ">
+                    <div className=" lg:left-[10px]  grid font-inter lg:text-[17px] top-[20px] sm:top-[80px] md:top-[160px] relative text-white mx-auto justify-center  xl:left-[65px]  ">
                       <div className="grid gap-y-5">
                         {" "}
                         {d.iconThree.map((img) => (
@@ -252,10 +255,29 @@ function Contact() {
                             href={img.path}
                             target="blank"
                             key={img.id}
-                            className="flex gap-x-4 "
+                            className={`flex gap-x-4  ${
+                              img.info === "www.altrascientific.com"
+                                ? "relative left-[20px] sm:left-0"
+                                : ""
+                            } `}
                           >
-                            <img src={img.img} className="" />
-                            <p>{img.info}</p>
+                            <img
+                              src={img.img}
+                              className={`${
+                                img.info === "@altrascientific"
+                                  ? "sm:block hidden "
+                                  : ""
+                              }`}
+                            />
+                            <p
+                              className={`${
+                                img.info === "@altrascientific"
+                                  ? "sm:block hidden "
+                                  : ""
+                              }`}
+                            >
+                              {img.info}
+                            </p>
                           </a>
                         ))}
                       </div>
