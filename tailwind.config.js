@@ -23,7 +23,7 @@ const config = withMT({
       animation: {
         "infinite-scroll": "infinite-scroll 20s linear infinite",
         "infinite-scrollShowProducts": "infinite-scroll 35s linear infinite",
-        "infinite-scrollMob": "infinite-scrollMob 20s linear infinite",
+        "infinite-scrollMob": "infinite-scrollMob 25s linear infinite",
         "infinite-scroll-reverse":
           "infinite-scroll 20s linear infinite reverse",
 
@@ -43,7 +43,7 @@ const config = withMT({
         },
         "infinite-scrollMob": {
           from: { transform: "translateX(120)" },
-          to: { transform: "translateX(-440%)" },
+          to: { transform: "translateX(-500%)" },
         },
       },
     },

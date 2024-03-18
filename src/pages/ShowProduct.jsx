@@ -23,11 +23,15 @@ const MemoRizedProducts = memo(function ShowProduct() {
         Products
       </p>
       <div className="sm:mt-[30px] lg:scale-95 md:scale-90 sm:scale-75 scale-50 overscroll-x-auto z-1 mb-[40px] sm:mb-0 top-2 relative">
-        <div className="bottom-[130px]  sm:bottom-0 flex justify-start [&_li]:mx-8 [&_img]:max-w-96 animate-infinite-scrollShowProducts scroll-smooth md:gap-x-[80px] xl:gap-x-[190px] relative md:top-3">
+        <div className="bottom-[130px]  sm:bottom-0 flex justify-start [&_li]:mx-8 [&_img]:max-w-96 animate-infinite-scrollMob sm:animate-infinite-scrollShowProducts scroll-smooth md:gap-x-[80px] xl:gap-x-[190px] relative md:top-3">
           {" "}
           {productsCaru.map((img) => (
             <div key={img.id}>
-              <img src={img.img} alt={img.id} className="xl:scale-125 scale-90 sm:scale-100" />
+              <img
+                src={img.img}
+                alt={img.id}
+                className="xl:scale-125 scale-90 sm:scale-100"
+              />
             </div>
           ))}
         </div>
