@@ -32,7 +32,7 @@ export const productCategoryData = [
   {
     id: 3,
     img1: C,
-    img2:I,
+    img2: I,
     alt: "consumabales",
     title: "Consumables",
     path: "/labfurniture",
@@ -40,26 +40,26 @@ export const productCategoryData = [
   {
     id: 4,
     img1: D,
-    img2:J,
+    img2: J,
     alt: "Equipment",
     title: "Equipment",
     path: "/chemicals",
   },
   {
-    id: 4,
+    id: 5,
     img1: E,
-    img2:K,
+    img2: K,
     alt: "Glassware",
     title: "Glassware",
     path: "/chemicals",
   },
   {
-    id: 4,
+    id: 6,
     img1: F,
     img2: L,
     alt: "Furniture",
     title: "Furniture",
-    path: "/chemicals",
+    path: "/furniture",
   },
 ];
 

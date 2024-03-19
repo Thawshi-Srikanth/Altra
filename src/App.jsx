@@ -12,6 +12,8 @@ import NotFoundPage from "./pages/NotFoundPage";
 import Equipment from "./pages/ProductsSubPages/Equipment";
 import EquipmentMainPAge from "./pages/Equipments/EquipmentMainPAge";
 import France from "./pages/Equipments/Comapnies/France";
+import FurnitureMainPage from "./pages/Furniture/FurnitureMainPage";
+import ProductCataloguetemplate from "./components/ProductCataloguetemplate";
 
 export default function App() {
   return (
@@ -30,11 +32,11 @@ export default function App() {
 
         <Route path="/equipment/:id" element={<EquipmentMainPAge />}></Route>
         <Route path="/filterpapers" element={<NotFoundPage />}></Route>
-        <Route path="/labfurniture" element={<NotFoundPage />}></Route>
+        <Route path="/furniture/:id" element={<FurnitureMainPage />}></Route>
         <Route path="/chemicals" element={<NotFoundPage />}></Route>
 
-
         <Route path="/france" element={<France />}></Route>
+        <Route path="/productCatelgoue/:id" element={<ProductCataloguetemplate />}></Route>
       </Routes>
       <Footer />
     </Router>
