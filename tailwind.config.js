@@ -47,8 +47,8 @@ const config = withMT({
           to: { transform: "translateX(-500%)" },
         },
         "infinite-scrollMobShowProduct": {
-          from: { transform: "translateX(120)" },
-          to: { transform: "translateX(-600%)" },
+          from: { transform: "translateX(90)" },
+          to: { transform: "translateX(-690%)" },
         },
       },
     },

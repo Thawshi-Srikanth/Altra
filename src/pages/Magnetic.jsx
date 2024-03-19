@@ -4,7 +4,7 @@ import magnet from "../assets/images/Magnet/magnet.png";
 import magnetFact from "../assets/images/Magnet/FactSm.png";
 function Magnetic() {
   return (
-    <div className=" w-full pr-[10px] md:pr-6 flex xl:mt-[160px] lg:mt-[100px] md:mt-[130px] lg:pb-6 mt-[50px] relative md:right-[10px] lg:right-0  md:scale-100 right-[4px] 2xl:top-[80px]  xl:top-[50px] lg:left-[-23px] xl:left-[-5px]">
+    <div className=" w-full pr-[10px] md:pr-6 flex xl:mt-[160px] lg:mt-[100px] md:mt-[130px] lg:pb-6 mt-[50px] relative md:right-[10px] lg:right-0  md:scale-100 right-[4px] 2xl:top-[80px]  xl:top-[50px] lg:left-[-23px] xl:left-[-34px] 2xl:left-0">
       <div className="md:pt-[10px] rounded-[12px] lg:pt-0 md:left-[60px] md:w-11/12  md:h-[140px] md:rounded-[15px] lg:left-0 lg:mt-[18px] lg:px-[20px] xl:ml-[90px] 2xl:ml-[180px]  lg:ml-[60px] relative lg:rounded-[45px] md:bg-white md:bg-opacity-80 lg:h-[200px] xl:h-[250px] xl:w-[1255px] 2xl:w-[1250px]  lg:w-[1200px] magWidth w-[335px] sm:w-[500px] sm:h-[120px] h-[80px]  ">
         <img
           src={magnetFact}
@@ -30,11 +30,11 @@ function Magnetic() {
           </p>
         </div>
       </div>
-      <div className="md:block hidden magnet absolute  md:right-[-30px] right-[-37px] lg:right-[-40px] 2xl:right-[40px] xl:mt-[-125px] 2xl:mt-[-120px] lg:mt-[-120px] md:mt-[-95px] mt-[-60px] 2xl:scale-100 xl:scale-75 xl:right-[-110px] ">
+      <div className="md:block hidden magnet absolute  md:right-[-30px] right-[-37px] lg:right-[-40px] 2xl:right-[40px] xl:mt-[-125px] 2xl:mt-[-120px] lg:mt-[-120px] md:mt-[-95px] mt-[-60px] 2xl:scale-100 xl:scale-75 xl:right-[-140px] ">
         <img
           src={magnet}
           alt="magnet"
-          className="2xl:h-[450px] 2xl:w-[450px] xl:h-[470px] xl:w-[462px] lg:h-[400px] lg:w-[400px] md:w-[280px] w-[135px] md:h-full h-[178px] scale-75 md:scale-100 relative xl:bottom-2 2xl:bottom-0 xl:left-1 2xl:left-0"
+          className="2xl:h-[450px] 2xl:w-[450px] xl:h-[560px] xl:w-[510px] lg:h-[400px] lg:w-[400px] md:w-[280px] w-[135px] md:h-full h-[178px] scale-75 md:scale-100 relative xl:bottom-[50px] 2xl:bottom-0 xl:left-1 2xl:left-0"
         />
       </div>
     </div>
