@@ -2,7 +2,6 @@
 import withMT from "@material-tailwind/react/utils/withMT";
 
 const config = withMT({
-  
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -31,6 +30,8 @@ const config = withMT({
           "infinite-scrollClientle 14s linear infinite",
         "infinite-scrollClientle-reverse":
           "infinite-scrollClientle 14s linear infinite reverse",
+        "infinite-scrollMobShowProduct":
+          "infinite-scrollMobShowProduct 30s linear infinite",
       },
       keyframes: {
         "infinite-scroll": {
@@ -45,9 +46,13 @@ const config = withMT({
           from: { transform: "translateX(120)" },
           to: { transform: "translateX(-500%)" },
         },
+        "infinite-scrollMobShowProduct": {
+          from: { transform: "translateX(120)" },
+          to: { transform: "translateX(-600%)" },
+        },
       },
     },
   },
   plugins: [],
-})
+});
 export default config;

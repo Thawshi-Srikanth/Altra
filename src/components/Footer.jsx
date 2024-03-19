@@ -73,10 +73,16 @@ function Footer() {
               <Link to="/products"> Products</Link>
             </p>
             {/* <img src={Line} alt="line" /> */}
-            <p className="lg:text-[15px] md:text-[12px] sm:text-[12px]  xl:text-[13px] text-nowrap lg:ml-[-30px] md:ml-[-30px] sm:ml-[-30px] 2xl:ml-0 xl:ml-[-20px] text-white wrap xl:scale-150 lg:scale-[125px]  relative left-[30px] lg:top-[15px] xl:top-[27px] sm:top-[10px]">
+            <p className="font-rosario lg:text-[15px] md:text-[12px] sm:text-[12px]  xl:text-[13px] text-nowrap lg:ml-[-30px] md:ml-[-30px] sm:ml-[-30px] 2xl:ml-0 xl:ml-[-20px] text-white wrap xl:scale-150 lg:scale-[125px]  relative left-[30px] lg:top-[15px] xl:top-[30px] sm:top-[10px] py-3">
               Equipment
-              <br /> Chemical And Reagents <br /> Consumable Filter Papers
-              <br /> Lab Furniture
+              <br />
+              Chemical And Standard <br /> Consumables
+              <br />
+              Furniture
+              <br />
+              Glassware
+              <br />
+              Plasticware
             </p>
           </div>
           <div className="sm:block hidden lg:top-[40px] lg:mt-[-17px] relative lg:left-[50px] md:left-[30px] xl:left-[70px] 2xl:left-[70px] sm:left-[70px]">
@@ -88,7 +94,7 @@ function Footer() {
               alt="line"
               className="sm:left-[30px] md:left-[31px] lg:left-0 xl:left-0 lg:ml-0 relative"
             /> */}
-            <p className="lg:text-[15px] md:text-[12px] sm:text-[12px] xl:text-[13px] text-white wrap xl:scale-150  lg:scale-[125px] relative left-[30px]  xl:top-[23px] lg:top-[15px] lg:ml-[-30px] xl:ml-0 text-nowrap md:ml-[3px] sm:top-[10px] ">
+            <p className="font-rosario lg:text-[15px] md:text-[12px] sm:text-[12px] xl:text-[13px] text-white wrap xl:scale-150  lg:scale-[125px] relative left-[30px]  xl:top-[23px] lg:top-[15px] lg:ml-[-30px] xl:ml-0 text-nowrap md:ml-[3px] sm:top-[10px] ">
               Research Support <br />
               Expression Of Interest <br />
               Grants
@@ -119,11 +125,11 @@ function Footer() {
               alt="line"
               className="lg:w-[250px] relative lg:bottom-[5px] md:bottom-[-2px] sm:bottom-[-3px] sm:block hidden"
             /> */}
-            <p className="text-white font-light sm:block hidden font-inter xl:text-[23px] lg:text-[18px] md:text-[12.5px] text-[13px] lg:my-[10px] lg:pl-[60px] relative bottom-[0px] sm:pt-[18px] md:pt-[10px] lg:pt-0 ">
+            <p className="text-white font-light sm:block hidden font-inter xl:text-[23px] lg:text-[18px] md:text-[12.5px] text-[13px] lg:my-[10px] lg:pl-[60px] relative bottom-[0px] sm:pt-[18px] md:pt-[10px] lg:pt-0 xl:pl-[65px]">
               <span className="lg:pl-[30px] left-[16px] sm:left-0 relative">
                 Phone: <br />
               </span>
-              <p className="lg:pl-[10px] ">
+              <p className="lg:pl-[10px] relative xl:right-2">
                 011 744 5564
                 <br />
                 077 233 6609

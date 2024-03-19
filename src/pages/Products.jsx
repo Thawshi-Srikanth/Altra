@@ -35,7 +35,7 @@ function Products() {
             alt="bgimage"
             className="w-full h-full object-cover relative sm:hidden  top-[30px] "
           />
-          <div className="flex absolute sm:gap-x-3 gap-x-2 lg:gap-x-10 2xl:bottom-[233px] xl:bottom-[180px] lg:bottom-[145px]  sm:bottom-[112px] bottom-[30px] 2xl:left-[180px] xl:left-[160px] lg:left-[75px] left-[66px] font-rosario lg:text-[25px] md:text-[16px] sm:text-[13px]  text-[9px] text-[#FF8A3B]  lg:scale-90 xl:scale-100 sm:scale-90 sm:left-[69px] mdbutton">
+          <div className="flex absolute sm:gap-x-3 gap-x-2 lg:gap-x-10 2xl:bottom-[233px] xl:bottom-[180px] lg:bottom-[145px]  sm:bottom-[112px] bottom-[20px] 2xl:left-[180px] xl:left-[160px] lg:left-[75px] left-[66px] font-rosario lg:text-[25px] md:text-[16px] sm:text-[13px]  text-[9px] text-[#FF8A3B]  lg:scale-90 xl:scale-100 sm:scale-90 sm:left-[69px] mdbutton">
             <Link to="/aboutus">
               <button className="lg:w-[200px] lg:h-[50px] sm:w-[90px] sm:h-[40px] w-[50px] h-[20px] bg-white sm:rounded-[10px] rounded-[3px]   hover:text-black font-bold transition duration-300 ">
                 About Us
@@ -50,7 +50,7 @@ function Products() {
         </div>
         <div className="bg-[#5B5B5B]  ">
           {" "}
-          <div className="  xl:h-[300px] lg:h-[180px]    md:h-[150px]  sm:h-[100px]  flex h-[200px]  w-full  sm:justify-evenly mx-auto items-center  relative top-[0px] pb-3 sm:pb-0 sm:top-0 sm:px-0 px-[50px]  ">
+          <div className="  xl:h-[300px] lg:h-[180px]    md:h-[150px]  sm:h-[100px]  flex h-[200px]  w-full  sm:justify-evenly mx-auto items-center  relative top-[0px] pb-3 sm:pb-0 sm:top-0 sm:px-0 px-[30px]  sm:gap-0 ">
             {counterDetails.map((detail) => (
               <Counter
                 key={detail.id}

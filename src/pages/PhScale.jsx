@@ -8,8 +8,11 @@ function PhScale() {
       <div className=" phwidth rounded-[12px]  lg:mt-[18px] lg:px-[20px] xl:ml-[90px] 2xl:ml-[180px]  lg:ml-[60px] relative lg:rounded-[45px] md:rounded-[11.6px] md:bg-white md:bg-opacity-80 lg:h-[200px] xl:h-[250px] xl:w-[1255px] 2xl:w-[1250px]  lg:w-[1050px]  md:ml-[50px]  md:w-[850px] sm:w-[500px] sm:h-[120px]   md:h-[140px] h-[80px] w-[335px] flex-col">
         <div className="md:top-[-5px] relative lg:top-[10px] top-[10px]  left-[-8px] md:left-0">
           {" "}
-
-          <img src={phDetail} alt="" className="md:hidden scale-y-110 sm:scale-y-0  p-6  sm:px-3  sm:scale-125  sm:left-[140px] relative sm:top-[70px] bottom-[20px] sm:bottom-0"/>
+          <img
+            src={phDetail}
+            alt=""
+            className="md:hidden scale-y-110 sm:scale-y-0  p-6  sm:px-3  sm:scale-125  sm:left-[140px] relative sm:top-[70px] bottom-[20px] sm:bottom-0"
+          />
           <p className="sm:text-[30px] md:block hidden text-[12px] md:text-[25px]  lg:text-[30px] xl:text-[40px]  font-rosario text-[#fd5901] font-bold lg:px-[10px] lg:ml-[20px] lg:pt-[20px] md:ml-[20px] md:pt-[20px] ">
             PH Scale
           </p>
@@ -31,11 +34,11 @@ function PhScale() {
           className="xl:h-[450px] xl:w:h-[450px] lg:h-[400px] lg:w:h-[400px]  md:h-[200px] w-[124px] h-[124px]"
         />
       </div> */}{" "}
-      <div className="md:block hidden right-[0]  md:mr-0  absolute lg:right-[-50px] 2xl:right-[-10px] xl:mt-[-155px] mt-[-35px] 2xl:mt-[-155px] lg:mt-[-120px] md:right-[px] md:mt-[-45px]">
+      <div className="md:block hidden right-[0]  md:mr-0  absolute lg:right-[-50px] 2xl:right-[-10px] xl:mt-[-155px] mt-[-35px] 2xl:mt-[-155px] lg:mt-[-120px] md:right-[px] md:mt-[-45px] xl:right-[-142px] xl:scale-90 2xl:scale-100">
         <img
           src={ph}
           alt="magnet"
-          className="xl:h-[450px]  lg:h-[400px] md:h-[200px]  h-[124px] scale-95 md:scale-100"
+          className="xl:h-[450px]  lg:h-[400px] md:h-[200px]  h-[124px] scale-95 md:scale-100 "
         />
       </div>
     </div>

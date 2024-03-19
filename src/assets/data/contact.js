@@ -45,7 +45,7 @@ export const contact = [
         path: "https://www.linkedin.com/company/altra-scientific-pvt-ltd/",
       },
       { id: 2, img: web, info: "www.altrascientific.com", path: "" },
-      { id: 3, img: fbIcon, info: "@altrascientific", path: "" },
+      // { id: 3, img: fbIcon, info: "@altrascientific", path: "" },
     ],
   },
 ];
