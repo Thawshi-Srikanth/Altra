@@ -4,7 +4,7 @@ import phDetail from "../assets/images/Phmeter/Fact.png";
 
 function PhScale() {
   return (
-    <div className=" w-full bottom-[194px] md:bottom-0 flex xl:mt-[230px] 2xl:mt-[190px] lg:mt-[120px] md:mt-[-90px] lg:pb-6  relative left-[17px] md:left-[-17px] lg:left-[-10px] xl:left-[-50px] 2xl:left-[-120px] xl:justify-center mx-auto xl:top-[35px] 2xl:top-0 ">
+    <div className="xl:hidden w-full bottom-[194px] md:bottom-0 flex xl:mt-[230px] 2xl:mt-[190px] lg:mt-[120px] md:mt-[-90px] lg:pb-6  relative left-[17px] md:left-[-17px] lg:left-[-10px] xl:left-[-50px] 2xl:left-[-120px] xl:justify-center mx-auto xl:top-[35px] 2xl:top-0 ">
       <div className=" phwidth rounded-[12px]  lg:mt-[18px] lg:px-[20px] xl:ml-[90px] 2xl:ml-[180px]  lg:ml-[60px] relative lg:rounded-[45px] md:rounded-[11.6px] md:bg-white md:bg-opacity-80 lg:h-[200px] xl:h-[250px] xl:w-[1255px] 2xl:w-[1250px]  lg:w-[1050px]  md:ml-[50px]  md:w-[850px] sm:w-[500px] sm:h-[120px]   md:h-[140px] h-[80px] w-[335px] flex-col">
         <div className="md:top-[-5px] relative lg:top-[10px] top-[10px]  left-[-8px] md:left-0">
           {" "}
@@ -34,7 +34,7 @@ function PhScale() {
           className="xl:h-[450px] xl:w:h-[450px] lg:h-[400px] lg:w:h-[400px]  md:h-[200px] w-[124px] h-[124px]"
         />
       </div> */}{" "}
-      <div className="md:block hidden right-[0]  md:mr-0  absolute lg:right-[-50px] 2xl:right-[-10px] xl:mt-[-155px] mt-[-35px] 2xl:mt-[-155px] lg:mt-[-120px] md:right-[px] md:mt-[-45px] xl:right-[-142px] xl:scale-90 2xl:scale-100">
+      <div className="md:block hidden right-[0]  md:mr-0  absolute lg:right-[-50px] 2xl:right-[-20px] xl:mt-[-155px] mt-[-35px] 2xl:mt-[-155px] lg:mt-[-120px] md:right-[px] md:mt-[-45px] xl:right-[-142px] xl:scale-90 2xl:scale-100">
         <img
           src={ph}
           alt="magnet"

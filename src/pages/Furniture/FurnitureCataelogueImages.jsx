@@ -7,14 +7,14 @@ const secondRow=catelogue.slice(5,9)
 const thirdRow=catelogue.slice(9,11)
 const mobileview=catelogue.slice(0,9)
   return (
-    <div className="xl:space-y-[40px] lg:space-y-[40px] md:space-y-[30px] relative xl:top-[30px] lg:top-[30px] md:top-[20px]">
+    <div className="xl:space-y-[40px] lg:space-y-[40px] md:space-y-[30px] sm:space-y-[10px] relative xl:top-[30px] lg:top-[30px] sm:top-[20px] sm:mb-[170px] md:mb-0">
       {" "}
-      <div className="flex xl:gap-x-[40px] lg:gap-x-[30px] md:gap-x-[10px] justify-center">
+      <div className="flex xl:gap-x-[40px] lg:gap-x-[30px] sm:gap-x-[30px] md:gap-x-[10px] justify-center">
         {firstRow.map((image) => (
           <div className="" key={image.id}>
             <img
               src={image.Catlogueimage}
-              className="xl:w-[250px] xl:h-[335px] md:h-[200px] md:w-[140px] lg:w-[150px] lg:h-[250px] border border-blue-gray-400 rounded-lg sm:block hidden"
+              className="xl:w-[250px] xl:h-[335px]  sm:h-[150px] sm:w-[100px] md:h-[200px] md:w-[140px] lg:w-[150px] lg:h-[250px] border border-blue-gray-400 rounded-lg sm:block hidden"
               alt="Catalogue Image"
             />
           </div>
@@ -31,19 +31,19 @@ const mobileview=catelogue.slice(0,9)
           </div>
         ))}
       </div>
-      <div className=" md:gap-x-[10px] flex xl:gap-x-[40px] lg:gap-x-[30px] justify-center">
+      <div className="flex xl:gap-x-[40px] lg:gap-x-[30px] sm:gap-x-[30px] md:gap-x-[10px] justify-center">
         {secondRow.map((image) => (
           <div className="" key={image.id}>
             <img
               src={image.Catlogueimage}
-              className="md:h-[200px] md:w-[140px] xl:w-[250px] xl:h-[335px]  lg:w-[150px] lg:h-[250px] border border-blue-gray-400 rounded-lg sm:block hidden"
+              className="xl:w-[250px] xl:h-[335px]  sm:h-[150px] sm:w-[100px] md:h-[200px] md:w-[140px] lg:w-[150px] lg:h-[250px] border border-blue-gray-400 rounded-lg sm:block hidden"
             />
           </div>
         ))}
       </div>
-      <div className="flex xl:gap-x-[40px] lg:gap-x-[30px]  justify-center md:gap-x-[10px] relative top-7 sm:top-0 gap-x-8 mb-10 sm:mb-0">
+      <div className="flex xl:gap-x-[40px] lg:gap-x-[30px]  justify-center md:gap-x-[10px] relative top-7 sm:top-0 gap-x-6 mb-10 sm:mb-0">
         {thirdRow.map((image) => (
-          <div className="" key={image.id}>
+          <div className="px-1" key={image.id}>
             <img
               src={image.Catlogueimage}
               className="xl:w-[436px] xl:h-[335px] lg:w-[236px] lg:h-[235px] md:w-[200px] md:h-[150px] h-[139px] w-[181px] border border-blue-gray-400 rounded-lg"

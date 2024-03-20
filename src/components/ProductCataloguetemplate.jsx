@@ -31,7 +31,7 @@ function ProductCataloguetemplate() {
         <div key={id}>{i.bgImage}</div>
       ))}
 
-      <p className="text-[15px] text-center xl:text-[50px] lg:text-[40px] md:text-[35px] font-rosario font-bold text-[#ff8a3a]  relative mt-9 ">
+      <p className="text-[15px] text-center xl:text-[50px] lg:text-[40px] md:text-[35px] sm:text-[30px] font-rosario font-bold text-[#ff8a3a]  relative mt-9 ">
         {" "}
         Product catelogue
       </p>

@@ -11,6 +11,8 @@ import PhScale from "./pages/PhScale";
 import productDropdown from "./assets/data/productDropdown";
 import ProductDropdownCom from "./components/ProductDropdownCom";
 import { userStateContext } from "./contexts/ContextProvider";
+import MagnetDesktop from "./pages/MagnetDesktop";
+import Phdekstop from "./pages/Phdekstop";
 
 export default function Home() {
   const{clickToggle,}=userStateContext()
@@ -77,12 +79,12 @@ export default function Home() {
           </Suspense>
 
           <Commitment />
-
+<MagnetDesktop/>
           <Magnetic />
           <Suspense fallback={<Loader />}>
             <LazyProducts />
           </Suspense>
-
+<Phdekstop/>
           <PhScale />
           <Suspense fallback={<Loader />}>
             {" "}
