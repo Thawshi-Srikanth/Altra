@@ -29,10 +29,12 @@ function Header() {
   }; */
   useEffect(() => {
     const productDropdownTitles = {
-      "/equipment/:1": "Equipment",
-      "/filterpapers/:2": "Filter Papers/Consumables",
-      "/labfurniture/:3": "Lab Furniture",
-      "/chemicals/:4": "Chemical & Regents",
+      "/equipment/:id": "Equipment",
+      "/filterpapers/:id": "Chemical And Standard",
+      "/labfurniture/:id": "Consumables",
+      "/furniture/:id": "Furniture",
+      "": "Glassware",
+      "": "PlasticWare",
     };
     const tittles = {
       "/": "Home",
@@ -127,13 +129,13 @@ function Header() {
         </div>
         {clickToggle && (
           <div
-            className="rounded-b-[20px] lg:block hidden bg-white xl:w-[600px] lg:w-[400px] xl:h-[248px] lg:h-[140px] lg:left-[40px] xl:left-[80px] relative mx-auto font-rosario"
+            className="rounded-b-[20px] lg:block hidden bg-white xl:w-[600px] lg:w-[400px] xl:h-[370px] lg:h-[140px] lg:left-[40px] xl:left-[80px] relative mx-auto font-rosario"
             ref={menuRef}
           >
             {productDropdown.map((title) => (
               <div key={title.id} onClick={()=>setClickToggle(!clickToggle)}>
                 {" "}
-                <ProductDropdownCom title={title} currentTabDropdown={currentTabDropdown}/>
+                <ProductDropdownCom title={title} currentTabDropdown={currentTabDropdown} />
               </div>
             ))}
           </div>

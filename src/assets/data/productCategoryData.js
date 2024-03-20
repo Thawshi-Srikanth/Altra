@@ -19,7 +19,7 @@ export const productCategoryData = [
     img2: G,
     alt: "chemicals",
     title: "Chemical & Standards",
-    path: "/equipment",
+    path: "/chemicals",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ export const productCategoryData = [
     img2: H,
     alt: "plasticware",
     title: "Plasticware",
-    path: "/filterpapers",
+    path: "/plasticware",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ export const productCategoryData = [
     img2: I,
     alt: "consumabales",
     title: "Consumables",
-    path: "/labfurniture",
+    path: "/consumables",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ export const productCategoryData = [
     img2: J,
     alt: "Equipment",
     title: "Equipment",
-    path: "/chemicals",
+    path: "/equipment",
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ export const productCategoryData = [
     img2: K,
     alt: "Glassware",
     title: "Glassware",
-    path: "/chemicals",
+    path: "/glassware",
   },
   {
     id: 6,

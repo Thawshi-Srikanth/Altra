@@ -10,12 +10,14 @@ import I from "../../images/products/cateogories/furniture/catelogueImages/I.png
 import J from "../../images/products/cateogories/furniture/catelogueImages/J.png"
 import K from "../../images/products/cateogories/furniture/catelogueImages/K.png"
 import methodBg  from "../../images/products/cateogories/furniture/catelogueImages/bg/methodBg.png"
+import methodMobbg  from "../../images/products/cateogories/furniture/catelogueImages/bg/methodMobbg.png"
 
 
 export const furnitureCatelogue = [
   {
     id: " furcatalogue",
     bgImage:methodBg,
+    bgImageMob:methodMobbg,
     catelogue: [
       { id: 1, Catlogueimage: A, alt: "" },
       { id: 2, Catlogueimage: B, alt: "" },
