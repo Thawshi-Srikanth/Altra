@@ -6,7 +6,7 @@ function Phdekstop() {
       <img
         src={phDekstop}
         alt=""
-        className="xl:block hidden relative px-5 w-3/4  mx-auto   items-center justify-center scale-125 "
+        className="xl:block hidden relative px-5 w-3/4  mx-auto   items-center justify-center scale-125 xl:left-3 2xl:left-0 "
       />
     </div>
   );
