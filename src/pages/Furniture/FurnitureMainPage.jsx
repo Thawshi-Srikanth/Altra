@@ -5,6 +5,7 @@ import furniturebg from "../../assets/images/products/cateogories/furniture/furn
 import furnitureDetail from "../../assets/images/products/cateogories/furniture/furnitureDetails.png";
 import client from "../../assets/images/products/cateogories/furniture/client.png";
 export default function FurnitureMainPage() {
+
   const { id } = useParams();
 
   return (

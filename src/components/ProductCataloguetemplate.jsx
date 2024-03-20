@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { furnitureCatelogue } from "./../assets/data/catelogue/furnitureCatelogue";
 import { userStateContext } from "../contexts/ContextProvider";
@@ -6,6 +6,10 @@ import ImageCommonBg from "./ImageCommonBg";
 import CatelogueCommon from "./CatelogueCommon";
 
 function ProductCataloguetemplate() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { id } = useParams();
   console.log(id);
   const { furnitureCatelogue } = userStateContext();
