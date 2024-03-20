@@ -21,21 +21,21 @@ function ProductTemplate({
       <img src={imgOne} alt="equipment" className="w-full " />
       <img src={imgTwo} alt="detail" className="mx-auto " />
 
-      <div className="bg-[#FF8A3A]  lg:md:mb-[-80px]">
+      <div className="bg-[#FF8A3A]  md:mb-[-80px] mb-[0px]">
         {/* {id == 1 && <ClientLogos>{<EquipmentClients />}</ClientLogos>} */}
-        <Link to={`/productCatelgoue/${nextpath}`}>
+        <Link to={`/productCatelgoue/${nextpath}`} className="">
           {" "}
           <img
             src={imgThree}
-            className="mx-auto justify-center items-center relative top-20 lg:w-[650px] lg:h-[188px]"
+            className=" mx-auto justify-center items-center relative lg:top-20 sm:top-[50px] top-[30px] lg:w-[650px] lg:h-[188px] md:w-[600px] md:h-[148px] sm:w-[400px] sm:h-[100px] w-[190px] h-[55px]"
           />
         </Link>
-
+        <div className="sm:hidden bg-[#FF8A3A] h-[90px]"></div>
         <div className="   relative  md:top-0 md:block hidden">
           {" "}
           <MemoRizedClientele />
         </div>
-        <div className=" overflow-x-hidden md:hidden relative sm:top-[20px] top-[60px] overflow-y-hidden ">
+        <div className="sm:block hidden overflow-x-hidden md:hidden relative sm:top-[20px] top-[60px] overflow-y-hidden ">
           <MemoRizedClientele2 />
         </div>
       </div>
