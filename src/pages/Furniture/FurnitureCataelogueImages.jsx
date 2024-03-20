@@ -7,7 +7,7 @@ const secondRow=catelogue.slice(5,9)
 const thirdRow=catelogue.slice(9,11)
 const mobileview=catelogue.slice(0,9)
   return (
-    <div className="xl:space-y-[40px] lg:space-y-[40px] md:space-y-[30px] sm:space-y-[10px] relative xl:top-[30px] lg:top-[30px] sm:top-[20px] sm:mb-[170px] md:mb-0">
+    <div className="xl:space-y-[40px] lg:space-y-[40px] md:space-y-[30px] sm:space-y-[10px] relative xl:top-[30px] lg:top-[30px] sm:top-[20px] sm:mb-[170px] md:mb-0 ">
       {" "}
       <div className="flex xl:gap-x-[40px] lg:gap-x-[30px] sm:gap-x-[30px] md:gap-x-[10px] justify-center">
         {firstRow.map((image) => (
@@ -46,7 +46,7 @@ const mobileview=catelogue.slice(0,9)
           <div className="px-1" key={image.id}>
             <img
               src={image.Catlogueimage}
-              className="xl:w-[436px] xl:h-[335px] lg:w-[236px] lg:h-[235px] md:w-[200px] md:h-[150px] h-[139px] w-[181px] border border-blue-gray-400 rounded-lg"
+              className="xl:w-[436px] xl:h-[335px] lg:w-[236px] lg:h-[235px] md:w-[200px] md:h-[150px] h-[139px] w-[161px] border border-blue-gray-400 rounded-lg"
             />
           </div>
         ))}
