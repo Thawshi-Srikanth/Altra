@@ -14,6 +14,7 @@ import EquipmentMainPAge from "./pages/Equipments/EquipmentMainPAge";
 import France from "./pages/Equipments/Comapnies/France";
 import FurnitureMainPage from "./pages/Furniture/FurnitureMainPage";
 import ProductCataloguetemplate from "./components/ProductCataloguetemplate";
+import GlasswareMainPage from "./pages/Glassware/GlasswareMainPage";
 
 export default function App() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
         <Route path="/equipment/:id" element={<EquipmentMainPAge />}></Route>
         <Route path="/filterpapers" element={<NotFoundPage />}></Route>
         <Route path="/furniture/:id" element={<FurnitureMainPage />}></Route>
+        <Route path="/glassware/:id" element={<GlasswareMainPage />}></Route>
         <Route path="/chemicals" element={<NotFoundPage />}></Route>
 
         <Route path="/france" element={<France />}></Route>

@@ -11,8 +11,8 @@ function ProductCataloguetemplate() {
   }, []);
 
   const { id } = useParams();
-  console.log(id);
-  const { furnitureCatelogue } = userStateContext();
+  
+  const { furnitureCatelogue ,glasswareCatelogue} = userStateContext();
 
   const destructuring = (data) =>
     data.map((item) => ({
@@ -28,7 +28,11 @@ function ProductCataloguetemplate() {
   if (id === "furcatalogue") {
     selectedValue = furnitureCatelogue;
   }
+  else if(id==="glassware"){
+    selectedValue=glasswareCatelogue;
+  }
   const items = selectedValue && destructuring(selectedValue);
+
   return (
     <div>
       {items.map((i, id) => (

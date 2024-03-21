@@ -8,11 +8,12 @@ const StateContext = createContext({
   setResponse: () => {},
   response: false,
   furnitureCatelogue: furnitureCatelogue,
+  glasswareCatelogue: glasswareCatelogue,
 });
 
 import React from "react";
 import furnitureCatelogue from "../assets/data/catelogue/furnitureCatelogue";
-
+import glasswareCatelogue from "../assets/data/catelogue/glasswareCatelogue";
 export const ContextProvider = ({ children }) => {
   const [zindex, setzIndex] = useState(1);
   const [clickToggle, setClickToggle] = useState(false);
@@ -27,6 +28,7 @@ export const ContextProvider = ({ children }) => {
         response,
         setResponse,
         furnitureCatelogue,
+        glasswareCatelogue,
       }}
     >
       {children}

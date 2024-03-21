@@ -14,7 +14,12 @@ export default function NotFoundPage() {
           moved or deleted.
         </p>
 
-        <Link to='/' className='bg-black flex items-center justify-center text-slate-100 w-44 h-12 rounded text-base font-semibold hover:text-white duration-200 hover:bg-orange-600'>Back to Home</Link>
+        <Link
+          to="/"
+          className="bg-orange-700 flex items-center justify-center text-slate-100 w-44 h-12 rounded text-base font-semibold hover:text-white duration-200 hover:bg-orange-600"
+        >
+          Back to Home
+        </Link>
       </div>
     </div>
   );

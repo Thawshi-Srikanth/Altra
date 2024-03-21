@@ -1,5 +1,5 @@
 import React from "react";
-import { DNA, RotatingTriangles, Triangle } from "react-loader-spinner";
+import { Triangle } from "react-loader-spinner";
 function Loader() {
   return (
     <div className="flex justify-center relative  xl:scale-125 top-7">

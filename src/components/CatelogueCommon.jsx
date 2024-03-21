@@ -1,5 +1,6 @@
 import React from "react";
 import FurnitureCataelogueImages from "../pages/Furniture/FurnitureCataelogueImages";
+import GlasswareCataelogueImages from './../pages/Glassware/GlasswareCataelogueImages';
 
 function CatelogueCommon({ catelogue, id }) {
   return (
@@ -19,6 +20,14 @@ function CatelogueCommon({ catelogue, id }) {
             <div className="">
               {" "}
               <FurnitureCataelogueImages catelogue={catelogue} />
+            </div>
+          )}
+    
+     
+          {id === "glassware" && (
+            <div className="">
+              {" "}
+              <GlasswareCataelogueImages catelogue={catelogue} />
             </div>
           )}
     
