@@ -101,7 +101,7 @@ function GlasswareCataelogueImages({ catelogue }) {
                   : "h-[101px]"
               }  ${image.id === 29 ? "w-[40px]" : ""} ${
                 image.id === 28 || image.id === 27
-                  ? "relative ml-[12px] min-w-[120px]"
+                  ? "relative ml-[12px] w-[100px]"
                   : ""
               } ${
                 image.id === 27 && "relative ml-[-9px]"
