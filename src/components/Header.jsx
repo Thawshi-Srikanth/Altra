@@ -33,7 +33,7 @@ function Header() {
       "/filterpapers/:id": "Chemical And Standard",
       "/labfurniture/:id": "Consumables",
       "/furniture/:id": "Furniture",
-      "": "Glassware",
+      "/glassware/:id": "Glassware",
       "": "PlasticWare",
     };
     const tittles = {
