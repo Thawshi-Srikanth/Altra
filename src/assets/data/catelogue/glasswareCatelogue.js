@@ -76,7 +76,7 @@ export const glasswareCatelogue = [
       { id: 26, Catlogueimage: Z1, alt: "" },
       { id: 27, Catlogueimage: Z2, alt: "" },
       { id: 28, Catlogueimage: Z3, alt: "" },
-      { id: 288, Catlogueimage: grouped, alt: "" },
+      // { id: 288, Catlogueimage: grouped, alt: "" },
       { id: 29, Catlogueimage: Z4, alt: "" },
       { id: 30, Catlogueimage: Z5, alt: "" },
       { id: 31, Catlogueimage: Z6, alt: "" },
