@@ -25,7 +25,7 @@ function ImagePopup({
       className=" z-50 fixed  bg-opacity-30 bg-blue-gray-200 backdrop-blur-sm inset-0  justify-center items-center overflow-y-auto flex flex-col "
     >
       <div
-        className="absolute md:bottom-[390px] sm:bottom-[340px] sm:left-[70px] md:left-[200px] lg:left-0 lg:bottom-[620px] sm:ml-[350px] hover:scale-125 ml-[200px] top-[260px] sm:top-0 xl:ml-[800px] 2xl:ml-[960px] xl:top-[60px] cursor-pointer "
+        className="absolute md:bottom-[390px] sm:bottom-[340px] sm:left-[70px] md:left-[200px] lg:left-[320px] 2xl:left-0 lg:top-9 lg:bottom-[620px] sm:ml-[350px] hover:scale-125 ml-[200px] top-[260px] sm:top-0 xl:ml-[800px] 2xl:ml-[960px] xl:top-[60px] cursor-pointer "
         onClick={onClose}
       >
         <X size={30} />

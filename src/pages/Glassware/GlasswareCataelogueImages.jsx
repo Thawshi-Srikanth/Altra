@@ -32,7 +32,7 @@ function GlasswareCataelogueImages({ catelogue }) {
       ) : (
         ""
       )}
-      <div className="grid sm:grid-cols-5  items-baseline justify-center mx-auto lg:space-y-9 md:space-y-6 sm:space-y-6 md:mx-[80px]  lg:mx-auto -y-2">
+      <div className="grid sm:grid-cols-5  items-baseline justify-center mx-auto lg:space-y-9 md:space-y-6 sm:space-y-6 md:mx-[40px]  lg:mx-auto -y-2 2xl:space-y-[60px]">
         {dekstopSimilarSize.map((image) => (
           <div
             key={catelogue.id}
@@ -45,7 +45,7 @@ function GlasswareCataelogueImages({ catelogue }) {
                 [1, 2, 3, 4, 5].includes(image.id)
                   ? "  border-none "
                   : "border-blue-gray-400 "
-              }  rounded  xl:w-[228px] xl:h-[335px] lg:w-[170px] lg:h-[270px] sm:w-[100px] sm:h-[150px]  md:w-[120px] md:h-[170px] object-center justify-center mx-auto lg:rounded-lg cursor-pointer`}
+              }  rounded  xl:w-[228px] 2xl:w-[248px] xl:h-[335px] lg:w-[170px] lg:h-[270px] sm:w-[100px] sm:h-[150px]  md:w-[120px] md:h-[170px] object-center justify-center mx-auto lg:rounded-lg cursor-pointer`}
             />
           </div>
         ))}
@@ -71,7 +71,7 @@ function GlasswareCataelogueImages({ catelogue }) {
             )
         )}
       </div>
-      <div className="grid sm:grid-cols-3 lg:space-y-9  sm:space-y-6 items-baseline justify-center 2xl:gap-x-0   xl:gap-x-[40px] xl:px-[80px] lg:px-[20px] md:px-[120px]">
+      <div className="grid sm:grid-cols-3 lg:space-y-9  sm:space-y-6 items-baseline justify-center 2xl:gap-x-0   xl:gap-x-[40px] xl:px-[80px] lg:px-[20px] md:px-[80px]">
         {" "}
         {secondRaw.map((image) => (
           <div
@@ -96,16 +96,22 @@ function GlasswareCataelogueImages({ catelogue }) {
             <img
               src={image.Catlogueimage}
               className={`border ${
-                [27, 28, 29].includes(image.id) ? " h-[120px] " : "h-[101px]"
-              }  ${
-                image.id === 29 ? "w-[44px]" : ""
-              }  border-blue-gray-400 object-center justify-center mx-auto rounded-lg cursor-pointer w-[117px] `}
+                [27, 28, 29].includes(image.id)
+                  ? " h-[100px] relative  left-5  "
+                  : "h-[101px]"
+              }  ${image.id === 29 ? "w-[40px]" : ""} ${
+                image.id === 28 || image.id === 27
+                  ? "relative ml-[12px] min-w-[120px]"
+                  : ""
+              } ${
+                image.id === 27 && "relative ml-[-9px]"
+              } border-blue-gray-400 object-center justify-center mx-auto rounded-lg cursor-pointer  `}
             />
           </div>
         ))}
       </div>
       <div
-        className={` flex lg:space-y-9  sm:space-y-6 items-baseline justify-center  xl:gap-x-[90px] 2xl:gap-x-0 lg:px-[20px]`}
+        className={`2xl:space-y-[60px]  flex lg:space-y-9  sm:space-y-6 items-baseline justify-center  xl:gap-x-[90px] 2xl:gap-x-0 lg:px-[20px]`}
       >
         {secondRawTwo.map((image) => (
           <div
@@ -117,17 +123,17 @@ function GlasswareCataelogueImages({ catelogue }) {
               src={image.Catlogueimage}
               className={`cursor-pointer ${
                 image.id === 29 || image.id === 30
-                  ? "xl:w-[125px] lg:h-[235px]  relative xl:right-[60px] 2xl:right-[50px] lg:right-[20px]  md:right-[30px] sm:right-[10px]"
+                  ? "xl:w-[125px] lg:h-[235px]  relative xl:right-[60px] 2xl:right-[50px] lg:right-[20px]  md:right-[50px] sm:right-[10px]"
                   : "xl:w-[342px] 2xl:w-[389px]  lg:w-[289px] lg:h-[235px]  sm:w-[189px] relative "
               } z-0  xl:h-[335px] sm:h-[145px] object-center justify-center mx-auto rounded-lg  border border-blue-gray-400 ${
                 image.id === 27 &&
-                "relative 2xl:left-[54px] xl:left-[66px] lg:left-[-4px]  md:left-[85px]"
+                "relative 2xl:left-[40px] xl:left-[62px] lg:left-[-4px]  md:left-[55px]"
               } ${
                 image.id === 30 &&
-                "relative 2xl:right-[10] xl:right-[70px] lg:right-[10px]  md:right-[112px]"
+                "relative 2xl:right-[10] xl:right-[70px] lg:right-[10px]  md:right-[50px]"
               }  ${
                 image.id === 28 &&
-                "relative lg:right-[25px] xl:right-0 sm:right-[18px] md:right-[-15px]"
+                "relative lg:right-[25px] xl:right-0 sm:right-[18px] md:right-[2px]"
               } `}
             />
             {/* <img
@@ -141,7 +147,7 @@ function GlasswareCataelogueImages({ catelogue }) {
           </div>
         ))}
       </div>
-      <div className="flex lg:space-y-9 sm:space-y-6 items-baseline justify-center  xl:mx-[345px]   2xl:mx-[400px] lg:mx-[280px] md:mx-[330px] sm:mx-[200px] sm:mb-[150px] md:mb-[30px] lg:mb-0 ">
+      <div className="2xl:space-y-[60px] flex lg:space-y-9 sm:space-y-6 items-baseline justify-center  xl:mx-[345px]   2xl:mx-[400px] lg:mx-[280px] md:mx-[273px] sm:mx-[200px] sm:mb-[150px] md:mb-[30px] lg:mb-0 ">
         {" "}
         {thirdTawRaw.map((image) => (
           <div
@@ -160,12 +166,12 @@ function GlasswareCataelogueImages({ catelogue }) {
           </div>
         ))}
       </div>
-      <div className="sm:hidden flex space-y-5 items-baseline justify-center mx-[104px] mb-[30px]">
+      <div className="gap-x-[14px] sm:hidden flex space-y-5 items-baseline justify-center mx-[0px] mb-[30px]">
         {" "}
         {thirdTawRaw.map((image) => (
           <div
             key={catelogue.id}
-            className="mx-auto  justify-center mx-1 "
+            className="  justify-center "
             onClick={() => handleClick(image.id)}
           >
             <img
@@ -175,7 +181,7 @@ function GlasswareCataelogueImages({ catelogue }) {
           </div>
         ))}
       </div>
-      <p className="text-[14px] text-center font-rosario xl:text-[15px] text-[#666] mb-5  md:top-4 lg:top-0 relative sm:bottom-[130px] md:bottom-0 xl:top-9">
+      <p className="text-[14px] text-center font-rosario xl:text-[15px] text-[#666] mb-5  md:top-4 lg:top-7 xl:mt-0 relative sm:bottom-[130px] md:bottom-0 xl:top-9">
         Copyrights- Catalog Method Fume Hood
       </p>
     </div>
