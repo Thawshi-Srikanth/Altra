@@ -1,25 +1,24 @@
-import React, { useEffect } from 'react'
-import { useParams } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import glasswareProductTemplate from '../../assets/data/catelogue/glasswareProductTemplate';
 import ProductTemplate from '../../components/ProductTemplate';
-import Glasswarebg from "../../assets/images/products/cateogories/Glassware/Glasswarebg.png";
-import GlasswareDetail from "../../assets/images/products/cateogories/Glassware/GlasswareDetails.png";
-import client from "../../assets/images/products/cateogories/Glassware/client.png";
 function GlasswareMainPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const { id } = useParams();
+
 
   return (
     <div>
       {" "}
-      <ProductTemplate
-        id={id}
-        imgOne={Glasswarebg}
-        imgTwo={GlasswareDetail}
-        imgThree={client}
-        nextpath="glassware"
-      />
+      {glasswareProductTemplate.map((item) => (
+        <ProductTemplate
+          key={item.id}
+          imgOne={item.imgOne}
+          clients={item.clients}
+          MainNextpath="glassware"
+          description="We have been at the forefront of the industry, catering to the needs of the global chemical, pharmaceutical, and medical sectors. Evidenced by our adherence to ISO 9001 standards and rigorous testing protocols. Each piece of glassware is meticulously crafted with precision and durability, embodying the renowned German engineering standards. Emphasizing uniform design and interchangeable parts for superior lab glassware solutions that elevate your laboratory operations to new heights of excellence."
+        />
+      ))}
     </div>
   );
 }

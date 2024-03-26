@@ -30,8 +30,8 @@ function Header() {
   useEffect(() => {
     const productDropdownTitles = {
       "/equipment/:id": "Equipment",
-      "/filterpapers/:id": "Chemical And Standard",
-      "/labfurniture/:id": "Consumables",
+      "/chemicals/:id": "Chemical And Standard",
+      "/consumables/:id": "Consumables",
       "/furniture/:id": "Furniture",
       "/glassware/:id": "Glassware",
       "": "PlasticWare",

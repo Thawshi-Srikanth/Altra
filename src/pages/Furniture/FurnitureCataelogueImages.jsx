@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import ImagePopup from "../../components/ImagePopup";
 
 function FurnitureCataelogueImages({ catelogue }) {
-console.log(catelogue);
+
+
+
   const [imagepopUp, setImagePopup] = useState(false);
    const [popupId, setPopupId] = useState(null);
 const firstRow = catelogue.slice(0, 5);
+
 const secondRow=catelogue.slice(5,9)
 const thirdRow=catelogue.slice(9,11)
 const mobileview=catelogue.slice(0,9)

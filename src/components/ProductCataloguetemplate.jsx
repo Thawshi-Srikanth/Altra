@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { furnitureCatelogue } from "./../assets/data/catelogue/furnitureCatelogue";
 import { userStateContext } from "../contexts/ContextProvider";
@@ -6,30 +6,45 @@ import ImageCommonBg from "./ImageCommonBg";
 import CatelogueCommon from "./CatelogueCommon";
 
 function ProductCataloguetemplate() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+   
+   const { furnitureCatelogue, glasswareCatelogue, chemicalsCatelogue, index, } =userStateContext();
+
+
+
+
 
   const { id } = useParams();
-  
-  const { furnitureCatelogue ,glasswareCatelogue} = userStateContext();
+
+ 
 
   const destructuring = (data) =>
+
     data.map((item) => ({
       bgImage: (
         <div key={item.id}>
-          <ImageCommonBg img={item.bgImage} id={id} mobImg={item.bgImageMob} />
+          <ImageCommonBg
+            img={item && item.bgImage }
+            id={id}
+            text={item.text}
+          />
         </div>
       ),
-      catelogue: <CatelogueCommon catelogue={item.catelogue} id={id} />,
+      catelogue: (
+        <CatelogueCommon
+          catelogue={item && item.catelogue[index].catlogueImages}
+          id={id}
+        />
+      ),
     }));
 
   let selectedValue = null;
-  if (id === "furcatalogue") {
+  if (id === "furniture") {
+  
     selectedValue = furnitureCatelogue;
-  }
-  else if(id==="glassware"){
-    selectedValue=glasswareCatelogue;
+  } else if (id === "glassware") {
+    selectedValue = glasswareCatelogue;
+  } else if (id === "chemicatalogue") {
+    selectedValue = chemicalsCatelogue;
   }
   const items = selectedValue && destructuring(selectedValue);
 

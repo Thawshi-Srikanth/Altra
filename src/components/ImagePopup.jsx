@@ -22,19 +22,22 @@ function ImagePopup({
     <div
       onClick={onCloseImage}
       ref={popUpRef}
-      className=" z-50 fixed  bg-opacity-30 bg-blue-gray-200 backdrop-blur-sm inset-0  justify-center items-center overflow-y-auto flex flex-col "
+      className="overflow-hidden z-50 fixed  bg-opacity-30 bg-blue-gray-200 backdrop-blur-sm inset-0  justify-center items-center overflow-y-auto flex flex-col "
     >
       <div
-        className="absolute md:bottom-[390px] sm:bottom-[340px] sm:left-[70px] md:left-[200px] lg:left-[320px] 2xl:left-0 lg:top-9 lg:bottom-[620px] sm:ml-[350px] hover:scale-125 ml-[200px] top-[170px] sm:top-0  xl:ml-[490px] 2xl:ml-[960px] xl:top-[60px] cursor-pointer "
+        className="h-9 overflow-y-hidden absolute md:bottom-[390px] sm:bottom-[340px] sm:left-[70px] md:left-[200px] lg:left-[320px] 2xl:left-0 lg:top-9 lg:bottom-[620px] xl:bottom-0 sm:ml-[350px] hover:scale-125 ml-[200px] top-[170px] sm:top-0  xl:ml-[490px] 2xl:ml-[960px] xl:top-[120px] cursor-pointer "
         onClick={onClose}
       >
-        <X size={30} />
+        <X size={30} className="overflow-y-hidden " />
       </div>
       {popUpImageGlassWare.map((image) => (
-        <div className="bg-white xl:rounded-xl flex" key={image.id}>
+        <div
+          className="bg-white xl:rounded-xl flex overflow-hidden"
+          key={image.id}
+        >
           <img
             src={image.Catlogueimage}
-            className=" justify-center mx-auto lg:w-[400px] lg:h-[500px] w-[220px] h-[300px] "
+            className=" justify-center mx-auto lg:w-[400px] lg:h-[300px] w-[220px] h-[200px] overflow-hidden "
           />
         </div>
       ))}
