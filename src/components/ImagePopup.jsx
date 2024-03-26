@@ -37,7 +37,7 @@ function ImagePopup({
         >
           <img
             src={image.Catlogueimage}
-            className=" justify-center mx-auto lg:w-[400px] lg:h-[300px] w-[220px] h-[200px] overflow-hidden "
+            className=" justify-center mx-auto lg:w-[350px] lg:h-[300px] w-[220px] h-[200px] overflow-hidden "
           />
         </div>
       ))}
