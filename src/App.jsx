@@ -16,6 +16,7 @@ import FurnitureMainPage from "./pages/Furniture/FurnitureMainPage";
 import ProductCataloguetemplate from "./components/ProductCataloguetemplate";
 import GlasswareMainPage from "./pages/Glassware/GlasswareMainPage";
 import ChemicalasMainPage from "./pages/Chemicals&Standards/ChemicalasMainPage";
+import PlasticwareMainPage from "./pages/Plasticware/PlasticwareMainPage";
 
 export default function App() {
   return (
@@ -37,6 +38,7 @@ export default function App() {
         <Route path="/furniture/:id" element={<FurnitureMainPage />}></Route>
         <Route path="/glassware/:id" element={<GlasswareMainPage />}></Route>
         <Route path="/chemicals/:id" element={<ChemicalasMainPage/>}></Route>
+        <Route path="/plasticware/:id" element={<PlasticwareMainPage/>}></Route>
 
         <Route path="/france" element={<France />}></Route>
         <Route path="/productCatelgoue/:id" element={<ProductCataloguetemplate />}></Route>

@@ -6,6 +6,8 @@ import { userStateContext } from "../contexts/ContextProvider";
 import chemLAbCatelogue from "../pages/Chemicals&Standards/ChemLAbCatelogue";
 import ChemLAbCatelogue from "../pages/Chemicals&Standards/ChemLAbCatelogue";
 import MegazymeCatelogue from "./../pages/Chemicals&Standards/MegazymeCatelogue";
+import { plasticwareCatelogue } from './../assets/data/catelogue/plasticwareCatelogue';
+import PlasticwareCatelogueImages from './../pages/Plasticware/PlasticwareCatelogueImages';
 
 function CatelogueCommon({ catelogue, id }) {
   const { actualClient } = userStateContext();
@@ -45,6 +47,11 @@ function CatelogueCommon({ catelogue, id }) {
       {actualClient == "megazyme" && id === "chemicatalogue" && (
         <div className="">
           <MegazymeCatelogue catelogue={catelogue} />
+        </div>
+      )}
+      {id === "plasticware" && (
+        <div className="">
+          <PlasticwareCatelogueImages catelogue={catelogue} />
         </div>
       )}
     </>

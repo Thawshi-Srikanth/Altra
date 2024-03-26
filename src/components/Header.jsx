@@ -34,7 +34,7 @@ function Header() {
       "/consumables/:id": "Consumables",
       "/furniture/:id": "Furniture",
       "/glassware/:id": "Glassware",
-      "": "PlasticWare",
+      "/plasticware/:id": "PlasticWare",
     };
     const tittles = {
       "/": "Home",

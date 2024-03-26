@@ -12,6 +12,7 @@ const StateContext = createContext({
   furnitureCatelogue: furnitureCatelogue,
   glasswareCatelogue: glasswareCatelogue,
   chemicalsCatelogue: chemicalsCatelogue,
+  plasticwareCatelogue:plasticwareCatelogue,
   actualClient: "",
   setActualClient: () => {},
 });
@@ -20,6 +21,7 @@ import React from "react";
 import furnitureCatelogue from "../assets/data/catelogue/furnitureCatelogue";
 import glasswareCatelogue from "../assets/data/catelogue/glasswareCatelogue";
 import chemicalsCatelogue from "../assets/data/catelogue/chemicalsCatelogue";
+import { plasticwareCatelogue } from './../assets/data/catelogue/plasticwareCatelogue';
 export const ContextProvider = ({ children }) => {
   const [zindex, setzIndex] = useState();
   const [clickToggle, setClickToggle] = useState(false);
@@ -54,6 +56,7 @@ export const ContextProvider = ({ children }) => {
         actualClient,
         index,
         setIndex,
+        plasticwareCatelogue,
       }}
     >
       {children}

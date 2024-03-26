@@ -4,7 +4,7 @@ export const productDropdown = [
   { id: 3, name: "Consumables", path: "/consumables/:id" },
   { id: 4, name: "Furniture", path: "/furniture/:id" },
   { id: 5, name: "Glassware", path: "/glassware/:id" },
-  { id: 6, name: "Plasticware", path: "/chemicals/:4" },
+  { id: 6, name: "Plasticware", path: "/plasticware/:id" },
 ];
 
 export default productDropdown;

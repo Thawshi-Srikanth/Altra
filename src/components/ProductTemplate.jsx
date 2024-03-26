@@ -49,18 +49,20 @@ setIndex(data.index)
 
       <div className="bg-[#FF8A3A]  md:mb-[-80px] mb-[0px]">
         {/* {id == 1 && <ClientLogos>{<EquipmentClients />}</ClientLogos>} */}
-        <div className="sm:flex justify-evenly grid grid-cols-2">
+        <div className="flex justify-evenly ">
           {clients.map((client) => (
             <Link
               to={`/productCatelgoue/${MainNextpath}`}
               className="flex "
               key={client.id}
-              onClick={()=>forwardArrayIndex(client)}
+              onClick={() => forwardArrayIndex(client)}
             >
-              <img
-                src={client.client}
-                className={`${client.id==3?" relative left-[115px] top-[90px] sm:top-0 sm:left-0 ":""}transition duration-500 hover:scale-125  mx-auto justify-center items-center relative lg:top-20 sm:top-[50px] top-[60px] lg:w-[342px] lg:h-[171px] md:w-[250px] md:h-[108px] sm:w-[200px] sm:h-[104px] w-[178px] h-[89px]`}
-              />
+             
+                <img
+                  src={client.client}
+                  className="transition duration-500 hover:scale-125  mx-auto justify-center items-center relative lg:top-20 sm:top-[50px] top-[60px] lg:w-[342px] lg:h-[171px] md:w-[250px] md:h-[108px] sm:w-[200px] sm:h-[104px] w-[178px] h-[89px]"
+                />
+              
             </Link>
           ))}
           {/* {imgFour? (
