@@ -8,6 +8,12 @@ import ChemLAbCatelogue from "../pages/Chemicals&Standards/ChemLAbCatelogue";
 import MegazymeCatelogue from "./../pages/Chemicals&Standards/MegazymeCatelogue";
 import { plasticwareCatelogue } from './../assets/data/catelogue/plasticwareCatelogue';
 import PlasticwareCatelogueImages from './../pages/Plasticware/PlasticwareCatelogueImages';
+import JohnsonCatelogue from './../pages/Consumables/JohnsonCatelogue';
+import WaterCatelogue from './../pages/Consumables/WaterCatelogue';
+import Geyer from './../pages/Consumables/GeyerCatelogue';
+import GeyerCatelogue from "./../pages/Consumables/GeyerCatelogue";
+import Lactosan from './../pages/Consumables/LactosanCatelogue';
+import LactosanCatelogue from "./../pages/Consumables/LactosanCatelogue";
 
 function CatelogueCommon({ catelogue, id }) {
   const { actualClient } = userStateContext();
@@ -49,6 +55,34 @@ function CatelogueCommon({ catelogue, id }) {
           <MegazymeCatelogue catelogue={catelogue} />
         </div>
       )}
+
+
+
+      {/* consumables */}
+      {actualClient == "johnson" && id === "consumables" && (
+        <div className="">
+          <JohnsonCatelogue catelogue={catelogue} />
+        </div>
+      )}
+      {actualClient == "water" && id === "consumables" && (
+        <div className="">
+          <WaterCatelogue catelogue={catelogue} />
+        </div>
+      )}
+      {actualClient == "geyer" && id === "consumables" && (
+        <div className="">
+          <GeyerCatelogue catelogue={catelogue} />
+        </div>
+      )}
+      {actualClient == "lactos" && id === "consumables" && (
+        <div className="">
+          <LactosanCatelogue catelogue={catelogue} />
+        </div>
+      )}
+
+
+
+{/* plasticware */}
       {id === "plasticware" && (
         <div className="">
           <PlasticwareCatelogueImages catelogue={catelogue} />

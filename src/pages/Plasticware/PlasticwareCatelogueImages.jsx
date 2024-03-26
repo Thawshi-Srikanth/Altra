@@ -13,7 +13,7 @@ function PlasticwareCatelogueImages({ catelogue }) {
     setPopupId(id);
   };
   return (
-    <div className="z-50 overflow-hidden xl:space-y-[0px] lg:space-y-[40px] space-y-[20px] md:space-y-[30px] sm:space-y-[30px] relative xl:top-[30px] lg:top-[30px] sm:top-[20px] sm:mb-[170px] md:mb-0">
+    <div className=" overflow-hidden xl:space-y-[0px] lg:space-y-[40px] space-y-[20px] md:space-y-[30px] sm:space-y-[30px] relative xl:top-[30px] lg:top-[30px] sm:top-[20px] sm:mb-[170px] md:mb-0">
       {imagepopUp ? (
         <div className="overflow-hidden">
           <ImagePopup

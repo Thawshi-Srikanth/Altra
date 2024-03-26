@@ -7,7 +7,7 @@ import CatelogueCommon from "./CatelogueCommon";
 
 function ProductCataloguetemplate() {
    
-   const { furnitureCatelogue, glasswareCatelogue, chemicalsCatelogue, index,plasticwareCatelogue } =userStateContext();
+   const { furnitureCatelogue, glasswareCatelogue, chemicalsCatelogue, index,plasticwareCatelogue,consumablesCatelogue } =userStateContext();
 
 
 
@@ -50,6 +50,9 @@ function ProductCataloguetemplate() {
   }
   else if (id === "plasticware") {
     selectedValue = plasticwareCatelogue;
+  }
+  else if (id === "consumables") {
+    selectedValue = consumablesCatelogue;
   }
   const items = selectedValue && destructuring(selectedValue);
 
