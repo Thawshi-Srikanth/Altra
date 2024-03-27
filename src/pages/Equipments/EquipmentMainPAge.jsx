@@ -1,26 +1,26 @@
 import React, { useEffect } from "react";
-import ProductTemplate from "../../components/ProductTemplate";
 import { useParams } from "react-router-dom";
-import equipmentbg from "../../assets/images/products/cateogories/equipments/EquipmentSeparate/bg/equipmentbg.png";
-import equipmentDetail from "../../assets/images/products/cateogories/equipments/EquipmentSeparate/detail/equipmentDetail.png";
-import equipmentbgMob from "../../assets/images/products/cateogories/equipments/EquipmentSeparate/bg/equipmentbgMob.png";
-import equipmentDetailMob from "../../assets/images/products/cateogories/equipments/EquipmentSeparate/detail/equipmentDetailMob.png";
+import equipmentProductTemplate from "../../assets/data/catelogue/equipmentProductTemplate";
+import ProductTemplate from "../../components/ProductTemplate";
 
-function EquipmentMainPAge() {
+export default function FurnitureMainPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   const { id } = useParams();
+
   return (
     <div>
-      <ProductTemplate
-        id={id}
-        imgOne={equipmentbg}
-        imgTwo={equipmentDetail}
-     
-      />
+      {" "}
+      {equipmentProductTemplate.map((item) => (
+        <ProductTemplate
+          key={item.id}
+          imgOne={item.imgOne}
+          clients={item.clients}
+          MainNextpath="equipment"
+          description="Our portfolio includes innovative thermometers, centrifuges, and mercury-free measuring tools, alongside advanced devices for pH, ORP, conductivity, and TDS analysis. We offer high-tech laboratory equipment like field meters, electrophoresis supplies, conductometers, microscopes, and solutions for microbiology, water testing, and environmental analysis, catering to the needs of chemical, pharmaceutical, and medical sectors with a focus on quality and sustainability.."
+        />
+      ))}
     </div>
   );
 }
-
-export default EquipmentMainPAge;

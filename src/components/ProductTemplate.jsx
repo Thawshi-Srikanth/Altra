@@ -48,39 +48,20 @@ setIndex(data.index)
       </div>
 
       <div className="bg-[#FF8A3A]  md:mb-[-80px] mb-[0px]">
-        {/* {id == 1 && <ClientLogos>{<EquipmentClients />}</ClientLogos>} */}
-        <div className="flex justify-evenly ">
+        <div className={`flex justify-evenly ${MainNextpath==="equipment"&&"xl:grid xl:grid-cols-4 "} `}>
           {clients.map((client) => (
             <Link
               to={`/productCatelgoue/${MainNextpath}`}
-              className="flex "
+              className={"flex "}
               key={client.id}
               onClick={() => forwardArrayIndex(client)}
             >
-             
-                <img
-                  src={client.client}
-                  className="transition duration-500 hover:scale-125  mx-auto justify-center items-center relative lg:top-20 sm:top-[50px] top-[60px] lg:w-[342px] lg:h-[171px] md:w-[250px] md:h-[108px] sm:w-[200px] sm:h-[104px] w-[178px] h-[89px]"
-                />
-              
+              <img
+                src={client.client}
+                className={`transition duration-500 hover:scale-125  mx-auto justify-center items-center relative lg:top-20 sm:top-[50px] top-[60px] lg:w-[342px] lg:h-[171px] md:w-[250px] md:h-[108px] sm:w-[200px] sm:h-[104px] w-[178px] h-[89px]`}
+              />
             </Link>
           ))}
-          {/* {imgFour? (
-            <Link>
-              <img
-                src={imgFour}
-                className="transition duration-500 hover:scale-125  mx-auto justify-center items-center relative lg:top-20 sm:top-[50px] top-[60px] lg:w-[450px] lg:h-[188px] md:w-[250px] md:h-[108px] sm:w-[200px] sm:h-[104px] w-[178px] h-[89px]"
-              />
-            </Link>
-          ):""}
-          {imgThree ? (
-            <Link>
-              <img
-                src={imgFive}
-                className="transition duration-500 hover:scale-125  mx-auto justify-center items-center relative lg:top-20 sm:top-[50px] top-[60px] lg:w-[450px] lg:h-[188px] md:w-[250px] md:h-[108px] sm:w-[200px] sm:h-[104px] w-[178px] h-[89px]"
-              />
-            </Link>
-          ):""} */}
         </div>
 
         <div className="sm:hidden bg-[#FF8A3A] h-[150px]"></div>
