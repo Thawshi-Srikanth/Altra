@@ -10,12 +10,12 @@ function ProductCataloguetemplate() {
    
    const { furnitureCatelogue, glasswareCatelogue, chemicalsCatelogue, index,plasticwareCatelogue,consumablesCatelogue,equipmentCatelogue } =userStateContext();
 
-console.log(equipmentCatelogue)
+
 
 
   const { id } = useParams();
 
- console.log(id);
+
 
   const destructuring = (data) =>
 

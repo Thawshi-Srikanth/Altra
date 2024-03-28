@@ -16,13 +16,14 @@ import Lactosan from "./../pages/Consumables/LactosanCatelogue";
 import LactosanCatelogue from "./../pages/Consumables/LactosanCatelogue";
 import { equipmentCatelogue } from "./../assets/data/catelogue/equipmentCatelogue";
 import FranceCatelogue from "../pages/Equipments/FranceCatelogue";
+import AperaCatelogue from "../pages/Equipments/AperaCatelogue";
+import OrtoCatelogue from "../pages/Equipments/OrtoCatelogue";
+import EuroMexCatelogue from "../pages/Equipments/EuroMexCatelogue";
 
 
 function CatelogueCommon({ catelogue, id }) {
   const { actualClient } = userStateContext();
-  console.log(actualClient);
-
-  console.log(catelogue);
+console.log(actualClient)
   //   const filteredCatelogue = catelogue.filter((item) => {
   // console.log(item.catelogueName);
   //    return item.catelogueName === actualClient;
@@ -65,6 +66,21 @@ function CatelogueCommon({ catelogue, id }) {
       {actualClient == "france" && id === "equipment" && (
         <div className="">
           <FranceCatelogue catelogue={catelogue} />
+        </div>
+      )}
+      {actualClient == "apera" && id === "equipment" && (
+        <div className="">
+          <AperaCatelogue catelogue={catelogue} />
+        </div>
+      )}
+      {actualClient == "orto" && id === "equipment" && (
+        <div className="">
+          <OrtoCatelogue catelogue={catelogue} />
+        </div>
+      )}
+      {actualClient == "euromax" && id === "equipment" && (
+        <div className="">
+          <EuroMexCatelogue catelogue={catelogue} />
         </div>
       )}
 

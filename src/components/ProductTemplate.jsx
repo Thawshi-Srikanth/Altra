@@ -1,10 +1,8 @@
 import React from "react";
-import MemoRizedClientele from "../pages/Clientele";
-import ClientLogos from "./ClientLogos";
-import EquipmentClients from "../pages/Equipments/EquipmentClients";
-import MemoRizedClientele2 from "../pages/ClienteleSm";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { userStateContext } from "../contexts/ContextProvider";
+import MemoRizedClientele from "../pages/Clientele";
+import MemoRizedClientele2 from "../pages/ClienteleSm";
 
 function ProductTemplate({
  
@@ -23,9 +21,9 @@ function ProductTemplate({
 
 
   const { setActualClient,setIndex ,actualClient} = userStateContext();
-console.log(actualClient);
+
 const forwardArrayIndex=(data)=>{
- 
+ console.log(actualClient);
 setActualClient(data.nextpath);
 setIndex(data.index)
 }
