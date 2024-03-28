@@ -1,23 +1,21 @@
 import React from "react";
-import Header from "./components/Header";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "./Home";
-import Products from "./pages/Products";
-import Services from "./pages/Services";
-import AboutUs from "./pages/AboutUs";
-import Research from "./pages/Research";
-import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
-import NotFoundPage from "./pages/NotFoundPage";
-import Equipment from "./pages/ProductsSubPages/Equipment";
-import EquipmentMainPAge from "./pages/Equipments/EquipmentMainPAge";
-import France from "./pages/Equipments/Comapnies/France";
-import FurnitureMainPage from "./pages/Furniture/FurnitureMainPage";
+import Header from "./components/Header";
 import ProductCataloguetemplate from "./components/ProductCataloguetemplate";
-import GlasswareMainPage from "./pages/Glassware/GlasswareMainPage";
+import AboutUs from "./pages/AboutUs";
 import ChemicalasMainPage from "./pages/Chemicals&Standards/ChemicalasMainPage";
-import PlasticwareMainPage from "./pages/Plasticware/PlasticwareMainPage";
 import ConsumablesMainPage from "./pages/Consumables/ConsumablesMainPage";
+import Contact from "./pages/Contact";
+import EquipmentMainPAge from "./pages/Equipments/EquipmentMainPAge";
+import FurnitureMainPage from "./pages/Furniture/FurnitureMainPage";
+import GlasswareMainPage from "./pages/Glassware/GlasswareMainPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import PlasticwareMainPage from "./pages/Plasticware/PlasticwareMainPage";
+import Products from "./pages/Products";
+import Research from "./pages/Research";
+import Services from "./pages/Services";
 
 export default function App() {
   return (
@@ -48,7 +46,7 @@ export default function App() {
           element={<ConsumablesMainPage />}
         ></Route>
 
-        <Route path="/france" element={<France />}></Route>
+        
         <Route
           path="/productCatelgoue/:id"
           element={<ProductCataloguetemplate />}

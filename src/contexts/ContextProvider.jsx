@@ -15,6 +15,7 @@ const StateContext = createContext({
   plasticwareCatelogue: plasticwareCatelogue,
   actualClient: "",
   consumablesCatelogue: consumablesCatelogue,
+  equipmentCatelogue: equipmentCatelogue,
   setActualClient: () => {},
 });
 
@@ -24,6 +25,7 @@ import glasswareCatelogue from "../assets/data/catelogue/glasswareCatelogue";
 import chemicalsCatelogue from "../assets/data/catelogue/chemicalsCatelogue";
 import { plasticwareCatelogue } from "./../assets/data/catelogue/plasticwareCatelogue";
 import { consumablesCatelogue } from "./../assets/data/catelogue/consumablesCatelogue";
+import { equipmentCatelogue } from './../assets/data/catelogue/equipmentCatelogue';
 export const ContextProvider = ({ children }) => {
   const [zindex, setzIndex] = useState();
   const [clickToggle, setClickToggle] = useState(false);
@@ -59,6 +61,7 @@ export const ContextProvider = ({ children }) => {
         setIndex,
         plasticwareCatelogue,
         consumablesCatelogue,
+        equipmentCatelogue
       }}
     >
       {children}

@@ -14,6 +14,7 @@ import consort from "../../images/Brands/brand11.png";
 import witeg from "../../images/Brands/brand6.png";
 import jp from "../../images/Brands/brand7.png";
 import interscience from "../../images/Brands/brand8.png";
+
 export const equipmentProductTemplate = [
   {
     id: 1,

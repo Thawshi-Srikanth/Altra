@@ -4,13 +4,13 @@ import { furnitureCatelogue } from "./../assets/data/catelogue/furnitureCatelogu
 import { userStateContext } from "../contexts/ContextProvider";
 import ImageCommonBg from "./ImageCommonBg";
 import CatelogueCommon from "./CatelogueCommon";
+import { CloudCog } from "lucide-react";
 
 function ProductCataloguetemplate() {
    
-   const { furnitureCatelogue, glasswareCatelogue, chemicalsCatelogue, index,plasticwareCatelogue,consumablesCatelogue } =userStateContext();
+   const { furnitureCatelogue, glasswareCatelogue, chemicalsCatelogue, index,plasticwareCatelogue,consumablesCatelogue,equipmentCatelogue } =userStateContext();
 
-
-
+console.log(equipmentCatelogue)
 
 
   const { id } = useParams();
@@ -54,7 +54,11 @@ function ProductCataloguetemplate() {
   else if (id === "consumables") {
     selectedValue = consumablesCatelogue;
   }
+  else if (id === "equipment") {
+    selectedValue = equipmentCatelogue;
+  }
   const items = selectedValue && destructuring(selectedValue);
+console.log(items);
 
   return (
     <div>

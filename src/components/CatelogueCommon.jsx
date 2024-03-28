@@ -6,17 +6,21 @@ import { userStateContext } from "../contexts/ContextProvider";
 import chemLAbCatelogue from "../pages/Chemicals&Standards/ChemLAbCatelogue";
 import ChemLAbCatelogue from "../pages/Chemicals&Standards/ChemLAbCatelogue";
 import MegazymeCatelogue from "./../pages/Chemicals&Standards/MegazymeCatelogue";
-import { plasticwareCatelogue } from './../assets/data/catelogue/plasticwareCatelogue';
-import PlasticwareCatelogueImages from './../pages/Plasticware/PlasticwareCatelogueImages';
-import JohnsonCatelogue from './../pages/Consumables/JohnsonCatelogue';
-import WaterCatelogue from './../pages/Consumables/WaterCatelogue';
-import Geyer from './../pages/Consumables/GeyerCatelogue';
+import { plasticwareCatelogue } from "./../assets/data/catelogue/plasticwareCatelogue";
+import PlasticwareCatelogueImages from "./../pages/Plasticware/PlasticwareCatelogueImages";
+import JohnsonCatelogue from "./../pages/Consumables/JohnsonCatelogue";
+import WaterCatelogue from "./../pages/Consumables/WaterCatelogue";
+import Geyer from "./../pages/Consumables/GeyerCatelogue";
 import GeyerCatelogue from "./../pages/Consumables/GeyerCatelogue";
-import Lactosan from './../pages/Consumables/LactosanCatelogue';
+import Lactosan from "./../pages/Consumables/LactosanCatelogue";
 import LactosanCatelogue from "./../pages/Consumables/LactosanCatelogue";
+import { equipmentCatelogue } from "./../assets/data/catelogue/equipmentCatelogue";
+import FranceCatelogue from "../pages/Equipments/FranceCatelogue";
+
 
 function CatelogueCommon({ catelogue, id }) {
   const { actualClient } = userStateContext();
+  console.log(actualClient);
 
   console.log(catelogue);
   //   const filteredCatelogue = catelogue.filter((item) => {
@@ -56,7 +60,13 @@ function CatelogueCommon({ catelogue, id }) {
         </div>
       )}
 
+      {/* equipment */}
 
+      {actualClient == "france" && id === "equipment" && (
+        <div className="">
+          <FranceCatelogue catelogue={catelogue} />
+        </div>
+      )}
 
       {/* consumables */}
       {actualClient == "johnson" && id === "consumables" && (
@@ -80,9 +90,7 @@ function CatelogueCommon({ catelogue, id }) {
         </div>
       )}
 
-
-
-{/* plasticware */}
+      {/* plasticware */}
       {id === "plasticware" && (
         <div className="">
           <PlasticwareCatelogueImages catelogue={catelogue} />

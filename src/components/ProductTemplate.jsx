@@ -48,7 +48,7 @@ setIndex(data.index)
       </div>
 
       <div className="bg-[#FF8A3A]  md:mb-[-80px] mb-[0px]">
-        <div className={`flex justify-evenly ${MainNextpath==="equipment"&&"xl:grid xl:grid-cols-4 "} `}>
+        <div className={`flex justify-evenly `}>
           {clients.map((client) => (
             <Link
               to={`/productCatelgoue/${MainNextpath}`}
