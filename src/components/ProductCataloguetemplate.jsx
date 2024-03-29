@@ -18,20 +18,16 @@ function ProductCataloguetemplate() {
 
 
   const destructuring = (data) =>
-
     data.map((item) => ({
       bgImage: (
         <div key={item.id}>
-          <ImageCommonBg
-            img={item && item.bgImage }
-            id={id}
-            text={item.text}
-          />
+          <ImageCommonBg img={item && item.bgImage} id={id} text={item.text} />
         </div>
       ),
       catelogue: (
         <CatelogueCommon
           catelogue={item && item.catelogue[index].catlogueImages}
+          catelogueHorizontal={item && item.catelogue[index].horizontal}
           id={id}
         />
       ),

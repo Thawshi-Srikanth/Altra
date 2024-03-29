@@ -138,6 +138,65 @@ import B27 from "../../images/products/cateogories/equipmentOne/catelogueImages/
 import B30 from "../../images/products/cateogories/equipmentOne/catelogueImages/euromax/stereo blue.png";
 import B31 from "../../images/products/cateogories/equipmentOne/catelogueImages/euromax/z series.png";
 
+
+
+
+
+
+import C10 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/vertical/3.png'
+import C11 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/vertical/8.png'
+import C12 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/vertical/10.png' 
+import C13 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/vertical/17.png' 
+import C14 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/vertical/21.png' 
+import C15 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/vertical/25.png' 
+import C16 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/vertical/26.png' 
+import C17 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/vertical/27.png' 
+import C18 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/vertical/32.png' 
+import C19 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/vertical/34.png' 
+import C20 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/vertical/35.png' 
+import C21 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/vertical/37.png' 
+import C22 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/vertical/38.png' 
+import C23 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/vertical/39.png'
+
+
+
+
+
+import C24 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/1.png'
+import C25 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/2.png'
+import C26 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/4.png'
+import C27 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/5.png'
+import C28 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/6.png'
+import C29 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/7.png'
+import C30 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/9.png'
+import C31 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/11.png' 
+import C32 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/12.png' 
+import C33 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/13.png' 
+import C34 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/14.png' 
+import C35 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/15.png' 
+import C36 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/16.png' 
+import C37 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/18.png' 
+import C38 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/19.png' 
+import C39 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/20.png' 
+import C40 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/22.png' 
+import C41 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/23.png' 
+import C42 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/24.png' 
+import C43 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/28.png' 
+import C44 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/29.png' 
+import C45 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/30.png' 
+import C46 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/31.png' 
+import C47 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/33.png' 
+import C48 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/36.png' 
+import C49 from '../../images/products/cateogories/equipmentOne/catelogueImages/camlab/horizontal/40.png'
+
+
+
+
+
+
+
+
+
 export const equipmentCatelogue = [
   {
     id: "equipment",
@@ -386,7 +445,7 @@ export const equipmentCatelogue = [
           // { id: 14, Catlogueimage: B14, alt: "	HD	" },
           // { id: 15, Catlogueimage: B15, alt: "	hd	" },
           // { id: 16, Catlogueimage: B16, alt: "	hd	" },
-         
+
           { id: 18, Catlogueimage: B18, alt: "	iscope	" },
           { id: 19, Catlogueimage: B19, alt: "	iscope.png	" },
           // { id: 20, Catlogueimage: B20, alt: "	macrozoom.png	" },
@@ -401,6 +460,54 @@ export const equipmentCatelogue = [
           // { id: 29, Catlogueimage: B29, alt: "	sing	" },
           { id: 30, Catlogueimage: B30, alt: "	stereo	" },
           { id: 31, Catlogueimage: B31, alt: "	z	" },
+        ],
+      },
+      {
+        catelogueName: "camlab",
+        index: 4,
+        catlogueImages: [
+          { id: 1, Catlogueimage: C10, alt: "		" },
+          { id: 2, Catlogueimage: C11, alt: "		" },
+          { id: 3, Catlogueimage: C12, alt: "		" },
+          { id: 4, Catlogueimage: C13, alt: "		" },
+          { id: 14, Catlogueimage: C14, alt: "		" },
+          { id: 5, Catlogueimage: C15, alt: "		" },
+          { id: 6, Catlogueimage: C16, alt: "		" },
+          { id: 7, Catlogueimage: C17, alt: "		" },
+          { id: 8, Catlogueimage: C18, alt: "		" },
+          { id: 9, Catlogueimage: C19, alt: "		" },
+          { id: 10, Catlogueimage: C20, alt: "		" },
+          { id: 11, Catlogueimage: C21, alt: "		" },
+          { id: 12, Catlogueimage: C22, alt: "		" },
+          { id: 13, Catlogueimage: C23, alt: "		" },
+        ],
+        horizontal: [
+          { id: 14, Catlogueimage: C24, alt: "		" },
+          { id: 15, Catlogueimage: C25, alt: "		" },
+          { id: 16, Catlogueimage: C26, alt: "		" },
+          { id: 17, Catlogueimage: C27, alt: "		" },
+          { id: 18, Catlogueimage: C28, alt: "		" },
+          { id: 19, Catlogueimage: C29, alt: "		" },
+          { id: 20, Catlogueimage: C30, alt: "		" },
+          { id: 21, Catlogueimage: C31, alt: "		" },
+          { id: 22, Catlogueimage: C32, alt: "		" },
+          { id: 23, Catlogueimage: C33, alt: "		" },
+          { id: 24, Catlogueimage: C34, alt: "		" },
+          { id: 25, Catlogueimage: C35, alt: "		" },
+          { id: 26, Catlogueimage: C36, alt: "		" },
+          { id: 27, Catlogueimage: C37, alt: "		" },
+          { id: 28, Catlogueimage: C38, alt: "		" },
+          { id: 29, Catlogueimage: C39, alt: "		" },
+          { id: 30, Catlogueimage: C40, alt: "		" },
+          { id: 31, Catlogueimage: C41, alt: "		" },
+          { id: 32, Catlogueimage: C42, alt: "		" },
+          { id: 33, Catlogueimage: C43, alt: "		" },
+          { id: 34, Catlogueimage: C44, alt: "		" },
+          { id: 35, Catlogueimage: C45, alt: "		" },
+          { id: 36, Catlogueimage: C46, alt: "		" },
+          { id: 37, Catlogueimage: C47, alt: "		" },
+          { id: 38, Catlogueimage: C48, alt: "		" },
+          { id: 39, Catlogueimage: C49, alt: "		" },
         ],
       },
     ],

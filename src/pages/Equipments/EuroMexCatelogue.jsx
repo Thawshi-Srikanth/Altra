@@ -26,7 +26,7 @@ function EuroMexCatelogue({ catelogue }) {
       ) : (
         ""
       )}
-      <div className=" grid grid-cols-5 xl:gap-x-[0px] lg:gap-x-[10px] sm:gap-x-[30px] md:gap-x-[20px]  gap-x-[10px] justify-center  xl:mx-[200px] md:mx-[100px]  sm:mx-[90px]  mx-[15px] lg:mx-[90px]  xl:space-y-[60px] lg:space-y-10 space-y-5  sm:space-y-8  md:space-y-12 items-baseline">
+      <div className=" grid grid-cols-5 xl:space-x-[30px] lg:gap-x-[20px] sm:gap-x-[30px] md:gap-x-[20px]  gap-x-[10px] justify-center  xl:mx-[0px] md:mx-[70px]  sm:mx-[15px]  mx-[12px] lg:mx-[20px]  xl:space-y-[60px] lg:space-y-20 space-y-5  sm:space-y-8  md:space-y-10 items-baseline">
         {firstRow.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto "
@@ -35,13 +35,13 @@ function EuroMexCatelogue({ catelogue }) {
           >
             <img
               src={image.Catlogueimage}
-              className="  text-nowarap xl:w-[230px] xl:h-[335px] w-[118px] h-[82px] sm:h-[120px] sm:w-[140px] md:h-[140px] md:w-[190px] lg:w-[232px] lg:h-[150px] border border-blue-gray-400 rounded-lg "
+              className="  text-nowarap xl:w-[230px] xl:h-[335px]  w-[80px] h-[100px] sm:h-[90px] sm:w-[120px] md:h-[100px] md:w-[120px] lg:w-[150px] lg:h-[150px] border border-blue-gray-400 rounded-lg "
               alt="Catalogue Image"
             />
           </div>
         ))}
       </div>
-      <div className=" grid grid-cols-4 xl:gap-x-[20px] lg:gap-x-[10px] sm:gap-x-[30px] md:gap-x-[20px]  gap-x-[10px] justify-center  xl:mx-[130px] md:mx-[30px]  sm:mx-[20px]  mx-[15px] lg:mx-[0px]  xl:space-y-0 lg:space-y-10 space-y-0  sm:space-y-8  md:space-y-12 items-baseline">
+      <div className=" grid grid-cols-4 xl:gap-x-[0px] lg:gap-x-[10px] sm:gap-x-[30px] md:gap-x-[0px]  gap-x-[10px] justify-center  xl:mx-[140px] md:mx-[120px]  sm:mx-[60px]  mx-[7px] lg:mx-[90px]  xl:space-y-20 lg:space-y-10 space-y-6  sm:space-y-8  md:space-y-10 items-baseline relative xl:bottom-10 bottom-4 sm:bottom-[20px]">
         {finalRow.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto "
@@ -50,7 +50,7 @@ function EuroMexCatelogue({ catelogue }) {
           >
             <img
               src={image.Catlogueimage}
-              className="  text-nowarap xl:w-[332px] xl:h-[230px] w-[118px] h-[82px] sm:h-[120px] sm:w-[140px] md:h-[140px] md:w-[190px] lg:w-[232px] lg:h-[150px] border border-blue-gray-400 rounded-lg "
+              className="  text-nowarap xl:w-[230px] xl:h-[335px]  w-[80px] h-[100px] sm:h-[90px] sm:w-[120px] md:h-[100px] md:w-[120px] lg:w-[150px] lg:h-[150px] border border-blue-gray-400 rounded-lg "
               alt="Catalogue Image"
             />
           </div>

@@ -19,9 +19,10 @@ import FranceCatelogue from "../pages/Equipments/FranceCatelogue";
 import AperaCatelogue from "../pages/Equipments/AperaCatelogue";
 import OrtoCatelogue from "../pages/Equipments/OrtoCatelogue";
 import EuroMexCatelogue from "../pages/Equipments/EuroMexCatelogue";
+import CamlabCatelogue from "../pages/Equipments/CamlabCatelogue";
 
 
-function CatelogueCommon({ catelogue, id }) {
+function CatelogueCommon({ catelogue, id, catelogueHorizontal }) {
   const { actualClient } = userStateContext();
 console.log(actualClient)
   //   const filteredCatelogue = catelogue.filter((item) => {
@@ -81,6 +82,14 @@ console.log(actualClient)
       {actualClient == "euromax" && id === "equipment" && (
         <div className="">
           <EuroMexCatelogue catelogue={catelogue} />
+        </div>
+      )}
+      {actualClient == "camlab" && id === "equipment" && (
+        <div className="">
+          <CamlabCatelogue
+            catelogue={catelogue}
+            catelogueHorizontal={catelogueHorizontal}
+          />
         </div>
       )}
 

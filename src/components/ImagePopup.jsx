@@ -1,20 +1,30 @@
 import React, { useRef } from "react";
 import { X } from "lucide-react";
-function ImagePopup({
-  imageId,
-  catelogue,
+function ImagePopup({ imageId, catelogue, catelogueHorizontal, onClose }) {
 
-  onClose,
-}) {
-  const popUpImageGlassWare = catelogue.filter((image) => image.id === imageId);
+
+
+  const filteredCatelogue =
+    catelogue.length > 0
+      ? catelogue.filter((image) => image.id === imageId)
+      : [];
+
+  // Filter catelogueHorizontal array if it has elements
+  const filteredCatelogueHorizontal =
+    catelogueHorizontal.length > 0
+      ? catelogueHorizontal.filter((image) => image.id === imageId)
+      : [];
+
+  // Concatenate the filtered arrays
+  const popUpImageGlassWare = filteredCatelogue.concat(
+    filteredCatelogueHorizontal
+  );
 
   const popUpRef = useRef();
 
   const onCloseImage = (e) => {
-
-    if (popUpRef.current=== e.target) {
-  
-   onClose()
+    if (popUpRef.current === e.target) {
+      onClose();
     }
   };
 
