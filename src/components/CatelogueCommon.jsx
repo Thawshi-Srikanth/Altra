@@ -20,6 +20,10 @@ import AperaCatelogue from "../pages/Equipments/AperaCatelogue";
 import OrtoCatelogue from "../pages/Equipments/OrtoCatelogue";
 import EuroMexCatelogue from "../pages/Equipments/EuroMexCatelogue";
 import CamlabCatelogue from "../pages/Equipments/CamlabCatelogue";
+import GerberCatelogue from "../pages/Equipments/GerberCatelogue";
+import Jp from "../pages/Equipments/Jp";
+import Consort from "../pages/Equipments/Consort";
+import InterScience from "../pages/Equipments/InterScience";
 
 
 function CatelogueCommon({ catelogue, id, catelogueHorizontal }) {
@@ -90,6 +94,29 @@ console.log(actualClient)
             catelogue={catelogue}
             catelogueHorizontal={catelogueHorizontal}
           />
+        </div>
+      )}
+      {actualClient == "gerber" && id === "equipment" && (
+        <div className="">
+          <GerberCatelogue
+            catelogue={catelogue}
+         
+          />
+        </div>
+      )}
+      {actualClient == "jp" && id === "equipment" && (
+        <div className="">
+          <Jp catelogue={catelogue} />
+        </div>
+      )}
+      {actualClient == "consort" && id === "equipment" && (
+        <div className="">
+          <Consort catelogue={catelogue} />
+        </div>
+      )}
+      {actualClient == "interscience" && id === "equipment" && (
+        <div className="">
+          <InterScience catelogue={catelogue} />
         </div>
       )}
 

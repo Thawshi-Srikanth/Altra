@@ -11,7 +11,7 @@ function ImagePopup({ imageId, catelogue, catelogueHorizontal, onClose }) {
 
   // Filter catelogueHorizontal array if it has elements
   const filteredCatelogueHorizontal =
-    catelogueHorizontal.length > 0
+    catelogueHorizontal&&catelogueHorizontal.length > 0
       ? catelogueHorizontal.filter((image) => image.id === imageId)
       : [];
 
