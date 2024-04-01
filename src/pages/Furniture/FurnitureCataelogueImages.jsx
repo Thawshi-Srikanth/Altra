@@ -1,22 +1,18 @@
 import React, { useState } from "react";
 import ImagePopup from "../../components/ImagePopup";
 
-function FurnitureCataelogueImages({ catelogue }) {
-
-
-
+function FurnitureCataelogueImages({ catelogue, copyright }) {
   const [imagepopUp, setImagePopup] = useState(false);
-   const [popupId, setPopupId] = useState(null);
-const firstRow = catelogue.slice(0, 5);
+  const [popupId, setPopupId] = useState(null);
+  const firstRow = catelogue.slice(0, 5);
 
-const secondRow=catelogue.slice(5,9)
-const thirdRow=catelogue.slice(9,11)
-const mobileview=catelogue.slice(0,9)
-
+  const secondRow = catelogue.slice(5, 9);
+  const thirdRow = catelogue.slice(9, 11);
+  const mobileview = catelogue.slice(0, 9);
 
   const handleClick = (id) => {
     setImagePopup(!imagepopUp);
-  setPopupId(id);
+    setPopupId(id);
   };
   return (
     <div className="xl:space-y-[40px] lg:space-y-[40px] md:space-y-[30px] sm:space-y-[10px] relative xl:top-[30px] lg:top-[30px] sm:top-[20px] sm:mb-[170px] md:mb-0 ">
@@ -91,7 +87,7 @@ const mobileview=catelogue.slice(0,9)
         ))}
       </div>
       <p className="text-[14px] text-center font-rosario xl:text-[15px] text-[#666] mb-5 sm:mb-0">
-        Copyrights- Catalog Method Fume Hood
+        {copyright}
       </p>
     </div>
   );

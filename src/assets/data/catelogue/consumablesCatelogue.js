@@ -109,6 +109,8 @@ export const consumablesCatelogue = [
       {
         catelogueName: "johnson",
         index: 0,
+        copyright: "Copyrights- https://www.johnsontestpapers.com/",
+        text: "Established in 1938, Johnson Test Papers is a leading manufacturer of rapid tests trusted for their speed and accuracy. Our comprehensive range of products, spanning pH testing, water analysis, and food parameter measurements, serves diverse sectors including education, research, healthcare, and specialized industries. With over 70 years of experience, our brand is synonymous with quality and reliability, reaching over 45 countries worldwide. Experience the satisfaction of fast, dependable testing solutions with Johnson Test Papers.",
         catlogueImages: [
           { id: 1, Catlogueimage: A, alt: "" },
           { id: 2, Catlogueimage: B, alt: "" },
@@ -130,6 +132,8 @@ export const consumablesCatelogue = [
       {
         catelogueName: "water",
         index: 1,
+        copyright: "Copyrights-https://water-id.com/",
+        text: "Water-i.d., founded in 2003, has been a pioneer in pool testing innovation. Starting with the ap-i.d. press&break pooltester, the company introduced blistered reagent tablets, now an industry standard, and expanded its product range to include pooltesters, electronic meters, and bacteria tests. Notable achievements include the development of the PrimeLab 1.0 photometer, featuring simultaneous testing on 400 wavelengths and Bluetooth connectivity, and the launch of the FlexiTester, offering 41 parameters in one device. With over 2,900 products under the Water-i.d. brand, the company continues to lead in quality and innovation.",
         catlogueImages: [
           { id: 1, Catlogueimage: AAA, alt: "" },
           { id: 2, Catlogueimage: BBB, alt: "" },
@@ -172,6 +176,8 @@ export const consumablesCatelogue = [
       {
         catelogueName: "lactos",
         index: 2,
+        copyright: "Copyrights-https://www.milkotronic.com/",
+        text: "Established in 1997 in Nova Zagora, Bulgaria, MILKOTRONIC LTD specializes in ultrasonic-based analyzing modules, notably the LACTOSCAN milk analyzer. With CE marking and ISO 9001:2000 certification, their analyzers meet international safety and quality standards. Initially focusing on the local market, MILKOTRONIC has expanded globally, with thousands of LACTOSCAN analyzers sold worldwide through agents and distributors. LACTOSCAN provides direct and accurate measurements of milk parameters, irrespective of milk type or acidity, and can be connected to a computer for data storage and analysis.",
         catlogueImages: [
           { id: 1, Catlogueimage: AA, alt: "" },
 
@@ -194,6 +200,8 @@ export const consumablesCatelogue = [
       {
         catelogueName: "geyer",
         index: 3,
+        copyright: "Copyrights-https://www.thgeyer.com/de/",
+        text: "Th. Geyer, a German B2B trading company, specializes in Laboratory and Ingredients sectors with over 130 years of experience. Renowned for innovative procurement solutions, personalized advice, and secure supply chains, Th. Geyer maintains certified processes and emphasizes sustainability in its operations.",
         catlogueImages: [
           { id: 1, Catlogueimage: A1, alt: "" },
 
@@ -220,8 +228,6 @@ export const consumablesCatelogue = [
           { id: 17, Catlogueimage: A17, alt: "" },
           { id: 18, Catlogueimage: A18, alt: "" },
 
-
-
           { id: 19, Catlogueimage: A19, alt: "" },
           { id: 20, Catlogueimage: A20, alt: "" },
 
@@ -231,7 +237,6 @@ export const consumablesCatelogue = [
           { id: 23, Catlogueimage: A23, alt: "" },
           { id: 24, Catlogueimage: A22, alt: "" },
           { id: 25, Catlogueimage: A21, alt: "" },
-     
         ],
       },
     ],

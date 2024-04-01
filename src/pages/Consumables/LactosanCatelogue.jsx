@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import ImagePopup from "../../components/ImagePopup";
 
-function LactosanCatelogue({ catelogue }) {
+function LactosanCatelogue({ catelogue, copyright }) {
   const [imagepopUp, setImagePopup] = useState(false);
   const [popupId, setPopupId] = useState(null);
 
+  const firstRow = catelogue.slice(0, catelogue.length - 3);
 
-  const firstRow = catelogue.slice(0, catelogue.length-3);
-
-  const finalRow = catelogue.slice(catelogue.length - 3,);
+  const finalRow = catelogue.slice(catelogue.length - 3);
 
   const handleClick = (id) => {
     setImagePopup(!imagepopUp);
@@ -43,7 +42,7 @@ function LactosanCatelogue({ catelogue }) {
           </div>
         ))}
       </div>
-      <div className=" md:mx-[200px] md:space-y-0 sm:top-0 relative flex xl:gap-x-[0px] lg:gap-x-[0px] sm:gap-x-[0px] md:gap-x-[0px]  gap-x-[0px] justify-center 2xl:mx-[390px]  xl:mx-[250px]  xl:space-y-10 items-baseline lg:mx-[200px] sm:mx-[130px] mx-[90px]">
+      <div className=" md:mx-[200px] md:space-y-0 sm:top-0 relative flex xl:gap-x-[0px] lg:gap-x-[0px] sm:gap-x-[0px] md:gap-x-[0px]  gap-x-[0px] justify-center 2xl:mx-[390px]  xl:mx-[250px]  xl:space-y-10 items-baseline lg:mx-[200px] sm:mx-[130px] mx-[60px]">
         {finalRow.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto"
@@ -59,7 +58,7 @@ function LactosanCatelogue({ catelogue }) {
         ))}
       </div>
       <p className="text-[10px] text-center font-rosario xl:text-[15px] text-[#666] mb-3 sm:mb-0 pb-8 sm:pb-5  relative top-4 xl:top-9 ">
-        Copyrights-https://www.chem-lab.be/en-gb
+        {copyright}
       </p>
     </div>
   );

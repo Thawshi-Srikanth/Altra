@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import ImagePopup from "../../components/ImagePopup";
 
-function GerberCatelogue({ catelogue }) {
+function GerberCatelogue({ catelogue, copyright }) {
   const [imagepopUp, setImagePopup] = useState(false);
   const [popupId, setPopupId] = useState(null);
 
-  const firstRow = catelogue.slice(0, catelogue.length );
-
+  const firstRow = catelogue.slice(0, catelogue.length);
 
   const handleClick = (id) => {
     setImagePopup(!imagepopUp);
@@ -43,7 +42,7 @@ function GerberCatelogue({ catelogue }) {
       </div>
 
       <p className=" text-[12px] text-center font-rosario lg:text-[15px] text-[#666]  relative  top-4  ">
-        Copyrights-https://www.gerber-instruments.com/en/
+        {copyright}
       </p>
     </div>
   );

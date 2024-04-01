@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ImagePopup from "./../../components/ImagePopup";
 
-function GlasswareCataelogueImages({ catelogue }) {
+function GlasswareCataelogueImages({ catelogue, copyright }) {
   const [imagepopUp, setImagePopup] = useState(false);
   const [popupId, setPopupId] = useState(null);
   const [fixed, setfixedImage] = useState(false);
@@ -182,7 +182,7 @@ function GlasswareCataelogueImages({ catelogue }) {
         ))}
       </div>
       <p className="text-[14px] text-center font-rosario xl:text-[15px] text-[#666] mb-5  md:top-4 lg:top-7 xl:mt-0 relative sm:bottom-[130px] md:bottom-0 xl:top-9">
-        Copyrights- Catalog Method Fume Hood
+        {copyright}
       </p>
     </div>
   );

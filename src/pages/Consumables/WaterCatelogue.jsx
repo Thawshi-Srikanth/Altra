@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ImagePopup from "../../components/ImagePopup";
 
-function WaterCatelogue({ catelogue }) {
+function WaterCatelogue({ catelogue, copyright }) {
   const [imagepopUp, setImagePopup] = useState(false);
   const [popupId, setPopupId] = useState(null);
 
@@ -9,7 +9,7 @@ function WaterCatelogue({ catelogue }) {
 
   const finalRow = catelogue.slice(9, 29);
 
-  const thirdRow = catelogue.slice(29,);
+  const thirdRow = catelogue.slice(29);
 
   const handleClick = (id) => {
     setImagePopup(!imagepopUp);
@@ -29,7 +29,7 @@ function WaterCatelogue({ catelogue }) {
       ) : (
         ""
       )}
-      <div className="2xl:gap-x-[0px]  2xl:mx-[220px] xl:gap-x-[0px] grid grid-cols-3  lg:gap-x-[0px] sm:gap-x-[0px] md:gap-x-[0px]  gap-x-[0px] justify-center  xl:mx-[80px] md:mx-[130px]   sm:mx-[90px]  mx-[37px] lg:mx-[100px]  xl:space-y-10 lg:space-y-10 space-y-5  sm:space-y-8  md:space-y-10 items-baseline">
+      <div className="2xl:gap-x-[0px]  2xl:mx-[220px] xl:gap-x-[0px] grid grid-cols-3  lg:gap-x-[0px] sm:gap-x-[0px] md:gap-x-[0px]  gap-x-[0px] justify-center  xl:mx-[80px] md:mx-[130px]   sm:mx-[90px]  mx-[17px] lg:mx-[100px]  xl:space-y-10 lg:space-y-10 space-y-5  sm:space-y-8  md:space-y-10 items-baseline">
         {firstRow.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto"
@@ -75,7 +75,7 @@ function WaterCatelogue({ catelogue }) {
         ))}
       </div>
       <p className="text-[10px] text-center font-rosario xl:text-[15px] text-[#666] mb-3 sm:mb-0 pb-8 sm:pb-5  relative top-4 ">
-        Copyrights-https://www.chem-lab.be/en-gb
+        {copyright}
       </p>
     </div>
   );

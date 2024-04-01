@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ImagePopup from "../../components/ImagePopup";
 
-function JohnsonCatelogue({ catelogue }) {
+function JohnsonCatelogue({ catelogue ,copyright}) {
   const [imagepopUp, setImagePopup] = useState(false);
   const [popupId, setPopupId] = useState(null);
 
@@ -60,7 +60,7 @@ function JohnsonCatelogue({ catelogue }) {
       <div className="h-[80px] md:h-[0px] relative top-12 sm:top-[60px] md:top-20 ">
         {" "}
         <p className="text-[10px] md:text-[12px] text-center font-rosario xl:text-[15px] text-[#666]  relative  ">
-          Copyrights-https://www.chem-lab.be/en-gb
+          {copyright}
         </p>
       </div>
     </div>

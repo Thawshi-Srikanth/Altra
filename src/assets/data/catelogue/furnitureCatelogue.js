@@ -16,10 +16,10 @@ export const furnitureCatelogue = [
     id: "furniture",
     bgImage: [{ id: 1, img: methodBg, title: "method" }],
 
-    text: "METHOD, established in 1990, transitioned from trading to manufacturing laboratory fittings in 1994, offering cost-effective options to the growing market. With over 30 years of experience, METHOD is a trusted supplier of laboratory fixtures in over 40 countries, prioritizing quality, affordability, and innovation. The company remains committed to providing customized solutions and ensuring workplace safety through continuous research and collaboration.",
     catelogue: [
       {
-   
+        text: "METHOD, established in 1990, transitioned from trading to manufacturing laboratory fittings in 1994, offering cost-effective options to the growing market. With over 30 years of experience, METHOD is a trusted supplier of laboratory fixtures in over 40 countries, prioritizing quality, affordability, and innovation. The company remains committed to providing customized solutions and ensuring workplace safety through continuous research and collaboration.",
+        copyright: "Copyrights- Catalog Method Fume Hood",
         catelogueName: "method",
 
         catlogueImages: [

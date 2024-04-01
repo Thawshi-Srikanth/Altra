@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import ImagePopup from "../../components/ImagePopup";
 
-function FranceCatelogue({ catelogue }) {
-  
-
+function FranceCatelogue({ catelogue, copyright }) {
   const [imagepopUp, setImagePopup] = useState(false);
   const [popupId, setPopupId] = useState(null);
 
@@ -96,7 +94,7 @@ function FranceCatelogue({ catelogue }) {
       <div className="  relative sm:bottom-[110px]    md:bottom-[100px]  lg:bottom-0 sm:h-[50px] md:h-full">
         {" "}
         <p className=" text-[12px] text-center font-rosario lg:text-[15px] text-[#666]  relative top-7 sm:top-0 mb-10 sm:mb-0   ">
-          Copyrights- https://aperainst.com/
+          {copyright}
         </p>
       </div>
     </div>

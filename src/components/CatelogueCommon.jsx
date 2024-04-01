@@ -26,43 +26,44 @@ import Consort from "../pages/Equipments/Consort";
 import InterScience from "../pages/Equipments/InterScience";
 
 
-function CatelogueCommon({ catelogue, id, catelogueHorizontal }) {
+function CatelogueCommon({ catelogue, id, catelogueHorizontal, copyright }) {
   const { actualClient } = userStateContext();
-console.log(actualClient)
+  console.log(actualClient);
   //   const filteredCatelogue = catelogue.filter((item) => {
   // console.log(item.catelogueName);
   //    return item.catelogueName === actualClient;
 
   //   });
+  console.log(copyright)
 
   return (
     <>
       {id === "furniture" && (
         <div className="">
           {" "}
-          <FurnitureCataelogueImages catelogue={catelogue} />
+          <FurnitureCataelogueImages catelogue={catelogue} copyright={copyright} />
         </div>
       )}
 
       {id === "glassware" && (
         <div className="">
           {" "}
-          <GlasswareCataelogueImages catelogue={catelogue} />
+          <GlasswareCataelogueImages catelogue={catelogue} copyright={copyright} />
         </div>
       )}
       {actualClient == "accustand" && id === "chemicatalogue" && (
         <div className="">
-          <ChemicalsAccStandCatelogue catelogue={catelogue} />
+          <ChemicalsAccStandCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
       )}
       {actualClient == "chemlab" && id === "chemicatalogue" && (
         <div className="">
-          <ChemLAbCatelogue catelogue={catelogue} />
+          <ChemLAbCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
       )}
       {actualClient == "megazyme" && id === "chemicatalogue" && (
         <div className="">
-          <MegazymeCatelogue catelogue={catelogue} />
+          <MegazymeCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
       )}
 
@@ -70,82 +71,79 @@ console.log(actualClient)
 
       {actualClient == "france" && id === "equipment" && (
         <div className="">
-          <FranceCatelogue catelogue={catelogue} />
+          <FranceCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
       )}
       {actualClient == "apera" && id === "equipment" && (
         <div className="">
-          <AperaCatelogue catelogue={catelogue} />
+          <AperaCatelogue catelogue={catelogue} copyright={copyright}  />
         </div>
       )}
       {actualClient == "orto" && id === "equipment" && (
         <div className="">
-          <OrtoCatelogue catelogue={catelogue} />
+          <OrtoCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
       )}
       {actualClient == "euromax" && id === "equipment" && (
         <div className="">
-          <EuroMexCatelogue catelogue={catelogue} />
+          <EuroMexCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
       )}
       {actualClient == "camlab" && id === "equipment" && (
         <div className="">
           <CamlabCatelogue
-            catelogue={catelogue}
+            catelogue={catelogue} copyright={copyright}
             catelogueHorizontal={catelogueHorizontal}
           />
         </div>
       )}
       {actualClient == "gerber" && id === "equipment" && (
         <div className="">
-          <GerberCatelogue
-            catelogue={catelogue}
-         
-          />
+          <GerberCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
       )}
       {actualClient == "jp" && id === "equipment" && (
         <div className="">
-          <Jp catelogue={catelogue} />
+          <Jp catelogue={catelogue} copyright={copyright} />
         </div>
       )}
       {actualClient == "consort" && id === "equipment" && (
         <div className="">
-          <Consort catelogue={catelogue} />
+          <Consort catelogue={catelogue} copyright={copyright} />
         </div>
       )}
       {actualClient == "interscience" && id === "equipment" && (
         <div className="">
-          <InterScience catelogue={catelogue} />
+          <InterScience catelogue={catelogue} copyright={copyright} />
         </div>
       )}
 
       {/* consumables */}
       {actualClient == "johnson" && id === "consumables" && (
         <div className="">
-          <JohnsonCatelogue catelogue={catelogue} />
+          <JohnsonCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
       )}
       {actualClient == "water" && id === "consumables" && (
         <div className="">
-          <WaterCatelogue catelogue={catelogue} />
+          <WaterCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
       )}
       {actualClient == "geyer" && id === "consumables" && (
         <div className="">
-          <GeyerCatelogue catelogue={catelogue} />
+          <GeyerCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
       )}
       {actualClient == "lactos" && id === "consumables" && (
         <div className="">
-          <LactosanCatelogue catelogue={catelogue} />
+          <LactosanCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
       )}
 
       {/* plasticware */}
       {id === "plasticware" && (
         <div className="">
-          <PlasticwareCatelogueImages catelogue={catelogue} />
+          <PlasticwareCatelogueImages catelogue={catelogue} copyright={copyright} />
         </div>
       )}
     </>

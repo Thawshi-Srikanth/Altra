@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import ImagePopup from "../../components/ImagePopup";
 
-function AperaCatelogue({ catelogue }) {
+function AperaCatelogue({ catelogue, copyright }) {
   const [imagepopUp, setImagePopup] = useState(false);
   const [popupId, setPopupId] = useState(null);
 
-  const firstRow = catelogue.slice(0, catelogue.length-2);
+  const firstRow = catelogue.slice(0, catelogue.length - 2);
 
-  const finalRow = catelogue.slice( catelogue.length-2,);
+  const finalRow = catelogue.slice(catelogue.length - 2);
 
   const handleClick = (id) => {
     setImagePopup(!imagepopUp);
@@ -74,7 +74,7 @@ function AperaCatelogue({ catelogue }) {
       </div>
       <div className="relative lg:top-[-200px] md:top-[-240px] sm:top-[-200px] ">
         <p className=" text-[12px] lg:text-[20px] text-center font-rosario xl:text-[15px] text-[#666] mb-0 sm:mb-0 pb-8 sm:pb-5 md:pb-0 relative top-4 xl:top-0 ">
-          Copyrights-https://www.chem-lab.be/en-gb
+          {copyright}
         </p>
       </div>
     </div>

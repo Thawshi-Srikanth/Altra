@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import ImagePopup from "../../components/ImagePopup";
 
-function EuroMexCatelogue({ catelogue }) {
+function EuroMexCatelogue({ catelogue, copyright }) {
   const [imagepopUp, setImagePopup] = useState(false);
   const [popupId, setPopupId] = useState(null);
 
-  const firstRow = catelogue.slice(0,10);
-  const finalRow = catelogue.slice(10,);
+  const firstRow = catelogue.slice(0, 10);
+  const finalRow = catelogue.slice(10);
 
   const handleClick = (id) => {
     setImagePopup(!imagepopUp);
@@ -57,7 +57,7 @@ function EuroMexCatelogue({ catelogue }) {
         ))}
       </div>
       <p className=" text-[12px] text-center font-rosario lg:text-[15px] text-[#666]  relative  top-4  ">
-        Copyrights- https://aperainst.com/
+        {copyright}
       </p>
     </div>
   );

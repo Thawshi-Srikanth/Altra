@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ImagePopup from "../../components/ImagePopup";
 
-function PlasticwareCatelogueImages({ catelogue }) {
+function PlasticwareCatelogueImages({ catelogue,copyright }) {
   const [imagepopUp, setImagePopup] = useState(false);
   const [popupId, setPopupId] = useState(null);
   const firstRow = catelogue.slice(0, 5);
@@ -76,7 +76,7 @@ function PlasticwareCatelogueImages({ catelogue }) {
         ))}
       </div>
       <p className="text-[10px] sm:text-[15px] text-center font-rosario xl:text-[15px] text-[#666] mb-3 sm:mb-0 pb-8 sm:pb-5 xl:pb-0 relative top-4 xl:top-[90px] xl:h-[120px] ">
-        Copyrights-https://www.chem-lab.be/en-gb
+        {copyright}
       </p>
     </div>
   );

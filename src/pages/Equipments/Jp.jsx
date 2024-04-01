@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ImagePopup from "../../components/ImagePopup";
 
-function Jp({ catelogue }) {
+function Jp({ catelogue, copyright }) {
   const [imagepopUp, setImagePopup] = useState(false);
   const [popupId, setPopupId] = useState(null);
 
@@ -74,7 +74,7 @@ function Jp({ catelogue }) {
         ))}
       </div>
       <p className=" text-[12px] text-center font-rosario lg:text-[15px] text-[#666]  relative  top-4  ">
-        Copyrights- https://aperainst.com/
+        {copyright}
       </p>
     </div>
   );

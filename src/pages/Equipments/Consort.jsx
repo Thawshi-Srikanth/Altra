@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ImagePopup from "../../components/ImagePopup";
 
-function Consort({ catelogue }) {
+function Consort({ catelogue,   copyright}) {
   const [imagepopUp, setImagePopup] = useState(false);
   const [popupId, setPopupId] = useState(null);
 console.log(catelogue.length)
@@ -42,7 +42,7 @@ console.log(catelogue.length)
       </div>
 
       <p className=" text-[12px] text-center font-rosario lg:text-[15px] text-[#666]  relative  top-4  ">
-        Copyrights-https://www.gerber-instruments.com/en/
+        {copyright}
       </p>
     </div>
   );

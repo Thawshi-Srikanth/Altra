@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ImagePopup from '../../components/ImagePopup';
 
-function MegazymeCatelogue({ catelogue }) {
+function MegazymeCatelogue({ catelogue,copyright }) {
   const [imagepopUp, setImagePopup] = useState(false);
   const [popupId, setPopupId] = useState(null);
 
@@ -41,9 +41,12 @@ function MegazymeCatelogue({ catelogue }) {
           </div>
         ))}
       </div>
-      <p className="text-[10px] sm:text-[15px] text-center font-rosario xl:text-[15px] text-[#666] mb-3 sm:mb-0 pb-8 sm:pb-5  relative top-4 xl:top-9 ">
-        Copyrights-https://www.chem-lab.be/en-gb
-      </p>
+      <div className=' '>
+        {" "}
+        <p className="text-[10px] sm:text-[15px] text-center font-rosario xl:text-[15px] text-[#666] mb-3 sm:mb-0 pb-8 sm:pb-5  relative top-4 xl:top-9 xl:mb-5 ">
+        {copyright}
+        </p>
+      </div>
     </div>
   );}
 

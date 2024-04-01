@@ -47,7 +47,7 @@ function ProductTemplate({
         <div
           className={`flex justify-evenly mx-auto  ${
             MainNextpath === "equipment"
-              ? "right-6 mx-[10px] sm:grid sm:grid-cols-4 grid grid-cols-2 sm:gap-x-0  sm:mx-[10px]  space-y-7 sm:space-y-5 md:space-y-14 md:right-7 xl:left-0 relative  sm:space-x-5 2xl:space-x-0 2xl:mx-[60px]   2xl:space-y-10 items-baseline justify-center"
+              ? "right- mx-[10px] sm:grid sm:grid-cols-4 grid grid-cols-2 sm:gap-x-0  sm:mx-[10px]  space-y-7 sm:space-y-5 md:space-y-14 md:right-7 xl:left-0 relative  sm:space-x-5 2xl:space-x-0 2xl:mx-[60px]   2xl:space-y-10 items-baseline justify-center"
               : ""
           } 
           
@@ -58,7 +58,7 @@ function ProductTemplate({
           }
           ${
             MainNextpath === "consumables"
-              ? "grid grid-cols-2 sm:flex  mx-5 sm:mx-auto justify-center space-y-7 sm:space-y-0  items-baseline right-6 relative sm:right-0 xl:left-1 2xl:left-0"
+              ? "grid grid-cols-2 sm:flex  mx-5 sm:mx-auto justify-center space-y-7 sm:space-y-0  items-baseline right- relative sm:right-0 xl:left-1 2xl:left-0"
               : ""
           }
           xl:relative mx-auto xl:right-5  right-3`}

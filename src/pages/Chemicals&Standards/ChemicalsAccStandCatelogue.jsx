@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ImagePopup from '../../components/ImagePopup';
 
-function ChemicalsAccStandcatelogue({ catelogue }) {
+function ChemicalsAccStandcatelogue({ catelogue,copyright }) {
   const [imagepopUp, setImagePopup] = useState(false);
   const [popupId, setPopupId] = useState(null);
 
@@ -105,7 +105,7 @@ function ChemicalsAccStandcatelogue({ catelogue }) {
         ))}
       </div>
       <p className="text-[10px] text-center font-rosario xl:text-[15px] text-[#666] mb-3 sm:mb-0 pb-3 sm:pb-0">
-        Copyrights-Master_Catalog_INO_72020 & AccuStandard_Inorganics
+        {copyright}
       </p>
     </div>
   );

@@ -327,6 +327,8 @@ export const equipmentCatelogue = [
     catelogue: [
       {
         catelogueName: "france",
+        copyright:"Copyrights- https://allafrance.com/index",
+        text: "ALLA FRANCE, formerly known as M. ALLA & Fils, ALLA & PIRLOT, and ATELIERS M. ALLA, boasts a rich history dating back to the end of the 18th century. The Galileo thermometer, based on varying weights of glass beads in water, remains a symbol of innovation. Our BIOTEMP® range, featuring mercury-free instruments, ensures safety and versatility across diverse applications. Registered and protected in Europe, the USA, and China, BIOTEMP® reflects ALLA FRANCE's commitment to quality and sustainability.",
         index: 0,
         catlogueImages: [
           {
@@ -458,7 +460,9 @@ export const equipmentCatelogue = [
       },
       {
         catelogueName: "apera",
+        copyright: "Copyrights- https://aperainst.com/",
         index: 1,
+        text: "Apera Instruments, founded in 1991, specializes in providing cutting-edge measurement solutions for pH, ORP, conductivity, TDS, and more, with products utilized in over 60 countries. Our commitment to quality is evident in our ISO 9001:2015 certified factory and CE and RoHS certified products. We prioritize customer satisfaction, continuous improvement, and sustainability. Backed by 30 years of expertise, our in-house manufacturing ensures industry-leading warranty and reliability. Our mission is to provide the best value by offering top-quality products and accessible resources for water quality testing.",
         catlogueImages: [
           { id: 1, Catlogueimage: A, alt: "	conductivity meter	" },
           { id: 2, Catlogueimage: B, alt: "	benchtop ph meter	" },
@@ -505,6 +509,8 @@ export const equipmentCatelogue = [
       {
         catelogueName: "orto",
         index: 2,
+        copyright: "Copyrights- Catalog-Orto Alresa-2019",
+        text: "Established in 1949, Ortoalresa has become a prominent centrifuge manufacturer with a 75-year legacy of excellence. Driven by innovation and sustainability, we offer tailored solutions for cutting-edge laboratories globally. Committed to integrity, agility, and continuous improvement, we adhere to international management standards and anticipate regulatory changes for user safety and environmental responsibility. Through advanced technology and global partnerships, we redefine centrifugation beyond laboratory boundaries. We prioritize personalized service and technical expertise, supporting our clients every step of the way.",
         catlogueImages: [
           { id: 1, Catlogueimage: A1, alt: "		" },
           { id: 2, Catlogueimage: A2, alt: "		" },
@@ -539,6 +545,8 @@ export const equipmentCatelogue = [
       {
         catelogueName: "euromax",
         index: 3,
+        copyright: "Copyrights- https://www.euromex.com/nl/",
+        text: "Euromex Microscopen BV, established in 1966 and headquartered in Arnhem, The Netherlands, is a leading manufacturer of microscopes and optical instruments worldwide. Euromex ensures top-notch products. Operating in over 120 countries through distributors, their clientele includes educational institutes, laboratories, and industrial sectors. Euromex Microscopen is a subsidiary of Euromex Optics Group, which encompasses subsidiaries like Physix Photonics, specializing in high-level optical components and assemblies, offering a diverse range from flat to curved optics manufactured to precise specifications.",
         catlogueImages: [
           // { id: 1, Catlogueimage: B1, alt: "	accessories.png	" },
           { id: 2, Catlogueimage: B2, alt: "	achios	" },
@@ -575,7 +583,9 @@ export const equipmentCatelogue = [
       },
       {
         catelogueName: "camlab",
+        copyright: "Copyrights-https://www.camlab.co.uk/",
         index: 4,
+        text: "Camlab, based in Cambridge, UK, boasts over 70 years of global experience in supplying water testing and laboratory equipment. Our dedicated team offers unparalleled support throughout the lifetime of your purchase, backed by extensive expertise in laboratory products and instrumentation. Specializing in water analysis, environmental chambers, life science instrumentation, and more, we prioritize customer satisfaction and aim to provide the highest levels of service. With a vast selection of over 60,000 quality products, we strive to deliver innovative solutions while actively reducing our environmental impact.",
         catlogueImages: [
           { id: 1, Catlogueimage: C10, alt: "		" },
           { id: 2, Catlogueimage: C11, alt: "		" },
@@ -623,7 +633,9 @@ export const equipmentCatelogue = [
       },
       {
         catelogueName: "gerber",
+        copyright: "Copyrights-https://www.gerber-instruments.com/en/",
         index: 5,
+        text: "Founded in 1892 by Dr. N. Gerber, Gerber Instruments AG has been a cornerstone of quality analytic solutions for over 120 years. Based in Effretikon, Switzerland, Gerber Instruments is renowned for its innovative approach to milk and dairy product analysis, as well as solutions for water, wastewater, food, feed, chemical, and pharmaceutical industries. Dr. N. Gerber's revolutionized the Swiss dairy industry and earned global acclaim for its reliability and ease of use. Today, Gerber Instruments continues to set the standard for quality determination in various industries, providing unparalleled service and reliability to customers worldwide.",
         catlogueImages: [
           { id: 1, Catlogueimage: d1, alt: "		" },
           { id: 2, Catlogueimage: d2, alt: "		" },
@@ -657,6 +669,8 @@ export const equipmentCatelogue = [
       {
         catelogueName: "consort",
         index: 6,
+        copyright: "Copyrights-Catalog Consort 2021",
+        text: "Consort, with a rich history spanning over 40 years, is renowned for developing a wide array of high-tech products ranging from field-meters to precision laboratory equipment. Consort's journey began when Luk De Ceuster responded to a need for affordable pH meters. This led to the creation of Consort's first pH meter in 1972, distinguished by its attention to detail and user-friendly design. Over the years, Consort expanded its offerings to include electrophoresis power supplies, conductometers, and computer-controlled data-loggers. With a commitment to excellence, Consort continues to innovate under the leadership of Jan De Ceuster.",
         catlogueImages: [
           { id: 1, Catlogueimage: g1, alt: "		" },
           { id: 2, Catlogueimage: g2, alt: "		" },
@@ -678,27 +692,28 @@ export const equipmentCatelogue = [
           { id: 18, Catlogueimage: g18, alt: "		" },
           { id: 19, Catlogueimage: g19, alt: "		" },
           { id: 20, Catlogueimage: g20, alt: "		" },
-       
+
           { id: 22, Catlogueimage: g22, alt: "		" },
           { id: 23, Catlogueimage: g23, alt: "		" },
           { id: 24, Catlogueimage: g24, alt: "		" },
           { id: 25, Catlogueimage: g25, alt: "		" },
           { id: 26, Catlogueimage: g26, alt: "		" },
-          {	id:	27	,Catlogueimage:	g27	,alt:"		"},
-{	id:	28	,Catlogueimage:	g28	,alt:"		"},
-{	id:	29	,Catlogueimage:	g29	,alt:"		"},
+          { id: 27, Catlogueimage: g27, alt: "		" },
+          { id: 28, Catlogueimage: g28, alt: "		" },
+          { id: 29, Catlogueimage: g29, alt: "		" },
 
-{	id:	31	,Catlogueimage:	g31	,alt:"		"},
-{	id:	32	,Catlogueimage:	g32	,alt:"		"},
-{	id:	33	,Catlogueimage:	g33	,alt:"		"},
-{	id:	34	,Catlogueimage:	g34	,alt:"		"},
-{	id:	35	,Catlogueimage:	g35	,alt:"		"},
-
+          { id: 31, Catlogueimage: g31, alt: "		" },
+          { id: 32, Catlogueimage: g32, alt: "		" },
+          { id: 33, Catlogueimage: g33, alt: "		" },
+          { id: 34, Catlogueimage: g34, alt: "		" },
+          { id: 35, Catlogueimage: g35, alt: "		" },
         ],
       },
       {
         catelogueName: "interscience",
         index: 7,
+        copyright: "Copyrights-https://www.interscience.com/en",
+        text: "With over four decades of experience, INTERSCIENCE leads in innovative microbiology equipment. Serving diverse industries including food, pharmaceuticals, cosmetics, and medical research, our products guarantee efficient and secure analyses. Since our establishment in 1979, we've prioritized excellence, global expansion, and superior service, pioneering methods like the Spiral technique for automated bacterial enumeration. Our commitment to social responsibility further solidifies our position as a premier global manufacturer in microbiology.",
         catlogueImages: [
           { id: 1, Catlogueimage: e1, alt: "		" },
           { id: 2, Catlogueimage: e2, alt: "		" },

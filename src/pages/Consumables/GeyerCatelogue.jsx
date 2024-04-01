@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import ImagePopup from "../../components/ImagePopup";
 
-function GeyerCatelogue({ catelogue }) {
+function GeyerCatelogue({ catelogue, copyright }) {
   const [imagepopUp, setImagePopup] = useState(false);
   const [popupId, setPopupId] = useState(null);
 
-  const firstRow = catelogue.slice(0, catelogue.length );
-
-
+  const firstRow = catelogue.slice(0, catelogue.length);
 
   const handleClick = (id) => {
     setImagePopup(!imagepopUp);
@@ -44,7 +42,7 @@ function GeyerCatelogue({ catelogue }) {
       </div>
 
       <p className="text-[10px] text-center font-rosario xl:text-[15px] text-[#666] mb-3 sm:mb-0 pb-8 sm:pb-5  relative top-4 xl:top-9 ">
-        Copyrights-https://www.chem-lab.be/en-gb
+        {copyright}
       </p>
     </div>
   );

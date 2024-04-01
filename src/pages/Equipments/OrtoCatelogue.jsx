@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import ImagePopup from "../../components/ImagePopup";
 
-function OrtoCatelogue({ catelogue }) {
+function OrtoCatelogue({ catelogue, copyright }) {
   const [imagepopUp, setImagePopup] = useState(false);
   const [popupId, setPopupId] = useState(null);
 
-  const firstRow = catelogue.slice(0, catelogue.length-1);
-  const finalRow = catelogue.slice( catelogue.length-1,);
+  const firstRow = catelogue.slice(0, catelogue.length - 1);
+  const finalRow = catelogue.slice(catelogue.length - 1);
 
-    const handleClick = (id) => {
-      setImagePopup(!imagepopUp);
-      setPopupId(id);
-    };
+  const handleClick = (id) => {
+    setImagePopup(!imagepopUp);
+    setPopupId(id);
+  };
   return (
     <div className="  relative xl:top-[30px] lg:top-[30px] sm:top-[20px] sm:mb-[200px] md:mb-[0px] lg:mb-[0px] xl:mb-[0px] xl:space-y-10  sm:space-y-7 md:space-y-0 space-y-5 mb-10">
       {imagepopUp ? (
@@ -57,7 +57,7 @@ function OrtoCatelogue({ catelogue }) {
         ))}
       </div>
       <p className=" text-[12px] text-center font-rosario lg:text-[15px] text-[#666]  relative  top-4  ">
-        Copyrights- https://aperainst.com/
+        {copyright}
       </p>
     </div>
   );

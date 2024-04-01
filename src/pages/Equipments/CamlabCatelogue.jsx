@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ImagePopup from "../../components/ImagePopup";
 
-function CamlabCatelogue({ catelogue, catelogueHorizontal }) {
+function CamlabCatelogue({ catelogue, catelogueHorizontal,   copyright }) {
   const [imagepopUp, setImagePopup] = useState(false);
   const [popupId, setPopupId] = useState(null);
 
@@ -181,7 +181,7 @@ function CamlabCatelogue({ catelogue, catelogueHorizontal }) {
         ))}
       </div>
       <p className=" text-[12px] text-center font-rosario lg:text-[15px] text-[#666]  relative  top-4  ">
-        Copyrights- https://aperainst.com/
+        {copyright}
       </p>
     </div>
   );

@@ -50,6 +50,9 @@ export const chemicalsCatelogue = [
       {
         catelogueName: "accustand",
         index: 0,
+        copyright:
+          "Copyrights-Master_Catalog_INO_72020  &  AccuStandard_Inorganics",
+        text: "AccuStandard, established in 1986 by Michael and Alice Bolgar, specializes in high-quality Organic, Inorganic, and Petrochemical reference materials, complying with ISO 17034:2016, ISO/IEC 17025:2017, and ISO 9001:2015 standards. With a portfolio exceeding 12,000 Reference Standards and 30,000 custom solutions, the company is recognized for its pioneering contributions and commitment to customer satisfaction. Serving customers in over 130 countries, AccuStandard is supported by a robust global distributor network and a dedicated team.",
         catlogueImages: [
           { id: 1, Catlogueimage: A, alt: "" },
           { id: 2, Catlogueimage: B, alt: "" },
@@ -69,6 +72,8 @@ export const chemicalsCatelogue = [
       {
         catelogueName: "chemlab",
         index: 1,
+        copyright: "Copyrights-https://www.chem-lab.be/en-gb",
+        text: "Chem-Lab since its inception in 1993, has excelled in producing tailor-made reagents, specializing in custom solvent mixtures, acid mixtures, buffer solutions, and organic and inorganic standards. Capable of handling orders ranging from 1ml to several tons, Chem-Lab not only meets specific manufacturing needs but also offers customized packaging solutions, accommodating sizes from 1ml to 1000l IBC containers. Operating from an ISO-certified production facility, Chem-Lab ensures the highest quality by delivering all solutions with a certificate of analysis and providing Safety Data Sheets online.",
         catlogueImages: [
           { id: 1, Catlogueimage: AA, alt: "" },
           { id: 2, Catlogueimage: BB, alt: "" },
@@ -85,6 +90,8 @@ export const chemicalsCatelogue = [
       {
         catelogueName: "megazyme",
         index: 2,
+        copyright: "Copyrights-https://www.megazyme.com/",
+        text: "Founded in 1988 and headquartered in Bray, Ireland, Megazyme specializes in developing analytical methods and producing high-purity reagents for analyzing components like starch, sugars, and enzymes. The company sets global standards in laboratory accuracy, reliability, and convenience, and is recognized as a leading provider of enzyme substrate products. Megazyme's commitment to innovation is supported by its acquisition by NEOGEN Corporation in 2021, enhancing its reach in food and animal safety.",
         catlogueImages: [
           { id: 1, Catlogueimage: AAA, alt: "" },
 

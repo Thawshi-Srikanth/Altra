@@ -21,13 +21,14 @@ function ProductCataloguetemplate() {
     data.map((item) => ({
       bgImage: (
         <div key={item.id}>
-          <ImageCommonBg img={item && item.bgImage} id={id} text={item.text} />
+          <ImageCommonBg img={item && item.bgImage} id={id} text={item && item.catelogue[index].text} />
         </div>
       ),
       catelogue: (
         <CatelogueCommon
           catelogue={item && item.catelogue[index].catlogueImages}
           catelogueHorizontal={item && item.catelogue[index].horizontal}
+          copyright={item && item.catelogue[index].copyright}
           id={id}
         />
       ),
