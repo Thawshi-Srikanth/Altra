@@ -38,7 +38,7 @@ function ImagePopup({ imageId, catelogue, catelogueHorizontal, onClose }) {
         className="h-9 overflow-y-hidden absolute md:bottom-[390px] sm:bottom-[340px] sm:left-[70px] md:left-[200px] lg:left-[320px] 2xl:left-0 lg:top-9 lg:bottom-[620px] xl:bottom-0 sm:ml-[350px] hover:scale-125 ml-[200px] top-[170px] sm:top-0  xl:ml-[490px] 2xl:ml-[960px] xl:top-[120px] cursor-pointer "
         onClick={onClose}
       >
-        <X size={30} className="overflow-y-hidden " />
+        <X size={30} className="overflow-y-hidden relative top-3 " />
       </div>
       {popUpImageGlassWare.map((image) => (
         <div

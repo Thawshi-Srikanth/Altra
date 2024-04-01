@@ -42,7 +42,7 @@ function AperaCatelogue({ catelogue }) {
           </div>
         ))}
       </div>
-      <div className="flex  xl:gap-x-[20px] lg:gap-x-[30px] sm:gap-x-[30px] md:gap-x-[0px]  gap-x-[10px] justify-center  xl:mx-[530px] md:mx-[220px]  sm:mx-[20px]  mx-[15px] lg:mx-[0px]  xl:space-y-10 lg:space-y-10 space-y-5  sm:space-y-8  md:space-y-12 items-baseline">
+      <div className="flex  xl:gap-x-[20px]  2xl:gap-x-[60px] lg:gap-x-[30px] sm:gap-x-[30px] md:gap-x-[0px]  gap-x-[10px] justify-center  2xl:mx-[0px] md:mx-[220px]  sm:mx-[20px]  mx-[15px] lg:mx-[0px]  xl:space-y-10 lg:space-y-10 space-y-5  sm:space-y-8  md:space-y-12 items-baseline">
         {finalRow.map((image) => (
           <div
             className="cursor-pointer justify-center md:mx-4 lg:mx-0 "

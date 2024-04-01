@@ -41,7 +41,7 @@ function CamlabCatelogue({ catelogue, catelogueHorizontal }) {
       ) : (
         ""
       )}
-      <div className=" grid grid-cols-3 xl:gap-x-[0px] lg:gap-x-[20px] sm:gap-x-[0px] md:gap-x-[0px]  gap-x-[10px] justify-center  xl:mx-[160px] md:mx-[100px]  sm:mx-[0px]  mx-[12px] lg:mx-[20px]  xl:space-y-[0px] lg:space-y-20 space-y-5  sm:space-y-8  md:space-y-10 items-baseline">
+      <div className=" grid grid-cols-3 xl:gap-x-[0px] lg:gap-x-[20px] sm:gap-x-[0px] md:gap-x-[0px]  gap-x-[10px] justify-center  2xl:mx-[160px] md:mx-[100px]  sm:mx-[0px]  mx-[12px] lg:mx-[20px]  xl:space-y-[0px] lg:space-y-20 space-y-5  sm:space-y-8  md:space-y-10 items-baseline">
         {horizontal1.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto "
@@ -56,7 +56,7 @@ function CamlabCatelogue({ catelogue, catelogueHorizontal }) {
           </div>
         ))}
       </div>
-      <div className=" grid grid-cols-4 xl:gap-x-[0px] lg:gap-x-[0px]  sm:gap-x-[30px] md:gap-x-[40px]  gap-x-[10px] justify-center  xl:mx-[140px] md:mx-[10px]  sm:mx-[60px]  mx-[7px] lg:mx-[10px]  xl:space-y-20 lg:space-y-10 space-y-6  sm:space-y-8  md:space-y-10 items-baseline relative xl:bottom-10 bottom-4 sm:bottom-[20px]">
+      <div className=" grid grid-cols-4 xl:gap-x-[0px] lg:gap-x-[0px]  sm:gap-x-[30px] md:gap-x-[40px]  gap-x-[10px] justify-center  2xl:mx-[140px]  xl:mx-[70px] md:mx-[10px]  sm:mx-[60px]  mx-[7px] lg:mx-[10px]  xl:space-y-20 lg:space-y-10 space-y-6  sm:space-y-8  md:space-y-10 items-baseline relative xl:bottom-10 bottom-4 sm:bottom-[20px]">
         {vertical1.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto "
@@ -87,7 +87,7 @@ function CamlabCatelogue({ catelogue, catelogueHorizontal }) {
           </div>
         ))}
       </div>
-      <div className=" grid grid-cols-4 xl:gap-x-[0px] lg:gap-x-[0px]  sm:gap-x-[30px] md:gap-x-[40px]  gap-x-[10px] justify-center  xl:mx-[140px] md:mx-[10px]  sm:mx-[60px]  mx-[7px] lg:mx-[10px]  xl:space-y-20 lg:space-y-10 space-y-6  sm:space-y-8  md:space-y-10 items-baseline relative xl:bottom-10 bottom-4 sm:bottom-[20px]">
+      <div className=" grid grid-cols-4 xl:gap-x-[0px] lg:gap-x-[0px]  sm:gap-x-[30px] md:gap-x-[40px]  gap-x-[10px] justify-center  2xl:mx-[140px]  xl:mx-[70px]  md:mx-[10px]  sm:mx-[60px]  mx-[7px] lg:mx-[10px]  xl:space-y-20 lg:space-y-10 space-y-6  sm:space-y-8  md:space-y-10 items-baseline relative xl:bottom-10 bottom-4 sm:bottom-[20px]">
         {vertical2.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto "
@@ -118,7 +118,7 @@ function CamlabCatelogue({ catelogue, catelogueHorizontal }) {
           </div>
         ))}
       </div>
-      <div className=" grid grid-cols-4 xl:gap-x-[0px] lg:gap-x-[0px]  sm:gap-x-[30px] md:gap-x-[40px]  gap-x-[10px] justify-center  xl:mx-[140px] md:mx-[10px]  sm:mx-[60px]  mx-[7px] lg:mx-[10px]  xl:space-y-20 lg:space-y-10 space-y-6  sm:space-y-8  md:space-y-10 items-baseline relative xl:bottom-10 bottom-4 sm:bottom-[20px]">
+      <div className=" grid grid-cols-4 xl:gap-x-[0px] lg:gap-x-[0px]  sm:gap-x-[30px] md:gap-x-[40px]  gap-x-[10px] justify-center  2xl:mx-[140px]  xl:mx-[70px]  md:mx-[10px]  sm:mx-[60px]  mx-[7px] lg:mx-[10px]  xl:space-y-20 lg:space-y-10 space-y-6  sm:space-y-8  md:space-y-10 items-baseline relative xl:bottom-10 bottom-4 sm:bottom-[20px]">
         {vertical3.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto "
@@ -134,7 +134,7 @@ function CamlabCatelogue({ catelogue, catelogueHorizontal }) {
         ))}
       </div>
 
-      <div className=" grid grid-cols-3 xl:gap-x-[0px] lg:gap-x-[10px] sm:gap-x-[30px] md:gap-x-[0px]  gap-x-[10px] justify-center  xl:mx-[140px] md:mx-[120px]  sm:mx-[60px]  mx-[7px] lg:mx-[90px]  xl:space-y-20 lg:space-y-10 space-y-6  sm:space-y-8  md:space-y-10 items-baseline relative xl:bottom-10 bottom-4 sm:bottom-[20px]">
+      <div className=" grid grid-cols-3 xl:gap-x-[0px] lg:gap-x-[10px] sm:gap-x-[30px] md:gap-x-[0px]  gap-x-[10px] justify-center 2xl:mx-[140px]  xl:mx-[10px] md:mx-[120px]  sm:mx-[60px]  mx-[7px] lg:mx-[90px]  xl:space-y-20 lg:space-y-10 space-y-6  sm:space-y-8  md:space-y-10 items-baseline relative xl:bottom-10 bottom-4 sm:bottom-[20px]">
         {horizontal4.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto "
@@ -149,7 +149,7 @@ function CamlabCatelogue({ catelogue, catelogueHorizontal }) {
           </div>
         ))}
       </div>
-      <div className=" grid grid-cols-2 xl:gap-x-[0px] lg:gap-x-[10px] sm:gap-x-[30px] md:gap-x-[0px]  gap-x-[10px] justify-center  xl:mx-[340px] md:mx-[230px]  sm:mx-[60px]  mx-[70px] lg:mx-[90px]  xl:space-y-20 lg:space-y-10 space-y-6  sm:space-y-8  md:space-y-10 items-baseline relative xl:bottom-10 bottom-4 sm:bottom-[20px]">
+      <div className=" grid grid-cols-2 xl:gap-x-[0px] lg:gap-x-[10px] sm:gap-x-[30px] md:gap-x-[0px]  gap-x-[10px] justify-center  2xl:mx-[340px]  xl:mx-[220px]  md:mx-[230px]  sm:mx-[60px]  mx-[70px] lg:mx-[90px]  xl:space-y-20 lg:space-y-10 space-y-6  sm:space-y-8  md:space-y-10 items-baseline relative xl:bottom-10 bottom-4 sm:bottom-[20px]">
         {horizontal5.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto "
@@ -165,7 +165,7 @@ function CamlabCatelogue({ catelogue, catelogueHorizontal }) {
         ))}
       </div>
 
-      <div className=" grid grid-cols-2 xl:gap-x-[0px] lg:gap-x-[10px] sm:gap-x-[30px] md:gap-x-[0px]  gap-x-[10px] justify-center  xl:mx-[440px] md:mx-[240px]  sm:mx-[60px]  mx-[107px] lg:mx-[90px]  xl:space-y-20 lg:space-y-10 space-y-6  sm:space-y-8  md:space-y-10 items-baseline relative xl:bottom-10 bottom-4 sm:bottom-[20px]">
+      <div className=" grid grid-cols-2 xl:gap-x-[0px] lg:gap-x-[10px] sm:gap-x-[30px] md:gap-x-[0px]  gap-x-[10px] justify-center  2xl:mx-[440px] xl:mx-[330px] md:mx-[240px]  sm:mx-[60px]  mx-[107px] lg:mx-[90px]  xl:space-y-20 lg:space-y-10 space-y-6  sm:space-y-8  md:space-y-10 items-baseline relative xl:bottom-10 bottom-4 sm:bottom-[20px]">
         {vertical4.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto "

@@ -10,7 +10,7 @@ export default function FurnitureMainPage() {
   const { id } = useParams();
 
   return (
-    <div>
+    <div className="">
       {" "}
       {equipmentProductTemplate.map((item) => (
         <ProductTemplate

@@ -26,7 +26,7 @@ function GerberCatelogue({ catelogue }) {
       ) : (
         ""
       )}
-      <div className=" grid grid-cols-3 xl:gap-x-[60px] lg:gap-x-[10px] sm:gap-x-[30px] md:gap-x-[20px]  gap-x-[10px] justify-center  2xl:mx-[200px] md:mx-[100px]  sm:mx-[90px]  mx-[15px] lg:mx-[90px]  xl:space-y-[60px] lg:space-y-10 space-y-5  sm:space-y-8  md:space-y-12 items-baseline">
+      <div className=" grid grid-cols-3 xl:gap-x-[60px] lg:gap-x-[10px] sm:gap-x-[30px] md:gap-x-[20px]  gap-x-[10px] justify-center  2xl:mx-[200px] md:mx-[100px]  sm:mx-[90px]  mx-[15px] lg:mx-[90px]  2xl:space-y-[90px]  xl:space-y-[60px] lg:space-y-10 space-y-5  sm:space-y-8  md:space-y-12 items-baseline">
         {firstRow.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto "

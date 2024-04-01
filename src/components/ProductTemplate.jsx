@@ -5,7 +5,6 @@ import MemoRizedClientele from "../pages/Clientele";
 import MemoRizedClientele2 from "../pages/ClienteleSm";
 
 function ProductTemplate({
- 
   imgOne,
   imgTwo,
   imgThree,
@@ -16,17 +15,16 @@ function ProductTemplate({
   nextpath,
   description,
   clients,
-  MainNextpath
+  MainNextpath,
 }) {
+  const { setActualClient, setIndex, actualClient } = userStateContext();
 
-
-  const { setActualClient,setIndex ,actualClient} = userStateContext();
-
-const forwardArrayIndex=(data)=>{
- console.log(actualClient);
-setActualClient(data.nextpath);
-setIndex(data.index)
-}
+  const equipmentMainPageSizes = [1, 3, 5, 7];
+  const forwardArrayIndex = (data) => {
+    console.log(actualClient);
+    setActualClient(data.nextpath);
+    setIndex(data.index);
+  };
   return (
     <div>
       <img
@@ -46,7 +44,25 @@ setIndex(data.index)
       </div>
 
       <div className="bg-[#FF8A3A]  md:mb-[-80px] mb-[0px]">
-        <div className={`flex justify-evenly `}>
+        <div
+          className={`flex justify-evenly mx-auto  ${
+            MainNextpath === "equipment"
+              ? "right-6 mx-[10px] sm:grid sm:grid-cols-4 grid grid-cols-2 sm:gap-x-0  sm:mx-[10px]  space-y-7 sm:space-y-5 md:space-y-14 md:right-7 xl:left-0 relative  sm:space-x-5 2xl:space-x-0 2xl:mx-[60px]   2xl:space-y-10 items-baseline justify-center"
+              : ""
+          } 
+          
+          ${
+            MainNextpath === "chemicatalogue"
+              ? " grid grid-cols-2  mx-auto justify-center sm:flex xl:left-1 2xl:left-0 relative "
+              : ""
+          }
+          ${
+            MainNextpath === "consumables"
+              ? "grid grid-cols-2 sm:flex  mx-5 sm:mx-auto justify-center space-y-7 sm:space-y-0  items-baseline right-6 relative sm:right-0"
+              : ""
+          }
+          xl:relative mx-auto xl:right-5  right-3`}
+        >
           {clients.map((client) => (
             <Link
               to={`/productCatelgoue/${MainNextpath}`}
@@ -56,7 +72,39 @@ setIndex(data.index)
             >
               <img
                 src={client.client}
-                className={`transition duration-500 hover:scale-125  mx-auto justify-center items-center relative lg:top-20 sm:top-[50px] top-[60px] lg:w-[342px] lg:h-[171px] md:w-[250px] md:h-[108px] sm:w-[200px] sm:h-[104px] w-[178px] h-[89px]`}
+                className={`${
+                  MainNextpath === "equipment" &&
+                  [1, 3, 5, 7, 9].includes(client.id)
+                    ? ` w-[133px] h-[89px]  lg:h-[171px]  md:h-[101px] sm:h-[101px] lg:w-[206px] md:w-[116px] sm:w-[146px]  xl:max-w-[240px] xl:h-[171px] 2xl:min-h-[181px] xl:min-h-[141px]  `
+                    : "xl:w-[342px]  xl:h-[171px] md:h-[101px] sm:h-[101px] lg:h-[171px] "
+                } 
+                   ${
+                     MainNextpath === "equipment" && client.id === 9
+                       ? " xl:left-[490px]  2xl:left-[650px] lg:left-[370px] sm:left-[240px] md:mx-20 lg:mx-0 lg:ml-0 mx-auto left-[100px] "
+                       : "xl:h-[171px] "
+                   }
+                   ${
+                     MainNextpath === "equipment" && client.id === 8
+                       ? "2xl:h-[181px] xl:min-h-[141px] "
+                       : " "
+                   }
+
+
+                   ${
+                     MainNextpath === "consumables" &&
+                     [1, 3].includes(client.id)
+                       ? "w-[134px] h-[89px] sm:w-full sm:h-full "
+                       : ""
+                   }
+
+${
+  MainNextpath === "chemicatalogue" && client.id === 3
+    ? " w-[171px] h-[89px] relative mx-[125px]  sm:mx-0 top-[90px] sm:top-0"
+    : "left-3 sm:left-0 w-[171px] h-[89px] xl:w-full xl:h-full md:w-[100px] md:h-[108px]  sm:w-[200px] sm:h-[104px] sm:px-5 "
+}
+
+
+                transition duration-500 hover:scale-125  mx-auto justify-center items-center relative lg:top-20 sm:top-[50px] top-[60px] lg:w-[342px] lg:h-[171px] md:w-[250px] md:h-[108px]  sm:w-[200px] sm:h-[104px] w-[178px] h-[89px]`}
               />
             </Link>
           ))}
