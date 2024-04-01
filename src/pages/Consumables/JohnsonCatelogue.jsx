@@ -27,7 +27,7 @@ function JohnsonCatelogue({ catelogue }) {
       ) : (
         ""
       )}
-      <div className="grid grid-cols-3 xl:gap-x-[0px] lg:gap-x-[30px] sm:gap-x-[30px] md:gap-x-[0px]  gap-x-[10px] justify-center  xl:mx-[220px] md:mx-[100px]  sm:mx-[90px]  mx-[15px] lg:mx-auto  xl:space-y-10 lg:space-y-12 space-y-5  sm:space-y-8  md:space-y-10 items-baseline ">
+      <div className="grid grid-cols-3 2xl:gap-x-[0px]  2xl:mx-[220px] xl:gap-x-[50px] lg:gap-x-[30px] sm:gap-x-[30px] md:gap-x-[0px]  gap-x-[10px] justify-center  md:mx-[100px]  sm:mx-[90px]  mx-[15px] lg:mx-auto  xl:space-y-10 lg:space-y-12 space-y-5  sm:space-y-8  md:space-y-10 items-baseline ">
         {firstRow.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto md:px-3 lg:px-0"

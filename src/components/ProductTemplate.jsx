@@ -58,7 +58,7 @@ function ProductTemplate({
           }
           ${
             MainNextpath === "consumables"
-              ? "grid grid-cols-2 sm:flex  mx-5 sm:mx-auto justify-center space-y-7 sm:space-y-0  items-baseline right-6 relative sm:right-0"
+              ? "grid grid-cols-2 sm:flex  mx-5 sm:mx-auto justify-center space-y-7 sm:space-y-0  items-baseline right-6 relative sm:right-0 xl:left-1 2xl:left-0"
               : ""
           }
           xl:relative mx-auto xl:right-5  right-3`}

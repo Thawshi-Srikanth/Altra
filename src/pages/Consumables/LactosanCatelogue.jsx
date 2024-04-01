@@ -28,7 +28,7 @@ function LactosanCatelogue({ catelogue }) {
       ) : (
         ""
       )}
-      <div className="grid grid-cols-5 xl:gap-x-[20px] lg:gap-x-[0px] sm:gap-x-[30px] md:gap-x-[20px]  gap-x-[10px] justify-center  xl:mx-[130px] md:mx-[30px]  sm:mx-[20px]  mx-[15px] lg:mx-auto  xl:space-y-10 lg:space-y-10 space-y-5  sm:space-y-8  md:space-y-12 items-baseline">
+      <div className="grid grid-cols-5 xl:gap-x-[20px] lg:gap-x-[0px] sm:gap-x-[30px] md:gap-x-[20px]  gap-x-[10px] justify-center  2xl:mx-[130px] xl:mx-[50px] md:mx-[30px]  sm:mx-[20px]  mx-[15px] lg:mx-auto  xl:space-y-10 lg:space-y-10 space-y-5  sm:space-y-8  md:space-y-12 items-baseline">
         {firstRow.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto"
@@ -43,7 +43,7 @@ function LactosanCatelogue({ catelogue }) {
           </div>
         ))}
       </div>
-      <div className=" md:mx-[200px] md:space-y-0 sm:top-0 relative flex xl:gap-x-[0px] lg:gap-x-[0px] sm:gap-x-[0px] md:gap-x-[0px]  gap-x-[0px] justify-center xl:mx-[390px]  xl:space-y-10 items-baseline lg:mx-[200px] sm:mx-[130px] mx-[90px]">
+      <div className=" md:mx-[200px] md:space-y-0 sm:top-0 relative flex xl:gap-x-[0px] lg:gap-x-[0px] sm:gap-x-[0px] md:gap-x-[0px]  gap-x-[0px] justify-center 2xl:mx-[390px]  xl:mx-[250px]  xl:space-y-10 items-baseline lg:mx-[200px] sm:mx-[130px] mx-[90px]">
         {finalRow.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto"

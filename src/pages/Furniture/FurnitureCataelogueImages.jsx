@@ -32,7 +32,7 @@ const mobileview=catelogue.slice(0,9)
       ) : (
         ""
       )}
-      <div className="flex xl:gap-x-[40px] lg:gap-x-[30px] sm:gap-x-[30px] md:gap-x-[10px] justify-center">
+      <div className=" xl:px-6 2xl:px-0 flex xl:gap-x-[40px] lg:gap-x-[30px] sm:gap-x-[30px] md:gap-x-[10px] justify-center">
         {firstRow.map((image) => (
           <div
             className=""

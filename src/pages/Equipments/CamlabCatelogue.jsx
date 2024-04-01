@@ -118,7 +118,7 @@ function CamlabCatelogue({ catelogue, catelogueHorizontal }) {
           </div>
         ))}
       </div>
-      <div className=" grid grid-cols-4 xl:gap-x-[0px] lg:gap-x-[0px]  sm:gap-x-[30px] md:gap-x-[40px]  gap-x-[10px] justify-center  2xl:mx-[140px]  xl:mx-[70px]  md:mx-[10px]  sm:mx-[60px]  mx-[7px] lg:mx-[10px]  xl:space-y-20 lg:space-y-10 space-y-6  sm:space-y-8  md:space-y-10 items-baseline relative xl:bottom-10 bottom-4 sm:bottom-[20px]">
+      <div className=" grid grid-cols-4 xl:gap-x-[0px] lg:gap-x-[0px]  sm:gap-x-[30px] md:gap-x-[40px]  gap-x-[10px] justify-center  2xl:mx-[140px]  xl:mx-[110px]  md:mx-[10px]  sm:mx-[60px]  mx-[7px] lg:mx-[10px]  xl:space-y-20 lg:space-y-10 space-y-6  sm:space-y-8  md:space-y-10 items-baseline relative xl:bottom-10 bottom-4 sm:bottom-[20px]">
         {vertical3.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto "

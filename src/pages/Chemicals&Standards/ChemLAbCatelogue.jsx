@@ -28,7 +28,7 @@ function ChemLAbCatelogue({ catelogue }) {
       ) : (
         ""
       )}
-      <div className="grid grid-cols-4 xl:gap-x-[0px] lg:gap-x-[30px] sm:gap-x-[30px] md:gap-x-[0px]  gap-x-[10px] justify-center  xl:mx-[130px] md:mx-[70px]  sm:mx-[10px]  mx-[15px] lg:mx-auto  xl:space-y-20 lg:space-y-12 space-y-5  sm:space-y-8  md:space-y-12 items-baseline">
+      <div className="grid grid-cols-4 xl:gap-x-[0px] lg:gap-x-[30px] sm:gap-x-[30px] md:gap-x-[0px]  gap-x-[10px] justify-center  2xl:mx-[130px] md:mx-[70px]  sm:mx-[10px]  mx-[15px] lg:mx-auto  xl:space-y-20 lg:space-y-12 space-y-5  sm:space-y-8  md:space-y-12 items-baseline">
         {firstRow.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto"

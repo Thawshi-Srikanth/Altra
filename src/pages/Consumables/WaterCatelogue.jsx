@@ -29,7 +29,7 @@ function WaterCatelogue({ catelogue }) {
       ) : (
         ""
       )}
-      <div className="grid grid-cols-3 xl:gap-x-[0px] lg:gap-x-[0px] sm:gap-x-[0px] md:gap-x-[0px]  gap-x-[0px] justify-center  xl:mx-[240px] md:mx-[130px]   sm:mx-[90px]  mx-[37px] lg:mx-[100px]  xl:space-y-10 lg:space-y-10 space-y-5  sm:space-y-8  md:space-y-10 items-baseline">
+      <div className="2xl:gap-x-[0px]  2xl:mx-[220px] xl:gap-x-[0px] grid grid-cols-3  lg:gap-x-[0px] sm:gap-x-[0px] md:gap-x-[0px]  gap-x-[0px] justify-center  xl:mx-[80px] md:mx-[130px]   sm:mx-[90px]  mx-[37px] lg:mx-[100px]  xl:space-y-10 lg:space-y-10 space-y-5  sm:space-y-8  md:space-y-10 items-baseline">
         {firstRow.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto"
@@ -44,7 +44,7 @@ function WaterCatelogue({ catelogue }) {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-5 md:space-y-10  space-y-5 sm:space-y-5 sm:top-0 relative  xl:gap-x-[0px] lg:gap-x-[0px] sm:gap-x-[0px] md:gap-x-[0px]  gap-x-[5px] justify-center mx-3 xl:mx-[130px] lg:mx-[60px]  xl:space-y-10 items-baseline md:mx-[60px] sm:mx-[10px]  ">
+      <div className="grid grid-cols-5 md:space-y-10  space-y-5 sm:space-y-5 sm:top-0 relative  2xl:gap-x-[0px] xl:gap-x-[40px] lg:gap-x-[0px] sm:gap-x-[0px] md:gap-x-[0px]  gap-x-[5px] justify-center mx-3 2xl:mx-[130px] lg:mx-[60px]  xl:space-y-10 items-baseline md:mx-[60px] sm:mx-[10px]  ">
         {finalRow.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto"
@@ -59,7 +59,7 @@ function WaterCatelogue({ catelogue }) {
           </div>
         ))}
       </div>
-      <div className=" flex space-y-4 md:space-y-0 sm:top-2 relative xl:gap-x-[0px] lg:gap-x-[0px] sm:gap-x-[0px] md:gap-x-[20px]  gap-x-[0px] justify-center mx-[80px] xl:mx-[420px]  xl:space-y-0 items-baseline lg:mx-[200px] md:mx-[280px] sm:mx-[170px]">
+      <div className=" flex space-y-4 md:space-y-0 sm:top-2 relative xl:gap-x-[0px] lg:gap-x-[0px] sm:gap-x-[0px] md:gap-x-[20px]  gap-x-[0px] justify-center mx-[80px] 2xl:mx-[420px] xl:mx-[250px]  xl:space-y-0 items-baseline lg:mx-[200px] md:mx-[280px] sm:mx-[170px]">
         {thirdRow.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto"
