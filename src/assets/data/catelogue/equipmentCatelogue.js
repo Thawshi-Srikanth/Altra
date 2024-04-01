@@ -307,7 +307,6 @@ import g33 from "../../images/products/cateogories/equipmentOne/catelogueImages/
 import g34 from "../../images/products/cateogories/equipmentOne/catelogueImages/consort/35.png";
 import g35 from "../../images/products/cateogories/equipmentOne/catelogueImages/consort/36.png";
 
-
 export const equipmentCatelogue = [
   {
     id: "equipment",
@@ -327,7 +326,7 @@ export const equipmentCatelogue = [
     catelogue: [
       {
         catelogueName: "france",
-        copyright:"Copyrights- https://allafrance.com/index",
+        copyright: "Copyrights- https://allafrance.com/index",
         text: "ALLA FRANCE, formerly known as M. ALLA & Fils, ALLA & PIRLOT, and ATELIERS M. ALLA, boasts a rich history dating back to the end of the 18th century. The Galileo thermometer, based on varying weights of glass beads in water, remains a symbol of innovation. Our BIOTEMP® range, featuring mercury-free instruments, ensures safety and versatility across diverse applications. Registered and protected in Europe, the USA, and China, BIOTEMP® reflects ALLA FRANCE's commitment to quality and sustainability.",
         index: 0,
         catlogueImages: [
@@ -740,6 +739,8 @@ export const equipmentCatelogue = [
       {
         catelogueName: "jp",
         index: 8,
+        text: "J.P. SELECTA, with over 70 years in the scientific instruments and laboratory equipment sector, is globally recognized, serving over 100 countries. The company highlights its international focus with multilingual catalogs and participation in global exhibitions. Their continuous innovation and quality assurance are ISO 9001 certified, covering all aspects from design to service. The SELECTA GROUP, which includes JP SELECTA, COMECTA, and AQUISEL, offers extensive product distribution through a network of distributors. Their products are designed for longevity, showcasing a commitment to staying current and reliable.",
+        copyright: "Copyrights-https://grupo-selecta.com/en/",
         catlogueImages: [
           { id: 1, Catlogueimage: f1, alt: "		" },
           { id: 2, Catlogueimage: f2, alt: "		" },
