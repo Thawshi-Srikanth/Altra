@@ -27,10 +27,14 @@ function Research() {
             reach out to us at
           </p>
           <a
-            href="mailto:research@altrascietific.com"
-            className="text-[#FF8A3A] font-medium font-rosario  xl:text-[30px] lg:text-[30px] md:text-[25px] sm:text-[20px] text-[15]"
+            href="mailto:research@altrascietific.com "
+            className="text-[#FF8A3A]  relative font-medium font-rosario  xl:text-[30px] lg:text-[30px] md:text-[25px] sm:text-[20px] text-[15]"
           >
-            research@altrascietific.com
+            <span>
+              {" "}
+              research@altrascietific.com
+              <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#FF8A3A]"></span>
+            </span>
           </a>
         </div>
         <div className="max-w-[1240px] justify-center mx-auto pb-10 ">
@@ -49,9 +53,12 @@ function Research() {
           </p>
           <a
             href="mailto:eoi.research@altrascientific.com"
-            className="text-[#FF8A3A] font-medium font-rosario  xl:text-[30px] lg:text-[30px] md:text-[25px] sm:text-[20px] text-[15]"
+            className="relative text-[#FF8A3A] font-medium font-rosario  xl:text-[30px] lg:text-[30px] md:text-[25px] sm:text-[20px] text-[15]"
           >
-            eoi.research@altrascientific.com
+            <sapan>
+              eoi.research@altrascientific.com
+              <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#FF8A3A]"></span>
+            </sapan>
           </a>
         </div>
       </div>
