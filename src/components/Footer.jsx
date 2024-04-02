@@ -101,7 +101,7 @@ function Footer() {
             </p>
           </div>
         </div>
-        <div className="font-light mx-auto  sm:mx-0 sm:scale-75 md:scale-100 lg:top-[20px]  relative lg:right-[30px] md:left-[90px]  sm:left-[40px] lg:left-0  xl:right-0 xl:scale-90 md:mt-[0px] lg:mt-0 sm:mt-[27px] mt-[75px]  sm:px-0">
+        <div className="font-light mx-auto  sm:mx-0 sm:scale-75 md:scale-100 lg:top-[20px]  relative lg:right-[30px] md:left-[90px]  sm:left-[40px] lg:left-0  xl:right-0 xl:scale-90 md:mt-[0px] lg:mt-0 sm:mt-[27px] mt-[75px]  sm:px-0 md:top-[20px] lg:top-0]">
           <div className="lg:left-[100px] 2xl:left-[190px] xl:left-[130px] relative grid grid-cols-1 sm:grid-cols-1 gap-[10px] sm:gap-0 text-nowrap sm:top-[6px]  xl:top-0 ">
             <p className="text-white sm:block hidden  font-inter xl:text-[23px] sm:text-[11px] text-[13px] lg:text-[18px] md:text-[12.5px] lg:my-[17px] relative right-[0px] sm:right-0">
               <span className="text-nowrap text-center xl:pl-[80px] lg:left-[70px] relative xl:left-0  sm:left-0">

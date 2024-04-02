@@ -7,11 +7,11 @@ function Research() {
       <div>
         <img
           src={research}
-          className="object-cover w-full xl:h-[700px] lg:h-[600px] md:h-[400px] sm:h-[300px] h-[170px] "
+          className="object-cover w-full 2xl:h-[700px] lg:h-[600px] md:h-[400px] sm:h-[300px] h-[170px] "
           alt="research"
         />
       </div>
-      <div className="space-y-10 relative top-5 xl:max-w-[1240px] lg:max-w-[900px] md:max-w-[700px] sm:max-w-[500px] max-w-[300px] mx-auto justify-center ">
+      <div className="space-y-10 relative top-5 2xl:max-w-[1240px]  xl:max-w-[1040px]  lg:max-w-[900px] md:max-w-[700px] sm:max-w-[500px] max-w-[300px] mx-auto justify-center xl:p-10 2xl:p-0 ">
         {" "}
         <div className=" justify-center mx-auto">
           <p className="font-rosario font-bold text-nowrap xl:text-[50px] lg:text-[40px] md:text-[30px] sm:text-[30px] text-[25px]">
@@ -33,13 +33,14 @@ function Research() {
             research@altrascietific.com
           </a>
         </div>
-        <div className="max-w-[1240px] justify-center mx-auto pb-10">
-          <p className="font-bold font-rosario text-nowrap xl:text-[50px] lg:text-[40px] md:text-[30px] sm:text-[20px]">
+        <div className="max-w-[1240px] justify-center mx-auto pb-10 ">
+          <p className="font-rosario font-bold text-nowrap xl:text-[50px] lg:text-[40px] md:text-[30px] sm:text-[30px] text-[25px]">
             Research{" "}
             <span className="text-transparent [-webkit-text-stroke:0.5px_#000] lg:[-webkit-text-stroke:2px_#000]">
               Assistance
             </span>
           </p>
+          <div></div>
           <p className="font-medium font-rosario xl:text-[30px] lg:text-[30px] md:text-[25px] sm:text-[20px] text-[15]">
             We are committed to support your research projects relating to
             sustainability and environment conservations by assisting with
@@ -58,7 +59,7 @@ function Research() {
       <div>
         <img
           src={bottom}
-          className="object-cover w-full xl:h-[700px] lg:h-[600px] md:h-[400px] sm:h-[300px] h-[210px] relative "
+          className="object-cover  w-full xl:h-[700px] lg:h-[600px] md:h-[400px] sm:h-[300px] h-[210px] relative "
           alt="research"
         />
       </div>
