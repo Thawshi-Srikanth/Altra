@@ -8,7 +8,7 @@ export const headerTitles = [
   { id: 2, name: "Products", path: "/products", image: Line ,img:toggledown,imgTwo:toggledownRight},
   { id: 3, name: "Services", path: "/services", image: Line },
   { id: 4, name: "Research", path: "/research", image: Line },
-  { id: 5, name: "About Us", path: "/aboutUs", image: Line },
+  { id: 5, name: "About Us", path: "/aboutus", image: Line },
   { id: 6, name: "Contact", path: "/contact", image: Line },
   // { id: 7, name: "", path: "", lense: search },
 ];
