@@ -17,13 +17,18 @@ function ProductTemplate({
   clients,
   MainNextpath,
 }) {
-  const { setActualClient, setIndex, actualClient } = userStateContext();
 
+  const pathName = location.pathname;
+console.log(pathName)
+  const { setActualClient, setIndex, actualClient,setCurrentPath } = userStateContext();
+
+  console.log(MainNextpath);
   const equipmentMainPageSizes = [1, 3, 5, 7];
   const forwardArrayIndex = (data) => {
     console.log(actualClient);
     setActualClient(data.nextpath);
     setIndex(data.index);
+      setCurrentPath(pathName);
   };
   return (
     <div>
@@ -43,22 +48,32 @@ function ProductTemplate({
         </p>
       </div>
 
-      <div className="bg-[#FF8A3A]  md:mb-[-80px] mb-[0px]">
+      <div className="bg-[#FF8A3A]  md:mb-[-80px] mb-[-50px] sm:mb-0">
         <div
-          className={`flex justify-evenly mx-auto  ${
+          className={`flex justify-evenly mx-auto  
+          
+               ${
+                 MainNextpath === "glassware" || MainNextpath === "plasticware"
+                   ? "relative "
+                   : " "
+               }
+
+          
+          
+          ${
             MainNextpath === "equipment"
-              ? "right- mx-[10px] sm:grid sm:grid-cols-4 grid grid-cols-2 sm:gap-x-0  sm:mx-[10px]  space-y-7 sm:space-y-5 md:space-y-14 md:right-7 xl:left-0 relative  sm:space-x-5 2xl:space-x-0 2xl:mx-[60px]   2xl:space-y-10 items-baseline justify-center"
+              ? "right-5  sm:right-0 px-[20px] sm:grid sm:grid-cols-4 grid grid-cols-2 sm:gap-x-0  sm:mx-[10px]  space-y-7 sm:space-y-5 md:space-y-14 md:right-7 xl:left-0 relative  sm:space-x-5 2xl:space-x-0 2xl:mx-[60px]   2xl:space-y-10 items-baseline justify-center"
               : ""
           } 
           
           ${
             MainNextpath === "chemicatalogue"
-              ? " grid grid-cols-2  mx-auto justify-center sm:flex xl:left-1 2xl:left-0 relative "
+              ? " grid grid-cols-2  mx-auto justify-center sm:flex xl:left-1 2xl:left-0 relative  "
               : ""
           }
           ${
             MainNextpath === "consumables"
-              ? "grid grid-cols-2 sm:flex  mx-5 sm:mx-auto justify-center space-y-7 sm:space-y-0  items-baseline right- relative sm:right-0 xl:left-1 2xl:left-0"
+              ? "grid grid-cols-2 sm:flex  mx-6 sm:mx-auto justify-center space-y-7 sm:space-y-0  items-baseline right- relative sm:right-0 xl:left-1 2xl:left-0 "
               : ""
           }
           xl:relative mx-auto xl:right-5  right-3`}
@@ -66,21 +81,37 @@ function ProductTemplate({
           {clients.map((client) => (
             <Link
               to={`/productCatelgoue/${MainNextpath}`}
-              className={"flex "}
+              className={`flex  ${
+                MainNextpath === "equipment" ||
+                (MainNextpath === "consumables" &&
+                  "relative top-[-30px] sm:top-0  ")
+              }`}
               key={client.id}
               onClick={() => forwardArrayIndex(client)}
             >
               <img
                 src={client.client}
-                className={`${
+                className={`
+ ${MainNextpath === "equipment" && ([2, 4,6, 8, ].includes(client.id) && "scale-x-105  sm:scale-100")}
+
+
+
+                ${
+                  MainNextpath === "equipment" ||
+                  (MainNextpath === "consumables" &&
+                    "relative left-[-1px] sm:left-0  ")
+                }
+                
+                
+                ${
                   MainNextpath === "equipment" &&
                   [1, 3, 5, 7, 9].includes(client.id)
-                    ? ` w-[133px] h-[89px]  lg:h-[171px]  md:h-[101px] sm:h-[101px] lg:w-[206px] md:w-[116px] sm:w-[146px]  xl:max-w-[240px] xl:h-[171px] 2xl:min-h-[181px] xl:min-h-[141px]  `
-                    : "xl:w-[342px]  xl:h-[171px] md:h-[101px] sm:h-[101px] lg:h-[171px] "
+                    ? "rounded-md w-[100px] h-[89px]  lg:h-[171px]  md:h-[101px] sm:h-[101px] lg:w-[206px] md:w-[116px] sm:w-[146px]  xl:max-w-[240px] xl:h-[171px] 2xl:min-h-[181px] xl:min-h-[141px] scale-x-75 sm:scale-100"
+                    : "rounded-md xl:w-[342px]  xl:h-[171px] md:h-[101px] sm:h-[101px] lg:h-[171px] "
                 } 
                    ${
                      MainNextpath === "equipment" && client.id === 9
-                       ? " xl:left-[490px]  2xl:left-[650px] lg:left-[370px] sm:left-[240px] md:mx-20 lg:mx-0 lg:ml-0 mx-auto left-[100px] "
+                       ? " xl:left-[490px]  2xl:left-[650px] lg:left-[370px] sm:left-[240px] md:mx-20 lg:mx-0 lg:ml-0 mx-auto left-[89px] "
                        : "xl:h-[171px] "
                    }
                    ${
@@ -93,18 +124,24 @@ function ProductTemplate({
                    ${
                      MainNextpath === "consumables" &&
                      [1, 3].includes(client.id)
-                       ? "w-[134px] h-[89px] sm:w-full sm:h-full "
-                       : ""
+                       ? "w-[119px] h-[89px] sm:w-full sm:h-full scale-x-75 sm:scale-100 "
+                       : " "
+                   }
+                   ${
+                     MainNextpath === "consumables" &&
+                     [2, 4].includes(client.id)
+                       ? "scale-x-105  sm:scale-100 "
+                       : " "
                    }
 
 ${
   MainNextpath === "chemicatalogue" && client.id === 3
-    ? " w-[171px] h-[89px] relative mx-[125px]  sm:mx-0 top-[90px] sm:top-0"
-    : "left-3 sm:left-0 w-[171px] h-[89px] xl:w-full xl:h-full md:w-[100px] md:h-[108px]  sm:w-[200px] sm:h-[104px] sm:px-5 "
+    ? "scale-90 sm:scale-100 w-[171px] h-[89px] relative mx-[125px]  sm:mx-0 mt-4 sm:mt-0 sm:top-0 left-24 sm:left-0 "
+    : "scale-90 sm:scale-100 left-3 sm:left-0 w-[171px] h-[89px] xl:w-full xl:h-full md:w-[100px] md:h-[108px]  sm:w-[200px] sm:h-[104px] sm:px-5 "
 }
 
 
-                transition duration-500 hover:scale-125  mx-auto justify-center items-center relative lg:top-20 sm:top-[50px] top-[60px] lg:w-[342px] lg:h-[171px] md:w-[250px] md:h-[108px]  sm:w-[200px] sm:h-[104px] w-[178px] h-[89px]`}
+                transition duration-500 hover:scale-125  mx-auto justify-center items-center relative lg:top-20 sm:top-[50px] top-[30px] lg:w-[342px] lg:h-[171px] md:w-[250px] md:h-[108px]  sm:w-[200px] sm:h-[104px] w-[178px] h-[89px]`}
               />
             </Link>
           ))}

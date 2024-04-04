@@ -129,7 +129,7 @@ function AboutUs() {
             {data.team.map((member) => (
               <div
                 key={member.id}
-                className={`sm:flex items-center pt-10 ${
+                className={`sm:flex items-center pt-10  ${
                   member.id === 2 || member.id === 4
                     ? "sm:gap-x-10 "
                     : " sm:space-x-10"
@@ -139,10 +139,13 @@ function AboutUs() {
                   src={member.img}
                   alt="team"
                   className={`sm:${
-                    (member.id === 2 || member.id === 4) && "order-2"
+                    (member.id === 2 || member.id === 4) && " container order-2"
                   } sm:block hidden xl:w-[350px] xl:h-[350px] md:w-[280px] lg:h-[300px] lg:w-[300px] md:h-[280px] sm:w-[200px] sm:h-[200px] w-[100px] h-[100px] `}
                 />
 
+
+
+{/* mobile */}
                 <div className="sm:hidden ">
                   <div className="flex space-x-2 mx-auto justify-start">
                     <img
@@ -180,7 +183,7 @@ function AboutUs() {
                 {/* dekstop */}
                 <div
                   className={`sm:${
-                    (member.id === 2 || member.id === 4) && " sm:order-1  flex"
+                    (member.id === 2 || member.id === 4) && "container  sm:order-1  flex"
                   } mx-auto justify-center  sm:block hidden `}
                 >
                   <p

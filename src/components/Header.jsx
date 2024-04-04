@@ -20,7 +20,7 @@ function Header() {
 
   const menuRef = useRef(null);
 
-  const { clickToggle, setClickToggle } = userStateContext();
+  const { clickToggle, setClickToggle, actualClient,currentPath } = userStateContext();
   /* 
   const highlight = (title, path) => {
     setCurrentTab(title[path] || "");
@@ -45,9 +45,14 @@ function Header() {
       "/products": "Products",
     };
     const pathName = location.pathname;
+    console.log(pathName)
+    console.log(currentPath)
+if (currentPath == pathName) {
+  setCurrentTab("Products");
 
+}
     setCurrentTab(tittles[pathName] || "");
-
+console.log(currentTab)
     setCurrentTabDropdown(productDropdownTitles[pathName] || "");
 
     let handler = (e) => {
@@ -60,7 +65,7 @@ function Header() {
     return () => {
       document.removeEventListener("mousedown", handler);
     };
-  }, [location.pathname, mobDrawer, clickToggle, setClickToggle]);
+  }, [location.pathname, mobDrawer, clickToggle, setClickToggle,currentTab]);
 
   const handleItemClick = (item) => {
     setCurrentTab(item);
@@ -90,7 +95,7 @@ function Header() {
                     <Link to={title.path}>
                       <p
                         className={`${
-                          currentTab == title.name
+                          currentTab == title.name 
                             ? "text-[#FF8A3A]"
                             : "text-black"
                         } xl:text-[17px] 2xl:text-[22px] font-bold hover:text-[#FF8A3A]
@@ -133,9 +138,12 @@ function Header() {
             ref={menuRef}
           >
             {productDropdown.map((title) => (
-              <div key={title.id} onClick={()=>setClickToggle(!clickToggle)}>
+              <div key={title.id} onClick={() => setClickToggle(!clickToggle)}>
                 {" "}
-                <ProductDropdownCom title={title} currentTabDropdown={currentTabDropdown} />
+                <ProductDropdownCom
+                  title={title}
+                  currentTabDropdown={currentTabDropdown}
+                />
               </div>
             ))}
           </div>

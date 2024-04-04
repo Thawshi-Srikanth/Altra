@@ -12,61 +12,73 @@ export const productsCaru = [
     id: 1,
 
     img: A,
+    path: "/chemicals/:id",
   },
   {
     id: 2,
 
     img: B,
+    path: "/glassware/:id",
   },
   {
     id: 3,
 
     img: C,
+    path: "/equipment/:id",
   },
   {
     id: 4,
 
     img: D,
+    path: "/plasticware/:id",
   },
   {
     id: 5,
 
     img: E,
+    path: "/consumables/:id",
   },
   {
     id: 6,
 
     img: F,
+    path: "/furniture/:id",
   },
 
   {
     id: 1,
 
     img: C,
+    path: "/equipment/:id",
   },
   {
     id: 2,
 
     img: B,
+    path: "/glassware/:id",
   },
   {
     id: 3,
 
     img: C,
+    path: "/equipment/:id",
   },
   {
     id: 4,
 
     img: D,
+    path: "/plasticware/:id",
   },
   {
     id: 5,
 
     img: E,
+    path: "/consumables/:id",
   },
   {
     id: 6,
 
     img: F,
+    path: "/furniture/:id",
   },
 ];

@@ -8,6 +8,16 @@ import interscience from "../../images/products/cateogories/equipmentOne/intersc
 import jp from "../../images/products/cateogories/equipmentOne/jp.png";
 import orto from "../../images/products/cateogories/equipmentOne/orto.png";
 
+import aperaLogo from "../../images/products/cateogories/equipmentOne/logo/apera.png";
+import camlabLogo from "../../images/products/cateogories/equipmentOne/logo/camlab.png";
+import consortLogo from "../../images/products/cateogories/equipmentOne/logo/consort.png";
+import euromaxLogo from "../../images/products/cateogories/equipmentOne/logo/euromax.png";
+import franceLogo from "../../images/products/cateogories/equipmentOne/logo/france.png";
+import interscienceLogo from "../../images/products/cateogories/equipmentOne/logo/interscience.png";
+import jpLogo from "../../images/products/cateogories/equipmentOne/logo/jp.png";
+import ortoLogo from "../../images/products/cateogories/equipmentOne/logo/orto.png";
+import gerberLogo from "../../images/products/cateogories/equipmentOne/logo/gerber.png";
+
 import alcoholmeterwiththermometer from "../../images/products/cateogories/equipmentOne/catelogueImages/france/alcoholmeter with thermometer.png";
 import alcoholmeter from "../../images/products/cateogories/equipmentOne/catelogueImages/france/alcoholmeter.png";
 import aluminiumhandheldrefractometers from "../../images/products/cateogories/equipmentOne/catelogueImages/france/aluminium handheld refractometers.png";
@@ -311,15 +321,20 @@ export const equipmentCatelogue = [
   {
     id: "equipment",
     bgImage: [
-      { id: 1, img: france, title: "france" },
-      { id: 2, img: apera, title: "apera" },
-      { id: 3, img: orto, title: "orto" },
-      { id: 4, img: euromax, title: "euromax" },
-      { id: 5, img: camlab, title: "camlab" },
-      { id: 6, img: gerber, title: "gerber" },
-      { id: 7, img: consort, title: "consort" },
-      { id: 8, img: interscience, title: "interscience" },
-      { id: 9, img: jp, title: "jp" },
+      { id: 1, img: france, title: "france", logo: franceLogo },
+      { id: 2, img: apera, title: "apera", logo: aperaLogo },
+      { id: 3, img: orto, title: "orto", logo: ortoLogo },
+      { id: 4, img: euromax, title: "euromax", logo: euromaxLogo },
+      { id: 5, img: camlab, title: "camlab", logo: camlabLogo },
+      { id: 6, img: gerber, title: "gerber", logo: gerberLogo },
+      { id: 7, img: consort, title: "consort", logo: consortLogo },
+      {
+        id: 8,
+        img: interscience,
+        title: "interscience",
+        logo: interscienceLogo,
+      },
+      { id: 9, img: jp, title: "jp", logo: jpLogo },
     ],
 
     text: "METHOD, established in 1990, transitioned from trading'to manufacturing'laboratory fittings in 1994, offering'cost-effective options to the growing'market. With over 30 years of experience, METHOD is a trusted supplier of laboratory fixtures in over 40 countries, prioritizing'quality, affordability, and innovation. The company remains committed to providing'customized solutions and ensuring'workplace safety through continuous research and collaboration.",

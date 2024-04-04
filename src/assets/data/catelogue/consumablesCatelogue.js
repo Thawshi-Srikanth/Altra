@@ -2,6 +2,19 @@ import geyer from "../../images/products/cateogories/consumables/catelogueImages
 import johnson from "../../images/products/cateogories/consumables/catelogueImages/bg/johnson.png";
 import lactos from "../../images/products/cateogories/consumables/catelogueImages/bg/lactos.png";
 import water from "../../images/products/cateogories/consumables/catelogueImages/bg/water.png";
+
+
+import geyerLogo from "../../images/products/cateogories/consumables/logo/geyer.png";
+
+import johnsonLogo from "../../images/products/cateogories/consumables/logo/johnson.png";
+
+import lactosanLogo from "../../images/products/cateogories/consumables/logo/lactosan.png";
+
+import waterLogo from "../../images/products/cateogories/consumables/logo/water.png";
+
+
+
+
 import A from "../../images/products/cateogories/consumables/catelogueImages/johnson/A.png";
 import B from "../../images/products/cateogories/consumables/catelogueImages/johnson/B.png";
 import C from "../../images/products/cateogories/consumables/catelogueImages/johnson/C.png";
@@ -98,10 +111,11 @@ export const consumablesCatelogue = [
   {
     id: "consumables",
     bgImage: [
-      { id: 1, img: johnson, title: "johnson" },
-      { id: 2, img: water, title: "water" },
-      { id: 3, img: lactos, title: "lactos" },
-      { id: 3, img: geyer, title: "geyer" },
+      { id: 1, img: johnson, title: "johnson",logo:johnsonLogo },
+      { id: 2, img: water, title: "water",logo:waterLogo },
+      { id: 3, img: lactos, title: "lactos",logo:lactosanLogo },
+      { id: 3, img: geyer, title: "geyer",logo:geyerLogo },
+   
     ],
 
     text: "METHOD, established in 1990, transitioned from trading to manufacturing laboratory fittings in 1994, offering cost-effective options to the growing market. With over 30 years of experience, METHOD is a trusted supplier of laboratory fixtures in over 40 countries, prioritizing quality, affordability, and innovation. The company remains committed to providing customized solutions and ensuring workplace safety through continuous research and collaboration.",

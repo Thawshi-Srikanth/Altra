@@ -26,7 +26,7 @@ const MemoRizedProducts = memo(function ShowProduct() {
         <div className=" bottom-[130px]  sm:bottom-0 flex justify-start [&_li]:mx-8 [&_img]:max-w-96 animate-infinite-scrollMobShowProduct   gap-x-[40px] sm:gap-x-0 sm:animate-infinite-scrollShowProducts scroll-smooth md:gap-x-[80px] xl:gap-x-[190px] relative md:top-3">
           {" "}
           {productsCaru.map((img) => (
-            <Link key={img.id}>
+            <Link key={img.id} to={img.path}>
               <img
                 src={img.img}
                 alt={img.id}

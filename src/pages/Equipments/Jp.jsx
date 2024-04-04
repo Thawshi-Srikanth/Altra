@@ -27,7 +27,7 @@ function Jp({ catelogue, copyright }) {
       ) : (
         ""
       )}
-      <div className=" grid grid-cols-3 xl:gap-x-[0px] lg:gap-x-[10px] sm:gap-x-[30px] md:gap-x-[20px]  gap-x-[0px] justify-center  2xl:mx-[200px] xl:mx-[50px] md:mx-[100px]  sm:mx-[90px]  mx-[35px] lg:mx-[90px]  xl:space-y-[60px]  2xl:space-y-[90px] lg:space-y-10 space-y-5  sm:space-y-8  md:space-y-12 items-baseline">
+      <div className=" grid grid-cols-3 xl:gap-x-[0px] lg:gap-x-[10px] sm:gap-x-[30px] md:gap-x-[20px]  gap-x-[10px] justify-center  2xl:mx-[200px] xl:mx-[50px] md:mx-[100px]  sm:mx-[90px]  mx-[35px] lg:mx-[90px]  xl:space-y-[60px]  2xl:space-y-[90px] lg:space-y-10 space-y-5  sm:space-y-8  md:space-y-12 items-baseline">
         {firstRow.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto "

@@ -74,15 +74,16 @@ function Footer() {
             </p>
             {/* <img src={Line} alt="line" /> */}
             <p className="font-rosario lg:text-[15px] md:text-[12px] sm:text-[12px]  xl:text-[13px] text-nowrap lg:ml-[-30px] md:ml-[-30px] sm:ml-[-30px] 2xl:ml-0 xl:ml-[-20px] text-white wrap xl:scale-150 lg:scale-[125px]  relative left-[30px] lg:top-[15px] xl:top-[30px] sm:top-[10px] py-3">
-              Equipment
+              <Link to="/equipment/:id">Equipment</Link>
               <br />
-              Chemical And Standard <br /> Consumables
+              <Link to="/chemicals/:id">Chemical And Standard</Link> <br />{" "}
+              <Link to="/consumables/:id">Consumables</Link>
               <br />
-              Furniture
+              <Link to="/furniture/:id"> Furniture</Link>
               <br />
-              Glassware
+              <Link to="/glassware/:id">Glassware</Link>
               <br />
-              Plasticware
+              <Link to="/plasticware/:id"> Plasticware</Link>
             </p>
           </div>
           <div className="sm:block hidden lg:top-[40px] lg:mt-[-17px] relative lg:left-[50px] md:left-[30px] xl:left-[70px] 2xl:left-[70px] sm:left-[70px]">
@@ -96,8 +97,7 @@ function Footer() {
             /> */}
             <p className="font-rosario lg:text-[15px] md:text-[12px] sm:text-[12px] xl:text-[13px] text-white wrap xl:scale-150  lg:scale-[125px] relative left-[30px]  xl:top-[23px] lg:top-[15px] lg:ml-[-30px] xl:ml-0 text-nowrap md:ml-[3px] sm:top-[10px] ">
               Research Support <br />
-              Research Assistance 
-         
+              Research Assistance
             </p>
           </div>
         </div>

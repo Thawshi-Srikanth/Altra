@@ -10,11 +10,11 @@ import I from "../../images/products/cateogories/furniture/catelogueImages/I.png
 import J from "../../images/products/cateogories/furniture/catelogueImages/J.png";
 import K from "../../images/products/cateogories/furniture/catelogueImages/K.png";
 import methodBg from "../../images/products/cateogories/furniture/catelogueImages/bg/methodBg.png";
-
+import methodLogo from "../../images/products/cateogories/furniture/logo/method.png";
 export const furnitureCatelogue = [
   {
     id: "furniture",
-    bgImage: [{ id: 1, img: methodBg, title: "method" }],
+    bgImage: [{ id: 1, img: methodBg, title: "method" ,logo:methodLogo}],
 
     catelogue: [
       {

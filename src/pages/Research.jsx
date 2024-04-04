@@ -34,7 +34,7 @@ function Research() {
           />
         </div>
       </div>
-      <div className="space-y-10 top-8 relative 2xl:max-w-[1240px]  xl:max-w-[1040px]  lg:max-w-[900px] md:max-w-[700px] sm:max-w-[500px] max-w-[300px] mx-auto justify-center xl:p-10 2xl:p-0 ">
+      <div className="space-y-10 top-8   sm:top-[-40px] lg:top-10 relative 2xl:max-w-[1240px]  xl:max-w-[1040px]  lg:max-w-[900px] md:max-w-[700px] sm:max-w-[500px] max-w-[300px] mx-auto justify-center xl:p-10 2xl:p-0 bottom-3 ">
         {" "}
         <div className=" justify-center mx-auto">
           <p className="font-rosario font-bold text-nowrap xl:text-[50px] lg:text-[40px] md:text-[30px] sm:text-[30px] text-[25px]">
@@ -60,7 +60,7 @@ function Research() {
             </span>
           </a>
         </div>
-        <div className="max-w-[1240px] justify-center mx-auto pb-10 ">
+        <div className="max-w-[1240px] justify-center mx-auto pb-10 md:pb-20  ">
           <p className="font-rosario font-bold text-nowrap xl:text-[50px] lg:text-[40px] md:text-[30px] sm:text-[30px] text-[25px]">
             Research{" "}
             <span className="text-transparent [-webkit-text-stroke:0.5px_#000] lg:[-webkit-text-stroke:2px_#000]">

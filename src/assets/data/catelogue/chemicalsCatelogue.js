@@ -1,6 +1,13 @@
 import accustand from "../../images/products/cateogories/chemicals/catelogueImages/bg/accustand.png";
 import megazyme from "../../images/products/cateogories/chemicals/catelogueImages/bg/megazyme.png";
 import chemlab from "../../images/products/cateogories/chemicals/catelogueImages/bg/chemlab.png";
+
+
+import acacustandLogo from "../../images/products/cateogories/chemicals/logo/acustand.png";
+import chemlabLogo from "../../images/products/cateogories/chemicals/logo/chemlab.png";
+import megazymeLogo from "../../images/products/cateogories/chemicals/logo/megazyme.png";
+
+
 import A from "../../images/products/cateogories/chemicals/catelogueImages/accustand/A.png";
 import B from "../../images/products/cateogories/chemicals/catelogueImages/accustand/B.png";
 import C from "../../images/products/cateogories/chemicals/catelogueImages/accustand/C.png";
@@ -40,9 +47,9 @@ export const chemicalsCatelogue = [
   {
     id: "chemicatalogue",
     bgImage: [
-      { id: 1, img: accustand, title: "accustand" },
-      { id: 2, img: chemlab, title: "chemlab" },
-      { id: 3, img: megazyme, title: "megazyme" },
+      { id: 1, img: accustand, title: "accustand",logo:acacustandLogo },
+      { id: 2, img: chemlab, title: "chemlab",logo:chemlabLogo },
+      { id: 3, img: megazyme, title: "megazyme",logo:megazymeLogo }
     ],
 
     text: "METHOD, established in 1990, transitioned from trading to manufacturing laboratory fittings in 1994, offering cost-effective options to the growing market. With over 30 years of experience, METHOD is a trusted supplier of laboratory fixtures in over 40 countries, prioritizing quality, affordability, and innovation. The company remains committed to providing customized solutions and ensuring workplace safety through continuous research and collaboration.",
