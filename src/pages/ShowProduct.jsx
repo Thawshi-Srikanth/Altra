@@ -5,7 +5,7 @@ import MobileViewProducts from "./MobileViewProducts";
 import { brands } from "./../assets/data/brands";
 import { userStateContext } from "../contexts/ContextProvider";
 import { productsCaru } from "../assets/data/productsCaru";
-
+import { Link } from "react-router-dom";
 const MemoRizedProducts = memo(function ShowProduct() {
   // const [width, setWidth] = useState(0);
   // const carousel = useRef();
@@ -26,13 +26,13 @@ const MemoRizedProducts = memo(function ShowProduct() {
         <div className=" bottom-[130px]  sm:bottom-0 flex justify-start [&_li]:mx-8 [&_img]:max-w-96 animate-infinite-scrollMobShowProduct   gap-x-[40px] sm:gap-x-0 sm:animate-infinite-scrollShowProducts scroll-smooth md:gap-x-[80px] xl:gap-x-[190px] relative md:top-3">
           {" "}
           {productsCaru.map((img) => (
-            <div key={img.id}>
+            <Link key={img.id}>
               <img
                 src={img.img}
                 alt={img.id}
                 className="xl:scale-125 scale-90 sm:scale-100"
               />
-            </div>
+            </Link>
           ))}
         </div>
         {/* <div className="sm:hidden bottom-[130px]  sm:bottom-0 flex  [&_img]:max-w-96  animate-infinite-scrollMobShowProduct   relative gap-x-[40px] sm:gap-x-0    ">

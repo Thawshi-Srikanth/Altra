@@ -260,3 +260,29 @@ padding-top: 10px;
 
 
 
+
+
+@media only screen and (max-width: 430px) {
+  .mobBottom {
+  
+    bottom: 130px;
+    right: 5px;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 932px) {
+  .mdBottom {
+  
+    bottom:270px;
+    left:180px;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 667px) {
+  .mdBottom {
+  
+    bottom:200px;
+    left:150px;
+    position: relative;
+  }
+}

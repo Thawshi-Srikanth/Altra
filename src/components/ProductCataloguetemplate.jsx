@@ -65,7 +65,7 @@ console.log(items);
 
       <p className="text-[15px] text-center xl:text-[50px] lg:text-[40px] md:text-[35px] sm:text-[30px] font-rosario font-bold text-[#ff8a3a]  relative mt-9 ">
         {" "}
-        Product catelogue
+        Product Catalogue
       </p>
       {items.map((i, id) => (
         <div key={id}>{i.catelogue}</div>

@@ -78,13 +78,17 @@ function Services() {
             className="sm:space-x-10 space-y-3 justify-center mx-auto"
             key={img.id}
           >
-            <p className="text-center text-[#FF8A3A] font-bold xl:text-[30px] lg:text-[20px] md:text-[17px] sm:text-[15px] text-[20px]">
+            <p
+              className={`font-rosariotext-center text-[#FF8A3A] font-bold 2xl:text-[30px] xl:text-[25px] lg:text-[20px] md:text-[17px] sm:text-[15px] text-[20px] text-center ${
+                img.id === 3 && "relative xl:left-4 2xl:left-"
+              } `}
+            >
               {img.text}
             </p>
             <img
               src={img.img}
               alt={img.text}
-              className="object-cover rounded-lg justify-center mx-auto xl:w-[400px] xl:h-[250px] w-[310px] h-[150px] lg:w-[320px] lg:h-[200px] md:w-[250px] md:h-[150px] sm:w-[200px] sm:h-[100px] "
+              className={`object-cover rounded-lg justify-center mx-auto 2xl:w-[440px] xl:w-[400px]  xl:h-[250px] w-[310px] h-[150px] lg:w-[320px] lg:h-[200px] md:w-[250px] md:h-[150px] sm:w-[200px] sm:h-[100px] `}
             />
           </div>
         ))}

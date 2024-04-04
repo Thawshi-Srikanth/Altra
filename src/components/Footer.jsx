@@ -96,8 +96,8 @@ function Footer() {
             /> */}
             <p className="font-rosario lg:text-[15px] md:text-[12px] sm:text-[12px] xl:text-[13px] text-white wrap xl:scale-150  lg:scale-[125px] relative left-[30px]  xl:top-[23px] lg:top-[15px] lg:ml-[-30px] xl:ml-0 text-nowrap md:ml-[3px] sm:top-[10px] ">
               Research Support <br />
-              Expression Of Interest <br />
-              Grants
+              Research Assistance 
+         
             </p>
           </div>
         </div>
