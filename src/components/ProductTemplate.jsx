@@ -62,7 +62,7 @@ console.log(pathName)
           
           ${
             MainNextpath === "equipment"
-              ? "right-5  sm:right-0 px-[20px] sm:grid sm:grid-cols-4 grid grid-cols-2 sm:gap-x-0  sm:mx-[10px]  space-y-7 sm:space-y-5 md:space-y-14 md:right-7 xl:left-0 relative  sm:space-x-5 2xl:space-x-0 2xl:mx-[60px]   2xl:space-y-10 items-baseline justify-center"
+              ? "    right-5  sm:right-0 px-[20px] sm:grid sm:grid-cols-4 grid grid-cols-2 sm:gap-x-0  sm:mx-[10px]  space-y-7 sm:space-y-5 md:space-y-14 md:right-2  xl:left-[-20px] 2xl:left-[-32px] relative  sm:space-x-5 2xl:space-x-0 2xl:mx-[60px]   2xl:space-y-10 items-baseline justify-center "
               : ""
           } 
           
@@ -92,7 +92,11 @@ console.log(pathName)
               <img
                 src={client.client}
                 className={`
- ${MainNextpath === "equipment" && ([2, 4,6, 8, ].includes(client.id) && "scale-x-105  sm:scale-100")}
+ ${
+   MainNextpath === "equipment" &&
+   [2, 4, 6, 8].includes(client.id) &&
+   "scale-x-105  sm:scale-100"
+ }
 
 
 
@@ -107,7 +111,7 @@ console.log(pathName)
                   MainNextpath === "equipment" &&
                   [1, 3, 5, 7, 9].includes(client.id)
                     ? "rounded-md w-[100px] h-[89px]  lg:h-[171px]  md:h-[101px] sm:h-[101px] lg:w-[206px] md:w-[116px] sm:w-[146px]  xl:max-w-[240px] xl:h-[171px] 2xl:min-h-[181px] xl:min-h-[141px] scale-x-75 sm:scale-100"
-                    : "rounded-md xl:w-[342px]  xl:h-[171px] md:h-[101px] sm:h-[101px] lg:h-[171px] "
+                    : "rounded-md xl:w-[342px]  xl:h-[171px] md:h-[101px] sm:h-[101px] lg:h-[171px]  "
                 } 
                    ${
                      MainNextpath === "equipment" && client.id === 9
@@ -119,6 +123,22 @@ console.log(pathName)
                        ? "2xl:h-[181px] xl:min-h-[141px] "
                        : " "
                    }
+                   ${
+                     MainNextpath === "equipment" && client.id === 9
+                       ? "relative md:left-[190px] lg:left-0"
+                       : " "
+                   }
+                   ${
+                     MainNextpath === "equipment" && client.id === 5
+                       ? "relative md:scale-x-110  md:left-[-10px] xl:scale-100  xl:left-[-10px] 2xl:left-0"
+                       : " "
+                   }
+                    ${
+                      MainNextpath === "equipment" &&
+                      ![1, 3, 5, 7, 9].includes(client.id)
+                        ? "relative md:scale-x-125 lg:scale-x-150   xl:scale-100  "
+                        : " "
+                    }
 
 
                    ${
