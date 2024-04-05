@@ -110,7 +110,7 @@ console.log(pathName)
                 ${
                   MainNextpath === "equipment" &&
                   [1, 3, 5, 7, 9].includes(client.id)
-                    ? "rounded-md w-[100px] h-[89px]  lg:h-[171px]  md:h-[101px] sm:h-[101px] lg:w-[206px] md:w-[116px] sm:w-[146px]  xl:max-w-[240px] xl:h-[172px] 2xl:h-[159px]  scale-x-75 sm:scale-100"
+                    ? "rounded-md w-[100px] h-[89px]  lg:h-[171px]  md:h-[101px] sm:h-[101px] lg:w-[206px] md:w-[116px] sm:w-[146px]  xl:max-w-[240px] xl:h-[172px] xl:scale-95 2xl:scale-100 2xl:h-[159px]  scale-x-75 sm:scale-100"
                     : "rounded-md xl:w-[342px]  xl:h-[172px] md:h-[101px] sm:h-[101px] lg:h-[171px]  "
                 } 
                    ${
