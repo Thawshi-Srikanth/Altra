@@ -132,7 +132,7 @@ console.log(pathName)
                     ${
                       MainNextpath === "equipment" &&
                       ![1, 3, 5, 7, 9].includes(client.id)
-                        ? "relative md:scale-x-125 lg:scale-x-150   xl:scale-100 xl:h-[172px] 2xl:h-[159px] "
+                        ? "relative md:scale-x-125 lg:scale-x-150    xl:scale-105 2xl:scale-100 xl:h-[172px] 2xl:h-[159px] "
                         : " "
                     }
 
