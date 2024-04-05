@@ -110,19 +110,15 @@ console.log(pathName)
                 ${
                   MainNextpath === "equipment" &&
                   [1, 3, 5, 7, 9].includes(client.id)
-                    ? "rounded-md w-[100px] h-[89px]  lg:h-[171px]  md:h-[101px] sm:h-[101px] lg:w-[206px] md:w-[116px] sm:w-[146px]  xl:max-w-[240px] xl:h-[171px]  scale-x-75 sm:scale-100"
+                    ? "rounded-md w-[100px] h-[89px]  lg:h-[171px]  md:h-[101px] sm:h-[101px] lg:w-[206px] md:w-[116px] sm:w-[146px]  xl:max-w-[240px] xl:h-[123px] 2xl:h-[159px]  scale-x-75 sm:scale-100"
                     : "rounded-md xl:w-[342px]  xl:h-[171px] md:h-[101px] sm:h-[101px] lg:h-[171px]  "
                 } 
                    ${
                      MainNextpath === "equipment" && client.id === 9
                        ? " xl:left-[490px]  2xl:left-[650px] lg:left-[370px] sm:left-[240px] md:mx-20 lg:mx-0 lg:ml-0 mx-auto left-[89px] "
-                       : "xl:h-[171px] "
-                   }
-                   ${
-                     MainNextpath === "equipment" && client.id === 8
-                       ? "2xl:h-[181px] xl:min-h-[141px] "
                        : " "
                    }
+                  
                    ${
                      MainNextpath === "equipment" && client.id === 9
                        ? "relative md:left-[190px] lg:left-0"
@@ -155,7 +151,7 @@ console.log(pathName)
                    }
                    ${
                      MainNextpath === "equipment"
-                       ? "xl:w-[342px] xl:h-[172px]"
+                       ? "xl:w-[342px] xl:h-[171px]"
                        : " "
                    }
 
