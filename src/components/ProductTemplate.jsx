@@ -132,7 +132,7 @@ console.log(pathName)
                     ${
                       MainNextpath === "equipment" &&
                       ![1, 3, 5, 7, 9].includes(client.id)
-                        ? "relative md:scale-x-125 lg:scale-x-150   xl:scale-100 xl:h-[173px] 2xl:h-[159px] "
+                        ? "relative md:scale-x-125 lg:scale-x-150   xl:scale-100 xl:h-[175px] 2xl:h-[159px] "
                         : " "
                     }
 
@@ -151,7 +151,7 @@ console.log(pathName)
                    }
                    ${
                      MainNextpath === "equipment"
-                       ? "xl:w-[342px] xl:h-[171px]"
+                       ? "xl:w-[342px] xl:h-[172px]"
                        : " "
                    }
 
