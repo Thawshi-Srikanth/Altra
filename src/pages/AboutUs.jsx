@@ -5,9 +5,9 @@ import EllipseGreen from "../assets/images/team/EllipseGreen.png";
 import mission from "../assets/images/team/mission.png";
 import vision from "../assets/images/team/vision.png";
 function AboutUs() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0)
-  // }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="mb-[-80px] ">
       <div className="container mx-auto px-5  sm:px-1 lg:px-2 xl:px-3 2xl:px-0">
@@ -70,7 +70,7 @@ function AboutUs() {
           ))}
         </div> */}
 
-        <div className="grid relative top-20 mx-2 sm:mx-0  space-y-10 ">
+        <div className="grid relative  top-5 sm:top-20 mx-2 sm:mx-0  space-y-10  ">
           <div className="sm:flex font-rosario sm:space-x-20 relative top-10 ">
             <div className=" ">
               {" "}
