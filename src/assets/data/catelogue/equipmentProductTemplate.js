@@ -1,14 +1,14 @@
 import equipment from "../../images/products/cateogories/equipmentOne/equipmentbg.png";
 
-import euromax from "../../images/Brands/brand10.png";
-import consort from "../../images/Brands/brand11.png";
-import camlab from "../../images/Brands/brand12.png";
-import apera from "../../images/Brands/brand13.png";
-import orto from "../../images/Brands/brand14.png";
-import france from "../../images/Brands/brand15.png";
-import jp from "../../images/Brands/brand7.png";
-import interscience from "../../images/Brands/brand8.png";
-import gerber from "../../images/Brands/brand9.png";
+import euromax from "../../images/products/cateogories/equipmentOne/newBrands/euromex.png";
+import consort from "../../images/products/cateogories/equipmentOne/newBrands/consort.png";
+import camlab from "../../images/products/cateogories/equipmentOne/newBrands/camlab.png";
+import apera from "../../images/products/cateogories/equipmentOne/newBrands/Apera instruments.png";
+import orto from "../../images/products/cateogories/equipmentOne/newBrands/alvarez.png";
+import france from "../../images/products/cateogories/equipmentOne/newBrands/Alla france.png";
+import jp from "../../images/products/cateogories/equipmentOne/newBrands/jp.png";
+import interscience from "../../images/products/cateogories/equipmentOne/newBrands/interscience.png";
+import gerber from "../../images/products/cateogories/equipmentOne/newBrands/gerber.png";
 
 export const equipmentProductTemplate = [
   {

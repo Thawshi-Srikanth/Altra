@@ -26,6 +26,7 @@ import CC from "../../images/products/cateogories/chemicals/catelogueImages/chem
 import DD from "../../images/products/cateogories/chemicals/catelogueImages/chemlab/D.png";
 import EE from "../../images/products/cateogories/chemicals/catelogueImages/chemlab/E.png";
 import FF from "../../images/products/cateogories/chemicals/catelogueImages/chemlab/F.png";
+import GG from "../../images/products/cateogories/chemicals/catelogueImages/chemlab/G.png";
 
 import HH from "../../images/products/cateogories/chemicals/catelogueImages/chemlab/H.png";
 import II from "../../images/products/cateogories/chemicals/catelogueImages/chemlab/I.png";
@@ -88,10 +89,11 @@ export const chemicalsCatelogue = [
           { id: 4, Catlogueimage: DD, alt: "" },
           { id: 5, Catlogueimage: EE, alt: "" },
           { id: 6, Catlogueimage: FF, alt: "" },
+          { id: 7, Catlogueimage: GG, alt: "" },
 
           { id: 8, Catlogueimage: HH, alt: "" },
           { id: 9, Catlogueimage: II, alt: "" },
-          { id: 10, Catlogueimage: J, alt: "" },
+      
         ],
       },
       {

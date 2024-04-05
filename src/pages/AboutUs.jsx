@@ -34,7 +34,7 @@ function AboutUs() {
           </p>
         </div>
 
-        <div className="relative top-20">
+        {/* <div className="relative top-20">
           {aboutUs.map((info) => (
             <div key={info.id} className="space-y-10 mx-auto justify-center ">
               {info.history.map((detail) => (
@@ -68,7 +68,7 @@ function AboutUs() {
               <p></p>
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div className="grid relative top-20 mx-2 sm:mx-0  space-y-10">
           <div className="sm:flex font-rosario sm:space-x-20 relative top-10 ">
@@ -143,9 +143,7 @@ function AboutUs() {
                   } sm:block hidden xl:w-[350px] xl:h-[350px] md:w-[280px] lg:h-[300px] lg:w-[300px] md:h-[280px] sm:w-[200px] sm:h-[200px] w-[100px] h-[100px] `}
                 />
 
-
-
-{/* mobile */}
+                {/* mobile */}
                 <div className="sm:hidden ">
                   <div className="flex space-x-2 mx-auto justify-start">
                     <img
@@ -161,7 +159,7 @@ function AboutUs() {
                         {member.name}
                       </p>
                       <p
-                        className={`text-[#FF8A3A] font-rosario xl:text-[45px] lg:text-[35px] md:text-[30px] sm:text-[20px] text-[20px] ${
+                        className={`text-[#FF8A3A] font-bold font-rosario xl:text-[45px] lg:text-[35px] md:text-[30px] sm:text-[20px] text-[20px] ${
                           (member.id === 2 || member.id === 4) &&
                           "relative sm:flex sm:justify-end text-nowrap"
                         }`}
@@ -183,7 +181,8 @@ function AboutUs() {
                 {/* dekstop */}
                 <div
                   className={`sm:${
-                    (member.id === 2 || member.id === 4) && "container  sm:order-1  flex"
+                    (member.id === 2 || member.id === 4) &&
+                    "container  sm:order-1  flex"
                   } mx-auto justify-center  sm:block hidden `}
                 >
                   <p
@@ -206,7 +205,7 @@ function AboutUs() {
                   <div className="sm:block hidden">
                     {" "}
                     <p
-                      className={`text-[#FF8A3A] font-rosario xl:text-[45px] lg:text-[35px] md:text-[30px] sm:text-[20px] text-[25px] ${
+                      className={`text-[#FF8A3A] font-bold font-rosario xl:text-[45px] lg:text-[35px] md:text-[30px] sm:text-[20px] text-[25px] ${
                         (member.id === 2 || member.id === 4) &&
                         "relative sm:flex sm:justify-end  "
                       }`}

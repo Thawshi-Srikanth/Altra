@@ -5,9 +5,9 @@ function ChemLAbCatelogue({ catelogue ,copyright}) {
   const [imagepopUp, setImagePopup] = useState(false);
   const [popupId, setPopupId] = useState(null);
 
-  const firstRow = catelogue.slice(0, 8);
+  const firstRow = catelogue.slice(0,8);
 
-  const finalRow = catelogue.slice(8,9);
+  const finalRow = catelogue.slice(8);
 
 
   const handleClick = (id) => {

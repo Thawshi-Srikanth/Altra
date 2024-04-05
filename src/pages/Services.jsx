@@ -79,7 +79,7 @@ function Services() {
             key={img.id}
           >
             <p
-              className={`font-rosariotext-center text-[#FF8A3A] font-bold 2xl:text-[30px] xl:text-[25px] lg:text-[20px] md:text-[17px] sm:text-[15px] text-[20px] text-center ${
+              className={`font-rosario text-center text-[#FF8A3A] font-bold 2xl:text-[30px] xl:text-[25px] lg:text-[20px] md:text-[17px] sm:text-[15px] text-[20px] text-center ${
                 img.id === 3 && "relative xl:left-4 2xl:left-"
               } `}
             >
