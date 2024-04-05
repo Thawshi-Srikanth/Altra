@@ -234,13 +234,13 @@ console.log(currentTab)
                 onClick={() => setMobDrawer(!mobDrawer)}
                 src={toggle}
                 alt="toggle"
-                className="w-[19px] h-[17px] relative left-[160px] toggle sm:left-[330px]  md:bottom-[15px] sm:bottom-[11px] md:mt-[-8px]"
+                className="w-[19px] h-[17px] relative left-[190px] toggle sm:left-[330px]  md:bottom-[15px] sm:bottom-[11px] md:mt-[-8px] md:left-[385px]"
               />
-              <img
+              {/* <img
                 src={search}
                 alt="search"
                 className="w-[24px] h-[24px]  left-[90px]  md:left-[180px] sm:left-[162px] relative md:bottom-[15px] sm:bottom-[11px] md:mt-[-8px]"
-              />
+              /> */}
             </div>
           </div>
         )}
