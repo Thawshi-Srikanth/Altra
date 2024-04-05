@@ -14,7 +14,7 @@ import { userStateContext } from "../contexts/ContextProvider";
 import SearchBar from "./SearchBar";
 
 function Header() {
-    const [searchClick, setSearchClick] = useState(false);
+   
   const [currentTab, setCurrentTab] = useState(null);
   const [currentTabDropdown, setCurrentTabDropdown] = useState(null);
   const [mobDrawer, setMobDrawer] = useState(false);
@@ -26,7 +26,6 @@ function Header() {
   const { clickToggle, setClickToggle, actualClient,currentPath, } = userStateContext();
 
 
-console.log(searchClick)
 
   /* 
   const highlight = (title, path) => {
@@ -89,7 +88,7 @@ console.log(currentTab)
         <div
           className={`bg-white  z-50 top-0 bottom-0 w-screen  relative  lg:block hidden  lg:flex-row lg:h-[100px] lg:shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)] `}
         >
-          <div className="lg:right-[10px] xl:right-0 lg:flex lg:flex-row xl:pl-[86px] xl:pr-[86px] lg:pt-[10px] lg:pb-[10px] relative xl:left-[10px] 2xl:left-[40px]">
+          <div className="lg:right-[10px] xl:right-0 lg:flex lg:flex-row xl:pl-[86px] xl:pr-[86px] lg:pt-[10px] lg:pb-[10px] relative xl:left-[20px] 2xl:left-[50px]">
             <Link to="/">
               <div className="lg:flex lg:flex-row lg:scale-75 xl:scale-100 relative xl:right-[60px] 2xl:right-[70px]  ">
                 <img
@@ -99,7 +98,7 @@ console.log(currentTab)
                 />
               </div>
             </Link>
-            <div className="text-nowrap relative 2xl:left-[40px] lg:flex  lg:gap-x-[55px] xl:gap-x-[90px] xl:text-[24px] font-rosario justify-center items-center">
+            <div className="text-nowrap relative 2xl:left-[50px] lg:flex  lg:gap-x-[55px] xl:gap-x-[90px] xl:text-[24px] font-rosario justify-center items-center">
               {headerTitles.map((title) => (
                 <div key={title.id} className="">
                   <ul className="flex ">
@@ -135,9 +134,9 @@ console.log(currentTab)
                 </div>
               ))}
             </div>
-            <div
+            {/* <div
               className="relative  2xl:left-[130px] lg:left-[33px] flex  items-center hover:scale-125"
-              onClick={() => setSearchClick(!searchClick)}
+             
             >
               {" "}
               <img
@@ -145,7 +144,7 @@ console.log(currentTab)
                 alt="headerLogo"
                 className="xl:w-[42px] xl:h-[42px] lg:w-[35px] lg:h-[35px]"
               />
-            </div>
+            </div> */}
           </div>
           {clickToggle && (
             <div
@@ -246,7 +245,7 @@ console.log(currentTab)
           </div>
         )}
       </div>
-      {searchClick && <SearchBar searchClick={searchClick}  setSearchClick={setSearchClick}/>}
+    
     </>
   );
 }
