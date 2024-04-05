@@ -90,11 +90,11 @@ console.log(currentTab)
         >
           <div className="lg:right-[10px] xl:right-0 lg:flex lg:flex-row xl:pl-[86px] xl:pr-[86px] lg:pt-[10px] lg:pb-[10px] relative xl:left-[20px] 2xl:left-[90px]">
             <Link to="/">
-              <div className="lg:flex lg:flex-row lg:scale-75 xl:scale-100 relative xl:right-[65px] 2xl:right-[74x]  ">
+              <div className="lg:flex lg:flex-row lg:scale-75 xl:scale-100 relative xl:right-[65px] 2xl:right-[0x]  ">
                 <img
                   src={headerLogo}
                   alt="headerLogo"
-                  className="lg:h-[80px] "
+                  className="lg:h-[80px] relative 2xl:right-[50px] "
                 />
               </div>
             </Link>
