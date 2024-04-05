@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import bg from "../assets/images/Services/bg.png";
 import bgMob from "../assets/images/Services/bgMob.png";
 import { Link } from "react-router-dom";
 import servicesImages from "../assets/data/servicesImages";
 function Services() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
   return (
     <div className="md:mb-30 lg:mb-10 mb-10 space-y-10 sm:mb-60">
       {" "}

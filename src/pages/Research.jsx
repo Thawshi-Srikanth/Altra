@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import research from '../assets/images/Research/Research.png'
 import researchMob from '../assets/images/Research/ResearchMOb.png'
 import bottom from '../assets/images/Research/bottom.png'
 import researchVideo from '../assets/video/research.mp4'
 function Research() {
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <div className="xl:mb-[-80px] lg:mb-[-70px] md:mb-[-70px] ">
       <div>

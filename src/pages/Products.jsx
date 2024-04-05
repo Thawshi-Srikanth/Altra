@@ -16,9 +16,9 @@ import contact from "../assets/images/products/buttons/contact.png";
 function Products() {
   const [countOn, setCounton] = useState(false);
 
-  /*     useEffect(() => {
+     useEffect(() => {
     window.scrollTo(0, 0);
-  }, []); */
+  }, []);
 
   return (
     <>
