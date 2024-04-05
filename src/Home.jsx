@@ -13,6 +13,7 @@ import ProductDropdownCom from "./components/ProductDropdownCom";
 import { userStateContext } from "./contexts/ContextProvider";
 import MagnetDesktop from "./pages/MagnetDesktop";
 import Phdekstop from "./pages/Phdekstop";
+import SearchBar from "./components/SearchBar";
 
 export default function Home() {
   const{clickToggle,}=userStateContext()
@@ -71,7 +72,7 @@ export default function Home() {
           className="justify-end flex items-center absolute xl:h-[4964px]   lg:h-[4150px] md:h-[3158px] sm:h-[2456px] h-[1790px] object-cover min-w-full "
         />
         <div className="relative bg-[#FF8A3B] bg-opacity-80 min-w-full ">
-     
+     <SearchBar/>
           <HeroSection />
           <HeroText />
           <Suspense fallback={<Loader />}>

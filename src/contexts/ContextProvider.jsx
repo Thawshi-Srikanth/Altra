@@ -16,8 +16,9 @@ const StateContext = createContext({
   actualClient: "",
   consumablesCatelogue: consumablesCatelogue,
   equipmentCatelogue: equipmentCatelogue,
-  currentPath:"",
-  setCurrentPath:()=>{},
+  currentPath: "",
+ 
+  setCurrentPath: () => {},
   setActualClient: () => {},
 });
 
@@ -27,12 +28,12 @@ import glasswareCatelogue from "../assets/data/catelogue/glasswareCatelogue";
 import chemicalsCatelogue from "../assets/data/catelogue/chemicalsCatelogue";
 import { plasticwareCatelogue } from "./../assets/data/catelogue/plasticwareCatelogue";
 import { consumablesCatelogue } from "./../assets/data/catelogue/consumablesCatelogue";
-import { equipmentCatelogue } from './../assets/data/catelogue/equipmentCatelogue';
+import { equipmentCatelogue } from "./../assets/data/catelogue/equipmentCatelogue";
 export const ContextProvider = ({ children }) => {
   const [zindex, setzIndex] = useState();
   const [clickToggle, setClickToggle] = useState(false);
   const [response, setResponse] = useState(null);
-  const[currentPath,setCurrentPath]=useState("")
+  const [currentPath, setCurrentPath] = useState("");
   const [actualClient, setActualClient] = useState(
     localStorage.getItem("actualClient") || ""
   );
@@ -65,7 +66,9 @@ export const ContextProvider = ({ children }) => {
         plasticwareCatelogue,
         consumablesCatelogue,
         equipmentCatelogue,
-        currentPath,setCurrentPath
+        currentPath,
+        setCurrentPath,
+    
       }}
     >
       {children}
