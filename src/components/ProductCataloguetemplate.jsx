@@ -13,15 +13,19 @@ function ProductCataloguetemplate() {
 
 
 
-  const { id } = useParams();
+  const { mainNextpath } = useParams();
 
-
+console.log(mainNextpath)
 
   const destructuring = (data) =>
     data.map((item) => ({
       bgImage: (
         <div key={item.id}>
-          <ImageCommonBg img={item && item.bgImage}  id={id} text={item && item.catelogue[index].text} />
+          <ImageCommonBg
+            img={item && item.bgImage}
+            id={mainNextpath}
+            text={item && item.catelogue[index].text}
+          />
         </div>
       ),
       catelogue: (
@@ -29,33 +33,32 @@ function ProductCataloguetemplate() {
           catelogue={item && item.catelogue[index].catlogueImages}
           catelogueHorizontal={item && item.catelogue[index].horizontal}
           copyright={item && item.catelogue[index].copyright}
-          id={id}
+          id={mainNextpath}
         />
       ),
     }));
 
   let selectedValue = null;
-  if (id === "furniture") {
+  if (mainNextpath === "furniture") {
   
     selectedValue = furnitureCatelogue;
-  } else if (id === "glassware") {
+  } else if (mainNextpath === "glassware") {
     selectedValue = glasswareCatelogue;
   }
   
-  else if (id === "chemicatalogue") {
+  else if (mainNextpath === "chemicatalogue") {
     selectedValue = chemicalsCatelogue;
   }
-  else if (id === "plasticware") {
+  else if (mainNextpath === "plasticware") {
     selectedValue = plasticwareCatelogue;
   }
-  else if (id === "consumables") {
+  else if (mainNextpath === "consumables") {
     selectedValue = consumablesCatelogue;
   }
-  else if (id === "equipment") {
+  else if (mainNextpath === "equipment") {
     selectedValue = equipmentCatelogue;
   }
   const items = selectedValue && destructuring(selectedValue);
-console.log(items);
 
   return (
     <div>

@@ -12,6 +12,7 @@ function ChemicalasMainPage() {
     <div>
       {chemicalsProductTemplate.map((item) => (
         <ProductTemplate
+          nextPath={item.nextPath}
           key={item.id}
           imgOne={item.imgOne}
           clients={item.clients}

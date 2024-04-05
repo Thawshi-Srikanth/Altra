@@ -1,6 +1,8 @@
 import marketing from "../images/team/Marketing.png";
 import admin from "../images/team/Admin.png";
 import unknown from "../images/team/Unknown.png";
+import arasu from "../images/team/arasu.png";
+import biruntha from "../images/team/biruntha.png";
 
 export const aboutUs = [
   {
@@ -48,16 +50,16 @@ export const aboutUs = [
       {
         id: 1,
         name: "Mr.K.T.Arasu",
-        img: unknown,
+        img: arasu,
         description:
           "The late Mr.K.T.Arasu, a highly experiences laboratory Technician from the University of Oxford,laid the foundation of Altra Scientific in 1978.His visionary leadership and expertise were pivotal in establishing the company’s strong presence in the Sri lankan market",
-        designation: "Founder",
+        designation: "biruntha",
       },
 
       {
         id: 2,
         name: "Biruntha Shyamalan",
-        img: unknown,
+        img: biruntha,
         description:
           "Mr.Biruntha, with a Bachelor’s degree in Architecture and over 12 years of industry experience, spearheads the company. Her Strategic acumen and passion for excellence drive the business towards unprecedented success in varied industries.",
         designation: "Executive Director",

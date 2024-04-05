@@ -46,9 +46,8 @@ export default function App() {
           element={<ConsumablesMainPage />}
         ></Route>
 
-        
         <Route
-          path="/productCatelgoue/:id"
+          path="/product/:mainNextpath/:clientNextpath"
           element={<ProductCataloguetemplate />}
         ></Route>
       </Routes>

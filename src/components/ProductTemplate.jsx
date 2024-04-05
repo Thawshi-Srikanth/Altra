@@ -17,18 +17,17 @@ function ProductTemplate({
   clients,
   MainNextpath,
 }) {
-
   const pathName = location.pathname;
-console.log(pathName)
-  const { setActualClient, setIndex, actualClient,setCurrentPath } = userStateContext();
+  console.log(pathName);
+  const { setActualClient, setIndex, actualClient, setCurrentPath } =
+    userStateContext();
 
-  console.log(MainNextpath);
-  const equipmentMainPageSizes = [1, 3, 5, 7];
+  
   const forwardArrayIndex = (data) => {
-    console.log(actualClient);
+   console.log(data.nextpath)
     setActualClient(data.nextpath);
     setIndex(data.index);
-      setCurrentPath(pathName);
+    setCurrentPath(pathName);
   };
   return (
     <div>
@@ -80,7 +79,7 @@ console.log(pathName)
         >
           {clients.map((client) => (
             <Link
-              to={`/productCatelgoue/${MainNextpath}`}
+              to={`/product/${MainNextpath}/${client.nextpath}`}
               className={`flex  ${
                 MainNextpath === "equipment" ||
                 (MainNextpath === "consumables" &&
