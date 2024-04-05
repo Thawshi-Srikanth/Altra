@@ -1,5 +1,5 @@
 import { useFormik } from "formik";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import contact from "../assets/data/contact";
 import { basicSchema } from "../schemas/Schema";
 import { SendEmail } from "../emailApi/emailApi";
@@ -10,7 +10,9 @@ import { userStateContext } from "../contexts/ContextProvider";
 function Contact() {
   const [buttonLoading, setButtonLoading] = useState(false);
   const { setResponse, response } = userStateContext();
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const {
     values,
     errors,
