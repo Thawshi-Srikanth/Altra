@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
-import ProductTemplate from "../../components/ProductTemplate";
 import { useParams } from "react-router-dom";
-import chemicalsProductTemplate from "../../assets/data/catelogue/chemicalsProductTemplate";
 import furnitureProductTemplate from "../../assets/data/catelogue/furnitureProductTemplate";
+import ProductTemplate from "../../components/ProductTemplate";
 
 export default function FurnitureMainPage() {
   useEffect(() => {

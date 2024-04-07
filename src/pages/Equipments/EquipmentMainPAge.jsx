@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
+
 import equipmentProductTemplate from "../../assets/data/catelogue/equipmentProductTemplate";
 import ProductTemplate from "../../components/ProductTemplate";
 
@@ -7,7 +7,6 @@ export default function EquipmentMainPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const { id } = useParams();
 
   return (
     <div className="">
