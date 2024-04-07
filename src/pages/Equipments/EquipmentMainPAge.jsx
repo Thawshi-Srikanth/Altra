@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import equipmentProductTemplate from "../../assets/data/catelogue/equipmentProductTemplate";
 import ProductTemplate from "../../components/ProductTemplate";
 
-export default function FurnitureMainPage() {
+export default function EquipmentMainPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -14,7 +14,6 @@ export default function FurnitureMainPage() {
       {" "}
       {equipmentProductTemplate.map((item) => (
         <ProductTemplate
-       
           key={item.id}
           imgOne={item.imgOne}
           clients={item.clients}
