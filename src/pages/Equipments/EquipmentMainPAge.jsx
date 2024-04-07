@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import equipmentProductTemplate from "../../assets/data/catelogue/equipmentProductTemplate";
 import ProductTemplate from "../../components/ProductTemplate";
 
-export default function EquipmentMainPage() {
+export default function EquipmentMainPAge() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

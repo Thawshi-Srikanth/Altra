@@ -17,7 +17,7 @@ import PlasticwareMainPage from "./pages/Plasticware/PlasticwareMainPage";
 import Products from "./pages/Products";
 import Research from "./pages/Research";
 import Services from "./pages/Services";
-import EquipmentMainPAge from "./pages/Equipments/EquipmentMainPage"
+import EquipmentMainPAge from "./pages/Equipments/EquipmentMainPAge"
 export default function App() {
   return (
     <Router>
