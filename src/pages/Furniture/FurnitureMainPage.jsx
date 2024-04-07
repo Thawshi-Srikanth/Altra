@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import furnitureProductTemplate from "../../assets/data/catelogue/furnitureProductTemplate";
 import ProductTemplate from "../../components/ProductTemplate";
 
-export default function FurnitureMainPage() {
+export default function FurnitureMainPAge() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

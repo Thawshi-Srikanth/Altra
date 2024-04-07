@@ -17,7 +17,7 @@ import PlasticwareMainPage from "./pages/Plasticware/PlasticwareMainPage";
 import Products from "./pages/Products";
 import Research from "./pages/Research";
 import Services from "./pages/Services";
-import EquipmentMainPage from "./pages/Equipments/EquipmentMainPage"
+import EquipmentMainPAge from "./pages/Equipments/EquipmentMainPage"
 export default function App() {
   return (
     <Router>
@@ -34,7 +34,7 @@ export default function App() {
 
         <Route
           path="/products/equipment"
-          element={<EquipmentMainPage />}
+          element={<EquipmentMainPAge />}
         ></Route>
 
         <Route
