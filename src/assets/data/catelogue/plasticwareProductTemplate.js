@@ -6,7 +6,7 @@ export const plasticwareProductTemplate = [
   {
     id: 1,
     imgOne: plasticwarebg,
-    clients: [{ id: 1, client: client, nextpath: "plasticware", index: 0 }],
+    clients: [{ id: 1, client: client, nextpath: "witeg", index: 0 }],
   },
 ];
 

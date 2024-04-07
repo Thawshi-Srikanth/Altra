@@ -3,10 +3,9 @@ import { userStateContext } from "../contexts/ContextProvider";
 import imgMob from "../assets/images/products/mobile/mob.png"
 function ImageCommonBg({ img, text ,id}) {
   const { actualClient, } = userStateContext();
-console.log(id)
+
   const filtered = img.filter((item) =>{    return  item.title === actualClient});
-  console.log(filtered)
-console.log(actualClient)
+
   return (
     <div className="relative">
       <div className=" top-3 sm:top-0 grid grid-cols-2 absolute items-center mx-auto justify-center">
@@ -61,7 +60,7 @@ console.log(actualClient)
         >
           {text}
         </p>
-        {filtered.map((image) => (
+        {filtered.map((image,) => (
           <div
             key={image.id}
             className="grid top-5 left-3 mx-auto justify-center relative items-center  "
@@ -87,7 +86,7 @@ console.log(actualClient)
         ))}
       </div>
 
-      {filtered.map((image) => (
+      {filtered.map((image, id) => (
         <>
           <img
             key={image.id}
@@ -97,7 +96,7 @@ console.log(actualClient)
           <div>
             {" "}
             <img
-              key={image.id}
+              key={image.name}
               src={imgMob}
               className={`object-cover  h-[165px]   sm:top-0 sm:hidden `}
             />

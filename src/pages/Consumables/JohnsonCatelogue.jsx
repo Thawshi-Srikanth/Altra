@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ImagePopup from "../../components/ImagePopup";
 
 function JohnsonCatelogue({ catelogue ,copyright}) {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   const [imagepopUp, setImagePopup] = useState(false);
   const [popupId, setPopupId] = useState(null);
 

@@ -7,18 +7,20 @@ import CatelogueCommon from "./CatelogueCommon";
 import { CloudCog } from "lucide-react";
 
 function ProductCataloguetemplate() {
-   
-   const { furnitureCatelogue, glasswareCatelogue, chemicalsCatelogue, index,plasticwareCatelogue,consumablesCatelogue,equipmentCatelogue } =userStateContext();
-
-
-
+  const {
+    furnitureCatelogue,
+    glasswareCatelogue,
+    chemicalsCatelogue,
+    index,
+    plasticwareCatelogue,
+    consumablesCatelogue,
+    equipmentCatelogue,
+  } = userStateContext();
 
   const { mainNextpath } = useParams();
 
-console.log(mainNextpath)
-
   const destructuring = (data) =>
-    data.map((item) => ({
+    data.map((item, id) => ({
       bgImage: (
         <div key={item.id}>
           <ImageCommonBg
@@ -40,22 +42,16 @@ console.log(mainNextpath)
 
   let selectedValue = null;
   if (mainNextpath === "furniture") {
-  
     selectedValue = furnitureCatelogue;
   } else if (mainNextpath === "glassware") {
     selectedValue = glasswareCatelogue;
-  }
-  
-  else if (mainNextpath === "chemicatalogue") {
+  } else if (mainNextpath === "chemicatalogue") {
     selectedValue = chemicalsCatelogue;
-  }
-  else if (mainNextpath === "plasticware") {
+  } else if (mainNextpath === "plasticware") {
     selectedValue = plasticwareCatelogue;
-  }
-  else if (mainNextpath === "consumables") {
+  } else if (mainNextpath === "consumables") {
     selectedValue = consumablesCatelogue;
-  }
-  else if (mainNextpath === "equipment") {
+  } else if (mainNextpath === "equipment") {
     selectedValue = equipmentCatelogue;
   }
   const items = selectedValue && destructuring(selectedValue);

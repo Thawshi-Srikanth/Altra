@@ -1,19 +1,18 @@
 import React, { useEffect, useState } from "react";
+import CountUp from "react-countup";
+import { Link } from "react-router-dom";
+import ScrollTrigger from "react-scroll-trigger";
 import counterDetails from "../assets/data/counterDetails";
+import productCategoryData from "../assets/data/productCategoryData";
 import bg from "../assets/images/products/bg/bg.png";
 import bgMob from "../assets/images/products/bg/bgMob.png";
-import Counter from "./Counter";
-import CountUp from "react-countup";
-import ScrollTrigger from "react-scroll-trigger";
-import { Link } from "react-router-dom";
-import productCategoryData from "../assets/data/productCategoryData";
 import MemoRizedClientele from "./Clientele";
 import MemoRizedClientele2 from "./ClienteleSm";
+import Counter from "./Counter";
 import ProductCategory from "./ProductCategory";
-import about from "../assets/images/products/buttons/about.png";
-import contact from "../assets/images/products/buttons/contact.png";
 
-function Products() {
+
+const Products=React.memo(function Products() {
   const [countOn, setCounton] = useState(false);
 
      useEffect(() => {
@@ -77,9 +76,9 @@ function Products() {
               </div>
             )}
           </ScrollTrigger>
-        </div>
+        </div>{" "}
 
-        <div className="grid sm:grid-cols-2  relative lg:gap-y-[50px] sm:gap-y-[30px] xl:top-[50px] lg:top-[50px] sm:top-[40px]  text-nowrap top-[30px] ">
+        <div className="grid sm:grid-cols-2  relative lg:gap-y-[50px] sm:gap-y-[30px] xl:top-[50px] lg:top-[50px] sm:top-[40px]  text-nowrap top-[30px] " >
           {productCategoryData.map((categiry) => (
             <ProductCategory
               img1={categiry.img1}
@@ -91,6 +90,7 @@ function Products() {
             />
           ))}
         </div>
+
         <div className="bg-[#FF8A3A]    relative  md:top-0 md:block hidden">
           {" "}
           <MemoRizedClientele />
@@ -102,5 +102,5 @@ function Products() {
     </>
   );
 }
-
+)
 export default Products;

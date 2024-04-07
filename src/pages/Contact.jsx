@@ -7,7 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { userStateContext } from "../contexts/ContextProvider";
 
-function Contact() {
+const Contact = React.memo(function Contact() {
   const [buttonLoading, setButtonLoading] = useState(false);
   const { setResponse, response } = userStateContext();
   useEffect(() => {
@@ -37,7 +37,6 @@ function Contact() {
 
     validationSchema: basicSchema,
     onSubmit: (values) => {
-  
       SendEmail(values);
 
       console.log(response);
@@ -271,11 +270,7 @@ function Contact() {
                                   : ""
                               }`}
                             />
-                            <p
-                              className={``}
-                            >
-                              {img.info}
-                            </p>
+                            <p className={``}>{img.info}</p>
                           </a>
                         ))}
                       </div>
@@ -289,5 +284,5 @@ function Contact() {
       </div>
     </div>
   );
-}
+});
 export default Contact;

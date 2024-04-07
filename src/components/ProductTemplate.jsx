@@ -6,25 +6,18 @@ import MemoRizedClientele2 from "../pages/ClienteleSm";
 
 function ProductTemplate({
   imgOne,
-  imgTwo,
-  imgThree,
-  imgFour,
-  imgFive,
-  imgOneMob,
-  imgTwoMob,
-  nextpath,
+
   description,
   clients,
   MainNextpath,
 }) {
   const pathName = location.pathname;
-  console.log(pathName);
+
   const { setActualClient, setIndex, actualClient, setCurrentPath } =
     userStateContext();
 
-  
   const forwardArrayIndex = (data) => {
-   console.log(data.nextpath)
+    console.log(data.nextpath);
     setActualClient(data.nextpath);
     setIndex(data.index);
     setCurrentPath(pathName);
@@ -79,7 +72,7 @@ function ProductTemplate({
         >
           {clients.map((client) => (
             <Link
-              to={`/product/${MainNextpath}/${client.nextpath}`}
+              to={`/products/${MainNextpath}/${client.nextpath}`}
               className={`flex  ${
                 MainNextpath === "equipment" ||
                 (MainNextpath === "consumables" &&

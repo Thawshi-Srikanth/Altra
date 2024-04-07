@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ImagePopup from "../../components/ImagePopup";
 
 function FurnitureCataelogueImages({ catelogue, copyright }) {
   const [imagepopUp, setImagePopup] = useState(false);
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   const [popupId, setPopupId] = useState(null);
   const firstRow = catelogue.slice(0, 5);
 

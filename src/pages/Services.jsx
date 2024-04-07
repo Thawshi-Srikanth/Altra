@@ -3,7 +3,9 @@ import bg from "../assets/images/Services/bg.png";
 import bgMob from "../assets/images/Services/bgMob.png";
 import { Link } from "react-router-dom";
 import servicesImages from "../assets/data/servicesImages";
-function Services() {
+
+
+const Services=React.memo(function ServicesComponent() {
     useEffect(() => {
       window.scrollTo(0, 0);
     }, []);
@@ -13,12 +15,12 @@ function Services() {
       {" "}
       <div className=" w-full relative ">
         <img
-          src={bgMob}
+          src={bg}
           alt="bgimage"
           className="w-full h-full object-cover relative sm:block hidden "
         />
         <img
-          src={bg}
+          src={bgMob}
           alt="bgimage"
           className="w-full h-full object-cover relative sm:hidden  top-[30px] "
         />
@@ -100,5 +102,5 @@ function Services() {
     </div>
   );
 }
-
+)
 export default Services;

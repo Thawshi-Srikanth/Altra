@@ -8,15 +8,23 @@ function ProductDropdownCom({ title,currentTabDropdown }) {
       <Link to={title.path} className="">
         <div
           className={`${
-            title.name == "Chemical & Regents"
-              ? "rounded-b-[20px] hover:bg-blue-gray-400"
+            title.name == "Plasticware"
+              ? "rounded-b-[20px] hover:bg-blue-gray-300"
               : "hover:bg-blue-gray-400"
           }  `}
         >
           <ul
             className={`${
               currentTabDropdown === title.name ? "bg-blue-gray-400" : ""
-            } xl:text-[20px] lg:text-[12px] font-bold  text-left font-rosario pl-4  `}
+            } 
+              ${title.name == "Plasticware"? "rounded-b-[20px]":""}
+            
+            
+            xl:text-[20px] lg:text-[12px] font-bold  text-left font-rosario pl-4 
+  
+  
+  
+            `}
           >
             <li className="xl:py-4 lg:py-2 "> {title.name}</li>
           </ul>

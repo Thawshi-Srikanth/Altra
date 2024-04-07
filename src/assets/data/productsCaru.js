@@ -12,73 +12,73 @@ export const productsCaru = [
     id: 1,
 
     img: A,
-    path: "/chemicals/:id",
+    path: "/products/chemicals",
   },
   {
     id: 2,
 
     img: B,
-    path: "/glassware/:id",
+    path: "/products/glassware",
   },
   {
     id: 3,
 
     img: C,
-    path: "/equipment/:id",
+    path: "/products/equipment",
   },
   {
     id: 4,
 
     img: D,
-    path: "/plasticware/:id",
+    path: "/products/plasticware",
   },
   {
     id: 5,
 
     img: E,
-    path: "/consumables/:id",
+    path: "/products/consumables",
   },
   {
     id: 6,
 
     img: F,
-    path: "/furniture/:id",
+    path: "/products/furniture",
   },
 
   {
     id: 1,
 
     img: C,
-    path: "/equipment/:id",
+    path: "/products/equipment",
   },
   {
     id: 2,
 
     img: B,
-    path: "/glassware/:id",
+    path: "/products/glassware",
   },
   {
     id: 3,
 
     img: C,
-    path: "/equipment/:id",
+    path: "/products/equipment",
   },
   {
     id: 4,
 
     img: D,
-    path: "/plasticware/:id",
+    path: "/products/plasticware",
   },
   {
     id: 5,
 
     img: E,
-    path: "/consumables/:id",
+    path: "/products/consumables",
   },
   {
     id: 6,
 
     img: F,
-    path: "/furniture/:id",
+    path: "/products/furniture",
   },
 ];

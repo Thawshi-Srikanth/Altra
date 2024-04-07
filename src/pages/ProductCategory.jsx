@@ -1,14 +1,15 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function ProductCategory({ img1, img2, title, path,id }) {
-  
+
+
+  const navigate=useNavigate()
+
   return (
-    <div
-      className="mx-auto justify-center  overflow-hidden mt-6 sm:mt-0
-    "
-    >
-    <Link to={`${path}/${id}`}>
+    <div className="mx-auto justify-center  overflow-hidden mt-6 sm:mt-0" >
+      <Link to={`/products/${path}`}>
+      
         <p className="font-rosario text-center xl:text-[49.66px]  lg:text-[35.66px] sm:text-[25.66px] text-[22.55px] md:text-[28.66px] lg:text-transparent !bg-clip-text [background:linear-gradient(90deg,_#000,_#ff8a3b)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]  cursor-pointer font-extrabold ">
           {" "}
           {title}

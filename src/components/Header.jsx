@@ -1,20 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
+import { FaAngleDown, FaChevronRight } from "react-icons/fa6";
+import { Link, useLocation } from "react-router-dom";
 import headerTitles from "../assets/data/headerTitles";
 import headerLogo from "../assets/images/headerLogo.png";
-import search from "../assets/images/search.svg";
 import toggle from "../assets/images/toggle.png";
-import { FaChevronRight } from "react-icons/fa6";
-import { Link, useLocation } from "react-router-dom";
-import MobileDrawer from "./MobileDrawer";
-import { FaAngleDown } from "react-icons/fa6";
-import { productDropdown } from "./../assets/data/productDropdown";
-import ProductDropdown from "./ProductDropdownCom";
-import ProductDropdownCom from "./ProductDropdownCom";
 import { userStateContext } from "../contexts/ContextProvider";
-import SearchBar from "./SearchBar";
+import { productDropdown } from "./../assets/data/productDropdown";
+import ProductDropdownCom from "./ProductDropdownCom";
 
 function Header() {
-   
   const [currentTab, setCurrentTab] = useState(null);
   const [currentTabDropdown, setCurrentTabDropdown] = useState(null);
   const [mobDrawer, setMobDrawer] = useState(false);
@@ -23,9 +17,8 @@ function Header() {
 
   const menuRef = useRef(null);
 
-  const { clickToggle, setClickToggle, actualClient,currentPath, } = userStateContext();
-
-
+  const { clickToggle, setClickToggle, actualClient, currentPath } =
+    userStateContext();
 
   /* 
   const highlight = (title, path) => {
@@ -35,13 +28,14 @@ function Header() {
   }; */
   useEffect(() => {
     const productDropdownTitles = {
-      "/equipment/:id": "Equipment",
-      "/chemicals/:id": "Chemical And Standard",
-      "/consumables/:id": "Consumables",
-      "/furniture/:id": "Furniture",
-      "/glassware/:id": "Glassware",
-      "/plasticware/:id": "PlasticWare",
+      "/products/equipment": "Equipment",
+      "/products/chemicals": "Chemical And Standard",
+      "/products/consumables": "Consumables",
+      "/products/furniture": "Furniture",
+      "/products/glassware": "Glassware",
+      "/products/plasticware": "Plasticware",
     };
+
     const tittles = {
       "/": "Home",
       "/aboutus": "About Us",
@@ -49,16 +43,20 @@ function Header() {
       "/services": "Services",
       "/contact": "Contact",
       "/products": "Products",
+      "/products/chemicals": "Products",
+
     };
     const pathName = location.pathname;
-    console.log(pathName)
-    console.log(currentPath)
-if (currentPath == pathName) {
-  setCurrentTab("Products");
+    
 
-}
-    setCurrentTab(tittles[pathName] || "");
-console.log(currentTab)
+    if (!pathName) {
+      console.error("Could not get location pathname");
+    } else if (pathName.startsWith("/product")) {
+      setCurrentTab(tittles["/products"]);
+    } else {
+      setCurrentTab(tittles[pathName] || "");
+    }
+
     setCurrentTabDropdown(productDropdownTitles[pathName] || "");
 
     let handler = (e) => {
@@ -71,12 +69,18 @@ console.log(currentTab)
     return () => {
       document.removeEventListener("mousedown", handler);
     };
-  }, [location.pathname, mobDrawer, clickToggle, setClickToggle,currentTab,currentPath]);
+  }, [
+    location.pathname,
+    mobDrawer,
+    clickToggle,
+    setClickToggle,
+    currentTab,
+    currentPath,
+  ]);
 
   const handleItemClick = (item) => {
     setCurrentTab(item);
     setMobDrawer(!mobDrawer);
-  
   };
 
   return (
@@ -245,7 +249,6 @@ console.log(currentTab)
           </div>
         )}
       </div>
-    
     </>
   );
 }

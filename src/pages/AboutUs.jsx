@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
 import aboutUs from "../assets/data/aboutUs";
-import Ellipse from "../assets/images/team/Ellipse.png";
-import EllipseGreen from "../assets/images/team/EllipseGreen.png";
 import mission from "../assets/images/team/mission.png";
 import vision from "../assets/images/team/vision.png";
-function AboutUs() {
+const AboutUs =React.memo(function AboutUsComponent() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -221,6 +219,5 @@ function AboutUs() {
       </div>
     </div>
   );
-}
-
+})
 export default AboutUs;

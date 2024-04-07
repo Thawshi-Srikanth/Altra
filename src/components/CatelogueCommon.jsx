@@ -28,13 +28,13 @@ import InterScience from "../pages/Equipments/InterScience";
 
 function CatelogueCommon({ catelogue, id, catelogueHorizontal, copyright }) {
   const { actualClient } = userStateContext();
-  console.log(actualClient);
+ 
   //   const filteredCatelogue = catelogue.filter((item) => {
   // console.log(item.catelogueName);
   //    return item.catelogueName === actualClient;
 
   //   });
-  console.log(copyright)
+ 
 
   return (
     <>

@@ -74,16 +74,17 @@ function Footer() {
             </p>
             {/* <img src={Line} alt="line" /> */}
             <p className="font-rosario lg:text-[15px] md:text-[12px] sm:text-[12px]  xl:text-[13px] text-nowrap lg:ml-[-30px] md:ml-[-30px] sm:ml-[-30px] 2xl:ml-0 xl:ml-[-20px] text-white wrap xl:scale-150 lg:scale-[125px]  relative left-[30px] lg:top-[15px] xl:top-[30px] sm:top-[10px] py-3">
-              <Link to="/equipment/:id">Equipment</Link>
+              <Link to="/products/equipment">Equipment</Link>
               <br />
-              <Link to="/chemicals/:id">Chemical And Standard</Link> <br />{" "}
-              <Link to="/consumables/:id">Consumables</Link>
+              <Link to="/products/chemicals">
+                Chemical And Standard
+              </Link> <br /> <Link to="/products/consumables">Consumables</Link>
               <br />
-              <Link to="/furniture/:id"> Furniture</Link>
+              <Link to="/products/furniture"> Furniture</Link>
               <br />
-              <Link to="/glassware/:id">Glassware</Link>
+              <Link to="/products/glassware">Glassware</Link>
               <br />
-              <Link to="/plasticware/:id"> Plasticware</Link>
+              <Link to="/products/plasticware"> Plasticware</Link>
             </p>
           </div>
           <div className="sm:block hidden lg:top-[40px] lg:mt-[-17px] relative lg:left-[50px] md:left-[30px] xl:left-[70px] 2xl:left-[70px] sm:left-[70px]">
