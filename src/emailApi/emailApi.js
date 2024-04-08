@@ -21,7 +21,7 @@ export const SendEmail = async ({
     if (response && response.data) {
       
 
-      toast.success(`${response.data.msg} check your inbox mails`, {
+      toast.success(`${response.data.msg} check your inbox mails or spam folder`, {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
