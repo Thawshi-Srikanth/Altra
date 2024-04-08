@@ -77,7 +77,7 @@ const Contact = React.memo(function Contact() {
                   value={values.fullname}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  id="name"
+                  id="fullname"
                   required
                   type="text"
                   placeholder=" "
