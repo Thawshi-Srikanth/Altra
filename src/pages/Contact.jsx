@@ -74,20 +74,20 @@ const Contact = React.memo(function Contact() {
               </h6>
               <div className="relative h-11 w-full min-w-[200px]">
                 <input
-                  value={values.fullName}
+                  value={values.name}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  id="fullName"
+                  id="name"
                   required
                   type="text"
                   placeholder=" "
                   className={`placeholder:text-white bg-[#ffffff4d] placeholder:text-right relative peer h-full w-full rounded-md border border-blue-gray-200 border-t-transparent !border-t-blue-gray-200  px-3 py-3 font-inter text-sm font-normal text-white  transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-gray-900 focus:border-t-transparent focus:!border-t-gray-900 ${
-                    errors.fullName && touched.fullName
+                    errors.name && touched.name
                       ? "focus:outline-red-400"
                       : "focus:outline outline-0"
                   } disabled:border-0 disabled:bg-blue-gray-50`}
                 />
-                {errors.fullName && touched.fullName ? (
+                {errors.name && touched.name ? (
                   <p className="text-red-600">{errors.fullName}</p>
                 ) : (
                   ""
