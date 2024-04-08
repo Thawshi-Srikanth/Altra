@@ -14,12 +14,12 @@ export const SendEmail = async ({
   setButtonLoading(true);
   try {
     const datas = { email, phoneNumber, message, name };
-    console.log(datas);
+
     let response = await axios.post(`${apiUrl}/api`, datas);
 
     // Check if the response is defined and has a 'data' property
     if (response && response.data) {
-      console.log("Response:", response.data.msg);
+      
 
       toast.success(`${response.data.msg} check your inbox mails`, {
         position: "top-right",
