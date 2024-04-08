@@ -23,7 +23,7 @@ const Contact = React.memo(function Contact() {
     resetForm,
   } = useFormik({
     initialValues: {
-      name: "",
+      fullName: "",
       email: "",
       phoneNumber: "",
       message: "",
@@ -74,10 +74,10 @@ const Contact = React.memo(function Contact() {
               </h6>
               <div className="relative h-11 w-full min-w-[200px]">
                 <input
-                  value={values.name}
+                  value={values.fullName}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  id="name"
+                  id="fullName"
                   required
                   type="text"
                   placeholder=" "

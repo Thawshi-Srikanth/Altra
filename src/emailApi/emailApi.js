@@ -3,7 +3,7 @@ import axios from "axios";
 const apiUrl = import.meta.env.VITE_APP_API_URL;
 
 export const SendEmail = async ({
-  name,
+ fullName,
   email,
   phoneNumber,
   message,
@@ -13,7 +13,7 @@ export const SendEmail = async ({
 }) => {
   setButtonLoading(true);
   try {
-    const datas = { name, email, phoneNumber, message };
+    const datas = { fullName, email, phoneNumber, message };
 
     let response = await axios.post(`${apiUrl}/api`, datas);
 
