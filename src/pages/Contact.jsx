@@ -74,6 +74,7 @@ const Contact = React.memo(function Contact() {
               </h6>
               <div className="relative h-11 w-full min-w-[200px]">
                 <input
+                  autoComplete="name"
                   value={values.name}
                   onChange={handleChange}
                   onBlur={handleBlur}

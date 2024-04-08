@@ -13,7 +13,7 @@ export const SendEmail = async ({
 }) => {
   setButtonLoading(true);
   try {
-    const datas = { name, email, phoneNumber, message };
+    const datas = { email, phoneNumber, message, name };
     console.log(datas);
     let response = await axios.post(`${apiUrl}/api`, datas);
 
