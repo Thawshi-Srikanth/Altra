@@ -1,5 +1,6 @@
 import React from "react";
 import researchVideo from "../assets/video/research.mp4";
+import researchPoster from "../assets/images/Research/researchVideo.png";
 function ResearchVideo() {
   return (
     <video
@@ -13,7 +14,7 @@ function ResearchVideo() {
       loop
       muted
       autoPlay
-      // poster={researchPoster}
+      poster={researchPoster}
     />
   );
 }
