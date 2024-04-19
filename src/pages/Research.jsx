@@ -17,7 +17,7 @@ const Research = React.memo(function ResearchComponent() {
       return import("./ResearchVideo");
     } else {
       setPageLoaded(true);
-      return delayForDemo(import("./ResearchVideo"), 3500);
+      return delayForDemo(import("./ResearchVideo"), 5500);
     }
   });
 
