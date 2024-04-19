@@ -1,11 +1,9 @@
-import React, { Suspense, lazy, useCallback, useEffect, useState } from "react";
+import React, { Suspense, lazy, useEffect, useState } from "react";
 import research from "../assets/images/Research/Research.png";
 import researchMob from "../assets/images/Research/ResearchMOb.png";
 import bottom from "../assets/images/Research/bottom.png";
-import researchVideo from "../assets/video/research.mp4";
-import researchPoster from "../assets/images/Research/researchVideo.png";
-import Loader from "../components/Loader";
 import delayForDemo from "../components/Delay";
+import Loader from "../components/Loader";
 
 const Research = React.memo(function ResearchComponent() {
   const [pageLoaded, setPageLoaded] = useState(false);
@@ -20,7 +18,7 @@ const Research = React.memo(function ResearchComponent() {
         return import("./ResearchVideo");
       } else {
         setPageLoaded(true);
-        return delayForDemo(import("./ResearchVideo"), 4500);
+        return delayForDemo(import("./ResearchVideo"), 2000);
       }
     })
 
