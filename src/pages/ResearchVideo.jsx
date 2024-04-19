@@ -1,6 +1,6 @@
 import React from "react";
 import researchVideo from "../assets/video/research.mp4";
-import researchPoster from "../assets/images/Research/researchVideo.png";
+import researchPoster from "../assets/images/Research/poster.png";
 function ResearchVideo() {
   return (
     <video
