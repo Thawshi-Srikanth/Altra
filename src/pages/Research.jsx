@@ -13,8 +13,8 @@ const Research = React.memo(function ResearchComponent() {
     window.scrollTo(0, 0);
   }, []);
 
-  useEffect(() => {}, []);
-  const LazyVideo = useEffect(() => {
+
+  const LazyVideo = 
     lazy(() => {
       if (pageLoaded == true) {
         return import("./ResearchVideo");
@@ -22,9 +22,7 @@ const Research = React.memo(function ResearchComponent() {
         setPageLoaded(true);
         return delayForDemo(import("./ResearchVideo"), 4500);
       }
-    }),
-      [pageLoaded];
-  });
+    })
 
   return (
     <div className="xl:mb-[-80px] lg:mb-[-70px] md:mb-[-70px] ">
