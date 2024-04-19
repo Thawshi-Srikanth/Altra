@@ -133,7 +133,7 @@ function Footer() {
               <p className="lg:pl-[10px] relative xl:right-2">
                 011 744 5564
                 <br />
-                077 233 6609
+                077 236 3221
               </p>
             </p>
             <div className="font-light sm:hidden grid mx-auto pb-[20px]">
@@ -146,7 +146,7 @@ function Footer() {
                 {" "}
                 011 744 5564
                 <br />
-                077 233 6609
+                077 236 3221
               </p>
             </div>
           </div>

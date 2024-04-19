@@ -12,7 +12,7 @@ export const contact = [
     topic1: "Contact",
     icon: [
       { id: 1, img: telephone, info: "011 744 5564", path: "tel:+94117445564" },
-      { id: 2, img: call, info: "077 233 6609 ", path: "tel:+94772336609" },
+      { id: 2, img: call, info: " 077 236 3221", path: "tel:+94772336609" },
       {
         id: 3,
         img: gmail,
