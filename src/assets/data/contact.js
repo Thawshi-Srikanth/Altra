@@ -28,7 +28,8 @@ export const contact = [
       {
         id: 1,
         img: locationIcon,
-        info: "452 Negombo Rd, Welisara",
+        info: "Operations & Warehouse : 452 Negombo Rd, Welisara.",
+        info2: "Registered Office: 54,1/1, St.Lawrence Road, Colombo-06.",
         path: "https://maps.app.goo.gl/nzmBarY3pzQVTSWZ8",
       },
     ],
