@@ -252,7 +252,7 @@ const Contact = React.memo(function Contact() {
                                     {" "}
                                     Registered Office:
                                   </p>
-                                  <p className=" relative left-10  sm:left-2 ">
+                                  <p className=" relative left-9  sm:left-2 ">
                                     54,1/1,
                                     <br /> St.Lawrence Road, <br />
                                     Colombo-06,
