@@ -245,7 +245,7 @@ const Contact = React.memo(function Contact() {
                                   {img.info}
                                 </a>
                               </div>
-                              <div className="sm:scale-90  lg:scale-105 lg:left-5 lg:top-4  relative xl:hidden mx-auto justify-center grid grid-cols-1 space-y-5 mt-[12px] md:scale-90  ">
+                              <div className="sm:scale-90  lg:scale-105 lg:left-5 lg:top-4  relative xl:hidden mx-auto justify-center grid grid-cols-1 space-y-5 mt-[12px] md:scale-90 right-2 sm:right-0 ">
                                 <div className="flex space-x-4  mx-auto justify-center relative left-0 sm:left-3 md:left-6 lg:left-0">
                                   {" "}
                                   <p className="text-nowrap  relative right-4 md:right-10 lg:right-0 ">
