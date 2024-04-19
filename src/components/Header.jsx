@@ -135,7 +135,7 @@ else{setCurrentTabDropdown(productDropdownTitles[pathName]);}
                 />
               </div>
             </Link>
-            <div className="text-nowrap relative 2xl:left-[50px] lg:flex  lg:gap-x-[55px] xl:gap-x-[90px] xl:text-[24px] font-rosario justify-center items-center">
+            <div className="container text-nowrap relative 2xl:left-[-30px]  lg:flex  lg:gap-x-[55px] xl:gap-x-[90px] 2xl:gap-x-[90px] xl:text-[24px] font-rosario justify-center items-center">
               {headerTitles.map((title) => (
                 <div key={title.id} className="">
                   <ul className="flex ">
@@ -233,7 +233,6 @@ else{setCurrentTabDropdown(productDropdownTitles[pathName]);}
                           to={title.path}
                           key={title.id}
                           onClick={() => handleItemClick(title.name)}
-                        
                         >
                           {" "}
                           <ul>

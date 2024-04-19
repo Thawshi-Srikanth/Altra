@@ -53,7 +53,7 @@ export const aboutUs = [
         img: arasu,
         description:
           "The late Mr.K.T.Arasu, a highly experiences laboratory Technician from the University of Oxford,laid the foundation of Altra Scientific in 1978.His visionary leadership and expertise were pivotal in establishing the company’s strong presence in the Sri lankan market",
-        designation: "biruntha",
+        designation: "Founder",
       },
 
       {

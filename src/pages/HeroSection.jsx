@@ -31,7 +31,7 @@ function HeroSection() {
           </p>
         </div>
       </div>
-      <div className="relative xl:left-[35px] 2xl:left-0 bottom-[10px] lg:bottom-0 md:mt-[-13px] lg:mt-0 mt-[-10px]">
+      <div className="relative xl:left-[35px] 2xl:left-20 bottom-[10px] lg:bottom-0 md:mt-[-13px] lg:mt-0 mt-[-10px]">
         <img src={flask} alt="flask" className="lg:ml-[12px] xl:mt-[-40px] " />
       </div>
     </div>
