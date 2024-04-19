@@ -8,24 +8,29 @@ import Loader from "../components/Loader";
 import delayForDemo from "../components/Delay";
 
 const Research = React.memo(function ResearchComponent() {
-    const [pageLoaded, setPageLoaded] = useState(false);
+  const [pageLoaded, setPageLoaded] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const LazyVideo = lazy(() => {
-    if (pageLoaded == true) {
-      return import("./ResearchVideo");
-    } else {
-      setPageLoaded(true);
-      return delayForDemo(import("./ResearchVideo"), 5500);
-    }
+
+  useEffect(() => {}, []);
+  const LazyVideo = useEffect(() => {
+    lazy(() => {
+      if (pageLoaded == true) {
+        return import("./ResearchVideo");
+      } else {
+        setPageLoaded(true);
+        return delayForDemo(import("./ResearchVideo"), 4500);
+      }
+    }),
+      [pageLoaded];
   });
 
   return (
     <div className="xl:mb-[-80px] lg:mb-[-70px] md:mb-[-70px] ">
       <div>
         <Suspense fallback={<Loader />}>
-          <LazyVideo/>
+          <LazyVideo />
         </Suspense>
 
         <div className="sm:block hidden xl:bottom-60 lg:bottom-60 mdBottom   2xl:left-[770px]  xl:left-[630px] lg:left-[500px]   left-4 mx-auto justify-center  absolute ">
