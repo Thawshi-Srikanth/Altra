@@ -78,10 +78,10 @@ const Research = React.memo(function ResearchComponent() {
             href="mailto:eoi.research@altrascientific.com"
             className="relative text-[#FF8A3A] font-medium font-rosario  xl:text-[30px] lg:text-[30px] md:text-[25px] sm:text-[20px] text-[15]"
           >
-            <sapan>
+            <span>
               eoi.research@altrascientific.com
               <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#FF8A3A]"></span>
-            </sapan>
+            </span>
           </a>
         </div>
       </div>
