@@ -16,7 +16,7 @@ function ChemicalasMainPage() {
           key={item.id}
           imgOne={item.imgOne}
           clients={item.clients}
-          MainNextpath="chemicatalogue"
+          MainNextpath="chemicals"
           description="Our expansive inventory showcases a diverse array of meticulously selected chemicals and standards, tailored to meet the varied requirements of laboratories across different industries. From essential reagents and solvents to precision-calibrated reference materials, each product undergoes rigorous manufacturing processes to ensure unparalleled purity and accuracy. Our stringent quality assurance protocols guarantee consistent reliability, making us the preferred choice for researchers and laboratory professionals worldwide."
         />
       ))}

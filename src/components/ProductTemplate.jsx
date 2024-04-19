@@ -13,14 +13,20 @@ function ProductTemplate({
 }) {
   const pathName = location.pathname;
 
-  const { setActualClient, setIndex, actualClient, setCurrentPath } =
-    userStateContext();
-
+  const {
+    setActualClient,
+    setIndex,
+    actualClient,
+    setCurrentPath,
+    setMainCatelogue,
+  } = userStateContext();
+  console.log(MainNextpath);
   const forwardArrayIndex = (data) => {
-    console.log(data.nextpath);
     setActualClient(data.nextpath);
     setIndex(data.index);
     setCurrentPath(pathName);
+    setMainCatelogue(MainNextpath);
+
   };
   return (
     <div>
@@ -59,7 +65,7 @@ function ProductTemplate({
           } 
           
           ${
-            MainNextpath === "chemicatalogue"
+            MainNextpath === "chemicals"
               ? " grid grid-cols-2  mx-auto justify-center sm:flex xl:left-1 2xl:left-0 relative  "
               : ""
           }
@@ -148,7 +154,7 @@ function ProductTemplate({
                    }
 
 ${
-  MainNextpath === "chemicatalogue" && client.id === 3
+  MainNextpath === "chemicals" && client.id === 3
     ? "scale-90 sm:scale-100 w-[171px] h-[89px] relative mx-[125px]  sm:mx-0 mt-4 sm:mt-0 sm:top-0 left-24 sm:left-0 "
     : "scale-90 sm:scale-100 left-3 sm:left-0 w-[171px] h-[89px] xl:w-full xl:h-full md:w-[100px] md:h-[108px]  sm:w-[200px] sm:h-[104px] sm:px-5 "
 }

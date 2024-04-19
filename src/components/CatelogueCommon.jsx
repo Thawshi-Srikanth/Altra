@@ -51,17 +51,17 @@ function CatelogueCommon({ catelogue, id, catelogueHorizontal, copyright }) {
           <GlasswareCataelogueImages catelogue={catelogue} copyright={copyright} />
         </div>
       )}
-      {actualClient == "accustand" && id === "chemicatalogue" && (
+      {actualClient == "accustand" && id === "chemicals" && (
         <div className="">
           <ChemicalsAccStandCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
       )}
-      {actualClient == "chemlab" && id === "chemicatalogue" && (
+      {actualClient == "chemlab" && id === "chemicals" && (
         <div className="">
           <ChemLAbCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
       )}
-      {actualClient == "megazyme" && id === "chemicatalogue" && (
+      {actualClient == "megazyme" && id === "chemicals" && (
         <div className="">
           <MegazymeCatelogue catelogue={catelogue} copyright={copyright} />
         </div>

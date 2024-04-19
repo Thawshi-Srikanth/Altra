@@ -17,8 +17,14 @@ function Header() {
 
   const menuRef = useRef(null);
 
-  const { clickToggle, setClickToggle, actualClient, currentPath } =
-    userStateContext();
+  const {
+    clickToggle,
+    setClickToggle,
+    actualClient,
+    currentPath,
+    mainCatelogue,
+    setMainCatelogue,
+  } = userStateContext();
 
   /* 
   const highlight = (title, path) => {
@@ -27,6 +33,14 @@ function Header() {
 
   }; */
   useEffect(() => {
+    const categories = [
+      "furniture",
+      "chemicals",
+      "glassware",
+      "plasticware",
+      "consumables",
+      "equipment",
+    ];
     const productDropdownTitles = {
       "/products/equipment": "Equipment",
       "/products/chemicals": "Chemical And Standard",
@@ -44,10 +58,8 @@ function Header() {
       "/contact": "Contact",
       "/products": "Products",
       "/products/chemicals": "Products",
-
     };
     const pathName = location.pathname;
-    
 
     if (!pathName) {
       console.error("Could not get location pathname");
@@ -57,7 +69,20 @@ function Header() {
       setCurrentTab(tittles[pathName] || "");
     }
 
-    setCurrentTabDropdown(productDropdownTitles[pathName] || "");
+    //   if (mainCatelogue === "furniture") {
+    //     setCurrentTabDropdown(productDropdownTitles["/products/furniture"]);
+    //   }
+
+    //   else if(mainCatelogue === "equipment") {
+    //     setCurrentTabDropdown(productDropdownTitles["/products/equipment"]);}
+    //  else {
+    //     setCurrentTabDropdown(productDropdownTitles[pathName] || "");
+    //   }
+
+if (categories.includes(mainCatelogue)) {
+  setCurrentTabDropdown(productDropdownTitles[`/products/${mainCatelogue}`]);
+}
+else{setCurrentTabDropdown(productDropdownTitles[pathName]);}
 
     let handler = (e) => {
       if (!menuRef.current.contains(e.target)) {
@@ -76,11 +101,19 @@ function Header() {
     setClickToggle,
     currentTab,
     currentPath,
+    mainCatelogue,
+   
   ]);
 
   const handleItemClick = (item) => {
     setCurrentTab(item);
     setMobDrawer(!mobDrawer);
+       setMainCatelogue("");
+  };
+
+  const handleDropDownClick = () => {
+    setClickToggle(!clickToggle);
+    setMainCatelogue("");
   };
 
   return (
@@ -156,10 +189,7 @@ function Header() {
               ref={menuRef}
             >
               {productDropdown.map((title) => (
-                <div
-                  key={title.id}
-                  onClick={() => setClickToggle(!clickToggle)}
-                >
+                <div key={title.id} onClick={handleDropDownClick}>
                   {" "}
                   <ProductDropdownCom
                     title={title}
@@ -203,6 +233,7 @@ function Header() {
                           to={title.path}
                           key={title.id}
                           onClick={() => handleItemClick(title.name)}
+                        
                         >
                           {" "}
                           <ul>

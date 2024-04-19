@@ -17,7 +17,7 @@ const StateContext = createContext({
   consumablesCatelogue: consumablesCatelogue,
   equipmentCatelogue: equipmentCatelogue,
   currentPath: "",
- 
+ mainCatelogue:"", setMainCatelogue: () => {},
   setCurrentPath: () => {},
   setActualClient: () => {},
 });
@@ -30,6 +30,9 @@ import { plasticwareCatelogue } from "./../assets/data/catelogue/plasticwareCate
 import { consumablesCatelogue } from "./../assets/data/catelogue/consumablesCatelogue";
 import { equipmentCatelogue } from "./../assets/data/catelogue/equipmentCatelogue";
 export const ContextProvider = ({ children }) => {
+  const [mainCatelogue, setMainCatelogue] = useState(
+    localStorage.getItem("mainCatelogue") || ""
+  );
   const [zindex, setzIndex] = useState();
   const [clickToggle, setClickToggle] = useState(false);
   const [response, setResponse] = useState(null);
@@ -41,7 +44,13 @@ export const ContextProvider = ({ children }) => {
 
   useEffect(() => {
     localStorage.setItem("actualClient", actualClient);
-  }, [actualClient]);
+  }, [actualClient]
+
+);
+
+  useEffect(() => {
+    localStorage.setItem("mainCatelogue", mainCatelogue);
+  }, [mainCatelogue]);
 
   useEffect(() => {
     localStorage.setItem("index", index);
@@ -68,7 +77,8 @@ export const ContextProvider = ({ children }) => {
         equipmentCatelogue,
         currentPath,
         setCurrentPath,
-    
+        mainCatelogue,
+        setMainCatelogue,
       }}
     >
       {children}

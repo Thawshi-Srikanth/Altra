@@ -45,7 +45,7 @@ function ProductCataloguetemplate() {
     selectedValue = furnitureCatelogue;
   } else if (mainNextpath === "glassware") {
     selectedValue = glasswareCatelogue;
-  } else if (mainNextpath === "chemicatalogue") {
+  } else if (mainNextpath === "chemicals") {
     selectedValue = chemicalsCatelogue;
   } else if (mainNextpath === "plasticware") {
     selectedValue = plasticwareCatelogue;

@@ -3,20 +3,17 @@ import "react-html5video/dist/styles.css";
 import bgVideo from "./assets/video/bgVideo.mp4";
 import delayForDemo from "./components/Delay";
 import Loader from "./components/Loader";
+import SearchBar from "./components/SearchBar";
 import Commitment from "./pages/Commitment";
 import HeroSection from "./pages/HeroSection";
 import HeroText from "./pages/HeroText";
+import MagnetDesktop from "./pages/MagnetDesktop";
 import Magnetic from "./pages/Magnetic";
 import PhScale from "./pages/PhScale";
-import productDropdown from "./assets/data/productDropdown";
-import ProductDropdownCom from "./components/ProductDropdownCom";
-import { userStateContext } from "./contexts/ContextProvider";
-import MagnetDesktop from "./pages/MagnetDesktop";
 import Phdekstop from "./pages/Phdekstop";
-import SearchBar from "./components/SearchBar";
 
 export default function Home() {
-  const{clickToggle,}=userStateContext()
+ 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
