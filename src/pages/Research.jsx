@@ -4,6 +4,7 @@ import researchMob from "../assets/images/Research/ResearchMOb.png";
 import bottom from "../assets/images/Research/bottom.png";
 import delayForDemo from "../components/Delay";
 import Loader from "../components/Loader";
+import { Link } from "react-router-dom";
 
 const Research = React.memo(function ResearchComponent() {
   const [pageLoaded, setPageLoaded] = useState(false);
@@ -49,8 +50,8 @@ const Research = React.memo(function ResearchComponent() {
             with tailor made analytical products on request, please feel free to
             reach out to us at
           </p>
-          <a
-            href="mailto:research@altrascietific.com "
+          <Link
+            to="mailto:research@altrascietific.com "
             className="text-[#FF8A3A]  relative font-medium font-rosario  xl:text-[30px] lg:text-[30px] md:text-[25px] sm:text-[20px] text-[15]"
           >
             <span>
@@ -58,7 +59,7 @@ const Research = React.memo(function ResearchComponent() {
               research@altrascientific.com
               <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#FF8A3A]"></span>
             </span>
-          </a>
+          </Link>
         </div>
         <div className="max-w-[1240px] justify-center mx-auto pb-10 md:pb-20 relative   ">
           <p className="font-rosario font-bold text-nowrap xl:text-[50px] lg:text-[40px] md:text-[30px] sm:text-[30px] text-[25px]">
@@ -74,15 +75,15 @@ const Research = React.memo(function ResearchComponent() {
             financial grants and resources depending on your project feel free
             to submit an Expression of Interest at
           </p>
-          <a
-            href="mailto:eoi.research@altrascientific.com"
+          <Link
+           to="mailto:eoi.research@altrascientific.com"
             className="relative text-[#FF8A3A] font-medium font-rosario  xl:text-[30px] lg:text-[30px] md:text-[25px] sm:text-[20px] text-[15]"
           >
             <span>
               eoi.research@altrascientific.com
               <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#FF8A3A]"></span>
             </span>
-          </a>
+          </Link>
         </div>
       </div>
 

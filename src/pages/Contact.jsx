@@ -6,7 +6,7 @@ import { SendEmail } from "../emailApi/emailApi";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { userStateContext } from "../contexts/ContextProvider";
-
+import {Link} from 'react-router-dom';
 const Contact = React.memo(function Contact() {
   const [buttonLoading, setButtonLoading] = useState(false);
   const { setResponse, response } = userStateContext();
@@ -200,8 +200,8 @@ const Contact = React.memo(function Contact() {
                       <div className="grid gap-y-5 ">
                         {" "}
                         {d.icon.map((img) => (
-                          <a
-                            href={img.path}
+                          <Link
+                            to={img.path}
                             target="blank"
                             key={img.id}
                             className={`flex gap-x-4   relative sm:left-0 ${
@@ -212,7 +212,7 @@ const Contact = React.memo(function Contact() {
                           >
                             <img src={img.img} className="" />
                             <p>{img.info}</p>
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     </div>
@@ -229,7 +229,7 @@ const Contact = React.memo(function Contact() {
                       <div className="grid gap-y-5">
                         {" "}
                         {d.iconTwo.map((img) => (
-                          <a
+                          <div
                             target="blank"
                             key={img.id}
                             className="flex gap-x-4 z-"
@@ -280,7 +280,7 @@ const Contact = React.memo(function Contact() {
                                 </div>
                               </div>
                             </div>
-                          </a>
+                          </div>
                         ))}
                       </div>
                     </div>
@@ -296,8 +296,8 @@ const Contact = React.memo(function Contact() {
                       <div className="grid gap-y-5">
                         {" "}
                         {d.iconThree.map((img) => (
-                          <a
-                            href={img.path}
+                          <Link
+                            to={img.path}
                             target="blank"
                             key={img.id}
                             className={`flex gap-x-4  ${
@@ -315,7 +315,7 @@ const Contact = React.memo(function Contact() {
                               }`}
                             />
                             <p className={``}>{img.info}</p>
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     </div>

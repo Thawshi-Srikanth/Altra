@@ -58,24 +58,24 @@ const Services=React.memo(function ServicesComponent() {
         <div className=" font-medium font-rosario xl:text-[30px] lg:text-[25px] md:text-[25px] sm:text-[20px] text-[15]">
           <p>
             {" "}
-            <a href="tel:+94772363221" className="">
+            <Link to="tel:+94772363221" className="">
               hotline :
               <span className="text-[#0094FF] relative">
                 +94 77 236 3221
                 <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#0094FF]"></span>
               </span>
-            </a>
+            </Link>
           </p>
           <p className="">
             {" "}
-            <a href="mailto:services@altrascientific.com" className="">
+            <Link to="mailto:services@altrascientific.com" className="">
               email{" "}
               <span className="relative xl:left-[19px] left-[10px]">:</span>
               <span className="text-[#0094FF] relative xl:left-6 left-3">
                 services@altrascientific.com
                 <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#0094FF]"></span>
               </span>
-            </a>
+            </Link>
           </p>
         </div>
       </div>
