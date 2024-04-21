@@ -6,7 +6,7 @@ function ImageCommonBg({ img, text, id }) {
 
   const { actualClient } = userStateContext();
 
-    const { clientNextpath } = useParams();
+    const { clientNextpath ,} = useParams();
 
   const filtered = img.filter((item) => {
     return item.title === clientNextpath;
@@ -70,7 +70,7 @@ function ImageCommonBg({ img, text, id }) {
   ${actualClient === "apera" ? "xl:top-[58px] " : ""}  
   ${
     actualClient === "lactos"
-      ? "xl:top-[60px] relative mt-[-20px] sm:mt-0  lg:mt-[-20px] xl:mt-0 "
+      ? " xl:top-[60px] relative  sm:mt-0  lg:mt-[-20px] xl:mt-0 "
       : ""
   }  
 
@@ -96,8 +96,8 @@ function ImageCommonBg({ img, text, id }) {
                ${actualClient === "france" ? "relative top- scale-50 " : ""}
                ${actualClient === "jp" ? "relative top-2 " : ""}
                ${
-                 actualClient === "lactos"
-                   ? "scale-75  max-h-[130px] sm:h-full sm:scale-100 "
+                 clientNextpath=== "lactos"
+                   ? " scale-75  max-h-[130px]  max-w-30 sm:h-full sm:scale-100 "
                    : ""
                }
               
