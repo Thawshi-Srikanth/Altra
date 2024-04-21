@@ -70,7 +70,7 @@ function ImageCommonBg({ img, text, id }) {
   ${actualClient === "apera" ? "xl:top-[58px] " : ""}  
   ${
     actualClient === "lactos"
-      ? "xl:top-[60px] relative mt-[-20px] sm:mt-0 "
+      ? "xl:top-[60px] relative mt-[-20px] sm:mt-0   "
       : ""
   }  
 
@@ -78,7 +78,7 @@ function ImageCommonBg({ img, text, id }) {
         >
           {text}
         </p>
-        {filtered.map((image,id) => (
+        {filtered.map((image, id) => (
           <div
             key={image.id}
             className="grid top-5 left-3 mx-auto justify-center relative items-center  "
@@ -95,7 +95,7 @@ function ImageCommonBg({ img, text, id }) {
               } 
                ${actualClient === "france" ? "relative top- scale-50 " : ""}
                ${actualClient === "jp" ? "relative top-2 " : ""}
-               ${actualClient === "lactos" ? "scale-75 h-[125px] " : ""}
+               ${actualClient === "lactos" ? "scale-75 h-[120px] " : ""}
               
                 `}
               alt={actualClient}
@@ -116,7 +116,7 @@ function ImageCommonBg({ img, text, id }) {
             <img
               key={image.name}
               src={imgMob}
-              className={`object-cover  h-[165px]   sm:top-0 sm:hidden `}
+              className={` object-cover  h-[165px]   sm:top-0 sm:hidden `}
             />
           </div>
         </>
