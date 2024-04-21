@@ -4,7 +4,7 @@ function HeroText() {
   return (
     <div className=" w-full min-w-[320px] ">
       <div className="text-nowrap text-center font-rosario text-[22px] md:text-[35px] sm:text-[30px] lg:text-[50px] xl:text-[69px]  font-bold text-white lg:pt-[80px] ">
-        <p className="text-nowrap">Decades of Excellence:</p>
+        <h1 className="text-nowrap">Decades of Excellence:</h1>
         <div className="lg:mt-[-20px] mt-[-10px] text-nowrap">Pioneering Laboratory Solutions</div>
       </div>
       <div className="md:text-[30px] sm:text-[25px] font-rosario lg:text-[25px] xl:text-[35px] 2xl:text-[37px] text-[14px] text-center lg:px-[60px] lg:pt-[20px] pt-[10px] scale-100 md:scale-100  ">

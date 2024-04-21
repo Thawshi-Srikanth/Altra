@@ -19,9 +19,9 @@ const MemoRizedProducts = memo(function ShowProduct() {
 
   return (
     <div className="  2xl:scale-90 sm:scale-75 lg:scale-100 w-full relative bottom-[25px] sm:bottom-0 xl:bottom-0 xl:mt-[-50px]  md:mt-[-50px] lg:mt-0 md:mb-[120px] lg:mb-0 xl:mb-[120px]">
-      <p className="sm:text-[40px] text-[25px] pt-[40px] lg:pt-[60px] md:pt-[60px] sm:pt-[110px]  text-center font-rosario xl:text-[69px] lg:text-[50px] md:text-[45px] font-bold text-white ">
+      <h1 className="sm:text-[40px] text-[25px] pt-[40px] lg:pt-[60px] md:pt-[60px] sm:pt-[110px]  text-center font-rosario xl:text-[69px] lg:text-[50px] md:text-[45px] font-bold text-white ">
         Products
-      </p>
+      </h1>
       <div className="sm:mt-[30px] lg:scale-95 md:scale-90 sm:scale-75 scale-50 sm:overscroll-x-auto z-1 mb-[40px] sm:mb-0 top-2 relative">
         <div className=" bottom-[130px]  sm:bottom-0 flex justify-start [&_li]:mx-8 [&_img]:max-w-96 animate-infinite-scrollMobShowProduct   gap-x-[40px] sm:gap-x-0 sm:animate-infinite-scrollShowProducts scroll-smooth md:gap-x-[80px] xl:gap-x-[190px] relative md:top-3">
           {" "}

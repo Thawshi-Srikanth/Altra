@@ -60,9 +60,9 @@ function Footer() {
               <Link to={title.path} key={title.id} className="sm:hidden">
                 <div className="mb-[30px] sm:mb-0">
                   {" "}
-                  <p className="text-white font-rosario xl:text-[23px] lg:text-[20px] md:text-[15px] lg:my-[17px] text-nowrap text-center sm:text-left  sm:mb-0 relative bottom-[15px] sm:bottom-0 ">
+                  <h2 className="text-white font-rosario xl:text-[23px] lg:text-[20px] md:text-[15px] lg:my-[17px] text-nowrap text-center sm:text-left  sm:mb-0 relative bottom-[15px] sm:bottom-0 ">
                     {title.name}
-                  </p>
+                  </h2>
                   <img src={title.image} alt="" />
                 </div>
               </Link>
@@ -73,7 +73,7 @@ function Footer() {
               <Link to="/products"> Products</Link>
             </p>
             {/* <img src={Line} alt="line" /> */}
-            <p className="font-rosario lg:text-[15px] md:text-[12px] sm:text-[12px]  xl:text-[13px] text-nowrap lg:ml-[-30px] md:ml-[-30px] sm:ml-[-30px] 2xl:ml-0 xl:ml-[-20px] text-white wrap xl:scale-150 lg:scale-[125px]  relative left-[30px] lg:top-[15px] xl:top-[30px] sm:top-[10px] py-3">
+            <h2 className="font-rosario lg:text-[15px] md:text-[12px] sm:text-[12px]  xl:text-[13px] text-nowrap lg:ml-[-30px] md:ml-[-30px] sm:ml-[-30px] 2xl:ml-0 xl:ml-[-20px] text-white wrap xl:scale-150 lg:scale-[125px]  relative left-[30px] lg:top-[15px] xl:top-[30px] sm:top-[10px] py-3">
               <Link to="/products/equipment">Equipment</Link>
               <br />
               <Link to="/products/chemicals">
@@ -85,7 +85,7 @@ function Footer() {
               <Link to="/products/glassware">Glassware</Link>
               <br />
               <Link to="/products/plasticware"> Plasticware</Link>
-            </p>
+            </h2>
           </div>
           <div className="sm:block hidden lg:top-[40px] lg:mt-[-17px] relative lg:left-[50px] md:left-[30px] xl:left-[70px] 2xl:left-[70px] sm:left-[70px]">
             <p className="text-white md:text-[15px] sm:text-[15px] font-rosario xl:text-[23px] lg:text-[20px] lg:my-[17px] md:ml-[30px] sm:ml-[30px] lg:ml-0">
