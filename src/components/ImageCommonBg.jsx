@@ -97,7 +97,7 @@ function ImageCommonBg({ img, text, id }) {
                ${actualClient === "jp" ? "relative top-2 " : ""}
                ${
                  clientNextpath=== "lactos"
-                   ? " scale-75  max-h-[130px]  max-w-30 sm:h-full sm:scale-100 "
+                   ? " scale-75  max-h-[130px] object-fill  max-w-30 sm:h-full sm:scale-100 "
                    : ""
                }
               
