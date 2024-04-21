@@ -5,7 +5,7 @@ export const glasswareProductTemplate = [
   {
     id: 1,
     imgOne: Glasswarebg,
-    clients: [{ id: 1, client: client, nextpath: "glassware", index: 0 }],
+    clients: [{ id: 1, client: client, nextpath: "witeg", index: 0 }],
   },
 ];
 

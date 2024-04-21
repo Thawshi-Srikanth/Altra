@@ -17,9 +17,12 @@ const StateContext = createContext({
   consumablesCatelogue: consumablesCatelogue,
   equipmentCatelogue: equipmentCatelogue,
   currentPath: "",
- mainCatelogue:"", setMainCatelogue: () => {},
+  mainCatelogue: "",
+  setMainCatelogue: () => {},
   setCurrentPath: () => {},
   setActualClient: () => {},
+  clearLocal:false,
+  setClearLocal:()=> {},
 });
 
 import React from "react";
@@ -34,6 +37,7 @@ export const ContextProvider = ({ children }) => {
     localStorage.getItem("mainCatelogue") || ""
   );
   const [zindex, setzIndex] = useState();
+  const [clearLocal, setClearLocal] = useState(false);
   const [clickToggle, setClickToggle] = useState(false);
   const [response, setResponse] = useState(null);
   const [currentPath, setCurrentPath] = useState("");
@@ -54,7 +58,8 @@ export const ContextProvider = ({ children }) => {
 
   useEffect(() => {
     localStorage.setItem("index", index);
-  }, [index]);
+    // if(clearLocal){localStorage.removeItem("index");}
+  }, [index,clearLocal]);
 
   return (
     <StateContext.Provider
@@ -79,6 +84,8 @@ export const ContextProvider = ({ children }) => {
         setCurrentPath,
         mainCatelogue,
         setMainCatelogue,
+        clearLocal,
+        setClearLocal,
       }}
     >
       {children}

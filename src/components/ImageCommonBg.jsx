@@ -1,25 +1,39 @@
 import React, { useState } from "react";
 import { userStateContext } from "../contexts/ContextProvider";
-import imgMob from "../assets/images/products/mobile/mob.png"
-function ImageCommonBg({ img, text ,id}) {
-  const { actualClient, } = userStateContext();
+import imgMob from "../assets/images/products/mobile/mob.png";
+import { useParams } from "react-router-dom";
+function ImageCommonBg({ img, text, id }) {
 
-  const filtered = img.filter((item) =>{    return  item.title === actualClient});
+  const { actualClient } = userStateContext();
+
+    const { clientNextpath } = useParams();
+
+  const filtered = img.filter((item) => {
+    return item.title === clientNextpath;
+  });
 
   return (
     <div className="relative">
       <div className=" top-3 sm:top-0 grid grid-cols-2 absolute items-center mx-auto justify-center">
         {" "}
         <p
-          className={`  relative ${
+          className={`md:mt-[-34px] lg:mt-0 relative  ${
             actualClient === "geyer" ? "xl:top-[130px]" : ""
           } 
         ${actualClient === "water" ? "xl:top-[60px] " : ""} 
+           ${
+             actualClient === "accustand" ? "2xl:relative 2xl:left-[15px] " : ""
+           } 
+                      ${
+                        actualClient === "chemlab"
+                          ? "2xl:relative 2xl:left-[60px] "
+                          : ""
+                      } 
         ${actualClient === "jp" ? "xl:top-[60px] " : ""} 
         ${actualClient === "apera" ? "mt-[-10px] sm:mt-0 " : ""} 
         ${
           actualClient === "geyer"
-            ? "top-[47px] sm:mt-0   xl:mt-4 2xl:mt-20"
+            ? "top-[47px] sm:mt-0   xl:mt-4 2xl:mt-20 md:mt-5 lg:mt-10 xl:mt-0"
             : ""
         } 
         ${actualClient === "france" ? "top-[40px] sm:mt-0 " : ""} 
@@ -31,11 +45,15 @@ function ImageCommonBg({ img, text ,id}) {
           actualClient === "consort" ||
           actualClient === "orto" ||
           actualClient === "jp"
-            ? "mt-[-10px] sm:mt-0 "
+            ? "mt-[-10px] sm:mt-0  md:relative md:scale-95 lg:scale-100 md:mt-[-22px] lg:mt-0"
             : ""
         } 
         ${actualClient === "france" ? "top-[32px] sm:top-0 " : ""} 
-        ${actualClient === "megazyme" ? "top-[40px] sm:top-0 " : ""} 
+        ${
+          actualClient === "megazyme"
+            ? "top-[40px] sm:top-0 relative 2xl:left-[40px]"
+            : ""
+        } 
         ${actualClient === "method" ? "top-[40px] sm:top-0 " : ""} 
         ${actualClient === "consort" ? "xl:top-[50px] sm:top-0 " : ""} 
         ${actualClient === "gerber" ? "xl:top-[52px] sm:top-0 " : ""} 
@@ -60,7 +78,7 @@ function ImageCommonBg({ img, text ,id}) {
         >
           {text}
         </p>
-        {filtered.map((image,) => (
+        {filtered.map((image,id) => (
           <div
             key={image.id}
             className="grid top-5 left-3 mx-auto justify-center relative items-center  "

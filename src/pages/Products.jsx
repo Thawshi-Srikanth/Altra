@@ -15,9 +15,9 @@ import ProductCategory from "./ProductCategory";
 const Products=React.memo(function Products() {
   const [countOn, setCounton] = useState(false);
 
-  //    useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+     useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

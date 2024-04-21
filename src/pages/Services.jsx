@@ -6,9 +6,9 @@ import servicesImages from "../assets/data/servicesImages";
 
 
 const Services=React.memo(function ServicesComponent() {
-    // useEffect(() => {
-    //   window.scrollTo(0, 0);
-    // }, []);
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
   return (
     <div className="md:mb-30 lg:mb-10 mb-10 space-y-10 sm:mb-60">

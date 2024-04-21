@@ -19,14 +19,17 @@ function ProductTemplate({
     actualClient,
     setCurrentPath,
     setMainCatelogue,
+
+    setClearLocal,
   } = userStateContext();
-  console.log(MainNextpath);
+
+  
   const forwardArrayIndex = (data) => {
     setActualClient(data.nextpath);
     setIndex(data.index);
     setCurrentPath(pathName);
     setMainCatelogue(MainNextpath);
-
+    setClearLocal(true);
   };
   return (
     <div>
@@ -41,7 +44,7 @@ function ProductTemplate({
         className="mx-auto w-full relative top-8 sm:top-0 "
       /> */}
       <div className="flex justify-center mx-auto  xl:h-[365px]  md:-[130px] lg:h-[150px]  md:h-[140px]  sm:h-[140px] h-[128px] items-center">
-        <p className="text-[8.96px] md:text-[16px] sm:text-[13px] lg:text-[20px] xl:w-[1227px] lg:w-[1200px] w-[366px] md:w-[810px]  sm:w-[530px] font-medium text-center font-rosario xl:text-[30px] items-center  relative mt-[27px] sm:mt-0">
+        <p className="text-[8.96px] md:text-[16px] sm:text-[13px] lg:text-[20px] xl:w-[1227px] lg:w-[1200px] w-[366px] md:w-[810px]  sm:w-[530px] font-medium text-center font-rosario xl:text-[30px] items-center  relative mt-[27px] sm:mt-0 lg:mx-12 xl:mx-0">
           {description}
         </p>
       </div>
@@ -78,7 +81,7 @@ function ProductTemplate({
         >
           {clients.map((client) => (
             <Link
-              to={`/products/${MainNextpath}/${client.nextpath}`}
+              to={`/products/${MainNextpath}/${client.nextpath}/${client.index}`}
               className={`flex  ${
                 MainNextpath === "equipment" ||
                 (MainNextpath === "consumables" &&

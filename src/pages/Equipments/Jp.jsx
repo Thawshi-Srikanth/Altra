@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import ImagePopup from "../../components/ImagePopup";
 
 function Jp({ catelogue, copyright }) {
+
     useEffect(() => {
       window.scrollTo(0, 0);
     }, []);

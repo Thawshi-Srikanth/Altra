@@ -359,11 +359,23 @@ body {
     
   }
 }
-@media only screen and (min-width: 1920px) {
-  .xlBottomResearch {
- top: -440px;
-  margin-left: -600px;
-    position: relative;
+@media only screen and (min-width: 1680px) {
+  .xlhide {
+    display: none;
     
   }
 }
+@media only screen and (max-width:768px) {
+  .xlhide {
+    display: none;
+    
+  }
+}
+@media only screen and (max-width:430px) {
+  .xlhide {
+    display: block;
+    
+  }
+}
+
+

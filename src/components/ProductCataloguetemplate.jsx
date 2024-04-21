@@ -7,6 +7,8 @@ import CatelogueCommon from "./CatelogueCommon";
 import { CloudCog } from "lucide-react";
 
 function ProductCataloguetemplate() {
+
+  const [newIndex,setIndex]=useState(null)
   const {
     furnitureCatelogue,
     glasswareCatelogue,
@@ -15,9 +17,10 @@ function ProductCataloguetemplate() {
     plasticwareCatelogue,
     consumablesCatelogue,
     equipmentCatelogue,
+  actualClient
   } = userStateContext();
 
-  const { mainNextpath } = useParams();
+  const { mainNextpath,ids } = useParams();
 
   const destructuring = (data) =>
     data.map((item, id) => ({
@@ -26,15 +29,15 @@ function ProductCataloguetemplate() {
           <ImageCommonBg
             img={item && item.bgImage}
             id={mainNextpath}
-            text={item && item.catelogue[index].text}
+            text={item && item.catelogue[index ? index : ids].text}
           />
         </div>
       ),
       catelogue: (
         <CatelogueCommon
-          catelogue={item && item.catelogue[index].catlogueImages}
-          catelogueHorizontal={item && item.catelogue[index].horizontal}
-          copyright={item && item.catelogue[index].copyright}
+          catelogue={item && item.catelogue[index ? index : ids].catlogueImages}
+          catelogueHorizontal={item && item.catelogue[index?index:ids].horizontal}
+          copyright={item && item.catelogue[index?index:ids].copyright}
           id={mainNextpath}
         />
       ),

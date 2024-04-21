@@ -45,7 +45,7 @@ function LactosanCatelogue({ catelogue, copyright }) {
           </div>
         ))}
       </div>
-      <div className=" md:mx-[200px] md:space-y-0 sm:top-0 relative flex xl:gap-x-[0px] lg:gap-x-[0px] sm:gap-x-[0px] md:gap-x-[0px]  gap-x-[0px] justify-center 2xl:mx-[390px]  xl:mx-[250px]  xl:space-y-10 items-baseline lg:mx-[200px] sm:mx-[130px] mx-[60px]">
+      <div className=" md:mx-[200px] md:space-y-0 sm:top-0 relative flex 2xl:gap-x-[20px] xl:gap-x-[0px] lg:gap-x-[0px] sm:gap-x-[0px] md:gap-x-[0px]  gap-x-[0px] justify-center 2xl:mx-[390px]  xl:mx-[250px]  xl:space-y-10 items-baseline lg:mx-[200px] sm:mx-[130px] mx-[60px]">
         {finalRow.map((image) => (
           <div
             className="cursor-pointer justify-center mx-auto"

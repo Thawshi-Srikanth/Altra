@@ -185,7 +185,7 @@ else{setCurrentTabDropdown(productDropdownTitles[pathName]);}
           </div>
           {clickToggle && (
             <div
-              className="rounded-b-[20px] lg:block hidden bg-white xl:w-[600px] lg:w-[400px] xl:h-[370px] lg:h-[140px] lg:left-[40px] xl:left-[80px] relative mx-auto font-rosario"
+              className="rounded-b-[20px] lg:block hidden bg-white xl:w-[600px] lg:w-[400px] xl:h-[370px] lg:h-[200px] lg:left-[40px] xl:left-[80px] relative mx-auto font-rosario"
               ref={menuRef}
             >
               {productDropdown.map((title) => (

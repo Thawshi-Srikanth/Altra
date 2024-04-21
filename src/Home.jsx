@@ -3,7 +3,6 @@ import "react-html5video/dist/styles.css";
 import bgVideo from "./assets/video/bgVideo.mp4";
 import delayForDemo from "./components/Delay";
 import Loader from "./components/Loader";
-import SearchBar from "./components/SearchBar";
 import Commitment from "./pages/Commitment";
 import HeroSection from "./pages/HeroSection";
 import HeroText from "./pages/HeroText";
@@ -55,7 +54,7 @@ export default function Home() {
     }
   }, []);
   return (
-    <div className="lg:mt-[0px]    w-screen relative lg:top-30 sm:top-[80px] top-[50px]  overflow-y-hidden">
+    <div className="lg:mt-[0px]    w-screen relative lg:top-30 sm:top-[80px] top-[50px]  overflow-y-hidden ">
   <div className="h-full w-full overflow-x-hidden ">
         <video
           playsInline
@@ -69,7 +68,7 @@ export default function Home() {
           className="justify-end flex items-center absolute xl:h-[4964px]   lg:h-[4150px] md:h-[3158px] sm:h-[2456px] h-[1790px] object-cover min-w-full "
         />
         <div className="relative bg-[#FF8A3B] bg-opacity-80 min-w-full ">
-     <SearchBar/>
+
           <HeroSection />
           <HeroText />
           <Suspense fallback={<Loader />}>

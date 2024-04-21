@@ -24,6 +24,7 @@ import GerberCatelogue from "../pages/Equipments/GerberCatelogue";
 import Jp from "../pages/Equipments/Jp";
 import Consort from "../pages/Equipments/Consort";
 import InterScience from "../pages/Equipments/InterScience";
+import { useParams } from "react-router-dom";
 
 
 function CatelogueCommon({ catelogue, id, catelogueHorizontal, copyright }) {
@@ -35,116 +36,189 @@ function CatelogueCommon({ catelogue, id, catelogueHorizontal, copyright }) {
 
   //   });
  
+  const { ids, clientNextpath, mainNextpath } = useParams();
 
   return (
     <>
-      {id === "furniture" && (
+      {(actualClient === "method" && id === "furniture") ||
+      (ids == 0 && clientNextpath === "method") ? (
         <div className="">
           {" "}
-          <FurnitureCataelogueImages catelogue={catelogue} copyright={copyright} />
+          <FurnitureCataelogueImages
+            catelogue={catelogue}
+            copyright={copyright}
+          />
         </div>
+      ) : (
+        ""
       )}
 
-      {id === "glassware" && (
+      {(actualClient === "witeg" && id === "glassware") ||
+      (ids == 0 && clientNextpath === "witeg"&& mainNextpath==="glassware") ? (
         <div className="">
           {" "}
-          <GlasswareCataelogueImages catelogue={catelogue} copyright={copyright} />
+          <GlasswareCataelogueImages
+            catelogue={catelogue}
+            copyright={copyright}
+          />
         </div>
+      ) : (
+        ""
       )}
-      {actualClient == "accustand" && id === "chemicals" && (
+      {(actualClient == "accustand" && id === "chemicals") ||
+      (ids == 0 && clientNextpath === "accustand") ? (
         <div className="">
-          <ChemicalsAccStandCatelogue catelogue={catelogue} copyright={copyright} />
+          <ChemicalsAccStandCatelogue
+            catelogue={catelogue}
+            copyright={copyright}
+          />
         </div>
+      ) : (
+        ""
       )}
-      {actualClient == "chemlab" && id === "chemicals" && (
+      {(actualClient == "chemlab" && id === "chemicals") ||
+      (ids == 1 && clientNextpath === "chemlab") ? (
         <div className="">
           <ChemLAbCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
+      ) : (
+        ""
       )}
-      {actualClient == "megazyme" && id === "chemicals" && (
+      {(actualClient == "megazyme" && id === "chemicals") ||
+      (ids == 2 && clientNextpath === "megazyme") ? (
         <div className="">
           <MegazymeCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
+      ) : (
+        ""
       )}
 
       {/* equipment */}
 
-      {actualClient == "france" && id === "equipment" && (
+      {(actualClient == "france" && id === "equipment") ||
+      (ids == 0 && clientNextpath === "france") ? (
         <div className="">
           <FranceCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
+      ) : (
+        ""
       )}
-      {actualClient == "apera" && id === "equipment" && (
+      {(actualClient == "apera" && id === "equipment") ||
+      (ids == 1 && clientNextpath === "apera") ? (
         <div className="">
-          <AperaCatelogue catelogue={catelogue} copyright={copyright}  />
+          <AperaCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
+      ) : (
+        ""
       )}
-      {actualClient == "orto" && id === "equipment" && (
+      {(actualClient == "orto" && id === "equipment") ||
+      (ids == 2 && clientNextpath === "orto") ? (
         <div className="">
           <OrtoCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
+      ) : (
+        ""
       )}
-      {actualClient == "euromax" && id === "equipment" && (
+      {(actualClient == "euromax" && id === "equipment") ||
+      (ids == 3 && clientNextpath === "euromax") ? (
         <div className="">
           <EuroMexCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
+      ) : (
+        ""
       )}
-      {actualClient == "camlab" && id === "equipment" && (
+      {(actualClient == "camlab" && id === "equipment") ||
+      (ids == 4 && clientNextpath === "camlab") ? (
         <div className="">
           <CamlabCatelogue
-            catelogue={catelogue} copyright={copyright}
+            catelogue={catelogue}
+            copyright={copyright}
             catelogueHorizontal={catelogueHorizontal}
           />
         </div>
+      ) : (
+        ""
       )}
-      {actualClient == "gerber" && id === "equipment" && (
+      {(actualClient == "gerber" && id === "equipment") ||
+      (ids == 5 && clientNextpath === "gerber") ? (
         <div className="">
           <GerberCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
+      ) : (
+        ""
       )}
-      {actualClient == "jp" && id === "equipment" && (
+      {(actualClient == "jp" && id === "equipment") ||
+      (ids == 8 && clientNextpath === "jp") ? (
         <div className="">
           <Jp catelogue={catelogue} copyright={copyright} />
         </div>
+      ) : (
+        ""
       )}
-      {actualClient == "consort" && id === "equipment" && (
+      {(actualClient == "consort" && id === "equipment") ||
+      (ids == 6 && clientNextpath === "consort") ? (
         <div className="">
           <Consort catelogue={catelogue} copyright={copyright} />
         </div>
+      ) : (
+        ""
       )}
-      {actualClient == "interscience" && id === "equipment" && (
+      {(actualClient == "interscience" && id === "equipment") ||
+      (ids == 7 && clientNextpath === "interscience") ? (
         <div className="">
           <InterScience catelogue={catelogue} copyright={copyright} />
         </div>
+      ) : (
+        ""
       )}
 
       {/* consumables */}
-      {actualClient == "johnson" && id === "consumables" && (
+      {(actualClient == "johnson" && id === "consumables") ||
+      (ids == 0 && clientNextpath === "johnson") ? (
         <div className="">
           <JohnsonCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
+      ) : (
+        ""
       )}
-      {actualClient == "water" && id === "consumables" && (
+      {(actualClient == "water" && id === "consumables") ||
+      (ids == 1 && clientNextpath === "water") ? (
         <div className="">
           <WaterCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
+      ) : (
+        ""
       )}
-      {actualClient == "geyer" && id === "consumables" && (
+      {(actualClient == "geyer" && id === "consumables") ||
+      (ids == 3 && clientNextpath === "geyer") ? (
         <div className="">
           <GeyerCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
+      ) : (
+        ""
       )}
-      {actualClient == "lactos" && id === "consumables" && (
+      {(actualClient == "lactos" && id === "consumables") ||
+      (ids == 2 && clientNextpath === "lactos") ? (
         <div className="">
           <LactosanCatelogue catelogue={catelogue} copyright={copyright} />
         </div>
+      ) : (
+        ""
       )}
 
       {/* plasticware */}
-      {id === "plasticware" && (
+      {(id === "plasticware" && actualClient == "witeg") ||
+      (ids == 0 &&
+        clientNextpath === "witeg" &&
+        mainNextpath === "plasticware") ? (
         <div className="">
-          <PlasticwareCatelogueImages catelogue={catelogue} copyright={copyright} />
+          <PlasticwareCatelogueImages
+            catelogue={catelogue}
+            copyright={copyright}
+          />
         </div>
+      ) : (
+        ""
       )}
     </>
   );

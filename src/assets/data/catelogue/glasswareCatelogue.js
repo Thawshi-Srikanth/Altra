@@ -41,7 +41,7 @@ import witegLogo from "../../images/products/cateogories/Glassware/logo/witeg.pn
 export const glasswareCatelogue = [
   {
     id: "glassware",
-    bgImage: [{ id: 1, img: witegBg, title: "glassware" ,logo:witegLogo}],
+    bgImage: [{ id: 1, img: witegBg, title: "witeg" ,logo:witegLogo}],
 
     text: "Witeg Labortechnik GmbH, established in 1960, is a key provider of laboratory equipment, serving the global chemical, pharmaceutical, and medical industries with over 30,000 products. Adhering to ISO 9001 standards, the company emphasizes quality and innovation, offering durable products designed with German engineering. Their focus on uniform design and interchangeable parts enhances after-sales support. Each product is rigorously tested to ensure high standards, underscored by a commitment to quality and technical excellence.",
     catelogue: [

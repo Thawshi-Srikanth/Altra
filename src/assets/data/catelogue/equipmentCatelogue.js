@@ -617,7 +617,7 @@ export const equipmentCatelogue = [
           { id: 13, Catlogueimage: C23, alt: "		" },
         ],
         horizontal: [
-          { id: 14, Catlogueimage: C24, alt: "		" },
+          { id: 143, Catlogueimage: C24, alt: "		" },
           { id: 15, Catlogueimage: C25, alt: "		" },
           { id: 16, Catlogueimage: C26, alt: "		" },
           { id: 17, Catlogueimage: C27, alt: "		" },

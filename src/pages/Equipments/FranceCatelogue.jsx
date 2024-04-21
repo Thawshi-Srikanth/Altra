@@ -8,6 +8,8 @@ function FranceCatelogue({ catelogue, copyright }) {
   const [imagepopUp, setImagePopup] = useState(false);
   const [popupId, setPopupId] = useState(null);
 
+
+  
   const firstRow = catelogue.slice(0, catelogue.length - 2);
   const finalRow = catelogue.slice(catelogue.length - 2);
 

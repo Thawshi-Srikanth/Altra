@@ -114,7 +114,7 @@ export const consumablesCatelogue = [
       { id: 1, img: johnson, title: "johnson",logo:johnsonLogo },
       { id: 2, img: water, title: "water",logo:waterLogo },
       { id: 3, img: lactos, title: "lactos",logo:lactosanLogo },
-      { id: 3, img: geyer, title: "geyer",logo:geyerLogo },
+      { id: 4, img: geyer, title: "geyer",logo:geyerLogo },
    
     ],
 

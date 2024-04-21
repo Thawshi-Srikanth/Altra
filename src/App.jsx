@@ -18,6 +18,7 @@ import Products from "./pages/Products";
 import Research from "./pages/Research";
 import Services from "./pages/Services";
 import EquipmentMainPAge from "./pages/Equipments/EquipmentMainPAge"
+import JohnsonCatelogue from "./pages/Consumables/JohnsonCatelogue";
 export default function App() {
   return (
     <Router>
@@ -32,6 +33,7 @@ export default function App() {
         <Route path="/aboutUs" element={<AboutUs />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
 
+       
         <Route
           path="/products/equipment"
           element={<EquipmentMainPAge />}
@@ -59,7 +61,7 @@ export default function App() {
         ></Route>
 
         <Route
-          path="/products/:mainNextpath/:clientNextpath"
+          path="/products/:mainNextpath/:clientNextpath/:ids"
           element={<ProductCataloguetemplate />}
         ></Route>
       </Routes>
