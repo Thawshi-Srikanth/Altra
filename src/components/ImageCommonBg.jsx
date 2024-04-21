@@ -70,7 +70,7 @@ function ImageCommonBg({ img, text, id }) {
   ${actualClient === "apera" ? "xl:top-[58px] " : ""}  
   ${
     actualClient === "lactos"
-      ? "xl:top-[60px] relative mt-[-20px] sm:mt-0   "
+      ? "xl:top-[60px] relative mt-[-20px] sm:mt-0  lg:mt-[-20px] xl:mt-0 "
       : ""
   }  
 
@@ -95,7 +95,11 @@ function ImageCommonBg({ img, text, id }) {
               } 
                ${actualClient === "france" ? "relative top- scale-50 " : ""}
                ${actualClient === "jp" ? "relative top-2 " : ""}
-               ${actualClient === "lactos" ? "scale-75 h-[120px] " : ""}
+               ${
+                 actualClient === "lactos"
+                   ? "scale-75  max-h-[130px] sm:h-full sm:scale-100 "
+                   : ""
+               }
               
                 `}
               alt={actualClient}
