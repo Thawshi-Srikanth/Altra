@@ -96,6 +96,13 @@ const Products=React.memo(function Products() {
         <div className=" overflow-x-hidden md:hidden relative sm:top-[20px] top-[60px] overflow-y-hidden ">
           <MemoRizedClientele2 />
         </div>
+        <Link to="/contact" style={{ display: "none" }}>
+          Contact
+        </Link>
+        <Link to="/aboutus" style={{ display: "none" }}>
+          {" "}
+          About Us
+        </Link>
       </div>
     </>
   );

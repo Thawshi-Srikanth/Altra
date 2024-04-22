@@ -26,7 +26,6 @@ const MemoRizedProducts = memo(function ShowProduct() {
                 src={img.img}
                 alt={img.id}
                 className="xl:scale-125 scale-90 sm:scale-100"
-               
               />
             </Link>
           ))}
