@@ -27,15 +27,19 @@ function HeroSection() {
             </button>
           </Link>
           <p className="pb-[20px]  sm:pb-0 lg:ml-[86px] text-[7px] md:text-[12px] sm:text-[9px] font-rosario lg:text-[20px]  text-[#e18655] lg:mt-[20px] md:mt-[10px] mt-[5px] relative left-[16px] sm:ml-[-5px] md:left-5 lg:left-0 ">
-            <Link to="/products" className="">
-              See Products
-            </Link>
+            <Link to="/products">See Products</Link>
           </p>
         </div>
       </div>
       <div className="relative xl:left-[35px] 2xl:left-20 bottom-[10px] lg:bottom-0 md:mt-[-13px] lg:mt-0 mt-[-10px]">
         <img src={flask} alt="flask" className="lg:ml-[12px] xl:mt-[-40px] " />
       </div>
+      <Link to="/contact" style={{ display: "none" }}>
+        Inquire Now
+      </Link>
+      <Link to="/products" style={{ display: "none" }}>
+        See Products
+      </Link>
     </div>
   );
 }

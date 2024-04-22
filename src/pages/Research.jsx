@@ -12,18 +12,15 @@ const Research = React.memo(function ResearchComponent() {
     window.scrollTo(0, 0);
   }, []);
 
+  const LazyVideo = lazy(() => {
+    if (pageLoaded == true) {
+      return import("./ResearchVideo");
+    } else {
+      setPageLoaded(true);
 
-  const LazyVideo = 
-    lazy(() => {
-      if (pageLoaded == true) {
-        return import("./ResearchVideo");
-      } else {
-        setPageLoaded(true);
-
-        return delayForDemo(import("./ResearchVideo"), 2000);
-
-      }
-    })
+      return delayForDemo(import("./ResearchVideo"), 2000);
+    }
+  });
 
   return (
     <div className="xl:mb-[-80px] lg:mb-[-70px] md:mb-[-70px] ">
@@ -31,9 +28,6 @@ const Research = React.memo(function ResearchComponent() {
         <Suspense fallback={<Loader />}>
           <LazyVideo />
         </Suspense>
-
-       
-   
       </div>
       <div className="space-y-10  2xl:top-[-100px]  sm:top-[-40px] lg:top-10 relative 2xl:max-w-[1240px]  xl:max-w-[1040px]  lg:max-w-[900px] md:max-w-[700px] sm:max-w-[500px] max-w-[300px] mx-auto justify-center xl:p-10 2xl:p-0 bottom-3 ">
         {" "}
@@ -51,7 +45,7 @@ const Research = React.memo(function ResearchComponent() {
             reach out to us at
           </p>
           <Link
-            to="mailto:research@altrascietific.com "
+            to="mailto:research@altrascietific.com"
             className="text-[#FF8A3A]  relative font-medium font-rosario  xl:text-[30px] lg:text-[30px] md:text-[25px] sm:text-[20px] text-[15]"
           >
             <span>
@@ -76,7 +70,7 @@ const Research = React.memo(function ResearchComponent() {
             to submit an Expression of Interest at
           </p>
           <Link
-           to="mailto:eoi.research@altrascientific.com"
+            to="mailto:eoi.research@altrascientific.com"
             className="relative text-[#FF8A3A] font-medium font-rosario  xl:text-[30px] lg:text-[30px] md:text-[25px] sm:text-[20px] text-[15]"
           >
             <span>

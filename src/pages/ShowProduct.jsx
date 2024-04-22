@@ -1,11 +1,6 @@
-import { motion } from "framer-motion";
-import React, { memo, useEffect, useRef, useState } from "react";
-import { ProductsImages } from "../assets/data/ProductsImages";
-import MobileViewProducts from "./MobileViewProducts";
-import { brands } from "./../assets/data/brands";
-import { userStateContext } from "../contexts/ContextProvider";
-import { productsCaru } from "../assets/data/productsCaru";
+import React, { memo } from "react";
 import { Link } from "react-router-dom";
+import { productsCaru } from "../assets/data/productsCaru";
 const MemoRizedProducts = memo(function ShowProduct() {
   // const [width, setWidth] = useState(0);
   // const carousel = useRef();
@@ -31,6 +26,7 @@ const MemoRizedProducts = memo(function ShowProduct() {
                 src={img.img}
                 alt={img.id}
                 className="xl:scale-125 scale-90 sm:scale-100"
+               
               />
             </Link>
           ))}
