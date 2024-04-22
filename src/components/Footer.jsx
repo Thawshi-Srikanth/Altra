@@ -29,7 +29,12 @@ function Footer() {
 
           <div className="mx-auto sm:mx-0 gap-[30px] flex lg:gap-[12px] md:gap-[10px] sm:gap-[0px] xl:gap-[30px] lg:mt-[12px] md:mt-[-23px] sm:mt-[-50px] lg:mb-[20px] relative 2xl:ml-[-3px]  xl:left-[60px] 2xl:left-[15px] xl:right-[0px] md:left-[40px] lg:right-0 sm:left-[10px]  sm:pb-[30px] mt-[5px] xl:ml-[-45px]">
             {social.map((social) => (
-              <Link key={social.id} to={social.path} target="blank">
+              <Link
+                key={social.id}
+                to={social.path}
+                target="blank"
+                rel="noopener noreferrer"
+              >
                 {" "}
                 <img
                   src={social.image}
@@ -160,7 +165,11 @@ function Footer() {
             Scientific Private Limited{" "}
             <span className="px-[10px] sm:px-0">|</span> All rights reserved
           </p>
-          <Link to="https://arrowreachdigital.com/" target="blank">
+          <Link
+            to="https://arrowreachdigital.com/"
+            rel="noopener noreferrer"
+            target="blank"
+          >
             {" "}
             <p className="sm:hidden text-nowrap text-center relative top-[20px]">
               Crafted by Arrow Reach Digital

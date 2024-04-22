@@ -209,6 +209,7 @@ const Contact = React.memo(function Contact() {
                                 ? "left-[0px]"
                                 : "left-[40px] sm:left-0"
                             }`}
+                            rel="noopener noreferrer"
                           >
                             <img src={img.img} className="" />
                             <p>{img.info}</p>
@@ -305,6 +306,7 @@ const Contact = React.memo(function Contact() {
                                 ? "relative left-[20px] sm:left-0"
                                 : ""
                             } `}
+                            rel="noopener noreferrer"
                           >
                             <img
                               src={img.img}

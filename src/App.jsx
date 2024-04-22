@@ -10,6 +10,7 @@ import ChemicalasMainPage from "./pages/Chemicals&Standards/ChemicalasMainPage";
 import ConsumablesMainPage from "./pages/Consumables/ConsumablesMainPage";
 import Contact from "./pages/Contact";
 
+import EquipmentMainPAge from "./pages/Equipments/EquipmentMainPAge";
 import FurnitureMainPage from "./pages/Furniture/FurnitureMainPage";
 import GlasswareMainPage from "./pages/Glassware/GlasswareMainPage";
 import NotFoundPage from "./pages/NotFoundPage";
@@ -17,8 +18,6 @@ import PlasticwareMainPage from "./pages/Plasticware/PlasticwareMainPage";
 import Products from "./pages/Products";
 import Research from "./pages/Research";
 import Services from "./pages/Services";
-import EquipmentMainPAge from "./pages/Equipments/EquipmentMainPAge"
-import JohnsonCatelogue from "./pages/Consumables/JohnsonCatelogue";
 export default function App() {
   return (
     <Router>
