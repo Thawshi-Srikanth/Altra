@@ -39,7 +39,7 @@ function CatelogueCommon({ catelogue, id, catelogueHorizontal, copyright }) {
   const { ids, clientNextpath, mainNextpath } = useParams();
 
   return (
-    <div className="xl:scale-95">
+    <div className="">
       {(actualClient === "method" && id === "furniture") ||
       (ids == 0 && clientNextpath === "method") ? (
         <div className="">
