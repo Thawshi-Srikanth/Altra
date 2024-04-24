@@ -29,7 +29,7 @@ const Research = React.memo(function ResearchComponent() {
           <LazyVideo />
         </Suspense>
       </div>
-      <div className="space-y-10  2xl:top-[-100px]  sm:top-[-40px] lg:top-10 relative 2xl:max-w-[1240px]  xl:max-w-[1040px]  lg:max-w-[900px] md:max-w-[700px] sm:max-w-[500px] max-w-[300px] mx-auto justify-center xl:p-10 2xl:p-0 bottom-3 ">
+      <div className="xl:scale-90 space-y-10  2xl:top-[-100px]  sm:top-[-40px] lg:top-10 relative 2xl:max-w-[1240px]  xl:max-w-[1040px]  lg:max-w-[900px] md:max-w-[700px] sm:max-w-[500px] max-w-[300px] mx-auto justify-center xl:p-10 2xl:p-0 bottom-3 ">
         {" "}
         <div className=" justify-center mx-auto">
           <p className="font-rosario font-bold text-nowrap xl:text-[50px] lg:text-[40px] md:text-[30px] sm:text-[30px] text-[25px]">

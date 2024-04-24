@@ -8,7 +8,7 @@ const AboutUs =React.memo(function AboutUsComponent() {
   }, [])
   return (
     <div className="mb-[-80px] ">
-      <div className="container mx-auto px-5  sm:px-1 lg:px-2 xl:px-3 2xl:px-0">
+      <div className="xl:scale-95 container mx-auto px-5  sm:px-1 lg:px-2 xl:px-3 2xl:px-0">
         <div className="relative top-4">
           {" "}
           <p className="font-rosario font-bold  text-nowrap xl:text-[50px] lg:text-[40px] md:text-[30px] sm:text-[30px] text-[25px] lg:top-1  sm:mt-10 lg:mt-0 relative mt-10 mx-2 sm:mx-0">
@@ -118,11 +118,11 @@ const AboutUs =React.memo(function AboutUsComponent() {
           </div>
         </div>
       </div>
-      <div className="bg-[#363636] w-full text-white space-y-44 mt-48  relative h-full md:pb-40 sm:pb-52 pb-40  px-5  sm:px-1 lg:px-2 xl:px-3 2xl:px-0">
+      <div className=" bg-[#363636] w-full text-white space-y-44 mt-48  relative h-full md:pb-40 sm:pb-52 pb-40  px-5  sm:px-1 lg:px-2 xl:px-3 2xl:px-0">
         {aboutUs.map((data) => (
           <div
             key={data.id}
-            className="mx-2 container sm:mx-auto md:pt-28  sm:pt-10 "
+            className="mx-2 container sm:mx-auto md:pt-28  sm:pt-10 xl:scale-95"
           >
             {data.team.map((member) => (
               <div

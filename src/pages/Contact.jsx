@@ -52,7 +52,7 @@ const Contact = React.memo(function Contact() {
 
   return (
     <div className="grid sm:grid-cols-2 bg-[#2D2D2D] xl:h-[900px] lg:h-[910px] md:h-[900px]  sm:h-[920px] h-[1450px]  w-full xl:mb-[-80px] lg:mb-[-73px]  sm:mb-[-72px]   relative lg:pt-[50px] xl:pt-0 xl:px-[150px]  ">
-      <div className="relative lg:top-[60px]  md:top-[140px] sm:top-[60px] top-[60px]  md:pl-5 lg:pl-0">
+      <div className="xl:scale-95 relative lg:top-[60px]  md:top-[140px] sm:top-[60px] top-[60px]  md:pl-5 lg:pl-0">
         <ToastContainer />
         <p className="lg:text-[30px] sm:text-[25px] text-[30px] text-center xl:text-[50px] font-rosario text-[#ff8a3a] font-bold">
           Send a{" "}
@@ -186,7 +186,7 @@ const Contact = React.memo(function Contact() {
           </form>
         </div>
       </div>
-      <div className="relative top-[-10px] sm:top-[-30px] md:top-0 sm:scale-90 md:scale-100">
+      <div className="xl:scale-95 relative top-[-10px] sm:top-[-30px] md:top-0 sm:scale-90 md:scale-100">
         <div className="grid grid-cols-1 lg:space-y-[-20px] xl:space-y-0 space-y-[40px] sm:space-y-[-10px]">
           {contact.map((d) => (
             <>

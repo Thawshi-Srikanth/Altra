@@ -11,9 +11,9 @@ const Services=React.memo(function ServicesComponent() {
     }, []);
 
   return (
-    <div className="md:mb-30 lg:mb-10 mb-10 space-y-10 sm:mb-60">
+    <div className="md:mb-30 lg:mb-10 mb-10 space-y-10 sm:mb-60 ">
       {" "}
-      <div className=" w-full relative ">
+      <div className=" w-full relative  ">
         <img
           src={bg}
           alt="bgimage"
@@ -37,7 +37,7 @@ const Services=React.memo(function ServicesComponent() {
           </Link>
         </div>
       </div>
-      <div className=" 2xl:max-w-[1240px]  xl:max-w-[1040px] lg:max-w-[900px] md:max-w-[700px] sm:max-w-[500px] max-w-[333px] mx-auto justify-center relative top-0">
+      <div className="xl:scale-90 2xl:max-w-[1240px]  xl:max-w-[1040px] lg:max-w-[900px] md:max-w-[700px] sm:max-w-[500px] max-w-[333px] mx-auto justify-center relative top-0">
         <p className="text-nowarap font-bold xl:text-[50px] font-rosario lg:text-[40px] md:text-[30px] sm:text-[30px] text-[25px] text-center sm:text-start">
           <span className="text-transparent [-webkit-text-stroke:0.5px_#000] lg:[-webkit-text-stroke:2px_#000]">
             {" "}

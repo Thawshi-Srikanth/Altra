@@ -49,7 +49,7 @@ const Products=React.memo(function Products() {
         </div>
         <div className="bg-[#5B5B5B]  ">
           {" "}
-          <div className="  xl:h-[300px] lg:h-[180px]    md:h-[150px]  sm:h-[100px]  flex h-[200px]  w-full  sm:justify-evenly mx-auto items-center  relative top-[0px] pb-3 sm:pb-0 sm:top-0 sm:px-0 px-[30px]  sm:gap-0 ">
+          <div className=" xl:scale-90 xl:h-[300px] lg:h-[180px]    md:h-[150px]  sm:h-[100px]  flex h-[200px]  w-full  sm:justify-evenly mx-auto items-center  relative top-[0px] pb-3 sm:pb-0 sm:top-0 sm:px-0 px-[30px]  sm:gap-0 ">
             {counterDetails.map((detail) => (
               <Counter
                 key={detail.id}
@@ -77,7 +77,7 @@ const Products=React.memo(function Products() {
             )}
           </ScrollTrigger>
         </div>{" "}
-        <div className="grid sm:grid-cols-2  relative lg:gap-y-[50px] sm:gap-y-[30px] xl:top-[50px] lg:top-[50px] sm:top-[40px]  text-nowrap top-[30px] ">
+        <div className="xl:scale-90 grid sm:grid-cols-2  relative lg:gap-y-[50px] sm:gap-y-[30px] xl:top-[50px] lg:top-[50px] sm:top-[40px]  text-nowrap top-[30px] ">
           {productCategoryData.map((categiry) => (
             <ProductCategory
               img1={categiry.img1}

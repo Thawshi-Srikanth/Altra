@@ -34,7 +34,7 @@ function PhScale() {
           className="xl:h-[450px] xl:w:h-[450px] lg:h-[400px] lg:w:h-[400px]  md:h-[200px] w-[124px] h-[124px]"
         />
       </div> */}{" "}
-      <div className="md:block hidden right-[0]  md:mr-0  absolute lg:right-[-50px] 2xl:right-[-20px] xl:mt-[-155px] mt-[-35px] 2xl:mt-[-155px] lg:mt-[-120px] md:right-[px] md:mt-[-45px] xl:right-[-142px] xl:scale-90 2xl:scale-100">
+      <div className="md:block hidden right-[0]  md:mr-0  absolute lg:right-[-50px] 2xl:right-[-20px] xl:mt-[-155px] mt-[-35px] 2xl:mt-[-155px] lg:mt-[-120px] md:right-[px] md:mt-[-45px] xl:right-[-142px] xl:scale-90 2xl:scale-90">
         <img
           src={ph}
           alt="magnet"

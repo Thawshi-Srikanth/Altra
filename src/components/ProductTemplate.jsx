@@ -36,14 +36,14 @@ function ProductTemplate({
       <img
         src={imgOne}
         alt="equipment"
-        className="w-full relative top-7 sm:top-0 "
+        className="w-full relative top-7 sm:top-0  "
       />
       {/* <img
         src={imgTwo}
         alt="detail"
         className="mx-auto w-full relative top-8 sm:top-0 "
       /> */}
-      <div className="flex justify-center mx-auto  xl:h-[365px]  md:-[130px] lg:h-[150px]  md:h-[140px]  sm:h-[140px] h-[128px] items-center">
+      <div className="xl:scale-95 flex justify-center mx-auto  xl:h-[365px]  md:-[130px] lg:h-[150px]  md:h-[140px]  sm:h-[140px] h-[128px] items-center">
         <p className="text-[8.96px] md:text-[16px] sm:text-[13px] lg:text-[20px] xl:w-[1227px] lg:w-[1200px] w-[366px] md:w-[810px]  sm:w-[530px] font-medium text-center font-rosario xl:text-[30px] items-center  relative mt-[27px] sm:mt-0 lg:mx-12 xl:mx-0">
           {description}
         </p>
@@ -51,7 +51,7 @@ function ProductTemplate({
 
       <div className="bg-[#FF8A3A]  md:mb-[-80px] mb-[-50px] sm:mb-0">
         <div
-          className={`flex justify-evenly mx-auto  
+          className={`flex justify-evenly mx-auto xl:scale-95 
           
                ${
                  MainNextpath === "glassware" || MainNextpath === "plasticware"
@@ -85,7 +85,7 @@ function ProductTemplate({
               className={`flex  ${
                 MainNextpath === "equipment" ||
                 (MainNextpath === "consumables" &&
-                  "relative top-[-30px] sm:top-0  ")
+                  "relative top-[-30px] sm:top-0  xl:scale-95")
               }`}
               key={client.id}
               onClick={() => forwardArrayIndex(client)}

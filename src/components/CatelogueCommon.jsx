@@ -39,7 +39,7 @@ function CatelogueCommon({ catelogue, id, catelogueHorizontal, copyright }) {
   const { ids, clientNextpath, mainNextpath } = useParams();
 
   return (
-    <>
+    <div className="xl:scale-95">
       {(actualClient === "method" && id === "furniture") ||
       (ids == 0 && clientNextpath === "method") ? (
         <div className="">
@@ -54,7 +54,9 @@ function CatelogueCommon({ catelogue, id, catelogueHorizontal, copyright }) {
       )}
 
       {(actualClient === "witeg" && id === "glassware") ||
-      (ids == 0 && clientNextpath === "witeg"&& mainNextpath==="glassware") ? (
+      (ids == 0 &&
+        clientNextpath === "witeg" &&
+        mainNextpath === "glassware") ? (
         <div className="">
           {" "}
           <GlasswareCataelogueImages
@@ -220,7 +222,7 @@ function CatelogueCommon({ catelogue, id, catelogueHorizontal, copyright }) {
       ) : (
         ""
       )}
-    </>
+    </div>
   );
 }
 
