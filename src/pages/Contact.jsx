@@ -107,7 +107,7 @@ const Contact = React.memo(function Contact() {
                   id="email"
                   required
                   type="email"
-                  placeholder="@gmail.com"
+                  placeholder=""
                   className={`placeholder:text-white bg-[#ffffff4d] placeholder:text-right relative peer h-full w-full rounded-md   px-3 py-3 font-inter text-sm font-normal text-white    ${
                     errors.email && touched.email
                       ? "focus:outline-red-900 border border-red-700"
