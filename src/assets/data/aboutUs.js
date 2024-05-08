@@ -65,16 +65,9 @@ export const aboutUs = [
         designation: "Executive Director",
         orderImg: "2",
       },
+
       {
         id: 3,
-        name: "Shyamalan Ratnam",
-        img: unknown,
-        description:
-          "Mr.Shyamalan brings a diverse background in Finance, IT , and international distribution, backed by a solid foundation in Physics and Chemistry. His expertise ensures seamless operations and superior customer relations, guiding the company’s growth.",
-        designation: "Managing Director",
-      },
-      {
-        id: 4,
         name: "Mass Jassim",
         img: marketing,
         description:
@@ -83,12 +76,20 @@ export const aboutUs = [
         orderImg: "2",
       },
       {
-        id: 5,
+        id: 4,
         name: "Neelakanda Sharma Vimaleindran ",
         img: admin,
         description:
           "Mr.sharma is the Head of administration, he counts 20 years of experience in diverse businesses such as Distribution, Service Industries and Lab Supplies. He carries an exclusive 7+ years in Lab supplies business.",
         designation: "Head of Administration",
+      },
+      {
+        id: 5,
+        name: "Shyamalan Ratnam",
+        img: unknown,
+        description:
+          "Mr.Shyamalan brings a diverse background in Finance, IT , and international distribution, backed by a solid foundation in Physics and Chemistry. His expertise ensures seamless operations and superior customer relations, guiding the company’s growth.",
+        designation: "Managing Director",
       },
     ],
   },

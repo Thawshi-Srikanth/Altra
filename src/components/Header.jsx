@@ -123,7 +123,7 @@ else{setCurrentTabDropdown(productDropdownTitles[pathName]);}
         {/* dekstop */}
 
         <div
-          className={`bg-white  z-50 top-0 bottom-0 w-screen  relative  lg:block hidden  lg:flex-row lg:h-[100px] lg:shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)] `}
+          className={`bg-white  z-50 top-0 bottom-0 w-screen  relative  lg:block hidden  lg:flex-row lg:h-[90px] lg:shadow-[10px_10px_10px_rgba(0,_0,_0,_0.3)] `}
         >
           <div className="lg:right-[10px] xl:right-0 lg:flex lg:flex-row xl:pl-[86px] xl:pr-[86px] lg:pt-[10px] lg:pb-[10px] relative xl:left-[20px] 2xl:left-[90px] xl:scale-90">
             <Link to="/">
@@ -131,7 +131,7 @@ else{setCurrentTabDropdown(productDropdownTitles[pathName]);}
                 <img
                   src={headerLogo}
                   alt="headerLogo"
-                  className="lg:h-[80px] relative 2xl:right-[50px] "
+                  className="lg:h-[70px] xl:h-[70px] relative 2xl:right-[50px] xl:scale-90"
                 />
               </div>
             </Link>
