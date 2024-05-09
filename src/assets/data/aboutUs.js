@@ -89,7 +89,7 @@ export const aboutUs = [
         img: unknown,
         description:
           "Mr.Shyamalan brings a diverse background in Finance, IT , and international distribution, backed by a solid foundation in Physics and Chemistry. His expertise ensures seamless operations and superior customer relations, guiding the company’s growth.",
-        designation: "Managing Director",
+        designation: "Managing Consultant",
       },
     ],
   },
