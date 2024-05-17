@@ -61,7 +61,7 @@ export const aboutUs = [
         name: "Biruntha Shyamalan",
         img: biruntha,
         description:
-          "Ms.Biruntha, with a Bachelor’s degree in Architecture and over 12 years of industry experience, spearheads the company. Her Strategic acumen and passion for excellence drive the business towards unprecedented success in varied industries.",
+          "Mrs.Biruntha, with a Bachelor’s degree in Architecture and over 14 years of industry experience, spearheads the company. She is instrumental in the company’s Laboratory and Furniture designing and the project management. Her Strategic acumen and passion for excellence drive the business towards unprecedented success in varied industries.",
         designation: "Executive Director",
         orderImg: "2",
       },
