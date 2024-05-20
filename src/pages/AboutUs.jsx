@@ -3,9 +3,9 @@ import aboutUs from "../assets/data/aboutUs";
 import mission from "../assets/images/team/mission.png";
 import vision from "../assets/images/team/vision.png";
 const AboutUs =React.memo(function AboutUsComponent() {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+  // useEffect(() => {
+  //   window.scrollTo(0, 0)
+  // }, [])
   return (
     <div className="mb-[-80px] ">
       <div className="xl:scale-95 container mx-auto px-5  sm:px-1 lg:px-2 xl:px-3 2xl:px-0">
@@ -136,7 +136,12 @@ const AboutUs =React.memo(function AboutUsComponent() {
                 <img
                   src={member.img}
                   alt="team"
-                  className={`sm:${
+                  className={`
+                  
+                  ${member.id===4?"md:ml-[-12px] lg:ml-0":""}
+                  ${
+                    member.id === 5 ? "scale-150 xl:w-[360px] xl:h-[360px] object-cover" : ""
+                  } sm:${
                     (member.id === 2 || member.id === 4) && " container order-2"
                   } sm:block hidden xl:w-[350px] xl:h-[350px] md:w-[280px] lg:h-[300px] lg:w-[300px] md:h-[280px] sm:w-[200px] sm:h-[200px] w-[100px] h-[100px] `}
                 />
@@ -147,7 +152,9 @@ const AboutUs =React.memo(function AboutUsComponent() {
                     <img
                       src={member.img}
                       alt="team"
-                      className={`  w-[100px] h-[100px] `}
+                      className={`  w-[100px] h-[100px] ${
+                        member.id === 5 ? "scale-150 " : ""
+                      }`}
                     />
                     <div className="relative top-3 ">
                       {" "}

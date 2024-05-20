@@ -1,6 +1,6 @@
 import marketing from "../images/team/Marketing.png";
 import admin from "../images/team/Admin.png";
-import unknown from "../images/team/Unknown.png";
+import Siyamalan from "../images/team/Siyamalan.png";
 import arasu from "../images/team/arasu.png";
 import biruntha from "../images/team/biruntha.png";
 
@@ -86,7 +86,7 @@ export const aboutUs = [
       {
         id: 5,
         name: "Shyamalan Ratnam",
-        img: unknown,
+        img: Siyamalan,
         description:
           "Mr.Shyamalan brings a diverse background in Finance, IT , and international distribution, backed by a solid foundation in Physics and Chemistry. His expertise ensures seamless operations and superior customer relations, guiding the company’s growth.",
         designation: "Managing Consultant",
