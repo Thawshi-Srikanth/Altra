@@ -58,10 +58,10 @@ export const aboutUs = [
 
       {
         id: 2,
-        name: "Biruntha Shyamalan",
+        name: "Biruntha Ariyaratnam",
         img: biruntha,
         description:
-          "Mrs.Biruntha, with a Bachelor’s degree in Architecture and over 14 years of industry experience, spearheads the company. She is instrumental in the company’s Laboratory and Furniture designing and the project management. Her Strategic acumen and passion for excellence drive the business towards unprecedented success in varied industries.",
+          "Ms.Biruntha, with a Bachelor’s degree in Architecture and over 14 years of industry experience, spearheads the company. She is instrumental in the company’s Laboratory and Furniture designing and the project management. Her Strategic acumen and passion for excellence drive the business towards unprecedented success in varied industries.",
         designation: "Executive Director",
         orderImg: "2",
       },
@@ -89,7 +89,7 @@ export const aboutUs = [
         img: Siyamalan,
         description:
           "Mr.Shyamalan brings a diverse background in Finance, IT , and international distribution, backed by a solid foundation in Physics and Chemistry. His expertise ensures seamless operations and superior customer relations, guiding the company’s growth.",
-        designation: "Managing Consultant",
+        designation: "Management Consultant",
       },
     ],
   },
